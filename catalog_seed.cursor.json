@@ -11,7 +11,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "teaching",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "productivity",
    "strict": null,
@@ -48,7 +48,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "continual-learning",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -91,7 +91,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cursor-team-kit",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -226,7 +226,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "thermos",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -286,7 +286,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "create-plugin",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -333,7 +333,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "ralph-loop",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -380,7 +380,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "agent-compatibility",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -440,7 +440,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cli-for-agent",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -477,7 +477,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "pr-review-canvas",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -514,7 +514,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "docs-canvas",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -551,7 +551,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cursor-sdk",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -590,7 +590,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "orchestrate",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -628,7 +628,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "pstack",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -908,7 +908,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "grok-voice",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -960,7 +960,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "advisor",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "development",
    "strict": null,
@@ -1001,7 +1001,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gmail",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "productivity",
    "strict": null,
@@ -1031,7 +1031,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-drive",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "productivity",
    "strict": null,
@@ -1062,7 +1062,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-calendar",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "productivity",
    "strict": null,
@@ -1093,7 +1093,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-docs",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "productivity",
    "strict": null,
@@ -1131,7 +1131,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-sheets",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "productivity",
    "strict": null,
@@ -1169,7 +1169,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-slides",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "productivity",
    "strict": null,
@@ -1207,7 +1207,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gong",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1254,7 +1254,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/salesforce",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1301,7 +1301,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/playwright",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1332,7 +1332,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/github",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1373,7 +1373,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ashby",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1405,7 +1405,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/hubspot",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1453,7 +1453,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/intercom",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1485,7 +1485,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/zoom",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1532,7 +1532,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1580,7 +1580,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/clay",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1612,7 +1612,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/circleback",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1643,7 +1643,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/docusign",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1690,7 +1690,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/navan",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1722,7 +1722,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/profound",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1755,7 +1755,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/juicebox",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1787,7 +1787,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outreach",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1819,7 +1819,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/amplemarket",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1851,7 +1851,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/klaviyo",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1883,7 +1883,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/customer-io",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1915,7 +1915,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mailerlite",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1947,7 +1947,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brevo",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -1988,7 +1988,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/typeform",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2019,7 +2019,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/jotform",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2049,7 +2049,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/semrush",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2081,7 +2081,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ahrefs",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2113,7 +2113,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/godaddy",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2144,7 +2144,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/upwork",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2176,7 +2176,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/workable",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2208,7 +2208,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brex",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2240,7 +2240,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mercury",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2271,7 +2271,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/todoist",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2302,7 +2302,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/calendly",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2333,7 +2333,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/smartsheet",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2373,7 +2373,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/wrike",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2413,7 +2413,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coda",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2444,7 +2444,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/guru",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2475,7 +2475,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fireflies",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2506,7 +2506,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/otter",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2537,7 +2537,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fathom",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2568,7 +2568,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/craft",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2599,7 +2599,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mem",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2630,7 +2630,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/readwise",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2661,7 +2661,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/similarweb",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2701,7 +2701,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/xero",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2749,7 +2749,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outlook",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "productivity",
    "strict": null,
@@ -2779,7 +2779,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outlook-calendar",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "productivity",
    "strict": null,
@@ -2810,7 +2810,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/onedrive",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "productivity",
    "strict": null,
@@ -2840,7 +2840,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/sharepoint",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "productivity",
    "strict": null,
@@ -2871,7 +2871,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/teams",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "productivity",
    "strict": null,
@@ -2901,7 +2901,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/finance",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2934,7 +2934,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x-ads",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -2967,7 +2967,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/attio",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3000,7 +3000,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/hunter",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3048,7 +3048,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gamma",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3081,7 +3081,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/webull",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3114,7 +3114,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/sp-global",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3147,7 +3147,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/interactive-brokers",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3180,7 +3180,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/meltwater",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3213,7 +3213,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/daloopa",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3246,7 +3246,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/excalidraw",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3279,7 +3279,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-cloud-bigquery",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3312,7 +3312,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/statsig",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3345,7 +3345,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/robinhood",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3380,7 +3380,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coinbase",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3413,7 +3413,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/etoro-trading",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
@@ -3448,7 +3448,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x-money",
     "ref": "main",
-    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+    "sha": "b42effe0aa50f59c693d7e2924714e015e00bf7c"
    },
    "category": "automation",
    "strict": null,
