@@ -13,7 +13,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "utilities",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -50,7 +50,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -93,7 +93,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -228,7 +228,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -288,7 +288,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -335,7 +335,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -382,7 +382,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -442,7 +442,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -479,7 +479,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -516,7 +516,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -553,7 +553,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -592,7 +592,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -630,7 +630,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -910,7 +910,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -962,7 +962,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "developer-tools",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1209,7 +1209,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1256,7 +1256,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1303,7 +1303,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1334,7 +1334,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1375,7 +1375,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1407,7 +1407,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1455,7 +1455,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1487,7 +1487,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1534,7 +1534,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1582,7 +1582,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1614,7 +1614,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1645,7 +1645,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1692,7 +1692,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1724,7 +1724,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1757,7 +1757,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1789,7 +1789,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1821,7 +1821,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1853,7 +1853,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1885,7 +1885,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1917,7 +1917,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1949,7 +1949,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1990,7 +1990,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2021,7 +2021,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2051,7 +2051,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2083,7 +2083,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2115,7 +2115,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2146,7 +2146,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2178,7 +2178,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2210,7 +2210,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2242,7 +2242,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2273,7 +2273,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2304,7 +2304,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2335,7 +2335,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2375,7 +2375,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2415,7 +2415,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2446,7 +2446,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2477,7 +2477,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2508,7 +2508,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2539,7 +2539,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2570,7 +2570,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2601,7 +2601,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2632,7 +2632,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2663,7 +2663,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2703,7 +2703,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2903,7 +2903,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2936,7 +2936,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2969,7 +2969,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3002,7 +3002,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3050,7 +3050,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3083,7 +3083,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3116,7 +3116,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3149,7 +3149,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3182,7 +3182,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3215,7 +3215,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3248,7 +3248,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3281,7 +3281,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3314,7 +3314,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3347,7 +3347,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3382,7 +3382,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3415,7 +3415,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3450,7 +3450,7 @@
     "ref": "main",
     "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
    },
-   "category": "integrations",
+   "category": "automation",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",

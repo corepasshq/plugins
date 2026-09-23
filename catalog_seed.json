@@ -1037,7 +1037,7 @@
     "ref": null,
     "sha": "86bb1ad27f80e189b328333d2271b360ae579f2b"
    },
-   "category": "AGENT_ORCHESTRATION",
+   "category": "agent-orchestration",
    "strict": null,
    "license": "MIT",
    "homepage": "https://docs.atlan.com/",
@@ -4282,8 +4282,8 @@
    }
   },
   {
-   "name": "astronomer-data-agents",
-   "displayName": "Astronomer Data Agents",
+   "name": "data",
+   "displayName": "Data",
    "description": "Data engineering for Apache Airflow and Astronomer. Author DAGs with best practices, debug pipeline failures, trace data lineage, profile tables, migrate Airflow 2 to 3, and manage local and cloud deployments.",
    "source": {
     "type": "url",
@@ -4355,9 +4355,9 @@
    }
   },
   {
-   "name": "astronomer-data-agents",
-   "displayName": "Astronomer Data Agents",
-   "description": "Data engineering for Apache Airflow and Astronomer. Author DAGs with best practices, debug pipeline failures, trace data lineage, profile tables, migrate Airflow 2 to 3, and manage local and cloud deployments.",
+   "name": "data-engineering",
+   "displayName": "Data Engineering",
+   "description": "Data engineering plugin - warehouse exploration, pipeline authoring, Airflow integration",
    "source": {
     "type": "url",
     "url": "https://github.com/astronomer/agents.git",
@@ -4365,7 +4365,7 @@
     "ref": null,
     "sha": "cbe1141f547bcf0506babb9778a7696bf15eff66"
    },
-   "category": "development",
+   "category": null,
    "strict": null,
    "license": "Apache-2.0",
    "homepage": "https://github.com/astronomer/agents",
@@ -10182,8 +10182,8 @@
    }
   },
   {
-   "name": "rc",
-   "displayName": "Rc",
+   "name": "revenuecat",
+   "displayName": "Revenuecat",
    "description": "Configure RevenueCat projects, apps, products, entitlements, and offerings directly from Claude Code. Manage your in-app purchase backend without leaving your development workflow.",
    "source": {
     "type": "git-subdir",
@@ -10976,8 +10976,8 @@
    }
   },
   {
-   "name": "cds-mcp",
-   "displayName": "Cds Mcp",
+   "name": "sap-cds-mcp",
+   "displayName": "Sap Cds Mcp",
    "description": "AI-assisted development of SAP Cloud Application Programming Model (CAP) projects. Search CDS models and CAP documentation.",
    "source": {
     "type": "url",
@@ -11969,14 +11969,7 @@
    "author": {
     "name": "Synthflow"
    },
-   "mcpServers": [
-    {
-     "name": "synthflow"
-    },
-    {
-     "name": "synthflow-docs"
-    }
-   ],
+   "logoUrl": "https://www.google.com/s2/favicons?domain=synthflow.ai&sz=128",
    "keywords": [
     "synthflow",
     "mcp",
@@ -11984,20 +11977,7 @@
     "ai-agents",
     "telephony",
     "integration"
-   ],
-   "skills": [
-    {
-     "name": "call-review",
-     "description": "Review the last 100 calls for an agent and surface problems. Use this whenever the user wants a call-quality audit, a QA pass over recent calls, a \"what's going wrong with this agent\" review, or to find failed, unresolved, dropped, or otherwise problematic calls. Trigger on phrases like \"review my calls\", \"what's wrong with the calls\", \"QA the last 100 calls\", \"find bad calls\", or \"audit recent calls\".",
-     "path": "skills/call-review/SKILL.md"
-    },
-    {
-     "name": "prompt-review",
-     "description": "Review AI voice-agent prompts, especially Synthflow Single-Prompt, for contradictions, missing context, unsafe tool/action behavior, escalation gaps, compliance risk, and regression risk. Use this when the user asks to review, audit, validate, improve, or compare a prompt before deployment.",
-     "path": "skills/prompt-review/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=synthflow.ai&sz=128"
+   ]
   },
   {
    "name": "tavily",
@@ -12635,8 +12615,8 @@
    }
   },
   {
-   "name": "vanta",
-   "displayName": "Vanta",
+   "name": "vanta-mcp-plugin",
+   "displayName": "Vanta Mcp Plugin",
    "description": "The Vanta plugin connects Claude Code to Vanta's security and compliance platform through the Vanta MCP server. It combines Vanta's test-specific remediation intelligence with your local repository context to help you fix compliance failures faster.",
    "source": {
     "type": "url",
@@ -13459,6 +13439,3360 @@
    "mcpServers": [
     {
      "name": "Wingspan"
+    }
+   ]
+  },
+  {
+   "name": "teaching",
+   "displayName": "Teaching",
+   "description": "Skill mapping, practice plans, and learning retrospectives.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "teaching",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins",
+   "keywords": [
+    "teaching",
+    "study-plan",
+    "practice",
+    "feedback",
+    "mentorship"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/teaching/assets/avatar.png",
+   "skills": [
+    {
+     "name": "create-learning-path",
+     "description": "Build a personalized learning roadmap with milestones and practice checkpoints",
+     "path": "skills/create-learning-path/SKILL.md"
+    },
+    {
+     "name": "run-learning-retrospective",
+     "description": "Evaluate learning progress, identify blockers, and adjust the learning plan",
+     "path": "skills/run-learning-retrospective/SKILL.md"
+    }
+   ]
+  },
+  {
+   "name": "continual-learning",
+   "displayName": "Continual Learning",
+   "description": "Incremental transcript-driven memory updates for AGENTS.md using high-signal bullet points only.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "continual-learning",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins",
+   "keywords": [
+    "continual-learning",
+    "agent-memory",
+    "transcripts",
+    "hooks",
+    "incremental"
+   ],
+   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/013db0017f4467de.png",
+   "skills": [
+    {
+     "name": "continual-learning",
+     "description": "Orchestrate continual learning by delegating transcript mining and AGENTS.md updates to `agents-memory-updater`.",
+     "path": "skills/continual-learning/SKILL.md"
+    }
+   ],
+   "agents": [
+    {
+     "name": "agents-memory-updater",
+     "description": "Mine high-signal transcript deltas, update `AGENTS.md`, and keep the incremental transcript index in sync.",
+     "path": "agents/agents-memory-updater.md"
+    }
+   ],
+   "publisher": {
+    "name": "cursor",
+    "displayName": "Cursor"
+   }
+  },
+  {
+   "name": "cursor-team-kit",
+   "displayName": "Cursor Team Kit",
+   "description": "Internal team workflows for CI, code review, shipping, local automation, and verification.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "cursor-team-kit",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins",
+   "keywords": [
+    "cursor-team-kit",
+    "ci",
+    "code-review",
+    "shipping",
+    "testing",
+    "verification",
+    "local-automation"
+   ],
+   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/e7f9aa0a9a21eba2.png",
+   "skills": [
+    {
+     "name": "check-compiler-errors",
+     "description": "Run compile and type-check commands and report failures",
+     "path": "skills/check-compiler-errors/SKILL.md"
+    },
+    {
+     "name": "control-cli",
+     "description": "Build or adapt a local harness to drive, inspect, and profile an interactive CLI or TUI without external services. Use for CLI UX checks, startup regressions, memory leaks, hangs, prompt flows, or terminal demos.",
+     "path": "skills/control-cli/SKILL.md"
+    },
+    {
+     "name": "control-ui",
+     "description": "Build or adapt a local browser/CDP harness to drive and inspect a web, IDE, or Electron UI. Use for local UI verification, screenshots, accessibility snapshots, perf profiles, visual diffs, or reproducing UI bugs.",
+     "path": "skills/control-ui/SKILL.md"
+    },
+    {
+     "name": "deslop",
+     "description": "Remove AI-generated code slop and clean up code style",
+     "path": "skills/deslop/SKILL.md"
+    },
+    {
+     "name": "fix-ci",
+     "description": "Find failing PR checks, inspect logs or external check links, and apply focused fixes",
+     "path": "skills/fix-ci/SKILL.md"
+    },
+    {
+     "name": "fix-merge-conflicts",
+     "description": "Resolve merge conflicts non-interactively, validate build and tests, and finalize conflict resolution",
+     "path": "skills/fix-merge-conflicts/SKILL.md"
+    },
+    {
+     "name": "get-pr-comments",
+     "description": "Fetch and summarize review comments from the active pull request",
+     "path": "skills/get-pr-comments/SKILL.md"
+    },
+    {
+     "name": "loop-on-ci",
+     "description": "Monitor PR checks and fix failures until green. Uses gh pr checks as the source of truth for PR-attached checks.",
+     "path": "skills/loop-on-ci/SKILL.md"
+    },
+    {
+     "name": "make-pr-easy-to-review",
+     "description": "Prepare PRs for review by cleaning noisy history, improving PR descriptions, and adding reviewer guidance without changing code behavior. Use for \"make this easy to review\", \"tidy this PR\", \"clean up commits\", or \"annotate the diff\".",
+     "path": "skills/make-pr-easy-to-review/SKILL.md"
+    },
+    {
+     "name": "new-branch-and-pr",
+     "description": "Create a fresh branch, complete work, and open a pull request",
+     "path": "skills/new-branch-and-pr/SKILL.md"
+    },
+    {
+     "name": "pr-review-canvas",
+     "description": "Generate an interactive PR review walkthrough as an HTML page. Fetches PR data via gh API, categorizes files into core vs mechanical changes, adds reviewer annotations, and renders diffs with moved-code detection. Use when the user pastes a GitHub PR URL and asks for a review, walkthrough, or summary, or says \"review this PR\".",
+     "path": "skills/pr-review-canvas/SKILL.md"
+    },
+    {
+     "name": "review-and-ship",
+     "description": "Review the current branch for bugs, intent fit, and test coverage; run or write tests; commit focused work; open or update a PR.",
+     "path": "skills/review-and-ship/SKILL.md"
+    },
+    {
+     "name": "run-smoke-tests",
+     "description": "Run Playwright smoke tests, debug failures, and verify fixes",
+     "path": "skills/run-smoke-tests/SKILL.md"
+    },
+    {
+     "name": "thermo-nuclear-code-quality-review",
+     "description": "Run an extremely strict maintainability review for abstraction quality, giant files, and spaghetti-condition growth. Use for a thermo-nuclear code quality review, thermonuclear review, deep code quality audit, or especially harsh maintainability review.",
+     "path": "skills/thermo-nuclear-code-quality-review/SKILL.md"
+    },
+    {
+     "name": "verify-this",
+     "description": "Verify a claim with fresh local evidence: restate it falsifiably, capture baseline and treatment, compare artifacts, and return VERIFIED, NOT VERIFIED, or INCONCLUSIVE.",
+     "path": "skills/verify-this/SKILL.md"
+    },
+    {
+     "name": "weekly-review",
+     "description": "Produce a weekly synthesis of authored commits with highlights by bugfix, tech debt, and net-new work",
+     "path": "skills/weekly-review/SKILL.md"
+    },
+    {
+     "name": "what-did-i-get-done",
+     "description": "Summarize authored commits over a user-specified time period into a concise update",
+     "path": "skills/what-did-i-get-done/SKILL.md"
+    },
+    {
+     "name": "workflow-from-chats",
+     "description": "Extract durable working preferences from recent Cursor chats and convert them into skills, rules, or workflow docs. Use when asked to learn preferences, mine feedback, personalize workflows, or generate team/person-specific agent guidance.",
+     "path": "skills/workflow-from-chats/SKILL.md"
+    }
+   ],
+   "agents": [
+    {
+     "name": "ci-watcher",
+     "description": "Watch PR CI for the current branch and report pass/fail with relevant failure links. Use when waiting for CI results or CI has failed. Use proactively to monitor branch CI.",
+     "path": "agents/ci-watcher.md"
+    },
+    {
+     "name": "thermo-nuclear-code-quality-review",
+     "description": "Thermo-nuclear code quality audit (maintainability, structure, 1k-line rule, spaghetti, code-judo). Invoked via Task after a parent gathers diff and file contents. Loads the rubric from the `thermo-nuclear-code-quality-review` skill in the cursor-team-kit plugin.",
+     "path": "agents/thermo-nuclear-code-quality-review.md"
+    }
+   ],
+   "publisher": {
+    "name": "cursor",
+    "displayName": "Cursor"
+   }
+  },
+  {
+   "name": "thermos",
+   "displayName": "Thermos",
+   "description": "Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "thermos",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins",
+   "keywords": [
+    "thermos",
+    "thermo-nuclear",
+    "code-review",
+    "deep-review",
+    "code-quality",
+    "security-review",
+    "subagents"
+   ],
+   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/e4b79e7704362fe6.png",
+   "skills": [
+    {
+     "name": "thermo-nuclear-code-quality-review",
+     "description": "Run an extremely strict maintainability review for abstraction quality, giant files, and spaghetti-condition growth. Use for a thermo-nuclear code quality review, thermonuclear review, deep code quality audit, or especially harsh maintainability review.",
+     "path": "skills/thermo-nuclear-code-quality-review/SKILL.md"
+    },
+    {
+     "name": "thermo-nuclear-review",
+     "description": "Comprehensive security and correctness audit of a branch's changes. Use for thermo nuclear, thermonuclear, or deep review requests, or branch/PR diff audits focused on bugs, breaking changes, security issues, devex regressions, and feature-gate leaks.",
+     "path": "skills/thermo-nuclear-review/SKILL.md"
+    },
+    {
+     "name": "thermos",
+     "description": "Launch both thermo-nuclear review subagents in parallel, then synthesize their findings. Use for thermos, double thermo review, or combined bug/security and code-quality branch audits.",
+     "path": "skills/thermos/SKILL.md"
+    }
+   ],
+   "agents": [
+    {
+     "name": "thermo-nuclear-code-quality-review-subagent",
+     "description": "Thermo-nuclear code quality audit (maintainability, structure, 1k-line rule, spaghetti, code-judo). Invoked via Task after a parent gathers diff and file contents. Loads rubric from the thermo-nuclear-code-quality-review skill in the Thermos plugin.",
+     "path": "agents/thermo-nuclear-code-quality-review-subagent.md"
+    },
+    {
+     "name": "thermo-nuclear-review-subagent",
+     "description": "Thermo-nuclear branch audit (bugs, breaking changes, security, devex, feature-flag leaks) scoped to the diff. Invoked via Task after a parent gathers diff and file contents. Loads rubric from the thermo-nuclear-review skill in the Thermos plugin.",
+     "path": "agents/thermo-nuclear-review-subagent.md"
+    }
+   ],
+   "publisher": {
+    "name": "cursor",
+    "displayName": "Cursor"
+   }
+  },
+  {
+   "name": "create-plugin",
+   "displayName": "Create Plugin",
+   "description": "Scaffold and validate new agent plugins.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "create-plugin",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins",
+   "keywords": [
+    "create-plugin",
+    "cursor-plugin",
+    "marketplace",
+    "plugin-authoring"
+   ],
+   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/3006a84a2fcdd3bd.png",
+   "skills": [
+    {
+     "name": "create-plugin-scaffold",
+     "description": "Create a new Cursor plugin scaffold with a valid manifest, component directories, and marketplace wiring. Use when starting a new plugin or adding a plugin to a multi-plugin repository.",
+     "path": "skills/create-plugin-scaffold/SKILL.md"
+    },
+    {
+     "name": "review-plugin-submission",
+     "description": "Audit a Cursor plugin for marketplace readiness. Use when validating manifests, component metadata, discovery paths, and submission quality before publishing.",
+     "path": "skills/review-plugin-submission/SKILL.md"
+    }
+   ],
+   "agents": [
+    {
+     "name": "plugin-architect",
+     "description": "Plugin architecture specialist. Use when deciding the right component mix, structure, and metadata for a new Cursor plugin.",
+     "path": "agents/plugin-architect.md"
+    }
+   ],
+   "publisher": {
+    "name": "cursor",
+    "displayName": "Cursor"
+   }
+  },
+  {
+   "name": "agent-compatibility",
+   "displayName": "Agent Compatibility",
+   "description": "CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "agent-compatibility",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins/tree/main/agent-compatibility",
+   "keywords": [
+    "agent-compatibility",
+    "agents",
+    "compatibility",
+    "cursor-plugin",
+    "repo-audit",
+    "startup",
+    "validation"
+   ],
+   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/d7d2cc82f335c257.png",
+   "skills": [
+    {
+     "name": "check-agent-compatibility",
+     "description": "Run the full repository compatibility pass: scanner score, startup path, validation loop, and docs reliability.",
+     "path": "skills/check-agent-compatibility/SKILL.md"
+    }
+   ],
+   "agents": [
+    {
+     "name": "compatibility-scan-review",
+     "description": "Run the agent-compatibility CLI and return the raw repository score with its main problems",
+     "path": "agents/compatibility-scan-review.md"
+    },
+    {
+     "name": "docs-reliability-review",
+     "description": "Check whether the documented setup and run paths reliably lead to the real working path",
+     "path": "agents/docs-reliability-review.md"
+    },
+    {
+     "name": "startup-review",
+     "description": "Try to bootstrap and start a repository like a cold agent, then report where the path breaks down",
+     "path": "agents/startup-review.md"
+    },
+    {
+     "name": "validation-review",
+     "description": "Assess whether an agent can verify a small change without guessing or running an unnecessarily heavy loop",
+     "path": "agents/validation-review.md"
+    }
+   ],
+   "publisher": {
+    "name": "cursor",
+    "displayName": "Cursor"
+   }
+  },
+  {
+   "name": "cli-for-agent",
+   "displayName": "Cli For Agent",
+   "description": "Patterns for designing CLIs that coding agents can run reliably: flags, help with examples, pipelines, errors, idempotency, dry-run.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "cli-for-agent",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins/tree/main/cli-for-agent",
+   "keywords": [
+    "cli",
+    "command-line",
+    "agents",
+    "automation",
+    "terminal",
+    "flags",
+    "help"
+   ],
+   "skills": [
+    {
+     "name": "cli-for-agents",
+     "description": ">-",
+     "path": "skills/cli-for-agents/SKILL.md"
+    }
+   ],
+   "publisher": {
+    "name": "cursor",
+    "displayName": "Cursor"
+   }
+  },
+  {
+   "name": "pr-review-canvas",
+   "displayName": "Pr Review Canvas",
+   "description": "Render PR diffs as review canvases grouped by importance.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "pr-review-canvas",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins/tree/main/pr-review-canvas",
+   "keywords": [
+    "cursor-plugin",
+    "canvas",
+    "pr-review",
+    "code-review",
+    "diff",
+    "pull-request"
+   ],
+   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/cc9252aece0e8ab0.png",
+   "skills": [
+    {
+     "name": "pr-review-canvas",
+     "description": ">-",
+     "path": "skills/pr-review-canvas/SKILL.md"
+    }
+   ],
+   "publisher": {
+    "name": "cursor",
+    "displayName": "Cursor"
+   }
+  },
+  {
+   "name": "docs-canvas",
+   "displayName": "Docs Canvas",
+   "description": "Render documentation as a navigable canvas.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "docs-canvas",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins/tree/main/docs-canvas",
+   "keywords": [
+    "cursor-plugin",
+    "canvas",
+    "documentation",
+    "docs",
+    "architecture",
+    "reference"
+   ],
+   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/c686397705e14122.png",
+   "skills": [
+    {
+     "name": "docs-canvas",
+     "description": ">-",
+     "path": "skills/docs-canvas/SKILL.md"
+    }
+   ],
+   "publisher": {
+    "name": "cursor",
+    "displayName": "Cursor"
+   }
+  },
+  {
+   "name": "cursor-sdk",
+   "displayName": "Cursor Sdk",
+   "description": "Build apps, scripts, and automations with the TypeScript SDK.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "cursor-sdk",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins/tree/main/cursor-sdk",
+   "keywords": [
+    "cursor-sdk",
+    "cursor",
+    "sdk",
+    "typescript",
+    "agents",
+    "automation",
+    "ci",
+    "mcp",
+    "streaming"
+   ],
+   "skills": [
+    {
+     "name": "cursor-sdk",
+     "description": "Guide users building apps, scripts, CI pipelines, or automations on top of the Cursor TypeScript SDK (`@cursor/sdk`). Use this skill whenever the user mentions integrating, installing, or writing code against the Cursor SDK; whenever they say `Agent.create`, `Agent.prompt`, `Agent.resume`, `agent.send`, `run.stream`, `CursorAgentError`, or `@cursor/sdk`; whenever they ask to run Cursor agents programmatically from a script, CI/CD pipeline, GitHub Action, backend service, or any other code that isn't the Cursor IDE itself; and whenever they want to pick between local and cloud runtime, configure MCP servers for an SDK agent, or handle streaming, cancellation, or errors from an SDK agent. Also trigger when a user is wiring Cursor into an automation, writing a bot that runs Cursor, or porting REST `/v1/agents` calls to the SDK, even if they don't explicitly name the package. Use this eagerly rather than answering from memory; the SDK surface evolves and this skill plus its references are the source of truth for the external package.",
+     "path": "skills/cursor-sdk/SKILL.md"
+    }
+   ],
+   "publisher": {
+    "name": "cursor",
+    "displayName": "Cursor"
+   }
+  },
+  {
+   "name": "orchestrate",
+   "displayName": "Orchestrate",
+   "description": "Fan large tasks out across parallel cloud agents with planners, workers, verifiers, and structured handoffs.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "orchestrate",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins/tree/main/orchestrate",
+   "keywords": [
+    "orchestrate",
+    "cursor",
+    "cursor-sdk",
+    "agents",
+    "cloud-agents",
+    "parallel",
+    "automation"
+   ],
+   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/3b987c929335c420.png",
+   "skills": [
+    {
+     "name": "orchestrate",
+     "description": "Use only when the user explicitly types `/orchestrate <goal>` to decompose a large task, spawn a tree of parallel cloud-agent workers/subplanners/verifiers via the Cursor SDK, and collect structured handoffs; do not invoke autonomously.",
+     "path": "skills/orchestrate/SKILL.md"
+    }
+   ],
+   "publisher": {
+    "name": "cursor",
+    "displayName": "Cursor"
+   }
+  },
+  {
+   "name": "pstack",
+   "displayName": "Pstack",
+   "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "pstack",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins/tree/main/pstack",
+   "keywords": [
+    "pstack",
+    "poteto-mode",
+    "workflow",
+    "principles",
+    "agent-style",
+    "subagents",
+    "unslop"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/pstack/assets/logo.png",
+   "skills": [
+    {
+     "name": "architect",
+     "description": "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape.",
+     "path": "skills/architect/SKILL.md"
+    },
+    {
+     "name": "arena",
+     "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
+     "path": "skills/arena/SKILL.md"
+    },
+    {
+     "name": "automate-me",
+     "description": "Use for \\\"automate me\\\", \\\"create/update/refresh my -mode skill\\\", \\\"turn/capture my preferences or working style into a skill\\\", or wanting agents to follow how the user works. Drafts or revises a personal -mode skill via create-skill + unslop, optionally pulling fresh evidence from recent transcripts.",
+     "path": "skills/automate-me/SKILL.md"
+    },
+    {
+     "name": "blast-radius",
+     "description": "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe because of by running real code instead of writing it up. Use for 'blast radius of X', 'what could this break', or reviewing a small diff you don't trust.",
+     "path": "skills/blast-radius/SKILL.md"
+    },
+    {
+     "name": "bro",
+     "description": "Restate the last message in plain human language, with no jargon.",
+     "path": "skills/bro/SKILL.md"
+    },
+    {
+     "name": "create-verification-skill",
+     "description": "Generate a project-local verification skill that drives your app the way a user does \u2014 any language, framework, or platform. Use for /create-verification-skill, \\\"make a control skill for this repo\\\", or when a project has no scripted way to prove UI/CLI/service behavior.",
+     "path": "skills/create-verification-skill/SKILL.md"
+    },
+    {
+     "name": "figure-it-out",
+     "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions via show-me-your-work. Use for /figure-it-out, 'figure it out', a large migration, or when no narrower playbook applies.",
+     "path": "skills/figure-it-out/SKILL.md"
+    },
+    {
+     "name": "how",
+     "description": "Use for \\\"how does X work\\\", code walkthroughs before changing something, and placement / ownership / layering questions (\\\"where should this live\\\", \\\"which package owns this\\\", \\\"is this the right layer\\\"). Explains subsystem architecture, runtime flow, onboarding mental models. Use why for motivation.",
+     "path": "skills/how/SKILL.md"
+    },
+    {
+     "name": "interrogate",
+     "description": "Use for \\\"interrogate\\\", \\\"adversarial review\\\", \\\"multi-model review\\\", \\\"challenge this\\\", \\\"stress test this code\\\", \\\"find blind spots\\\", or \\\"tear this apart\\\". Multiple LLM reviewers challenge changes from independent angles.",
+     "path": "skills/interrogate/SKILL.md"
+    },
+    {
+     "name": "maintain-verification-skill",
+     "description": "Periodic pass that keeps a project's verification skill and feature map honest: parallel source readers per feature, one live session driving every feature, at most one PR of proven corrections. Use for /maintain-verification-skill or \\\"audit the verify skill\\\".",
+     "path": "skills/maintain-verification-skill/SKILL.md"
+    },
+    {
+     "name": "make-bot-ui",
+     "description": ">-",
+     "path": "skills/make-bot-ui/SKILL.md"
+    },
+    {
+     "name": "no-comments",
+     "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
+     "path": "skills/no-comments/SKILL.md"
+    },
+    {
+     "name": "poteto-mode",
+     "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
+     "path": "skills/poteto-mode/SKILL.md"
+    },
+    {
+     "name": "principle-attack-the-premise",
+     "description": "Apply when two or more fixes that share one premise have failed the same gate. Take a census of which actors hold the imbalance before the next fix, then question the premise instead of writing another fix that assumes it.",
+     "path": "skills/principle-attack-the-premise/SKILL.md"
+    },
+    {
+     "name": "principle-boundary-discipline",
+     "description": "Apply when wiring validation, error handling, or framework adapters. Concentrate guards at system boundaries (CLI, config, network, external APIs); trust internal types and keep business logic in pure functions.",
+     "path": "skills/principle-boundary-discipline/SKILL.md"
+    },
+    {
+     "name": "principle-build-the-lever",
+     "description": "Apply to any non-trivial work, not just bulk work: edits, migrations, analyses, checks. Build the tool that does it or proves it (codemod, script, generator, or a skill your subagents follow) instead of working by hand. The tool is the artifact a reviewer can rerun.",
+     "path": "skills/principle-build-the-lever/SKILL.md"
+    },
+    {
+     "name": "principle-encode-lessons-in-structure",
+     "description": "Apply when you catch yourself writing the same instruction a second time, or notice a recurring correction. Encode the rule as a lint, metadata flag, runtime check, or script instead of more text.",
+     "path": "skills/principle-encode-lessons-in-structure/SKILL.md"
+    },
+    {
+     "name": "principle-exhaust-the-design-space",
+     "description": "Apply when facing a novel UI interaction or architectural decision with no precedent in the codebase. Build 2-3 competing prototypes and compare side by side before committing.",
+     "path": "skills/principle-exhaust-the-design-space/SKILL.md"
+    },
+    {
+     "name": "principle-experience-first",
+     "description": "Apply when product, UX, or feature-scope tradeoffs come up. Choose user delight over implementation convenience; ship fewer polished features over more rough ones.",
+     "path": "skills/principle-experience-first/SKILL.md"
+    },
+    {
+     "name": "principle-fix-root-causes",
+     "description": "Apply when debugging. Trace each symptom to its root cause and fix it there; reproduce first, ask why until you reach it, resist nil-check guards that silence crashes.",
+     "path": "skills/principle-fix-root-causes/SKILL.md"
+    },
+    {
+     "name": "principle-foundational-thinking",
+     "description": "Apply before writing logic: choosing core types and data structures, sequencing scaffold-vs-feature work, asking what concurrent actors share. Get the data structures right so downstream code becomes obvious.",
+     "path": "skills/principle-foundational-thinking/SKILL.md"
+    },
+    {
+     "name": "principle-guard-the-context-window",
+     "description": "Apply when context is filling up: large outputs, long files, repeated reads, fan-out planning. Route bulk to subagents; keep summaries in the main thread, not raw payloads.",
+     "path": "skills/principle-guard-the-context-window/SKILL.md"
+    },
+    {
+     "name": "principle-laziness-protocol",
+     "description": "Apply when refactoring, evaluating diff size, or tempted to add abstractions, layers, or signal threading. Bias toward deletion and the smallest change that solves the problem.",
+     "path": "skills/principle-laziness-protocol/SKILL.md"
+    },
+    {
+     "name": "principle-make-operations-idempotent",
+     "description": "Apply when designing commands, lifecycle steps, or processing loops that run amid crashes, restarts, and retries. Converge to the same end state regardless of partial prior runs.",
+     "path": "skills/principle-make-operations-idempotent/SKILL.md"
+    },
+    {
+     "name": "principle-migrate-callers-then-delete-legacy-apis",
+     "description": "Apply when introducing a new internal API while old callers still exist. Migrate callers and delete the old API in the same wave instead of preserving compatibility layers.",
+     "path": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
+    },
+    {
+     "name": "principle-minimize-reader-load",
+     "description": "Apply when reviewing or shaping code that's hard to trace. Count layers between question and answer, and hidden state in the reader's head; collapse one-caller wrappers and shrink mutable scope.",
+     "path": "skills/principle-minimize-reader-load/SKILL.md"
+    },
+    {
+     "name": "principle-model-the-domain",
+     "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files. Encode the domain in a structure instead of scattered conditionals.",
+     "path": "skills/principle-model-the-domain/SKILL.md"
+    },
+    {
+     "name": "principle-never-block-on-the-human",
+     "description": "Apply when tempted to ask 'should I do X?' on reversible work. Proceed, present the result, let the human course-correct after the fact; reserve confirmation for irreversible actions.",
+     "path": "skills/principle-never-block-on-the-human/SKILL.md"
+    },
+    {
+     "name": "principle-outcome-oriented-execution",
+     "description": "Apply during planned rewrites and migrations with explicit phase boundaries. Converge on the target architecture; don't preserve smooth intermediate states with throwaway compatibility code.",
+     "path": "skills/principle-outcome-oriented-execution/SKILL.md"
+    },
+    {
+     "name": "principle-prove-it-works",
+     "description": "Apply after completing a task, before declaring done. Verify against the real artifact (run the feature, read the actual value, inspect the diff), not a proxy, self-report, or 'it compiles.",
+     "path": "skills/principle-prove-it-works/SKILL.md"
+    },
+    {
+     "name": "principle-redesign-from-first-principles",
+     "description": "Apply when integrating a new requirement into an existing design. Redesign as if the requirement had been a foundational assumption from day one, instead of bolting it on.",
+     "path": "skills/principle-redesign-from-first-principles/SKILL.md"
+    },
+    {
+     "name": "principle-separate-before-serializing-shared-state",
+     "description": "Apply when concurrent actors might write to the same file, branch, key, or state object. Eliminate the sharing first; serialize structurally only when one shared writer is a real invariant.",
+     "path": "skills/principle-separate-before-serializing-shared-state/SKILL.md"
+    },
+    {
+     "name": "principle-sequence-verifiable-units",
+     "description": "Apply to multi-step work (sweeps, migrations, runs of similar edits) and to how you stack commits and PRs. Break work into small units that each end in a verifiable state, check each before the next, and order delivery so the sequence proves itself to a reviewer.",
+     "path": "skills/principle-sequence-verifiable-units/SKILL.md"
+    },
+    {
+     "name": "principle-subtract-before-you-add",
+     "description": "Apply when sequencing an addition, refactor, or rewrite. Remove dead code, redundant validators, and stub references first, then build on the simpler base.",
+     "path": "skills/principle-subtract-before-you-add/SKILL.md"
+    },
+    {
+     "name": "principle-test-behavior-not-implementation",
+     "description": "Apply when you write, change, or keep a test. Call the code the way its users do and assert the result they observe against a literal expected value. If the test would still pass when every imported function returns undefined, rewrite the assertion or delete the test.",
+     "path": "skills/principle-test-behavior-not-implementation/SKILL.md"
+    },
+    {
+     "name": "principle-type-system-discipline",
+     "description": "Apply when designing types, reviewing a function signature, or writing code in any statically-typed language. Make illegal states unrepresentable, brand semantic primitives, parse external data at boundaries, refuse to lie to the compiler, exhaust variants, derive from authoritative schemas.",
+     "path": "skills/principle-type-system-discipline/SKILL.md"
+    },
+    {
+     "name": "recall",
+     "description": "Reconstruct your recent working context from your own chat history, live state, and the shared record (user reports, prior fixes, incidents), then hand back a tight current-state brief. Use for 'recall my work on X', 'catch me up', 'what have I been working on', 'where did I leave off', before starting or resuming work.",
+     "path": "skills/recall/SKILL.md"
+    },
+    {
+     "name": "reflect",
+     "description": "Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.",
+     "path": "skills/reflect/SKILL.md"
+    },
+    {
+     "name": "setup-pstack",
+     "description": "Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", \"pstack budget\", or changing pstack's model choices.",
+     "path": "skills/setup-pstack/SKILL.md"
+    },
+    {
+     "name": "show-me-your-work",
+     "description": "Keep a reviewable decision trail for long-running or unattended work: a TSV log with one row per decision (what, why, evidence, result). Local by default; commit it when a reviewer needs the trail to trust the result. Use for /show-me-your-work, autonomous or multi-phase runs, or work a human reviews after stepping away.",
+     "path": "skills/show-me-your-work/SKILL.md"
+    },
+    {
+     "name": "swarm",
+     "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
+     "path": "skills/swarm/SKILL.md"
+    },
+    {
+     "name": "tdd",
+     "description": "Use only when the user explicitly asks for TDD, a failing test, or a regression test, OR when the bug has an obvious cheap local test target. Skip when the test path is unclear, expensive, integration-heavy, or not requested.",
+     "path": "skills/tdd/SKILL.md"
+    },
+    {
+     "name": "teach",
+     "description": "Explain a body of work plainly so a person actually understands it. Runs the `how` and `why` skills and weaves what they find into one clear explanation. Use for 'teach me this', 'help me really understand X', 'explain this change or subsystem to me'.",
+     "path": "skills/teach/SKILL.md"
+    },
+    {
+     "name": "technical-writing",
+     "description": "Layered technical-writing standard: Di\u00e1taxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
+     "path": "skills/technical-writing/SKILL.md"
+    },
+    {
+     "name": "typescript-best-practices",
+     "description": "TypeScript best practices. Use when reading or editing any .ts or .tsx file.",
+     "path": "skills/typescript-best-practices/SKILL.md"
+    },
+    {
+     "name": "unslop",
+     "description": "Cut AI tells from any writing. Must always apply.",
+     "path": "skills/unslop/SKILL.md"
+    },
+    {
+     "name": "why",
+     "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Discovers available MCPs and queries each evidence category (source control, issue tracker, long-form docs, real-time chat, infrastructure observability, error tracking, product analytics warehouse) in parallel, then returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
+     "path": "skills/why/SKILL.md"
+    }
+   ],
+   "agents": [
+    {
+     "name": "comment-sicko",
+     "description": "A deranged comment-hater that savors deletion and condemns workaround code.",
+     "path": "agents/comment-sicko.md"
+    },
+    {
+     "name": "poteto-agent",
+     "description": "Routing target for `/poteto-mode` and any request for poteto's style. Resume an existing `poteto-agent` for the conversation rather than spawning a sibling. Reads the `poteto-mode` skill's `SKILL.md` in full before any work, including its inline Principles index. Substituting `generalPurpose` skips that read and drifts.",
+     "path": "agents/poteto-agent.md"
+    }
+   ],
+   "publisher": {
+    "name": "cursor",
+    "displayName": "Cursor"
+   }
+  },
+  {
+   "name": "grok-voice",
+   "displayName": "Grok Voice",
+   "description": "Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "grok-voice",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins/tree/main/grok-voice",
+   "keywords": [
+    "grok",
+    "xai",
+    "voice",
+    "realtime",
+    "speech-to-speech",
+    "speech-to-text",
+    "text-to-speech",
+    "dictation",
+    "tts",
+    "stt"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/grok-voice/assets/logo.png",
+   "skills": [
+    {
+     "name": "add-dictation",
+     "description": ">-",
+     "path": "skills/add-dictation/SKILL.md"
+    },
+    {
+     "name": "add-read-aloud",
+     "description": ">-",
+     "path": "skills/add-read-aloud/SKILL.md"
+    },
+    {
+     "name": "add-voice",
+     "description": ">-",
+     "path": "skills/add-voice/SKILL.md"
+    },
+    {
+     "name": "debug-voice",
+     "description": ">-",
+     "path": "skills/debug-voice/SKILL.md"
+    }
+   ]
+  },
+  {
+   "name": "advisor",
+   "displayName": "Advisor",
+   "description": "Consult a stronger model before major decisions, when stuck, and before declaring done.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "advisor",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins/tree/main/advisor",
+   "keywords": [
+    "advisor",
+    "second-opinion",
+    "grok",
+    "multi-model",
+    "subagents",
+    "review",
+    "quality"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/advisor/assets/avatar.png",
+   "skills": [
+    {
+     "name": "advisor",
+     "description": ">-",
+     "path": "skills/advisor/SKILL.md"
+    }
+   ],
+   "agents": [
+    {
+     "name": "advisor-subagent",
+     "description": "Stronger-model advisor for the Advisor plugin. Consulted by the main agent at key checkpoints (before a major decision, when stuck on an error, before declaring a task done) with a briefing and, when available, the conversation transcript. Read-only. Returns a verdict and concrete guidance, not edits.",
+     "path": "agents/advisor-subagent.md"
+    }
+   ]
+  },
+  {
+   "name": "gmail",
+   "displayName": "Gmail",
+   "description": "Search, read, draft, and manage email.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/gmail",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "gmail"
+    }
+   ],
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/gmail",
+   "keywords": [
+    "gmail",
+    "email",
+    "google",
+    "mcp",
+    "workspace"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gmail/assets/logo.svg"
+  },
+  {
+   "name": "google-drive",
+   "displayName": "Google Drive",
+   "description": "Search, read, create, and share files.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/google-drive",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "google-drive"
+    }
+   ],
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-drive",
+   "keywords": [
+    "google-drive",
+    "drive",
+    "google",
+    "mcp",
+    "files",
+    "workspace"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-drive/assets/logo.svg"
+  },
+  {
+   "name": "google-calendar",
+   "displayName": "Google Calendar",
+   "description": "Search events and schedule meetings.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/google-calendar",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "google-calendar"
+    }
+   ],
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-calendar",
+   "keywords": [
+    "google-calendar",
+    "calendar",
+    "google",
+    "mcp",
+    "events",
+    "workspace"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-calendar/assets/logo.svg"
+  },
+  {
+   "name": "google-docs",
+   "displayName": "Google Docs",
+   "description": "Read, create, and edit documents.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/google-docs",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "google-docs"
+    }
+   ],
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-docs",
+   "keywords": [
+    "google-docs",
+    "docs",
+    "google",
+    "mcp",
+    "documents",
+    "workspace"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-docs/assets/logo.svg",
+   "skills": [
+    {
+     "name": "google-docs",
+     "description": "Author and edit Google Docs with the google-docs tools - structured writing, character and paragraph styling, lists, tables, images, headers/footers. Use when creating a formatted document, editing document content, or applying styles.",
+     "path": "skills/google-docs/SKILL.md"
+    }
+   ]
+  },
+  {
+   "name": "google-sheets",
+   "displayName": "Google Sheets",
+   "description": "Read, write, and append spreadsheet data.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/google-sheets",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "google-sheets"
+    }
+   ],
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-sheets",
+   "keywords": [
+    "google-sheets",
+    "sheets",
+    "google",
+    "mcp",
+    "spreadsheets",
+    "workspace"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-sheets/assets/logo.svg",
+   "skills": [
+    {
+     "name": "google-sheets",
+     "description": "Build and edit Google Sheets with the google-sheets tools - values, formatting, charts, conditional formatting, structure, validation, named and protected ranges. Use when creating a spreadsheet or dashboard, formatting cells, adding or fixing charts, or reorganizing tabs and rows.",
+     "path": "skills/google-sheets/SKILL.md"
+    }
+   ]
+  },
+  {
+   "name": "google-slides",
+   "displayName": "Google Slides",
+   "description": "Create, edit, and render presentations.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/google-slides",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "google-slides"
+    }
+   ],
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-slides",
+   "keywords": [
+    "google-slides",
+    "slides",
+    "google",
+    "mcp",
+    "presentations",
+    "workspace"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-slides/assets/logo.svg",
+   "skills": [
+    {
+     "name": "google-slides",
+     "description": "Build and edit Google Slides through the google-slides MCP tools - slides, grids of cards and columns, text boxes, shapes, images, tables, styling, layout inspection, and per-slide PNG rendering. Use when creating a deck, laying out slide elements, matching a template, or verifying how a slide looks.",
+     "path": "skills/google-slides/SKILL.md"
+    }
+   ]
+  },
+  {
+   "name": "gong",
+   "displayName": "Gong",
+   "description": "Pull account summaries, deal insights, and call briefs.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/gong",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "gong"
+    }
+   ],
+   "userConfig": {
+    "CLIENT_ID": {
+     "type": "string",
+     "title": "Gong Client ID",
+     "description": "OAuth Client ID from Gong Admin \u2192 Company Settings \u2192 Ecosystem \u2192 API \u2192 Integrations (MCP integration).",
+     "required": true,
+     "sensitive": false
+    },
+    "CLIENT_SECRET": {
+     "type": "string",
+     "title": "Gong Client Secret",
+     "description": "OAuth Client Secret from the same Gong MCP integration.",
+     "required": true,
+     "sensitive": true
+    }
+   },
+   "homepage": "https://help.gong.io/docs/about-gong-mcp-server",
+   "keywords": [
+    "gong",
+    "mcp",
+    "revenue",
+    "sales",
+    "calls",
+    "deals"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gong/assets/logo.png"
+  },
+  {
+   "name": "salesforce",
+   "displayName": "Salesforce",
+   "description": "Query, create, and update records in your org.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/salesforce",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "salesforce"
+    }
+   ],
+   "userConfig": {
+    "SALESFORCE_MCP_URL": {
+     "type": "string",
+     "title": "Salesforce MCP server URL",
+     "description": "Server URL from Setup \u2192 MCP Servers. Production: https://api.salesforce.com/platform/mcp/v1/platform/sobject-all. Sandbox or scratch: https://api.salesforce.com/platform/mcp/v1/sandbox/platform/sobject-all. For custom servers, replace platform/ with custom/.",
+     "required": true,
+     "sensitive": false
+    },
+    "CLIENT_ID": {
+     "type": "string",
+     "title": "Salesforce Consumer Key",
+     "description": "Consumer Key of the External Client App you created for this integration (Setup \u2192 External Client App Manager \u2192 your app \u2192 Settings \u2192 Consumer Key and Secret).",
+     "required": true,
+     "sensitive": false
+    }
+   },
+   "homepage": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/cursor.html",
+   "keywords": [
+    "salesforce",
+    "crm",
+    "mcp",
+    "sales",
+    "soql",
+    "sobject"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/salesforce/assets/logo.svg"
+  },
+  {
+   "name": "playwright",
+   "displayName": "Playwright",
+   "description": "Navigate, click, screenshot, and test in a real browser.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/playwright",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "playwright"
+    }
+   ],
+   "homepage": "https://github.com/microsoft/playwright-mcp",
+   "keywords": [
+    "playwright",
+    "browser",
+    "automation",
+    "testing",
+    "e2e",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/playwright/assets/logo.svg"
+  },
+  {
+   "name": "github",
+   "displayName": "Github",
+   "description": "Manage repos, issues, pull requests, and Actions.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/github",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "github"
+    }
+   ],
+   "userConfig": {
+    "GITHUB_PERSONAL_ACCESS_TOKEN": {
+     "type": "string",
+     "title": "GitHub personal access token",
+     "description": "Fine-grained or classic PAT from https://github.com/settings/tokens with the repo scopes you want the agent to use.",
+     "required": true,
+     "sensitive": true
+    }
+   },
+   "homepage": "https://docs.github.com/en/copilot/how-tos/context/use-mcp/use-the-github-mcp-server",
+   "keywords": [
+    "github",
+    "git",
+    "repositories",
+    "pull-requests",
+    "issues",
+    "actions",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/github/assets/logo.svg"
+  },
+  {
+   "name": "ashby",
+   "displayName": "Ashby",
+   "description": "Search candidates, prep interviews, and manage pipeline tasks.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/ashby",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "ashby"
+    }
+   ],
+   "homepage": "https://docs.ashbyhq.com/ashby-mcp-server-beta",
+   "keywords": [
+    "ashby",
+    "ats",
+    "recruiting",
+    "hiring",
+    "candidates",
+    "interviews",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/ashby/assets/logo.png"
+  },
+  {
+   "name": "hubspot",
+   "displayName": "Hubspot",
+   "description": "Search and update contacts, companies, deals, and tickets.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/hubspot",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "hubspot"
+    }
+   ],
+   "userConfig": {
+    "CLIENT_ID": {
+     "type": "string",
+     "title": "HubSpot Client ID",
+     "description": "OAuth Client ID from Development \u2192 MCP Auth Apps \u2192 your app.",
+     "required": true,
+     "sensitive": false
+    },
+    "CLIENT_SECRET": {
+     "type": "string",
+     "title": "HubSpot Client Secret",
+     "description": "OAuth Client Secret from the same HubSpot MCP auth app.",
+     "required": true,
+     "sensitive": true
+    }
+   },
+   "homepage": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+   "keywords": [
+    "hubspot",
+    "crm",
+    "mcp",
+    "sales",
+    "marketing",
+    "contacts",
+    "deals"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/hubspot/assets/logo.png"
+  },
+  {
+   "name": "zoom",
+   "displayName": "Zoom",
+   "description": "Search meetings, pull transcripts, and work with Zoom Docs.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/zoom",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "zoom"
+    }
+   ],
+   "userConfig": {
+    "CLIENT_ID": {
+     "type": "string",
+     "title": "Zoom Client ID",
+     "description": "OAuth Client ID from your Zoom App Marketplace General app \u2192 Basic Information \u2192 App Credentials.",
+     "required": true,
+     "sensitive": false
+    },
+    "CLIENT_SECRET": {
+     "type": "string",
+     "title": "Zoom Client Secret",
+     "description": "OAuth Client Secret from the same Zoom General app.",
+     "required": true,
+     "sensitive": true
+    }
+   },
+   "homepage": "https://developers.zoom.us/docs/mcp/",
+   "keywords": [
+    "zoom",
+    "mcp",
+    "meetings",
+    "recordings",
+    "transcripts",
+    "docs"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/zoom/assets/logo.png"
+  },
+  {
+   "name": "x",
+   "displayName": "X",
+   "description": "Search posts, read timelines, pull trends, manage bookmarks, and access X Chat.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/x",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "x"
+    }
+   ],
+   "homepage": "https://docs.x.com/tools/mcp",
+   "keywords": [
+    "x",
+    "twitter",
+    "posts",
+    "search",
+    "trends",
+    "news",
+    "lists",
+    "bookmarks",
+    "chat",
+    "social",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/x/assets/logo.svg",
+   "skills": [
+    {
+     "name": "x-api-mcp-guide",
+     "description": ">-",
+     "path": "skills/x-api-mcp-guide/SKILL.md"
+    },
+    {
+     "name": "x-chat",
+     "description": ">-",
+     "path": "skills/x-chat/SKILL.md"
+    }
+   ]
+  },
+  {
+   "name": "clay",
+   "displayName": "Clay",
+   "description": "Enrich people and companies, run AI research agents.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/clay",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "clay"
+    }
+   ],
+   "homepage": "https://university.clay.com/docs/connect-to-clay-mcp",
+   "keywords": [
+    "clay",
+    "enrichment",
+    "prospecting",
+    "gtm",
+    "sales",
+    "data",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/clay/assets/logo.png"
+  },
+  {
+   "name": "circleback",
+   "displayName": "Circleback",
+   "description": "Search meetings, transcripts, action items, and emails.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/circleback",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "circleback"
+    }
+   ],
+   "homepage": "https://support.circleback.ai/en/articles/13249081-circleback-mcp",
+   "keywords": [
+    "circleback",
+    "meetings",
+    "transcripts",
+    "notes",
+    "calendar",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/circleback/assets/logo.png"
+  },
+  {
+   "name": "docusign",
+   "displayName": "Docusign",
+   "description": "Manage envelopes, templates, workflows, and agreements.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/docusign",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "docusign"
+    }
+   ],
+   "userConfig": {
+    "CLIENT_ID": {
+     "type": "string",
+     "title": "Docusign Integration Key",
+     "description": "Integration Key from Docusign Apps and Keys (Settings \u2192 Apps and Keys \u2192 your app).",
+     "required": true,
+     "sensitive": false
+    },
+    "CLIENT_SECRET": {
+     "type": "string",
+     "title": "Docusign Secret Key",
+     "description": "Secret Key from the same Docusign Apps and Keys app.",
+     "required": true,
+     "sensitive": true
+    }
+   },
+   "homepage": "https://developers.docusign.com/platform/mcp-server/",
+   "keywords": [
+    "docusign",
+    "esignature",
+    "agreements",
+    "mcp",
+    "envelopes",
+    "contracts"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/docusign/assets/logo.png"
+  },
+  {
+   "name": "navan",
+   "displayName": "Navan",
+   "description": "Query expenses, travel bookings, policies, and cards.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/navan",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "navan"
+    }
+   ],
+   "homepage": "https://developer.navan.com/mcp/",
+   "keywords": [
+    "navan",
+    "mcp",
+    "travel",
+    "expenses",
+    "spend",
+    "corporate-cards",
+    "bookings"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/navan/assets/logo.png"
+  },
+  {
+   "name": "profound",
+   "displayName": "Profound",
+   "description": "Track AI visibility, sentiment, and citations.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/profound",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "profound"
+    }
+   ],
+   "homepage": "https://docs.tryprofound.com/mcp/overview",
+   "keywords": [
+    "profound",
+    "mcp",
+    "aeo",
+    "visibility",
+    "citations",
+    "sentiment",
+    "agents",
+    "analytics"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/profound/assets/logo.png"
+  },
+  {
+   "name": "juicebox",
+   "displayName": "Juicebox",
+   "description": "Query recruiting analytics, shortlists, and sourcing agents.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/juicebox",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "juicebox"
+    }
+   ],
+   "homepage": "https://docs.juicebox.ai/juicebox-mcp",
+   "keywords": [
+    "juicebox",
+    "recruiting",
+    "sourcing",
+    "candidates",
+    "shortlist",
+    "agents",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/juicebox/assets/logo.png"
+  },
+  {
+   "name": "outreach",
+   "displayName": "Outreach",
+   "description": "Search sequences, prospects, and Kaia meetings.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/outreach",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "outreach"
+    }
+   ],
+   "homepage": "https://developers.outreach.io/mcp-server",
+   "keywords": [
+    "outreach",
+    "sales",
+    "sequences",
+    "prospects",
+    "kaia",
+    "crm",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outreach/assets/logo.png"
+  },
+  {
+   "name": "amplemarket",
+   "displayName": "Amplemarket",
+   "description": "Search people and companies, enrich leads, run sequences.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/amplemarket",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "amplemarket"
+    }
+   ],
+   "homepage": "https://knowledge.amplemarket.com/articles/8022685319-connecting-to-the-amplemarket-mcp-server",
+   "keywords": [
+    "amplemarket",
+    "sales",
+    "prospecting",
+    "enrichment",
+    "sequences",
+    "leads",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/amplemarket/assets/logo.png"
+  },
+  {
+   "name": "klaviyo",
+   "displayName": "Klaviyo",
+   "description": "Manage profiles, segments, campaigns, and flows.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/klaviyo",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "klaviyo"
+    }
+   ],
+   "homepage": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+   "keywords": [
+    "klaviyo",
+    "marketing",
+    "email",
+    "sms",
+    "campaigns",
+    "segments",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/klaviyo/assets/logo.png"
+  },
+  {
+   "name": "customer-io",
+   "displayName": "Customer Io",
+   "description": "Build campaigns, manage segments, and query people.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/customer-io",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "customer-io"
+    }
+   ],
+   "homepage": "https://docs.customer.io/ai/mcp/",
+   "keywords": [
+    "customer.io",
+    "customerio",
+    "marketing",
+    "campaigns",
+    "segments",
+    "messaging",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/customer-io/assets/logo.png"
+  },
+  {
+   "name": "mailerlite",
+   "displayName": "Mailerlite",
+   "description": "Manage subscribers, groups, campaigns, and automations.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/mailerlite",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "mailerlite"
+    }
+   ],
+   "homepage": "https://developers.mailerlite.com/mcp",
+   "keywords": [
+    "mailerlite",
+    "email",
+    "marketing",
+    "newsletters",
+    "automations",
+    "subscribers",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mailerlite/assets/logo.png"
+  },
+  {
+   "name": "brevo",
+   "displayName": "Brevo",
+   "description": "Manage contacts, email and SMS campaigns, and CRM deals.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/brevo",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "brevo"
+    }
+   ],
+   "userConfig": {
+    "BREVO_MCP_TOKEN": {
+     "type": "string",
+     "title": "Brevo MCP token",
+     "description": "API key created in Brevo under Account \u2192 SMTP & API \u2192 API Keys with \"Create MCP server API key\" enabled.",
+     "required": true,
+     "sensitive": true
+    }
+   },
+   "homepage": "https://developers.brevo.com/docs/mcp-protocol",
+   "keywords": [
+    "brevo",
+    "sendinblue",
+    "email",
+    "sms",
+    "marketing",
+    "crm",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/brevo/assets/logo.png"
+  },
+  {
+   "name": "typeform",
+   "displayName": "Typeform",
+   "description": "Build forms, analyze responses, and manage contacts.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/typeform",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "typeform"
+    }
+   ],
+   "homepage": "https://developers.typeform.com/developers/get-started/mcp/",
+   "keywords": [
+    "typeform",
+    "forms",
+    "surveys",
+    "responses",
+    "insights",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/typeform/assets/logo.png"
+  },
+  {
+   "name": "jotform",
+   "displayName": "Jotform",
+   "description": "Create and edit forms, then read submissions.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/jotform",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "jotform"
+    }
+   ],
+   "homepage": "https://www.jotform.com/mcp/",
+   "keywords": [
+    "jotform",
+    "forms",
+    "submissions",
+    "surveys",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/jotform/assets/logo.png"
+  },
+  {
+   "name": "semrush",
+   "displayName": "Semrush",
+   "description": "Research keywords, backlinks, traffic, and competitors.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/semrush",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "semrush"
+    }
+   ],
+   "homepage": "https://developer.semrush.com/api/v4/introduction/semrush-mcp/",
+   "keywords": [
+    "semrush",
+    "seo",
+    "keywords",
+    "backlinks",
+    "competitive-intelligence",
+    "marketing",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/semrush/assets/logo.png"
+  },
+  {
+   "name": "ahrefs",
+   "displayName": "Ahrefs",
+   "description": "Research keywords, backlinks, rankings, and site health.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/ahrefs",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "ahrefs"
+    }
+   ],
+   "homepage": "https://ahrefs.com/mcp",
+   "keywords": [
+    "ahrefs",
+    "seo",
+    "backlinks",
+    "keywords",
+    "rank-tracking",
+    "site-audit",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/ahrefs/assets/logo.png"
+  },
+  {
+   "name": "godaddy",
+   "displayName": "Godaddy",
+   "description": "Brainstorm domain names and check availability.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/godaddy",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "godaddy"
+    }
+   ],
+   "homepage": "https://developer.godaddy.com/en/docs/api-users/mcp",
+   "keywords": [
+    "godaddy",
+    "domains",
+    "dns",
+    "availability",
+    "registration",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/godaddy/assets/logo.png"
+  },
+  {
+   "name": "upwork",
+   "displayName": "Upwork",
+   "description": "Search talent, post jobs, and manage contracts.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/upwork",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "upwork"
+    }
+   ],
+   "homepage": "https://www.upwork.com/ai/mcp",
+   "keywords": [
+    "upwork",
+    "freelance",
+    "hiring",
+    "jobs",
+    "contracts",
+    "proposals",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/upwork/assets/logo.png"
+  },
+  {
+   "name": "workable",
+   "displayName": "Workable",
+   "description": "Search candidates, move pipelines, and manage HR records.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/workable",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "workable"
+    }
+   ],
+   "homepage": "https://workable.readme.io/reference/workable-mcp-server",
+   "keywords": [
+    "workable",
+    "ats",
+    "recruiting",
+    "candidates",
+    "hris",
+    "hiring",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/workable/assets/logo.png"
+  },
+  {
+   "name": "brex",
+   "displayName": "Brex",
+   "description": "Query expenses, receipts, bills, cards, and travel.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/brex",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "brex"
+    }
+   ],
+   "homepage": "https://developer.brex.com/docs/mcp",
+   "keywords": [
+    "brex",
+    "expenses",
+    "spend",
+    "corporate-cards",
+    "finance",
+    "travel",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/brex/assets/logo.png"
+  },
+  {
+   "name": "mercury",
+   "displayName": "Mercury",
+   "description": "Read balances, transactions, statements, and cards.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/mercury",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "mercury"
+    }
+   ],
+   "homepage": "https://docs.mercury.com/docs/what-is-mercury-mcp",
+   "keywords": [
+    "mercury",
+    "banking",
+    "finance",
+    "transactions",
+    "statements",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mercury/assets/logo.png"
+  },
+  {
+   "name": "todoist",
+   "displayName": "Todoist",
+   "description": "Create, find, and complete tasks and projects.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/todoist",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "todoist"
+    }
+   ],
+   "homepage": "https://github.com/Doist/todoist-mcp",
+   "keywords": [
+    "todoist",
+    "tasks",
+    "todo",
+    "projects",
+    "productivity",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/todoist/assets/logo.png"
+  },
+  {
+   "name": "calendly",
+   "displayName": "Calendly",
+   "description": "Check availability and book, cancel, or reschedule.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/calendly",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "calendly"
+    }
+   ],
+   "homepage": "https://developer.calendly.com/calendly-mcp-server",
+   "keywords": [
+    "calendly",
+    "scheduling",
+    "calendar",
+    "meetings",
+    "availability",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/calendly/assets/logo.png"
+  },
+  {
+   "name": "smartsheet",
+   "displayName": "Smartsheet",
+   "description": "Query and update sheets, rows, and workspaces.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/smartsheet",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "smartsheet"
+    }
+   ],
+   "userConfig": {
+    "SMARTSHEET_API_TOKEN": {
+     "type": "string",
+     "title": "Smartsheet API token",
+     "description": "API access token generated in Smartsheet under Account \u2192 Personal Settings \u2192 API Access.",
+     "required": true,
+     "sensitive": true
+    }
+   },
+   "homepage": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "keywords": [
+    "smartsheet",
+    "sheets",
+    "project-management",
+    "work-management",
+    "rows",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/smartsheet/assets/logo.png"
+  },
+  {
+   "name": "wrike",
+   "displayName": "Wrike",
+   "description": "Search projects, create tasks, and post comments.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/wrike",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "wrike"
+    }
+   ],
+   "userConfig": {
+    "WRIKE_ACCESS_TOKEN": {
+     "type": "string",
+     "title": "Wrike permanent access token",
+     "description": "Permanent access token created in Wrike under Apps & Integrations \u2192 API.",
+     "required": true,
+     "sensitive": true
+    }
+   },
+   "homepage": "https://developers.wrike.com/docs/wrike-mcp-server-overview",
+   "keywords": [
+    "wrike",
+    "project-management",
+    "tasks",
+    "projects",
+    "work-management",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/wrike/assets/logo.png"
+  },
+  {
+   "name": "coda",
+   "displayName": "Coda",
+   "description": "Search docs, read pages, and update tables.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/coda",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "coda"
+    }
+   ],
+   "homepage": "https://help.superhuman.com/hc/en-us/articles/46210076980365-Connect-to-the-Coda-MCP",
+   "keywords": [
+    "coda",
+    "superhuman",
+    "docs",
+    "tables",
+    "knowledge",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/coda/assets/logo.png"
+  },
+  {
+   "name": "guru",
+   "displayName": "Guru",
+   "description": "Search company knowledge and draft verified answers.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/guru",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "guru"
+    }
+   ],
+   "homepage": "https://developer.getguru.com/docs/guru-mcp-server-overview",
+   "keywords": [
+    "guru",
+    "knowledge-base",
+    "search",
+    "wiki",
+    "documentation",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/guru/assets/logo.png"
+  },
+  {
+   "name": "fireflies",
+   "displayName": "Fireflies",
+   "description": "Search meeting transcripts, summaries, and action items.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/fireflies",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "fireflies"
+    }
+   ],
+   "homepage": "https://docs.fireflies.ai/getting-started/mcp-configuration",
+   "keywords": [
+    "fireflies",
+    "meetings",
+    "transcripts",
+    "notes",
+    "action-items",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/fireflies/assets/logo.png"
+  },
+  {
+   "name": "otter",
+   "displayName": "Otter",
+   "description": "Search meeting history and pull full transcripts.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/otter",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "otter"
+    }
+   ],
+   "homepage": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+   "keywords": [
+    "otter",
+    "otter.ai",
+    "meetings",
+    "transcripts",
+    "notes",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/otter/assets/logo.png"
+  },
+  {
+   "name": "fathom",
+   "displayName": "Fathom",
+   "description": "Search meetings and pull transcripts and summaries.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/fathom",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "fathom"
+    }
+   ],
+   "homepage": "https://developers.fathom.ai/mcp-docs",
+   "keywords": [
+    "fathom",
+    "meetings",
+    "transcripts",
+    "summaries",
+    "notes",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/fathom/assets/logo.png"
+  },
+  {
+   "name": "craft",
+   "displayName": "Craft",
+   "description": "Search, create, and update documents and daily notes.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/craft",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "craft"
+    }
+   ],
+   "homepage": "https://www.craft.do/imagine/guide/mcp",
+   "keywords": [
+    "craft",
+    "craft.do",
+    "notes",
+    "documents",
+    "writing",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/craft/assets/logo.png"
+  },
+  {
+   "name": "mem",
+   "displayName": "Mem",
+   "description": "Capture, search, and organize notes and collections.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/mem",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "mem"
+    }
+   ],
+   "homepage": "https://docs.mem.ai/mcp/overview",
+   "keywords": [
+    "mem",
+    "mem.ai",
+    "notes",
+    "knowledge",
+    "semantic-search",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mem/assets/logo.png"
+  },
+  {
+   "name": "readwise",
+   "displayName": "Readwise",
+   "description": "Search highlights and Reader documents, save articles.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/readwise",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "readwise"
+    }
+   ],
+   "homepage": "https://docs.readwise.io/tools/mcp",
+   "keywords": [
+    "readwise",
+    "reader",
+    "highlights",
+    "reading",
+    "notes",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/readwise/assets/logo.png"
+  },
+  {
+   "name": "similarweb",
+   "displayName": "Similarweb",
+   "description": "Analyze website traffic, audiences, and competitors.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/similarweb",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "similarweb"
+    }
+   ],
+   "userConfig": {
+    "SIMILARWEB_API_KEY": {
+     "type": "string",
+     "title": "Similarweb API key",
+     "description": "REST API key from Similarweb under Account Settings \u2192 Data Tools \u2192 REST API.",
+     "required": true,
+     "sensitive": true
+    }
+   },
+   "homepage": "https://docs.similarweb.com/api-v5/similarweb-mcp",
+   "keywords": [
+    "similarweb",
+    "traffic",
+    "analytics",
+    "competitive-intelligence",
+    "audience",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/similarweb/assets/logo.png"
+  },
+  {
+   "name": "xero",
+   "displayName": "Xero",
+   "description": "Read and write invoices, contacts, reports, and payroll.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/xero",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "xero"
+    }
+   ],
+   "userConfig": {
+    "XERO_CLIENT_ID": {
+     "type": "string",
+     "title": "Xero client ID",
+     "description": "Client ID of the Custom Connection you created at developer.xero.com. A Custom Connection is bound to a single Xero organisation.",
+     "required": true,
+     "sensitive": false
+    },
+    "XERO_CLIENT_SECRET": {
+     "type": "string",
+     "title": "Xero client secret",
+     "description": "Client secret generated alongside the Custom Connection's client ID at developer.xero.com.",
+     "required": true,
+     "sensitive": true
+    }
+   },
+   "homepage": "https://github.com/XeroAPI/xero-mcp-server",
+   "keywords": [
+    "xero",
+    "accounting",
+    "invoices",
+    "payroll",
+    "bookkeeping",
+    "finance",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/xero/assets/logo.png"
+  },
+  {
+   "name": "outlook",
+   "displayName": "Outlook",
+   "description": "Search, read, and send Microsoft Outlook email, and look up contacts.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/outlook",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "outlook"
+    }
+   ],
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/outlook",
+   "keywords": [
+    "outlook",
+    "email",
+    "microsoft",
+    "mcp",
+    "contacts"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outlook/assets/logo.svg"
+  },
+  {
+   "name": "outlook-calendar",
+   "displayName": "Outlook Calendar",
+   "description": "List, create, update, and cancel Microsoft Outlook calendar events.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/outlook-calendar",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "outlook-calendar"
+    }
+   ],
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/outlook-calendar",
+   "keywords": [
+    "outlook-calendar",
+    "calendar",
+    "outlook",
+    "microsoft",
+    "mcp",
+    "events"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outlook-calendar/assets/logo.svg"
+  },
+  {
+   "name": "onedrive",
+   "displayName": "Onedrive",
+   "description": "Browse, search, and read Microsoft OneDrive files.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/onedrive",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "onedrive"
+    }
+   ],
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/onedrive",
+   "keywords": [
+    "onedrive",
+    "files",
+    "microsoft",
+    "mcp",
+    "storage"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/onedrive/assets/logo.svg"
+  },
+  {
+   "name": "sharepoint",
+   "displayName": "Sharepoint",
+   "description": "Search and read Microsoft SharePoint sites, document libraries, files, and lists.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/sharepoint",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "sharepoint"
+    }
+   ],
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/sharepoint",
+   "keywords": [
+    "sharepoint",
+    "sites",
+    "files",
+    "lists",
+    "microsoft",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/sharepoint/assets/logo.svg"
+  },
+  {
+   "name": "teams",
+   "displayName": "Teams",
+   "description": "Search, read, and send Microsoft Teams chats and channel messages.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/teams",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "teams"
+    }
+   ],
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/teams",
+   "keywords": [
+    "teams",
+    "chat",
+    "microsoft",
+    "mcp",
+    "channels"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/teams/assets/logo.svg"
+  },
+  {
+   "name": "finance",
+   "displayName": "Finance",
+   "description": "Link your bank, card, and investment accounts through Plaid so Grok can answer questions about balances, spending, subscriptions, and investments. You'll share contact details, account and balance info, transactions, credit and loans, and investments. Grok syncs and stores your linked account data so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. Access is read-only, xAI never sees or stores your bank login, and you can unlink accounts anytime from cursor.com.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/finance",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "finance"
+    }
+   ],
+   "homepage": "https://grok.com/connectors",
+   "keywords": [
+    "finance",
+    "accounts",
+    "spending",
+    "subscriptions",
+    "balances",
+    "investments",
+    "grok",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/finance/assets/logo.svg"
+  },
+  {
+   "name": "x-ads",
+   "displayName": "X Ads",
+   "description": "Manage ad campaigns, create ads, track conversions, and pull performance stats.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/x-ads",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "x-ads"
+    }
+   ],
+   "homepage": "https://docs.x.com/x-ads-api/introduction",
+   "keywords": [
+    "x",
+    "twitter",
+    "ads",
+    "advertising",
+    "campaigns",
+    "conversions",
+    "analytics",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/x-ads/assets/logo.png"
+  },
+  {
+   "name": "attio",
+   "displayName": "Attio",
+   "description": "Search and update CRM records, lists, notes, and tasks.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/attio",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "attio"
+    }
+   ],
+   "homepage": "https://docs.attio.com/mcp/overview",
+   "keywords": [
+    "attio",
+    "crm",
+    "mcp",
+    "sales",
+    "records",
+    "lists",
+    "notes",
+    "tasks"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/attio/assets/logo.png"
+  },
+  {
+   "name": "gamma",
+   "displayName": "Gamma",
+   "description": "Generate presentations, documents, and webpages.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/gamma",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "gamma"
+    }
+   ],
+   "homepage": "https://developers.gamma.app/mcp/gamma-mcp-server.md",
+   "keywords": [
+    "gamma",
+    "presentations",
+    "slides",
+    "documents",
+    "webpages",
+    "design",
+    "export",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gamma/assets/logo.png"
+  },
+  {
+   "name": "webull",
+   "displayName": "Webull",
+   "description": "View accounts, positions, orders, watchlists, and market data.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/webull",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "webull"
+    }
+   ],
+   "homepage": "https://developer.webull.com/apis/docs/AI-friendly-Resources/mcp/",
+   "keywords": [
+    "webull",
+    "brokerage",
+    "trading",
+    "portfolio",
+    "quotes",
+    "watchlists",
+    "market data",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/webull/assets/logo.png"
+  },
+  {
+   "name": "sp-global",
+   "displayName": "Sp Global",
+   "description": "Query S&P Capital IQ financials, prices, and transcripts.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/sp-global",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "sp-global"
+    }
+   ],
+   "homepage": "https://docs.kensho.com/llmreadyapi/overview",
+   "keywords": [
+    "sp global",
+    "kensho",
+    "kfinance",
+    "capital iq",
+    "financials",
+    "market data",
+    "earnings transcripts",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/sp-global/assets/logo.png"
+  },
+  {
+   "name": "interactive-brokers",
+   "displayName": "Interactive Brokers",
+   "description": "Review positions, balances, P&L, and draft trade instructions.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/interactive-brokers",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "interactive-brokers"
+    }
+   ],
+   "homepage": "https://www.interactivebrokers.com/en/trading/ai-integrations.php",
+   "keywords": [
+    "interactive brokers",
+    "ibkr",
+    "brokerage",
+    "trading",
+    "portfolio",
+    "positions",
+    "market data",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/interactive-brokers/assets/logo.png"
+  },
+  {
+   "name": "meltwater",
+   "displayName": "Meltwater",
+   "description": "Search media and social mentions and pull analytics.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/meltwater",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "meltwater"
+    }
+   ],
+   "homepage": "https://developer.meltwater.com/guides/meltwater-mcp/overview",
+   "keywords": [
+    "meltwater",
+    "media monitoring",
+    "pr",
+    "social listening",
+    "mentions",
+    "sentiment",
+    "saved searches",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/meltwater/assets/logo.png"
+  },
+  {
+   "name": "daloopa",
+   "displayName": "Daloopa",
+   "description": "Pull source-linked fundamentals, KPIs, filings, and prices.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/daloopa",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "daloopa"
+    }
+   ],
+   "homepage": "https://docs.daloopa.com/docs/daloopa-mcp",
+   "keywords": [
+    "daloopa",
+    "fundamentals",
+    "kpis",
+    "sec filings",
+    "transcripts",
+    "equity research",
+    "financial data",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/daloopa/assets/logo.png"
+  },
+  {
+   "name": "excalidraw",
+   "displayName": "Excalidraw",
+   "description": "Draw and export hand-drawn diagrams from chat.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/excalidraw",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "excalidraw"
+    }
+   ],
+   "homepage": "https://github.com/excalidraw/excalidraw-mcp",
+   "keywords": [
+    "excalidraw",
+    "diagrams",
+    "whiteboard",
+    "sketch",
+    "flowchart",
+    "architecture",
+    "mcp apps",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/excalidraw/assets/logo.png"
+  },
+  {
+   "name": "google-cloud-bigquery",
+   "displayName": "Google Cloud Bigquery",
+   "description": "Explore datasets and tables and run SQL queries.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/google-cloud-bigquery",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "google-cloud-bigquery"
+    }
+   ],
+   "homepage": "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp",
+   "keywords": [
+    "google cloud bigquery",
+    "google cloud",
+    "bigquery",
+    "sql",
+    "analytics",
+    "data warehouse",
+    "datasets",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-cloud-bigquery/assets/logo.png"
+  },
+  {
+   "name": "statsig",
+   "displayName": "Statsig",
+   "description": "Inspect and manage feature gates, experiments, dynamic configs, and metrics.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/statsig",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "statsig"
+    }
+   ],
+   "homepage": "https://docs.statsig.com/integrations/mcp/cursor",
+   "keywords": [
+    "statsig",
+    "feature flags",
+    "feature gates",
+    "experiments",
+    "a/b testing",
+    "dynamic configs",
+    "metrics",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/statsig/assets/logo.png"
+  },
+  {
+   "name": "robinhood",
+   "displayName": "Robinhood",
+   "description": "View portfolios, positions, orders, watchlists, and market data, and trade in a Robinhood Agentic account.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/robinhood",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "robinhood"
+    }
+   ],
+   "homepage": "https://robinhood.com/us/en/support/articles/agentic-trading-overview/",
+   "keywords": [
+    "robinhood",
+    "brokerage",
+    "trading",
+    "portfolio",
+    "stocks",
+    "options",
+    "crypto",
+    "market data",
+    "watchlists",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/robinhood/assets/logo.png"
+  },
+  {
+   "name": "coinbase",
+   "displayName": "Coinbase",
+   "description": "Check balances, get quotes, and preview or place trades.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/coinbase",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "coinbase"
+    }
+   ],
+   "homepage": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
+   "keywords": [
+    "coinbase",
+    "crypto",
+    "trading",
+    "portfolio",
+    "balances",
+    "market data",
+    "advanced trade",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/coinbase/assets/logo.png"
+  },
+  {
+   "name": "etoro-trading",
+   "displayName": "Etoro Trading",
+   "description": "View your eToro portfolio, balances, positions, and watchlists, research instruments and traders, and prepare and place trades.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/etoro-trading",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "etoro-trading"
+    }
+   ],
+   "homepage": "https://api-portal.etoro.com/core/vibe-code/cursor",
+   "keywords": [
+    "etoro",
+    "brokerage",
+    "trading",
+    "portfolio",
+    "stocks",
+    "crypto",
+    "copy trading",
+    "market data",
+    "watchlists",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/etoro-trading/assets/logo.png"
+  },
+  {
+   "name": "x-money",
+   "displayName": "X Money",
+   "description": "Use your X Money Card, send money to users on X, manage your finances, view your balance and browse through your transaction history.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/x-money",
+    "ref": "main",
+    "sha": "70b2dc8b4b85c8d5648624ca40d692c421fff32f"
+   },
+   "category": "automation",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "x-money"
+    }
+   ],
+   "homepage": "https://x.com/i/money",
+   "keywords": [
+    "x money",
+    "xmoney",
+    "x",
+    "payments",
+    "balance",
+    "transactions",
+    "send money",
+    "p2p",
+    "virtual card",
+    "wallet",
+    "finance",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/x-money/assets/logo.png",
+   "skills": [
+    {
+     "name": "x-money-guide",
+     "description": ">-",
+     "path": "skills/x-money-guide/SKILL.md"
     }
    ]
   }
