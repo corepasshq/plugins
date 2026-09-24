@@ -37,7 +37,8 @@
   ],
   "category": "productivity",
   "displayName": "ActiveCampaign",
-  "description": "Marketing automation, CRM, and email marketing powered by ActiveCampaign. Manage contacts, campaigns, automations, deals, and get AI-powered marketing insights — all from Claude."
+  "description": "Marketing automation, CRM, and email marketing powered by ActiveCampaign. Manage contacts, campaigns, automations, deals, and get AI-powered marketing insights — all from Claude.",
+  "categoryOverride": "marketing"
  },
  "adobe-for-creativity": {
   "keywords": [
@@ -111,7 +112,8 @@
   ],
   "category": "integrations",
   "displayName": "Ahrefs",
-  "description": "Research keywords, backlinks, rankings, and site health."
+  "description": "Research keywords, backlinks, rankings, and site health.",
+  "categoryOverride": "marketing"
  },
  "ai-plugins": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.endorlabs.com&sz=128",
@@ -182,7 +184,8 @@
   ],
   "category": "productivity",
   "displayName": "Airwallex",
-  "description": "Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities."
+  "description": "Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities.",
+  "categoryOverride": "finance"
  },
  "airwallex-dev": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.airwallex.com&sz=128",
@@ -197,7 +200,8 @@
   ],
   "category": "development",
   "displayName": "Airwallex Dev",
-  "description": "Build Airwallex payment integrations in your own codebase. Generates the checkout, card-element, onboarding, and subscription-billing code for an Airwallex integration and wires it into your project: Hosted Payment Page, Drop-in and Split Card elements, connected-account KYC onboarding, and Billing Hosted Checkout for subscriptions and card-saving. Also plans card-on-file merchant-initiated flows for AI providers such as top-ups and auto-recharge."
+  "description": "Build Airwallex payment integrations in your own codebase. Generates the checkout, card-element, onboarding, and subscription-billing code for an Airwallex integration and wires it into your project: Hosted Payment Page, Drop-in and Split Card elements, connected-account KYC onboarding, and Billing Hosted Checkout for subscriptions and card-saving. Also plans card-on-file merchant-initiated flows for AI providers such as top-ups and auto-recharge.",
+  "categoryOverride": "payments"
  },
  "aiven": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=aiven.io&sz=128",
@@ -294,7 +298,8 @@
   ],
   "category": "integrations",
   "displayName": "Amplemarket",
-  "description": "Search people and companies, enrich leads, run sequences."
+  "description": "Search people and companies, enrich leads, run sequences.",
+  "categoryOverride": "sales"
  },
  "amplitude": {
   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/amplitude-2x.png",
@@ -317,7 +322,8 @@
   },
   "category": "productivity",
   "displayName": "Apollo",
-  "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork."
+  "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
+  "categoryOverride": "sales"
  },
  "apollo-skills": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.apollographql.com&sz=128",
@@ -374,7 +380,8 @@
   ],
   "category": "integrations",
   "displayName": "Ashby",
-  "description": "Search candidates, prep interviews, and manage pipeline tasks."
+  "description": "Search candidates, prep interviews, and manage pipeline tasks.",
+  "categoryOverride": "productivity"
  },
  "astronomer-data": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/d2ff32dd5ad1e05c.png",
@@ -402,7 +409,8 @@
   },
   "displayName": "Atlan",
   "description": "Atlan is the context layer for enterprise AI. Connect Corepass to your organization's context repos — the knowledge, data, and semantics your AI agents need to build effectively. Use Atlan's agent skills to search & discover enterprise context, traverse end-to-end lineage, access governed data definitions and glossaries, execute SQL, curate your metadata graph, and ensure data quality — so every coding task in Corepass is grounded in trusted organizational context.",
-  "category": "AGENT_ORCHESTRATION"
+  "category": "AGENT_ORCHESTRATION",
+  "categoryOverride": "data-analytics"
  },
  "atlassian": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/bf7719b83588a5fa.png",
@@ -470,7 +478,8 @@
   ],
   "category": "integrations",
   "displayName": "Attio",
-  "description": "Search and update CRM records, lists, notes, and tasks."
+  "description": "Search and update CRM records, lists, notes, and tasks.",
+  "categoryOverride": "sales"
  },
  "auth0": {
   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/auth0-logo.png",
@@ -968,7 +977,8 @@
  "blackrock-advisor-center-plugin": {
   "category": "productivity",
   "displayName": "Blackrock Advisor Center Plugin",
-  "description": "BlackRock Advisor Center 360° skills for financial advisors: portfolio review, opportunity and fund-health checks, guided benchmark selection, guided portfolio building, wealth projections, and routing to Advisor Center web workflows. Requires the BlackRock Advisor Center connector and an Advisor Center account."
+  "description": "BlackRock Advisor Center 360° skills for financial advisors: portfolio review, opportunity and fund-health checks, guided benchmark selection, guided portfolio building, wealth projections, and routing to Advisor Center web workflows. Requires the BlackRock Advisor Center connector and an Advisor Center account.",
+  "categoryOverride": "finance"
  },
  "boltz": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=boltz.bio&sz=128",
@@ -1028,7 +1038,8 @@
   ],
   "category": "integrations",
   "displayName": "Brevo",
-  "description": "Manage contacts, email and SMS campaigns, and CRM deals."
+  "description": "Manage contacts, email and SMS campaigns, and CRM deals.",
+  "categoryOverride": "marketing"
  },
  "brex": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/brex/assets/logo.png",
@@ -1043,7 +1054,8 @@
   ],
   "category": "integrations",
   "displayName": "Brex",
-  "description": "Query expenses, receipts, bills, cards, and travel."
+  "description": "Query expenses, receipts, bills, cards, and travel.",
+  "categoryOverride": "finance"
  },
  "brightdata-plugin": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.brightdata.com&sz=128",
@@ -1091,7 +1103,8 @@
   ],
   "category": "integrations",
   "displayName": "Calendly",
-  "description": "Check availability and book, cancel, or reschedule."
+  "description": "Check availability and book, cancel, or reschedule.",
+  "categoryOverride": "productivity"
  },
  "canva": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.canva.com&sz=128",
@@ -1150,7 +1163,8 @@
   ],
   "category": "productivity",
   "displayName": "Carta Crm",
-  "description": "Manage the Carta CRM conversationally — search, add, update, and enrich investors, companies, contacts, deals, notes, and fundraisings via the Carta CRM MCP Server."
+  "description": "Manage the Carta CRM conversationally — search, add, update, and enrich investors, companies, contacts, deals, notes, and fundraisings via the Carta CRM MCP Server.",
+  "categoryOverride": "sales"
  },
  "carta-investors": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=carta.com&sz=128",
@@ -1250,7 +1264,8 @@
   ],
   "category": "development",
   "displayName": "Circle Skills",
-  "description": "Ship stablecoin apps faster. Best-practice skills for USDC payments, cross-chain transfers, wallets, and smart contracts — plus Circle's MCP server for real-time SDK and documentation guidance."
+  "description": "Ship stablecoin apps faster. Best-practice skills for USDC payments, cross-chain transfers, wallets, and smart contracts — plus Circle's MCP server for real-time SDK and documentation guidance.",
+  "categoryOverride": "payments"
  },
  "circleback": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/circleback/assets/logo.png",
@@ -1312,7 +1327,8 @@
   ],
   "category": "integrations",
   "displayName": "Clay",
-  "description": "Enrich people and companies, run AI research agents."
+  "description": "Enrich people and companies, run AI research agents.",
+  "categoryOverride": "sales"
  },
  "cli-for-agent": {
   "publisher": {
@@ -1466,7 +1482,8 @@
   ],
   "category": "integrations",
   "displayName": "Coda",
-  "description": "Search docs, read pages, and update tables."
+  "description": "Search docs, read pages, and update tables.",
+  "categoryOverride": "productivity"
  },
  "code-modernization": {
   "publisher": {
@@ -1514,7 +1531,8 @@
   ],
   "category": "integrations",
   "displayName": "Coinbase",
-  "description": "Check balances, get quotes, and preview or place trades."
+  "description": "Check balances, get quotes, and preview or place trades.",
+  "categoryOverride": "finance"
  },
  "commit-commands": {
   "publisher": {
@@ -1601,7 +1619,8 @@
   ],
   "category": "integrations",
   "displayName": "Craft",
-  "description": "Search, create, and update documents and daily notes."
+  "description": "Search, create, and update documents and daily notes.",
+  "categoryOverride": "productivity"
  },
  "create-plugin": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/3006a84a2fcdd3bd.png",
@@ -1727,7 +1746,8 @@
   ],
   "category": "integrations",
   "displayName": "Customer Io",
-  "description": "Build campaigns, manage segments, and query people."
+  "description": "Build campaigns, manage segments, and query people.",
+  "categoryOverride": "marketing"
  },
  "cwc-makers": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=claude.com&sz=128",
@@ -1774,7 +1794,8 @@
   ],
   "category": "integrations",
   "displayName": "Daloopa",
-  "description": "Pull source-linked fundamentals, KPIs, filings, and prices."
+  "description": "Pull source-linked fundamentals, KPIs, filings, and prices.",
+  "categoryOverride": "finance"
  },
  "dash0": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=dash0.com&sz=128",
@@ -2004,7 +2025,8 @@
   ],
   "category": "integrations",
   "displayName": "Docusign",
-  "description": "Manage envelopes, templates, workflows, and agreements."
+  "description": "Manage envelopes, templates, workflows, and agreements.",
+  "categoryOverride": "productivity"
  },
  "dominodatalab": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.domino.ai&sz=128",
@@ -2105,7 +2127,8 @@
   ],
   "category": "integrations",
   "displayName": "Etoro Trading",
-  "description": "View your eToro portfolio, balances, positions, and watchlists, research instruments and traders, and prepare and place trades."
+  "description": "View your eToro portfolio, balances, positions, and watchlists, research instruments and traders, and prepare and place trades.",
+  "categoryOverride": "finance"
  },
  "exa": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/eee04524fe040f3f.jpg",
@@ -2144,7 +2167,8 @@
   ],
   "category": "integrations",
   "displayName": "Excalidraw",
-  "description": "Draw and export hand-drawn diagrams from chat."
+  "description": "Draw and export hand-drawn diagrams from chat.",
+  "categoryOverride": "design"
  },
  "explanatory-output-style": {
   "publisher": {
@@ -2153,7 +2177,8 @@
   },
   "category": "Claude Plugins Official",
   "displayName": "Explanatory Output Style",
-  "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)"
+  "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
+  "categoryOverride": "development"
  },
  "expo": {
   "category": "DEVELOPMENT",
@@ -2197,7 +2222,8 @@
   ],
   "category": "integrations",
   "displayName": "Fathom",
-  "description": "Search meetings and pull transcripts and summaries."
+  "description": "Search meetings and pull transcripts and summaries.",
+  "categoryOverride": "productivity"
  },
  "feature-dev": {
   "publisher": {
@@ -2240,7 +2266,8 @@
   ],
   "category": "integrations",
   "displayName": "Finance",
-  "description": "Link your bank, card, and investment accounts through Plaid so Grok can answer questions about balances, spending, subscriptions, and investments. You'll share contact details, account and balance info, transactions, credit and loans, and investments. Grok syncs and stores your linked account data so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. Access is read-only, xAI never sees or stores your bank login, and you can unlink accounts anytime from cursor.com."
+  "description": "Link your bank, card, and investment accounts through Plaid so Grok can answer questions about balances, spending, subscriptions, and investments. You'll share contact details, account and balance info, transactions, credit and loans, and investments. Grok syncs and stores your linked account data so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. Access is read-only, xAI never sees or stores your bank login, and you can unlink accounts anytime from cursor.com.",
+  "categoryOverride": "finance"
  },
  "firebase": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/7537eb6c21a6e43c.png",
@@ -2266,7 +2293,8 @@
   ],
   "category": "integrations",
   "displayName": "Fireflies",
-  "description": "Search meeting transcripts, summaries, and action items."
+  "description": "Search meeting transcripts, summaries, and action items.",
+  "categoryOverride": "productivity"
  },
  "firestore-native": {
   "publisher": {
@@ -2338,7 +2366,8 @@
   ],
   "category": "integrations",
   "displayName": "Gamma",
-  "description": "Generate presentations, documents, and webpages."
+  "description": "Generate presentations, documents, and webpages.",
+  "categoryOverride": "productivity"
  },
  "gc-ai": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.gc.ai&sz=128",
@@ -2392,7 +2421,8 @@
   ],
   "category": "integrations",
   "displayName": "Godaddy",
-  "description": "Brainstorm domain names and check availability."
+  "description": "Brainstorm domain names and check availability.",
+  "categoryOverride": "productivity"
  },
  "gong": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gong/assets/logo.png",
@@ -2406,7 +2436,8 @@
   ],
   "category": "integrations",
   "displayName": "Gong",
-  "description": "Pull account summaries, deal insights, and call briefs."
+  "description": "Pull account summaries, deal insights, and call briefs.",
+  "categoryOverride": "sales"
  },
  "google-calendar": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-calendar/assets/logo.svg",
@@ -2436,7 +2467,8 @@
   ],
   "category": "integrations",
   "displayName": "Google Cloud Bigquery",
-  "description": "Explore datasets and tables and run SQL queries."
+  "description": "Explore datasets and tables and run SQL queries.",
+  "categoryOverride": "database"
  },
  "google-cloud-storage": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
@@ -2607,7 +2639,8 @@
   "logoUrl": "https://www.google.com/s2/favicons?domain=growthbook.io&sz=128",
   "category": "testing",
   "displayName": "Growthbook",
-  "description": "A suite of agent skills for the full GrowthBook feature flag and experimentation lifecycle."
+  "description": "A suite of agent skills for the full GrowthBook feature flag and experimentation lifecycle.",
+  "categoryOverride": "development"
  },
  "gsap-skills": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/25c208a3a4549774.png",
@@ -2632,7 +2665,8 @@
   ],
   "category": "integrations",
   "displayName": "Guru",
-  "description": "Search company knowledge and draft verified answers."
+  "description": "Search company knowledge and draft verified answers.",
+  "categoryOverride": "productivity"
  },
  "harness": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/b1d754ad66e9bdac.png",
@@ -2693,7 +2727,8 @@
   ],
   "category": "integrations",
   "displayName": "Hubspot",
-  "description": "Search and update contacts, companies, deals, and tickets."
+  "description": "Search and update contacts, companies, deals, and tickets.",
+  "categoryOverride": "sales"
  },
  "hubspot-sales": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.hubspot.com&sz=128",
@@ -2710,7 +2745,8 @@
   ],
   "category": "productivity",
   "displayName": "HubSpot Sales",
-  "description": "Run your HubSpot sales workflow directly from Claude. Adds skills that cover the full sales day: import contacts and deals into HubSpot, get a prioritised morning brief, prep for any call with full CRM context, draft personalised follow-ups grounded in deal history, log calls and update records by describing what happened, and review your pipeline to surface stalling deals. Everything writes back to HubSpot."
+  "description": "Run your HubSpot sales workflow directly from Claude. Adds skills that cover the full sales day: import contacts and deals into HubSpot, get a prioritised morning brief, prep for any call with full CRM context, draft personalised follow-ups grounded in deal history, log calls and update records by describing what happened, and review your pipeline to surface stalling deals. Everything writes back to HubSpot.",
+  "categoryOverride": "sales"
  },
  "huggingface-skills": {
   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/hugging-face.png",
@@ -2821,7 +2857,8 @@
   ],
   "category": "integrations",
   "displayName": "Interactive Brokers",
-  "description": "Review positions, balances, P&L, and draft trade instructions."
+  "description": "Review positions, balances, P&L, and draft trade instructions.",
+  "categoryOverride": "finance"
  },
  "intercom": {
   "category": "PRODUCTIVITY",
@@ -2841,7 +2878,8 @@
  "intuit-quickbooks": {
   "category": "productivity",
   "displayName": "Intuit Quickbooks",
-  "description": "QuickBooks business insights and actions: financial health briefings across P&L, cash flow, balance sheet and A/R, industry benchmarking, payroll cost analysis, overdue-invoice reminders, estimate/invoice drafting from email, payroll onboarding and base-pay changes (with confirmation), and QuickBooks Capital lending guidance. Requires the Intuit QuickBooks connector."
+  "description": "QuickBooks business insights and actions: financial health briefings across P&L, cash flow, balance sheet and A/R, industry benchmarking, payroll cost analysis, overdue-invoice reminders, estimate/invoice drafting from email, payroll onboarding and base-pay changes (with confirmation), and QuickBooks Capital lending guidance. Requires the Intuit QuickBooks connector.",
+  "categoryOverride": "finance"
  },
  "jdtls-lsp": {
   "publisher": {
@@ -2875,7 +2913,8 @@
   ],
   "category": "integrations",
   "displayName": "Jotform",
-  "description": "Create and edit forms, then read submissions."
+  "description": "Create and edit forms, then read submissions.",
+  "categoryOverride": "productivity"
  },
  "juicebox": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/juicebox/assets/logo.png",
@@ -2890,7 +2929,8 @@
   ],
   "category": "integrations",
   "displayName": "Juicebox",
-  "description": "Query recruiting analytics, shortlists, and sourcing agents."
+  "description": "Query recruiting analytics, shortlists, and sourcing agents.",
+  "categoryOverride": "productivity"
  },
  "klaviyo": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/klaviyo/assets/logo.png",
@@ -2905,7 +2945,8 @@
   ],
   "category": "integrations",
   "displayName": "Klaviyo",
-  "description": "Manage profiles, segments, campaigns, and flows."
+  "description": "Manage profiles, segments, campaigns, and flows.",
+  "categoryOverride": "marketing"
  },
  "knowledge-catalog": {
   "publisher": {
@@ -2980,7 +3021,8 @@
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.leadfeeder.com&sz=128",
   "category": "productivity",
   "displayName": "Leadfeeder",
-  "description": "Turn website visitor signals into pipeline with Leadfeeder: daily visitor briefs, visitor company research, buyer and contact discovery, personalised outreach drafts, and adding companies to your Leadfeeder lists, via the Leadfeeder connector. Requires a Leadfeeder account."
+  "description": "Turn website visitor signals into pipeline with Leadfeeder: daily visitor briefs, visitor company research, buyer and contact discovery, personalised outreach drafts, and adding companies to your Leadfeeder lists, via the Leadfeeder connector. Requires a Leadfeeder account.",
+  "categoryOverride": "sales"
  },
  "learning-output-style": {
   "publisher": {
@@ -2989,7 +3031,8 @@
   },
   "category": "Claude Plugins Official",
   "displayName": "Learning Output Style",
-  "description": "Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style)"
+  "description": "Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style)",
+  "categoryOverride": "development"
  },
  "linear": {
   "logoUrl": "https://raw.githubusercontent.com/youlandinc/plugins/main/plugins/linear/logo.svg",
@@ -3068,7 +3111,8 @@
   },
   "category": "PRODUCTIVITY",
   "displayName": "Lusha",
-  "description": "Prospect, enrich, and build call-ready lead lists using Lusha's B2B intelligence platform — verified phone numbers, company signals, and lookalike targeting."
+  "description": "Prospect, enrich, and build call-ready lead lists using Lusha's B2B intelligence platform — verified phone numbers, company signals, and lookalike targeting.",
+  "categoryOverride": "sales"
  },
  "magicpath": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/2b33d6ddc6d1aa2c.png",
@@ -3094,7 +3138,8 @@
   ],
   "category": "integrations",
   "displayName": "Mailerlite",
-  "description": "Manage subscribers, groups, campaigns, and automations."
+  "description": "Manage subscribers, groups, campaigns, and automations.",
+  "categoryOverride": "marketing"
  },
  "mainframe": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/c9332481fa50268d.png",
@@ -3175,7 +3220,8 @@
   ],
   "category": "integrations",
   "displayName": "Meltwater",
-  "description": "Search media and social mentions and pull analytics."
+  "description": "Search media and social mentions and pull analytics.",
+  "categoryOverride": "marketing"
  },
  "mem": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mem/assets/logo.png",
@@ -3189,7 +3235,8 @@
   ],
   "category": "integrations",
   "displayName": "Mem",
-  "description": "Capture, search, and organize notes and collections."
+  "description": "Capture, search, and organize notes and collections.",
+  "categoryOverride": "productivity"
  },
  "mercadopago": {
   "keywords": [
@@ -3225,7 +3272,8 @@
   ],
   "category": "integrations",
   "displayName": "Mercury",
-  "description": "Read balances, transactions, statements, and cards."
+  "description": "Read balances, transactions, statements, and cards.",
+  "categoryOverride": "finance"
  },
  "merge-agent-handler": {
   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/merge-logo.png",
@@ -3434,7 +3482,8 @@
   ],
   "category": "PRODUCTIVITY",
   "displayName": "Monday.com",
-  "description": "Seven skills for monday CRM users — first-run setup, morning briefings, forecast dashboards, board diagnosis, bulk data hygiene, workspace setup, and meeting-to-opportunity sync. Each skill publishes a monday artifact (update, doc, or dashboard) so work stays inside monday. Composes the official monday MCP connector; no custom server, no new auth."
+  "description": "Seven skills for monday CRM users — first-run setup, morning briefings, forecast dashboards, board diagnosis, bulk data hygiene, workspace setup, and meeting-to-opportunity sync. Each skill publishes a monday artifact (update, doc, or dashboard) so work stays inside monday. Composes the official monday MCP connector; no custom server, no new auth.",
+  "categoryOverride": "sales"
  },
  "mongodb": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/012c006bcb239314.png",
@@ -3491,7 +3540,8 @@
   ],
   "category": "integrations",
   "displayName": "Navan",
-  "description": "Query expenses, travel bookings, policies, and cards."
+  "description": "Query expenses, travel bookings, policies, and cards.",
+  "categoryOverride": "finance"
  },
  "neon": {
   "keywords": [
@@ -3789,7 +3839,8 @@
   ],
   "category": "integrations",
   "displayName": "Otter",
-  "description": "Search meeting history and pull full transcripts."
+  "description": "Search meeting history and pull full transcripts.",
+  "categoryOverride": "productivity"
  },
  "outlook": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outlook/assets/logo.svg",
@@ -3837,7 +3888,8 @@
   ],
   "category": "integrations",
   "displayName": "Outreach",
-  "description": "Search sequences, prospects, and Kaia meetings."
+  "description": "Search sequences, prospects, and Kaia meetings.",
+  "categoryOverride": "sales"
  },
  "pagerduty": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/2ff7a67570d29c9f.png",
@@ -3867,7 +3919,8 @@
   "logoUrl": "https://www.google.com/s2/favicons?domain=developer.paypal.com&sz=128",
   "category": "development",
   "displayName": "Paypal",
-  "description": "PayPal development plugin for Claude — integrate payments, subscriptions, invoices, disputes, and more using PayPal's APIs and MCP server"
+  "description": "PayPal development plugin for Claude — integrate payments, subscriptions, invoices, disputes, and more using PayPal's APIs and MCP server",
+  "categoryOverride": "payments"
  },
  "pendo-analytics": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/87eab61ff591b059.png",
@@ -4103,7 +4156,8 @@
   ],
   "category": "integrations",
   "displayName": "Profound",
-  "description": "Track AI visibility, sentiment, and citations."
+  "description": "Track AI visibility, sentiment, and citations.",
+  "categoryOverride": "marketing"
  },
  "project-artifact": {
   "publisher": {
@@ -4266,7 +4320,8 @@
   ],
   "category": "integrations",
   "displayName": "Readwise",
-  "description": "Search highlights and Reader documents, save articles."
+  "description": "Search highlights and Reader documents, save articles.",
+  "categoryOverride": "productivity"
  },
  "receipts": {
   "category": "productivity",
@@ -4388,7 +4443,8 @@
   ],
   "category": "integrations",
   "displayName": "Robinhood",
-  "description": "View portfolios, positions, orders, watchlists, and market data, and trade in a Robinhood Agentic account."
+  "description": "View portfolios, positions, orders, watchlists, and market data, and trade in a Robinhood Agentic account.",
+  "categoryOverride": "finance"
  },
  "roboflow": {
   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/roboflow.png",
@@ -4485,7 +4541,8 @@
   ],
   "category": "integrations",
   "displayName": "Salesforce",
-  "description": "Query, create, and update records in your org."
+  "description": "Query, create, and update records in your org.",
+  "categoryOverride": "sales"
  },
  "salesforce-development": {
   "keywords": [
@@ -4615,7 +4672,8 @@
   ],
   "category": "integrations",
   "displayName": "Semrush",
-  "description": "Research keywords, backlinks, traffic, and competitors."
+  "description": "Research keywords, backlinks, traffic, and competitors.",
+  "categoryOverride": "marketing"
  },
  "sentry": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/962f590f01fc533a.png",
@@ -4779,7 +4837,8 @@
   ],
   "category": "integrations",
   "displayName": "Similarweb",
-  "description": "Analyze website traffic, audiences, and competitors."
+  "description": "Analyze website traffic, audiences, and competitors.",
+  "categoryOverride": "marketing"
  },
  "sinch-cursor-plugin": {
   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/sinch-logo.png",
@@ -4826,7 +4885,8 @@
   ],
   "category": "integrations",
   "displayName": "Smartsheet",
-  "description": "Query and update sheets, rows, and workspaces."
+  "description": "Query and update sheets, rows, and workspaces.",
+  "categoryOverride": "productivity"
  },
  "snowflake-cortex-code": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.snowflake.com&sz=128",
@@ -4887,7 +4947,8 @@
   ],
   "category": "integrations",
   "displayName": "Sp Global",
-  "description": "Query S&P Capital IQ financials, prices, and transcripts."
+  "description": "Query S&P Capital IQ financials, prices, and transcripts.",
+  "categoryOverride": "finance"
  },
  "spanner": {
   "publisher": {
@@ -4906,7 +4967,8 @@
  "spotify-ads-api": {
   "category": "PRODUCTIVITY",
   "displayName": "Spotify Ads Api",
-  "description": "Manage Spotify ad campaigns with natural language. Create campaigns, ad sets, ads, pull reports, and handle OAuth — all through conversation."
+  "description": "Manage Spotify ad campaigns with natural language. Create campaigns, ad sets, ads, pull reports, and handle OAuth — all through conversation.",
+  "categoryOverride": "marketing"
  },
  "spottercode": {
   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/thoughtspot-logo.png",
@@ -4965,7 +5027,8 @@
   ],
   "category": "integrations",
   "displayName": "Statsig",
-  "description": "Inspect and manage feature gates, experiments, dynamic configs, and metrics."
+  "description": "Inspect and manage feature gates, experiments, dynamic configs, and metrics.",
+  "categoryOverride": "development"
  },
  "streaming-skills-plugin": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.confluent.io&sz=128",
@@ -4990,7 +5053,8 @@
   ],
   "category": "PAYMENTS",
   "displayName": "Stripe",
-  "description": "Stripe plugin for Corepass to help with Stripe integrations including best practices, API/SDK upgrade guidance, and the Stripe MCP server."
+  "description": "Stripe plugin for Corepass to help with Stripe integrations including best practices, API/SDK upgrade guidance, and the Stripe MCP server.",
+  "categoryOverride": "payments"
  },
  "subtext": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/0075fceeb4120f20.png",
@@ -5007,7 +5071,8 @@
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.sumup.com&sz=128",
   "category": "development",
   "displayName": "Sumup",
-  "description": "SumUp payment integrations across terminal and online checkout flows. Build Android and iOS POS apps with SumUp card readers, online checkout with server SDKs and the checkout widget, and control card readers remotely via Cloud API."
+  "description": "SumUp payment integrations across terminal and online checkout flows. Build Android and iOS POS apps with SumUp card readers, online checkout with server SDKs and the checkout widget, and control card readers remotely via Cloud API.",
+  "categoryOverride": "payments"
  },
  "superdesign": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=superdesign.dev&sz=128",
@@ -5062,7 +5127,8 @@
   ],
   "category": "automation",
   "displayName": "Synthflow",
-  "description": "Connects Claude Code to the Synthflow AI voice-agent platform through its hosted MCP server, with skills for reviewing calls and auditing agent prompts, plus a docs-search connector."
+  "description": "Connects Claude Code to the Synthflow AI voice-agent platform through its hosted MCP server, with skills for reviewing calls and auditing agent prompts, plus a docs-search connector.",
+  "categoryOverride": "automation"
  },
  "tabnine": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/b1a35c718e41c46b.png",
@@ -5188,7 +5254,8 @@
   ],
   "category": "integrations",
   "displayName": "Todoist",
-  "description": "Create, find, and complete tasks and projects."
+  "description": "Create, find, and complete tasks and projects.",
+  "categoryOverride": "productivity"
  },
  "togetherai-skills": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.together.ai&sz=128",
@@ -5236,7 +5303,8 @@
   ],
   "category": "integrations",
   "displayName": "Typeform",
-  "description": "Build forms, analyze responses, and manage contacts."
+  "description": "Build forms, analyze responses, and manage contacts.",
+  "categoryOverride": "productivity"
  },
  "typescript-lsp": {
   "publisher": {
@@ -5331,7 +5399,8 @@
   ],
   "category": "integrations",
   "displayName": "Upwork",
-  "description": "Search talent, post jobs, and manage contracts."
+  "description": "Search talent, post jobs, and manage contracts.",
+  "categoryOverride": "productivity"
  },
  "valtown": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=val.town&sz=128",
@@ -5381,7 +5450,8 @@
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.vibeprospecting.ai&sz=128",
   "category": "productivity",
   "displayName": "Vibe Prospecting",
-  "description": "Vibe Prospecting connects Claude to live B2B company and contact data so users can search, match, enrich, filter, and export prospects at scale. It turns natural-language requests into structured GTM workflows for lead generation, CRM enrichment, company research, executive discovery, and multi-step prospecting automation inside Claude Cowork and Claude Code."
+  "description": "Vibe Prospecting connects Claude to live B2B company and contact data so users can search, match, enrich, filter, and export prospects at scale. It turns natural-language requests into structured GTM workflows for lead generation, CRM enrichment, company research, executive discovery, and multi-step prospecting automation inside Claude Cowork and Claude Code.",
+  "categoryOverride": "sales"
  },
  "vsql-extension-builder": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=villagesql.com&sz=128",
@@ -5440,7 +5510,8 @@
   ],
   "category": "integrations",
   "displayName": "Webull",
-  "description": "View accounts, positions, orders, watchlists, and market data."
+  "description": "View accounts, positions, orders, watchlists, and market data.",
+  "categoryOverride": "finance"
  },
  "windsor-ai": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=windsor.ai&sz=128",
@@ -5450,12 +5521,14 @@
   },
   "category": "PRODUCTIVITY",
   "displayName": "Windsor Ai",
-  "description": "Connect Claude Code to 325+ business data sources via Windsor.ai. Query marketing, sales, CRM, ecommerce, finance, and analytics data from Google Ads, Meta, HubSpot, Salesforce, Shopify, Stripe, and hundreds more — directly from your terminal."
+  "description": "Connect Claude Code to 325+ business data sources via Windsor.ai. Query marketing, sales, CRM, ecommerce, finance, and analytics data from Google Ads, Meta, HubSpot, Salesforce, Shopify, Stripe, and hundreds more — directly from your terminal.",
+  "categoryOverride": "marketing"
  },
  "wingspan": {
   "category": "productivity",
   "displayName": "Wingspan",
-  "description": "Ask Claude about the contractors you pay through Wingspan, what you owe them, and what is holding up a payment, then onboard contractors and log payments as drafts, with a preview before anything is written. Requires a Wingspan account; bundles the Wingspan MCP server (OAuth on first use)."
+  "description": "Ask Claude about the contractors you pay through Wingspan, what you owe them, and what is holding up a payment, then onboard contractors and log payments as drafts, with a preview before anything is written. Requires a Wingspan account; bundles the Wingspan MCP server (OAuth on first use).",
+  "categoryOverride": "finance"
  },
  "wix": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/ceaca98b6e180138.png",
@@ -5490,7 +5563,8 @@
   ],
   "category": "integrations",
   "displayName": "Workable",
-  "description": "Search candidates, move pipelines, and manage HR records."
+  "description": "Search candidates, move pipelines, and manage HR records.",
+  "categoryOverride": "productivity"
  },
  "workos": {
   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/workos-logo.png",
@@ -5516,7 +5590,8 @@
   ],
   "category": "integrations",
   "displayName": "Wrike",
-  "description": "Search projects, create tasks, and post comments."
+  "description": "Search projects, create tasks, and post comments.",
+  "categoryOverride": "productivity"
  },
  "x": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/x/assets/logo.svg",
@@ -5535,7 +5610,8 @@
   ],
   "category": "integrations",
   "displayName": "X",
-  "description": "Search posts, read timelines, pull trends, manage bookmarks, and access X Chat."
+  "description": "Search posts, read timelines, pull trends, manage bookmarks, and access X Chat.",
+  "categoryOverride": "marketing"
  },
  "x-ads": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/x-ads/assets/logo.png",
@@ -5551,7 +5627,8 @@
   ],
   "category": "integrations",
   "displayName": "X Ads",
-  "description": "Manage ad campaigns, create ads, track conversions, and pull performance stats."
+  "description": "Manage ad campaigns, create ads, track conversions, and pull performance stats.",
+  "categoryOverride": "marketing"
  },
  "x-money": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/x-money/assets/logo.png",
@@ -5571,7 +5648,8 @@
   ],
   "category": "integrations",
   "displayName": "X Money",
-  "description": "Use your X Money Card, send money to users on X, manage your finances, view your balance and browse through your transaction history."
+  "description": "Use your X Money Card, send money to users on X, manage your finances, view your balance and browse through your transaction history.",
+  "categoryOverride": "finance"
  },
  "xero": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/xero/assets/logo.png",
@@ -5586,7 +5664,8 @@
   ],
   "category": "integrations",
   "displayName": "Xero",
-  "description": "Read and write invoices, contacts, reports, and payroll."
+  "description": "Read and write invoices, contacts, reports, and payroll.",
+  "categoryOverride": "finance"
  },
  "youdotcom-agent-skills": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=you.com&sz=128",
@@ -5653,7 +5732,8 @@
  "zocks-advisor": {
   "category": "productivity",
   "displayName": "Zocks Advisor",
-  "description": "Seven skills for financial advisors built on Zocks meeting intelligence: client behavioral profiles, attrition-risk ranking, held-away asset radar, client journey dossiers, household review packs, next-best-action analysis and a tax opportunity scan. Requires the Zocks connector and a Zocks account."
+  "description": "Seven skills for financial advisors built on Zocks meeting intelligence: client behavioral profiles, attrition-risk ranking, held-away asset radar, client journey dossiers, household review packs, next-best-action analysis and a tax opportunity scan. Requires the Zocks connector and a Zocks account.",
+  "categoryOverride": "finance"
  },
  "zoom": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/zoom/assets/logo.png",
@@ -5667,7 +5747,8 @@
   ],
   "category": "integrations",
   "displayName": "Zoom",
-  "description": "Search meetings, pull transcripts, and work with Zoom Docs."
+  "description": "Search meetings, pull transcripts, and work with Zoom Docs.",
+  "categoryOverride": "productivity"
  },
  "zoom-plugin": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=developers.zoom.us&sz=128",
@@ -5684,7 +5765,8 @@
   },
   "category": "DATA_ANALYTICS",
   "displayName": "Zoominfo",
-  "description": "Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows."
+  "description": "Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows.",
+  "categoryOverride": "sales"
  },
  "zscaler": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/2ffde5b126a13a4d.png",
@@ -5706,12 +5788,25 @@
   },
   "displayName": "Zyte Web Data",
   "description": "Web scraping skills for Claude Code powered by the Zyte API — scrape sites, generate and run Scrapy spiders, define extraction schemas, and ship to Scrapy Cloud.",
-  "category": "AUTOMATION"
+  "category": "AUTOMATION",
+  "categoryOverride": "data-analytics"
  },
  "aikido": {
   "category": "security"
  },
  "prisma": {
   "category": "database"
+ },
+ "amazon-selling-partner": {
+  "categoryOverride": "sales"
+ },
+ "netsuite-finance-analyst": {
+  "categoryOverride": "finance"
+ },
+ "bigdata-com": {
+  "categoryOverride": "finance"
+ },
+ "browser-use": {
+  "categoryOverride": "automation"
  }
 }

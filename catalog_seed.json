@@ -571,7 +571,7 @@
    "author": {
     "name": "Airwallex"
    },
-   "category": "productivity",
+   "category": "finance",
    "description": "Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities.",
    "displayName": "Airwallex",
    "homepage": "https://www.airwallex.com/docs",
@@ -642,7 +642,7 @@
    "author": {
     "name": "Airwallex"
    },
-   "category": "development",
+   "category": "payments",
    "description": "Build Airwallex payment integrations in your own codebase. Generates the checkout, card-element, onboarding, and subscription-billing code for an Airwallex integration and wires it into your project: Hosted Payment Page, Drop-in and Split Card elements, connected-account KYC onboarding, and Billing Hosted Checkout for subscriptions and card-saving. Also plans card-on-file merchant-initiated flows for AI providers such as top-ups and auto-recharge.",
    "displayName": "Airwallex Dev",
    "homepage": "https://www.airwallex.com/docs",
@@ -1243,7 +1243,7 @@
    "author": {
     "name": "Apollo.io"
    },
-   "category": "productivity",
+   "category": "sales",
    "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io \u2014 one-click MCP server integration for Claude Code and Cowork.",
    "displayName": "Apollo",
    "homepage": "https://www.apollo.io/",
@@ -1757,7 +1757,7 @@
    "strict": null
   },
   {
-   "category": "agent-orchestration",
+   "category": "data-analytics",
    "description": "Atlan data catalog plugin for Claude Code. Search, explore, govern, and manage your data assets through natural language. Powered by the Atlan MCP server with semantic search, lineage traversal, glossary management, data quality rules, and more.",
    "displayName": "Atlan",
    "homepage": "https://docs.atlan.com/",
@@ -3550,7 +3550,7 @@
    "author": {
     "name": "RavenPack"
    },
-   "category": "database",
+   "category": "finance",
    "description": "Official Bigdata.com plugin providing financial research, analytics, and intelligence tools powered by Bigdata MCP.",
    "displayName": "Bigdata Com",
    "homepage": "https://docs.bigdata.com",
@@ -3863,7 +3863,7 @@
    "author": {
     "name": "BlackRock Advisor Center"
    },
-   "category": "productivity",
+   "category": "finance",
    "description": "BlackRock Advisor Center 360\u00b0 skills for financial advisors: portfolio review, opportunity and fund-health checks, guided benchmark selection, guided portfolio building, wealth projections, and routing to Advisor Center web workflows. Requires the BlackRock Advisor Center connector and an Advisor Center account.",
    "displayName": "Blackrock Advisor Center Plugin",
    "homepage": "https://github.com/blackrock/advisor-center-agent-skills",
@@ -4527,7 +4527,7 @@
    "author": {
     "name": "Carta Engineering"
    },
-   "category": "productivity",
+   "category": "sales",
    "description": "Manage the Carta CRM conversationally \u2014 search, add, update, and enrich investors, companies, contacts, deals, notes, and fundraisings via the Carta CRM MCP Server.",
    "displayName": "Carta Crm",
    "homepage": "https://carta.com",
@@ -5287,7 +5287,7 @@
    "author": {
     "name": "Circle"
    },
-   "category": "development",
+   "category": "payments",
    "description": "Ship stablecoin apps faster. Best-practice skills for USDC payments, cross-chain transfers, wallets, and smart contracts \u2014 plus Circle's MCP server for real-time SDK and documentation guidance.",
    "displayName": "Circle Skills",
    "homepage": "https://www.circle.com",
@@ -5718,7 +5718,7 @@
    "author": {
     "name": "Clay"
    },
-   "category": "productivity",
+   "category": "sales",
    "description": "Work with Clay from Claude Code: set up and sign in to the clay CLI, query and analyze Clay tables, search Clay's GTM database for people and companies, manage audiences, signals, routines and workflows, and draft and review Sequencer campaigns. Includes hooks that auto-approve the plugin's own clay CLI calls and Clay skills; requires a Clay account.",
    "displayName": "Clay",
    "homepage": "https://github.com/clay-run/agent-plugins/tree/main/clay",
@@ -9867,7 +9867,7 @@
     "ref": "main",
     "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
    },
-   "category": "learning",
+   "category": "development",
    "strict": null,
    "license": "Apache-2.0",
    "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/explanatory-output-style",
@@ -11184,7 +11184,7 @@
    "author": {
     "name": "GrowthBook"
    },
-   "category": "testing",
+   "category": "development",
    "description": "A suite of agent skills for the full GrowthBook feature flag and experimentation lifecycle.",
    "displayName": "Growthbook",
    "homepage": "https://growthbook.io",
@@ -12277,7 +12277,7 @@
    "author": {
     "name": "Intuit QuickBooks"
    },
-   "category": "productivity",
+   "category": "finance",
    "description": "QuickBooks business insights and actions: financial health briefings across P&L, cash flow, balance sheet and A/R, industry benchmarking, payroll cost analysis, overdue-invoice reminders, estimate/invoice drafting from email, payroll onboarding and base-pay changes (with confirmation), and QuickBooks Capital lending guidance. Requires the Intuit QuickBooks connector.",
    "displayName": "Intuit Quickbooks",
    "homepage": "https://github.com/intuit/quickbooks-claude-plugin",
@@ -12635,7 +12635,7 @@
    "author": {
     "name": "Leadfeeder"
    },
-   "category": "productivity",
+   "category": "sales",
    "description": "Turn website visitor signals into pipeline with Leadfeeder: daily visitor briefs, visitor company research, buyer and contact discovery, personalised outreach drafts, and adding companies to your Leadfeeder lists, via the Leadfeeder connector. Requires a Leadfeeder account.",
    "displayName": "Leadfeeder",
    "homepage": "https://www.leadfeeder.com",
@@ -12746,7 +12746,7 @@
     "ref": "main",
     "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
    },
-   "category": "learning",
+   "category": "development",
    "strict": null,
    "license": "Apache-2.0",
    "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/learning-output-style",
@@ -13237,7 +13237,7 @@
    "author": {
     "name": "Lusha"
    },
-   "category": "productivity",
+   "category": "sales",
    "description": "Prospect, enrich, and build call-ready lead lists using Lusha's B2B intelligence platform \u2014 verified phone numbers, company signals, and lookalike targeting.",
    "displayName": "Lusha",
    "homepage": "https://www.lusha.com",
@@ -14248,7 +14248,7 @@
    "author": {
     "name": "monday.com"
    },
-   "category": "productivity",
+   "category": "sales",
    "description": "Run your monday CRM in plain language. Build a pipeline from scratch, start the day with a ranked deal briefing, spin up a forecast dashboard, audit board health, clean up messy data in bulk, and turn meeting notes into deal updates. Every skill writes back into monday as a real update, doc, or dashboard. Built on the official monday MCP connector.",
    "displayName": "Monday Crm",
    "homepage": "https://monday.com",
@@ -14703,7 +14703,7 @@
    "author": {
     "name": "Oracle NetSuite"
    },
-   "category": "productivity",
+   "category": "finance",
    "description": "Director-level finance analysis on live NetSuite data: financial reporting, period close, variance, aging and reconciliation reviews, cash reporting, and board-ready narratives with next actions. Requires the NetSuite AI Connector Service.",
    "displayName": "Netsuite Finance Analyst",
    "homepage": "https://github.com/oracle/netsuite-suitecloud-sdk/tree/ai-plugins-dist/anthropic/netsuite-finance-analyst",
@@ -16244,7 +16244,7 @@
    "author": {
     "name": "PayPal"
    },
-   "category": "development",
+   "category": "payments",
    "commands": [
     {
      "description": "Diagnose PayPal integration issues by scanning your codebase, environment, and API usage patterns \u2014 then offer targeted fixes",
@@ -22276,7 +22276,7 @@
      "path": "agents/spotify-ads-request-builder.md"
     }
    ],
-   "category": "productivity",
+   "category": "marketing",
    "description": "Manage Spotify ad campaigns with natural language. Create campaigns, ad sets, ads, pull reports, and handle OAuth \u2014 all through conversation.",
    "displayName": "Spotify Ads Api",
    "homepage": "https://github.com/spotify/ads-claude-plugin",
@@ -22590,7 +22590,7 @@
      "path": "agents/company-researcher.md"
     }
    ],
-   "category": "development",
+   "category": "payments",
    "commands": [
     {
      "description": "Explain Stripe error codes and provide solutions with code examples",
@@ -22717,7 +22717,7 @@
    }
   },
   {
-   "category": "development",
+   "category": "payments",
    "description": "SumUp payment integrations across terminal and online checkout flows. Build Android and iOS POS apps with SumUp card readers, online checkout with server SDKs and the checkout widget, and control card readers remotely via Cloud API.",
    "displayName": "Sumup",
    "homepage": "https://www.sumup.com/",
@@ -24527,7 +24527,7 @@
    "author": {
     "name": "vibeprospecting.ai"
    },
-   "category": "productivity",
+   "category": "sales",
    "commands": [
     {
      "description": "Skip sample-first mode for this request \u2014 fetch/enrich at full scale without a 5-entity preview",
@@ -24619,7 +24619,7 @@
    "author": {
     "name": "Windsor.ai"
    },
-   "category": "productivity",
+   "category": "marketing",
    "commands": [
     {
      "description": "Generate a quick campaign performance report from any connected data source",
@@ -25122,7 +25122,7 @@
    "author": {
     "name": "Zocks"
    },
-   "category": "productivity",
+   "category": "finance",
    "description": "Seven skills for financial advisors built on Zocks meeting intelligence: client behavioral profiles, attrition-risk ranking, held-away asset radar, client journey dossiers, household review packs, next-best-action analysis and a tax opportunity scan. Requires the Zocks connector and a Zocks account.",
    "displayName": "Zocks Advisor",
    "homepage": "https://github.com/zocks-communications/zocks-agent-plugins",
@@ -25417,7 +25417,7 @@
    "author": {
     "name": "ZoomInfo"
    },
-   "category": "productivity",
+   "category": "sales",
    "description": "Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows.",
    "displayName": "Zoominfo",
    "homepage": "https://www.zoominfo.com",
@@ -25909,7 +25909,7 @@
    "author": {
     "name": "Zyte"
    },
-   "category": "automation",
+   "category": "data-analytics",
    "description": "Web scraping skills for Claude Code powered by the Zyte API \u2014 scrape sites, generate and run Scrapy spiders, define extraction schemas, and ship to Scrapy Cloud.",
    "displayName": "Zyte Web Data",
    "homepage": "https://www.zyte.com",
@@ -25980,7 +25980,7 @@
    "author": {
     "name": "ActiveCampaign"
    },
-   "category": "productivity",
+   "category": "marketing",
    "commands": [
     {
      "description": "Analyze contact list health, engagement levels, and data quality with cleanup recommendations.",
@@ -26090,7 +26090,7 @@
    "author": {
     "name": "HubSpot"
    },
-   "category": "productivity",
+   "category": "sales",
    "description": "Run your HubSpot sales workflow directly from Claude. Adds skills that cover the full sales day: import contacts and deals into HubSpot, get a prioritised morning brief, prep for any call with full CRM context, draft personalised follow-ups grounded in deal history, log calls and update records by describing what happened, and review your pipeline to surface stalling deals. Everything writes back to HubSpot.",
    "displayName": "HubSpot Sales",
    "homepage": "https://www.hubspot.com",
@@ -26380,7 +26380,7 @@
    "author": {
     "name": "Wingspan"
    },
-   "category": "productivity",
+   "category": "finance",
    "description": "Ask Claude about the contractors you pay through Wingspan, what you owe them, and what is holding up a payment, then onboard contractors and log payments as drafts, with a preview before anything is written. Requires a Wingspan account; bundles the Wingspan MCP server (OAuth on first use).",
    "displayName": "Wingspan",
    "homepage": "https://github.com/wingspanHQ/mcp-claude-plugin",
@@ -26460,7 +26460,7 @@
    "author": {
     "name": "Amazon"
    },
-   "category": "productivity",
+   "category": "sales",
    "commands": [
     {
      "description": "Find your suppressed/inactive listings and fix them (with your approval)",
@@ -27759,7 +27759,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -27806,7 +27806,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -27853,7 +27853,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -27885,7 +27885,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -27933,7 +27933,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -27980,7 +27980,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28028,7 +28028,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28075,7 +28075,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28107,7 +28107,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28140,7 +28140,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28172,7 +28172,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28204,7 +28204,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28236,7 +28236,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28268,7 +28268,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28300,7 +28300,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28332,7 +28332,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28373,7 +28373,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28404,7 +28404,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28434,7 +28434,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28466,7 +28466,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28498,7 +28498,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28529,7 +28529,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28561,7 +28561,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28593,7 +28593,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28625,7 +28625,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28656,7 +28656,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28687,7 +28687,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28718,7 +28718,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28758,7 +28758,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28798,7 +28798,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28829,7 +28829,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28860,7 +28860,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28891,7 +28891,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28922,7 +28922,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28953,7 +28953,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -28984,7 +28984,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29015,7 +29015,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29046,7 +29046,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29086,7 +29086,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29286,7 +29286,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29319,7 +29319,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29352,7 +29352,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29385,7 +29385,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29418,7 +29418,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29451,7 +29451,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29484,7 +29484,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29517,7 +29517,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29550,7 +29550,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29583,7 +29583,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "design",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29616,7 +29616,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "database",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29649,7 +29649,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29682,7 +29682,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29717,7 +29717,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29750,7 +29750,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29785,7 +29785,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -29827,7 +29827,7 @@
     "url": "https://github.com/corepasshq/plugins",
     "path": "plugins/sfranalytics",
     "ref": null,
-    "sha": "ff382e3e9167a3a78123163b8d946d85fe9a8b2f"
+    "sha": "7f7e48ee9dbee5ae55aae520797955bb5c0ee1ae"
    },
    "license": "proprietary",
    "category": "data-analytics",
@@ -29852,7 +29852,7 @@
     "url": "https://github.com/corepasshq/plugins",
     "path": "plugins/wavus",
     "ref": null,
-    "sha": "ff382e3e9167a3a78123163b8d946d85fe9a8b2f"
+    "sha": "7f7e48ee9dbee5ae55aae520797955bb5c0ee1ae"
    },
    "license": "proprietary",
    "category": "data-analytics",
@@ -29877,7 +29877,7 @@
     "url": "https://github.com/corepasshq/plugins",
     "path": "plugins/kanban",
     "ref": null,
-    "sha": "ff382e3e9167a3a78123163b8d946d85fe9a8b2f"
+    "sha": "7f7e48ee9dbee5ae55aae520797955bb5c0ee1ae"
    },
    "license": "proprietary",
    "category": "productivity",

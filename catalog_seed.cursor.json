@@ -1250,7 +1250,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1297,7 +1297,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1344,7 +1344,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": null,
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1375,7 +1375,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": null,
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1416,7 +1416,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1448,7 +1448,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1496,7 +1496,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1528,7 +1528,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1575,7 +1575,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1623,7 +1623,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1655,7 +1655,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": null,
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1686,7 +1686,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1733,7 +1733,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1765,7 +1765,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1798,7 +1798,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1830,7 +1830,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1862,7 +1862,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1894,7 +1894,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1926,7 +1926,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1958,7 +1958,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1990,7 +1990,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2031,7 +2031,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2062,7 +2062,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2092,7 +2092,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2124,7 +2124,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2156,7 +2156,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2187,7 +2187,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2219,7 +2219,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2251,7 +2251,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2283,7 +2283,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2314,7 +2314,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2345,7 +2345,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2376,7 +2376,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2416,7 +2416,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2456,7 +2456,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2487,7 +2487,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2518,7 +2518,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2549,7 +2549,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2580,7 +2580,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2611,7 +2611,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2642,7 +2642,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2673,7 +2673,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2704,7 +2704,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2744,7 +2744,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2944,7 +2944,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -2977,7 +2977,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3010,7 +3010,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3043,7 +3043,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3091,7 +3091,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3124,7 +3124,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3157,7 +3157,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3190,7 +3190,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3223,7 +3223,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3256,7 +3256,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3289,7 +3289,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "design",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3322,7 +3322,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "database",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3355,7 +3355,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3388,7 +3388,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3423,7 +3423,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3456,7 +3456,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3491,7 +3491,7 @@
     "ref": "main",
     "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
    },
-   "category": "automation",
+   "category": "finance",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
