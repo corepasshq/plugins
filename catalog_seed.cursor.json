@@ -1065,7 +1065,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "gmail"
+     "name": "gmail",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/gmail",
@@ -1096,7 +1097,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "google-drive"
+     "name": "google-drive",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-drive",
@@ -1128,7 +1130,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "google-calendar"
+     "name": "google-calendar",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-calendar",
@@ -1160,7 +1163,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "google-docs"
+     "name": "google-docs",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-docs",
@@ -1199,7 +1203,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "google-sheets"
+     "name": "google-sheets",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-sheets",
@@ -1238,7 +1243,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "google-slides"
+     "name": "google-slides",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-slides",
@@ -1277,7 +1283,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "gong"
+     "name": "gong",
+     "path": "mcp.json"
     }
    ],
    "userConfig": {
@@ -1325,7 +1332,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "salesforce"
+     "name": "salesforce",
+     "path": "mcp.json"
     }
    ],
    "userConfig": {
@@ -1373,7 +1381,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "playwright"
+     "name": "playwright",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/microsoft/playwright-mcp",
@@ -1405,7 +1414,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "github"
+     "name": "github",
+     "path": "mcp.json"
     }
    ],
    "userConfig": {
@@ -1447,7 +1457,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "ashby"
+     "name": "ashby",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.ashbyhq.com/ashby-mcp-server-beta",
@@ -1480,7 +1491,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "hubspot"
+     "name": "hubspot",
+     "path": "mcp.json"
     }
    ],
    "userConfig": {
@@ -1529,7 +1541,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "intercom"
+     "name": "intercom",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developers.intercom.com/docs/guides/mcp",
@@ -1562,7 +1575,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "zoom"
+     "name": "zoom",
+     "path": "mcp.json"
     }
    ],
    "userConfig": {
@@ -1610,7 +1624,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "x"
+     "name": "x",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.x.com/tools/mcp",
@@ -1659,7 +1674,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "clay"
+     "name": "clay",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://university.clay.com/docs/connect-to-clay-mcp",
@@ -1692,7 +1708,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "circleback"
+     "name": "circleback",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://support.circleback.ai/en/articles/13249081-circleback-mcp",
@@ -1724,7 +1741,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "docusign"
+     "name": "docusign",
+     "path": "mcp.json"
     }
    ],
    "userConfig": {
@@ -1772,7 +1790,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "navan"
+     "name": "navan",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developer.navan.com/mcp/",
@@ -1805,7 +1824,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "profound"
+     "name": "profound",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.tryprofound.com/mcp/overview",
@@ -1839,7 +1859,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "juicebox"
+     "name": "juicebox",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.juicebox.ai/juicebox-mcp",
@@ -1872,7 +1893,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "outreach"
+     "name": "outreach",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developers.outreach.io/mcp-server",
@@ -1905,7 +1927,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "amplemarket"
+     "name": "amplemarket",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://knowledge.amplemarket.com/articles/8022685319-connecting-to-the-amplemarket-mcp-server",
@@ -1938,7 +1961,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "klaviyo"
+     "name": "klaviyo",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
@@ -1971,7 +1995,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "customer-io"
+     "name": "customer-io",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.customer.io/ai/mcp/",
@@ -2004,7 +2029,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "mailerlite"
+     "name": "mailerlite",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developers.mailerlite.com/mcp",
@@ -2037,7 +2063,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "brevo"
+     "name": "brevo",
+     "path": "mcp.json"
     }
    ],
    "userConfig": {
@@ -2079,7 +2106,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "typeform"
+     "name": "typeform",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developers.typeform.com/developers/get-started/mcp/",
@@ -2111,7 +2139,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "jotform"
+     "name": "jotform",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://www.jotform.com/mcp/",
@@ -2142,7 +2171,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "semrush"
+     "name": "semrush",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developer.semrush.com/api/v4/introduction/semrush-mcp/",
@@ -2175,7 +2205,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "ahrefs"
+     "name": "ahrefs",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://ahrefs.com/mcp",
@@ -2208,7 +2239,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "godaddy"
+     "name": "godaddy",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developer.godaddy.com/en/docs/api-users/mcp",
@@ -2240,7 +2272,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "upwork"
+     "name": "upwork",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://www.upwork.com/ai/mcp",
@@ -2273,7 +2306,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "workable"
+     "name": "workable",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://workable.readme.io/reference/workable-mcp-server",
@@ -2306,7 +2340,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "brex"
+     "name": "brex",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developer.brex.com/docs/mcp",
@@ -2339,7 +2374,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "mercury"
+     "name": "mercury",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.mercury.com/docs/what-is-mercury-mcp",
@@ -2371,7 +2407,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "todoist"
+     "name": "todoist",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/Doist/todoist-mcp",
@@ -2403,7 +2440,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "calendly"
+     "name": "calendly",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developer.calendly.com/calendly-mcp-server",
@@ -2435,7 +2473,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "smartsheet"
+     "name": "smartsheet",
+     "path": "mcp.json"
     }
    ],
    "userConfig": {
@@ -2476,7 +2515,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "wrike"
+     "name": "wrike",
+     "path": "mcp.json"
     }
    ],
    "userConfig": {
@@ -2517,7 +2557,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "coda"
+     "name": "coda",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://help.superhuman.com/hc/en-us/articles/46210076980365-Connect-to-the-Coda-MCP",
@@ -2549,7 +2590,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "guru"
+     "name": "guru",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developer.getguru.com/docs/guru-mcp-server-overview",
@@ -2581,7 +2623,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "fireflies"
+     "name": "fireflies",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.fireflies.ai/getting-started/mcp-configuration",
@@ -2613,7 +2656,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "otter"
+     "name": "otter",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
@@ -2645,7 +2689,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "fathom"
+     "name": "fathom",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developers.fathom.ai/mcp-docs",
@@ -2677,7 +2722,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "craft"
+     "name": "craft",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://www.craft.do/imagine/guide/mcp",
@@ -2709,7 +2755,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "mem"
+     "name": "mem",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.mem.ai/mcp/overview",
@@ -2741,7 +2788,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "readwise"
+     "name": "readwise",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.readwise.io/tools/mcp",
@@ -2773,7 +2821,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "similarweb"
+     "name": "similarweb",
+     "path": "mcp.json"
     }
    ],
    "userConfig": {
@@ -2814,7 +2863,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "xero"
+     "name": "xero",
+     "path": "mcp.json"
     }
    ],
    "userConfig": {
@@ -2863,7 +2913,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "outlook"
+     "name": "outlook",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/outlook",
@@ -2894,7 +2945,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "outlook-calendar"
+     "name": "outlook-calendar",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/outlook-calendar",
@@ -2926,7 +2978,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "onedrive"
+     "name": "onedrive",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/onedrive",
@@ -2957,7 +3010,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "sharepoint"
+     "name": "sharepoint",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/sharepoint",
@@ -2989,7 +3043,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "teams"
+     "name": "teams",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/teams",
@@ -3020,7 +3075,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "finance"
+     "name": "finance",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://grok.com/connectors",
@@ -3054,7 +3110,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "x-ads"
+     "name": "x-ads",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.x.com/x-ads-api/introduction",
@@ -3088,7 +3145,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "attio"
+     "name": "attio",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.attio.com/mcp/overview",
@@ -3122,7 +3180,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "hunter"
+     "name": "hunter",
+     "path": "mcp.json"
     }
    ],
    "userConfig": {
@@ -3171,7 +3230,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "gamma"
+     "name": "gamma",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developers.gamma.app/mcp/gamma-mcp-server.md",
@@ -3205,7 +3265,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "webull"
+     "name": "webull",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developer.webull.com/apis/docs/AI-friendly-Resources/mcp/",
@@ -3239,7 +3300,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "sp-global"
+     "name": "sp-global",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.kensho.com/llmreadyapi/overview",
@@ -3273,7 +3335,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "interactive-brokers"
+     "name": "interactive-brokers",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://www.interactivebrokers.com/en/trading/ai-integrations.php",
@@ -3307,7 +3370,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "meltwater"
+     "name": "meltwater",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://developer.meltwater.com/guides/meltwater-mcp/overview",
@@ -3341,7 +3405,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "daloopa"
+     "name": "daloopa",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.daloopa.com/docs/daloopa-mcp",
@@ -3375,7 +3440,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "excalidraw"
+     "name": "excalidraw",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://github.com/excalidraw/excalidraw-mcp",
@@ -3409,7 +3475,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "google-cloud-bigquery"
+     "name": "google-cloud-bigquery",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp",
@@ -3443,7 +3510,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "statsig"
+     "name": "statsig",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.statsig.com/integrations/mcp/cursor",
@@ -3477,7 +3545,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "robinhood"
+     "name": "robinhood",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://robinhood.com/us/en/support/articles/agentic-trading-overview/",
@@ -3513,7 +3582,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "coinbase"
+     "name": "coinbase",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
@@ -3547,7 +3617,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "etoro-trading"
+     "name": "etoro-trading",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://api-portal.etoro.com/core/vibe-code/cursor",
@@ -3583,7 +3654,8 @@
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
-     "name": "x-money"
+     "name": "x-money",
+     "path": "mcp.json"
     }
    ],
    "homepage": "https://x.com/i/money",

@@ -12,5 +12,15 @@
  "cursor-team-kit": {"kind": "cursor-only", "reason": "Cursor's internal engineering workflows (control-cli, their CI)."},
  "docs-canvas": {"kind": "cursor-only", "reason": "Renders documentation into Cursor's canvas surface."},
  "pr-review-canvas": {"kind": "cursor-only", "reason": "Renders PR diffs into Cursor's canvas surface."},
- "continual-learning": {"kind": "cursor-only", "reason": "Mines Cursor agent transcripts from a Cursor stop hook, which Remy does not fire."}
+ "continual-learning": {"kind": "cursor-only", "reason": "Mines Cursor agent transcripts from a Cursor stop hook, which Remy does not fire."},
+ "skill-creator": {"kind": "builtin-overlap", "reason": "Remy ships its own skill-creator skill; this one also scores skills by shelling out to the claude CLI."},
+ "code-review": {"kind": "builtin-overlap", "reason": "Remy's built-in code-review skill already reviews a change with specialised passes."},
+ "dash0": {"kind": "claude-code-only", "reason": "OpenTelemetry for Claude Code sessions; ten of the 24 hook events it traces are ones Remy does not fire."},
+ "remember": {"kind": "claude-code-only", "reason": "Builds its memory from Claude Code transcripts and summarises them with the claude CLI."},
+ "session-report": {"kind": "claude-code-only", "reason": "Reports on Claude Code session logs under ~/.claude/projects."},
+ "receipts": {"kind": "claude-code-only", "reason": "Mines Claude Code transcripts for its usage report."},
+ "langfuse-observability": {"kind": "claude-code-only", "reason": "Exports Claude Code transcripts (the hook's transcript_path) to Langfuse; Remy hands hooks no transcript."},
+ "ralph-loop": {"kind": "claude-code-only", "reason": "Its loop is a Stop hook that re-reads the Claude Code transcript, which Remy does not hand to hooks."},
+ "advisor": {"kind": "cursor-only", "reason": "Runs on Cursor hook events (afterFileEdit, afterAgentResponse, stop) and a Grok-pinned Cursor subagent."},
+ "pstack": {"kind": "cursor-only", "reason": "A workflow kit built around Cursor automations, cursor-agent worktrees and Cursor subagents; only its principle notes work elsewhere."}
 }
