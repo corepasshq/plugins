@@ -37,7 +37,8 @@
      "description": "Evaluate learning progress, identify blockers, and adjust the learning plan",
      "path": "skills/run-learning-retrospective/SKILL.md"
     }
-   ]
+   ],
+   "marketplace": "cursor"
   },
   {
    "name": "continual-learning",
@@ -87,7 +88,8 @@
    "publisher": {
     "name": "cursor",
     "displayName": "Cursor"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "cursor-team-kit",
@@ -222,7 +224,8 @@
    "publisher": {
     "name": "cursor",
     "displayName": "Cursor"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "thermos",
@@ -282,7 +285,8 @@
    "publisher": {
     "name": "cursor",
     "displayName": "Cursor"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "create-plugin",
@@ -329,7 +333,8 @@
    "publisher": {
     "name": "cursor",
     "displayName": "Cursor"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "ralph-loop",
@@ -388,7 +393,8 @@
    "publisher": {
     "name": "Anthropic",
     "displayName": "Anthropic"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "agent-compatibility",
@@ -448,7 +454,8 @@
    "publisher": {
     "name": "cursor",
     "displayName": "Cursor"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "cli-for-agent",
@@ -485,7 +492,8 @@
    "publisher": {
     "name": "cursor",
     "displayName": "Cursor"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "pr-review-canvas",
@@ -522,7 +530,8 @@
    "publisher": {
     "name": "cursor",
     "displayName": "Cursor"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "docs-canvas",
@@ -559,7 +568,8 @@
    "publisher": {
     "name": "cursor",
     "displayName": "Cursor"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "cursor-sdk",
@@ -598,7 +608,8 @@
    "publisher": {
     "name": "cursor",
     "displayName": "Cursor"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "orchestrate",
@@ -636,7 +647,8 @@
    "publisher": {
     "name": "cursor",
     "displayName": "Cursor"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "pstack",
@@ -916,7 +928,8 @@
    "publisher": {
     "name": "cursor",
     "displayName": "Cursor"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "grok-voice",
@@ -968,7 +981,8 @@
      "description": ">-",
      "path": "skills/debug-voice/SKILL.md"
     }
-   ]
+   ],
+   "marketplace": "cursor"
   },
   {
    "name": "advisor",
@@ -1031,7 +1045,8 @@
      "description": "",
      "path": "hooks/hooks.json"
     }
-   ]
+   ],
+   "marketplace": "cursor"
   },
   {
    "name": "gmail",
@@ -1061,7 +1076,8 @@
     "mcp",
     "workspace"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gmail/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gmail/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "google-drive",
@@ -1092,7 +1108,8 @@
     "files",
     "workspace"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-drive/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-drive/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "google-calendar",
@@ -1123,7 +1140,8 @@
     "events",
     "workspace"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-calendar/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-calendar/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "google-docs",
@@ -1161,7 +1179,8 @@
      "description": "Author and edit Google Docs with the google-docs tools - structured writing, character and paragraph styling, lists, tables, images, headers/footers. Use when creating a formatted document, editing document content, or applying styles.",
      "path": "skills/google-docs/SKILL.md"
     }
-   ]
+   ],
+   "marketplace": "cursor"
   },
   {
    "name": "google-sheets",
@@ -1199,7 +1218,8 @@
      "description": "Build and edit Google Sheets with the google-sheets tools - values, formatting, charts, conditional formatting, structure, validation, named and protected ranges. Use when creating a spreadsheet or dashboard, formatting cells, adding or fixing charts, or reorganizing tabs and rows.",
      "path": "skills/google-sheets/SKILL.md"
     }
-   ]
+   ],
+   "marketplace": "cursor"
   },
   {
    "name": "google-slides",
@@ -1237,7 +1257,8 @@
      "description": "Build and edit Google Slides through the google-slides MCP tools - slides, grids of cards and columns, text boxes, shapes, images, tables, styling, layout inspection, and per-slide PNG rendering. Use when creating a deck, laying out slide elements, matching a template, or verifying how a slide looks.",
      "path": "skills/google-slides/SKILL.md"
     }
-   ]
+   ],
+   "marketplace": "cursor"
   },
   {
    "name": "gong",
@@ -1284,7 +1305,8 @@
     "calls",
     "deals"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gong/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gong/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "salesforce",
@@ -1331,7 +1353,8 @@
     "soql",
     "sobject"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/salesforce/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/salesforce/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "playwright",
@@ -1362,7 +1385,8 @@
     "e2e",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/playwright/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/playwright/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "github",
@@ -1403,7 +1427,8 @@
     "actions",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/github/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/github/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "ashby",
@@ -1435,7 +1460,8 @@
     "interviews",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/ashby/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/ashby/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "hubspot",
@@ -1483,7 +1509,8 @@
     "contacts",
     "deals"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/hubspot/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/hubspot/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "intercom",
@@ -1515,7 +1542,8 @@
     "help-center",
     "customer-support"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/intercom/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/intercom/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "zoom",
@@ -1562,7 +1590,8 @@
     "transcripts",
     "docs"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/zoom/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/zoom/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "x",
@@ -1610,7 +1639,8 @@
      "description": ">-",
      "path": "skills/x-chat/SKILL.md"
     }
-   ]
+   ],
+   "marketplace": "cursor"
   },
   {
    "name": "clay",
@@ -1642,7 +1672,8 @@
     "data",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/clay/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/clay/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "circleback",
@@ -1673,7 +1704,8 @@
     "calendar",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/circleback/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/circleback/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "docusign",
@@ -1720,7 +1752,8 @@
     "envelopes",
     "contracts"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/docusign/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/docusign/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "navan",
@@ -1752,7 +1785,8 @@
     "corporate-cards",
     "bookings"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/navan/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/navan/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "profound",
@@ -1785,7 +1819,8 @@
     "agents",
     "analytics"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/profound/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/profound/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "juicebox",
@@ -1817,7 +1852,8 @@
     "agents",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/juicebox/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/juicebox/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "outreach",
@@ -1849,7 +1885,8 @@
     "crm",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outreach/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outreach/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "amplemarket",
@@ -1881,7 +1918,8 @@
     "leads",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/amplemarket/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/amplemarket/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "klaviyo",
@@ -1913,7 +1951,8 @@
     "segments",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/klaviyo/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/klaviyo/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "customer-io",
@@ -1945,7 +1984,8 @@
     "messaging",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/customer-io/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/customer-io/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "mailerlite",
@@ -1977,7 +2017,8 @@
     "subscribers",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mailerlite/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mailerlite/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "brevo",
@@ -2018,7 +2059,8 @@
     "crm",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/brevo/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/brevo/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "typeform",
@@ -2049,7 +2091,8 @@
     "insights",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/typeform/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/typeform/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "jotform",
@@ -2079,7 +2122,8 @@
     "surveys",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/jotform/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/jotform/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "semrush",
@@ -2111,7 +2155,8 @@
     "marketing",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/semrush/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/semrush/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "ahrefs",
@@ -2143,7 +2188,8 @@
     "site-audit",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/ahrefs/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/ahrefs/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "godaddy",
@@ -2174,7 +2220,8 @@
     "registration",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/godaddy/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/godaddy/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "upwork",
@@ -2206,7 +2253,8 @@
     "proposals",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/upwork/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/upwork/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "workable",
@@ -2238,7 +2286,8 @@
     "hiring",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/workable/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/workable/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "brex",
@@ -2270,7 +2319,8 @@
     "travel",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/brex/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/brex/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "mercury",
@@ -2301,7 +2351,8 @@
     "statements",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mercury/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mercury/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "todoist",
@@ -2332,7 +2383,8 @@
     "productivity",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/todoist/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/todoist/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "calendly",
@@ -2363,7 +2415,8 @@
     "availability",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/calendly/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/calendly/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "smartsheet",
@@ -2403,7 +2456,8 @@
     "rows",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/smartsheet/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/smartsheet/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "wrike",
@@ -2443,7 +2497,8 @@
     "work-management",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/wrike/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/wrike/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "coda",
@@ -2474,7 +2529,8 @@
     "knowledge",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/coda/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/coda/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "guru",
@@ -2505,7 +2561,8 @@
     "documentation",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/guru/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/guru/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "fireflies",
@@ -2536,7 +2593,8 @@
     "action-items",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/fireflies/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/fireflies/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "otter",
@@ -2567,7 +2625,8 @@
     "notes",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/otter/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/otter/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "fathom",
@@ -2598,7 +2657,8 @@
     "notes",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/fathom/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/fathom/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "craft",
@@ -2629,7 +2689,8 @@
     "writing",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/craft/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/craft/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "mem",
@@ -2660,7 +2721,8 @@
     "semantic-search",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mem/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mem/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "readwise",
@@ -2691,7 +2753,8 @@
     "notes",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/readwise/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/readwise/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "similarweb",
@@ -2731,7 +2794,8 @@
     "audience",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/similarweb/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/similarweb/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "xero",
@@ -2779,7 +2843,8 @@
     "finance",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/xero/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/xero/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "outlook",
@@ -2809,7 +2874,8 @@
     "mcp",
     "contacts"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outlook/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outlook/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "outlook-calendar",
@@ -2840,7 +2906,8 @@
     "mcp",
     "events"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outlook-calendar/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outlook-calendar/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "onedrive",
@@ -2870,7 +2937,8 @@
     "mcp",
     "storage"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/onedrive/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/onedrive/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "sharepoint",
@@ -2901,7 +2969,8 @@
     "microsoft",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/sharepoint/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/sharepoint/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "teams",
@@ -2931,7 +3000,8 @@
     "mcp",
     "channels"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/teams/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/teams/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "finance",
@@ -2964,7 +3034,8 @@
     "grok",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/finance/assets/logo.svg"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/finance/assets/logo.svg",
+   "marketplace": "cursor"
   },
   {
    "name": "x-ads",
@@ -2997,7 +3068,8 @@
     "analytics",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/x-ads/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/x-ads/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "attio",
@@ -3030,7 +3102,8 @@
     "notes",
     "tasks"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/attio/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/attio/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "hunter",
@@ -3078,7 +3151,8 @@
    "publisher": {
     "name": "Hunter.io",
     "displayName": "Hunter.io"
-   }
+   },
+   "marketplace": "cursor"
   },
   {
    "name": "gamma",
@@ -3111,7 +3185,8 @@
     "export",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gamma/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gamma/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "webull",
@@ -3144,7 +3219,8 @@
     "market data",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/webull/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/webull/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "sp-global",
@@ -3177,7 +3253,8 @@
     "earnings transcripts",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/sp-global/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/sp-global/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "interactive-brokers",
@@ -3210,7 +3287,8 @@
     "market data",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/interactive-brokers/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/interactive-brokers/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "meltwater",
@@ -3243,7 +3321,8 @@
     "saved searches",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/meltwater/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/meltwater/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "daloopa",
@@ -3276,7 +3355,8 @@
     "financial data",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/daloopa/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/daloopa/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "excalidraw",
@@ -3309,7 +3389,8 @@
     "mcp apps",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/excalidraw/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/excalidraw/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "google-cloud-bigquery",
@@ -3342,7 +3423,8 @@
     "datasets",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-cloud-bigquery/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-cloud-bigquery/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "statsig",
@@ -3375,7 +3457,8 @@
     "metrics",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/statsig/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/statsig/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "robinhood",
@@ -3410,7 +3493,8 @@
     "watchlists",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/robinhood/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/robinhood/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "coinbase",
@@ -3443,7 +3527,8 @@
     "advanced trade",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/coinbase/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/coinbase/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "etoro-trading",
@@ -3478,7 +3563,8 @@
     "watchlists",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/etoro-trading/assets/logo.png"
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/etoro-trading/assets/logo.png",
+   "marketplace": "cursor"
   },
   {
    "name": "x-money",
@@ -3522,7 +3608,8 @@
      "description": ">-",
      "path": "skills/x-money-guide/SKILL.md"
     }
-   ]
+   ],
+   "marketplace": "cursor"
   }
  ]
 }

@@ -1,0 +1,16 @@
+{
+ "_comment": "Plugins kept out of the catalog feed, by name. kind is one of builtin-overlap, claude-code-only, cursor-only; reason says why, in a sentence a reviewer can check. Read by scripts/generate_catalog_seed.py --exclusions in corepasshq/remy; the feed carries the list as `excluded`, and user-center freezes an excluded row with reason EXCLUDED (and thaws it when the entry leaves this list).",
+ "browser-use": {"kind": "builtin-overlap", "reason": "Remy's built-in browser and Chrome plugins already drive a real browser."},
+ "chrome-devtools-mcp": {"kind": "builtin-overlap", "reason": "Remy's built-in Chrome/CDP plugins already inspect and control a live Chrome."},
+ "claude-code-setup": {"kind": "claude-code-only", "reason": "Recommends and writes Claude Code automations, and shells out to the claude CLI."},
+ "security-guidance": {"kind": "claude-code-only", "reason": "Its LLM diff review runs on the Claude Agent SDK with Claude credentials."},
+ "project-artifact": {"kind": "claude-code-only", "reason": "Generates and publishes its status page through the claude CLI."},
+ "mcp-tunnels": {"kind": "claude-code-only", "reason": "Drives Anthropic's MCP tunnel product, which needs an Anthropic API key."},
+ "cursor-sdk": {"kind": "cursor-only", "reason": "Skills for building on the Cursor SDK."},
+ "orchestrate": {"kind": "cursor-only", "reason": "Fans work out to Cursor cloud agents through the Cursor SDK."},
+ "create-plugin": {"kind": "cursor-only", "reason": "Scaffolds and validates Cursor-format plugins."},
+ "cursor-team-kit": {"kind": "cursor-only", "reason": "Cursor's internal engineering workflows (control-cli, their CI)."},
+ "docs-canvas": {"kind": "cursor-only", "reason": "Renders documentation into Cursor's canvas surface."},
+ "pr-review-canvas": {"kind": "cursor-only", "reason": "Renders PR diffs into Cursor's canvas surface."},
+ "continual-learning": {"kind": "cursor-only", "reason": "Mines Cursor agent transcripts from a Cursor stop hook, which Remy does not fire."}
+}
