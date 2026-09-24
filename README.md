@@ -13,31 +13,45 @@ the repo — a plugin may appear in either, both, or neither.
 A normalized directory of open-source Claude Code plugins, backing the app's
 Plugins storefront.
 
-- **Consumed remotely**: the app fetches the raw file at
-  `https://raw.githubusercontent.com/youlandinc/plugins/main/catalog_seed.json`
-  (via `COREPASS_CATALOG_URL`), so the plugin list updates without shipping a
-  new app build.
+- **Consumed through user-center**: user-center imports
+  `https://raw.githubusercontent.com/corepasshq/plugins/main/catalog_seed.json`
+  on its daily sync (or *Sync now* in the admin console). Clients see a change
+  once an operator **Publishes** the catalog version, and only the plugins
+  assigned to their application (admin → Application Plugins).
 - Each entry carries install git coords (`source.url` / `source.ref` /
-  `source.path`, pointing at each plugin's own upstream repo) plus enumerated
-  components (`skills` / `mcpServers` / `commands` / `agents` / …).
-  Install/uninstall clone those coords through the existing catalog path —
-  **nothing is vendored for this track**.
-- **Generated**, do not hand-edit. Produced by `scripts/normalize_plugins.py`
-  in the `simple-coding-harness` repo.
+  `source.path` / `source.sha`, pointing at each plugin's own upstream repo)
+  plus enumerated components (`skills` / `mcpServers` / `commands` / `agents` /
+  `hooks` / …). **Nothing is vendored for this track.**
+- **Generated**, do not hand-edit `catalog_seed.json` / `catalog_seed.cursor.json`.
+  Produced by `scripts/generate_catalog_seed.py` in `corepasshq/remy`.
 
-### Regenerate
+### How it is regenerated
+
+A scheduled workflow in `corepasshq/remy` (`.github/workflows/catalog-feed.yml`,
+Mondays and on demand) regenerates the feed and, when it changed, opens a
+`catalog-feed/<date>-<run>` pull request here. The PR body lists what needs a
+decision first — entries with no category, new entries, entries withheld by the
+licence allowlist. Merge it; nothing else here is manual.
+
+To run it by hand from a `remy` checkout next to this one:
 
 ```bash
-python scripts/normalize_plugins.py --emit catalog-seed \
-  --out /path/to/plugins/catalog_seed.json \
-  --all --require-license \
-  --merge-into src/registry/data/catalog_seed.json
-# review, then commit + push
+python scripts/generate_catalog_seed.py \
+  --out ../corepasshq-plugins --cursor-out ../corepasshq-plugins \
+  --overlay ../corepasshq-plugins/catalog_display_overlay.json \
+  --vendored-root ../corepasshq-plugins --merge-cursor
 ```
 
-Only plugins that ship a `LICENSE` file are included (`--require-license`);
-each entry records its upstream url + pinned rev under `_provenance`.
-Third-party plugins remain under their own licenses.
+Only plugins whose licence is on the allowlist are published. Third-party
+plugins remain under their own licences.
+
+### Curating: `catalog_display_overlay.json`
+
+Keyed by plugin name. `logoUrl`, `publisher` and `featured` are the overlay's
+own; `displayName`, `description`, `category` and `keywords` fill in only where
+upstream is silent; `categoryOverride` places a plugin in a category even when
+upstream names a different one. Categories must be in user-center's
+`uc_plugin_category` vocabulary, or the importer drops them.
 
 ## Track 2 — marketplace (hand-maintained, vendored)
 
