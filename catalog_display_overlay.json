@@ -116,7 +116,8 @@
  "ai-plugins": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.endorlabs.com&sz=128",
   "displayName": "Ai Plugins",
-  "description": "Set up endorctl and use Endor Labs to scan, prioritize, and fix security risks across your software supply chain"
+  "description": "Set up endorctl and use Endor Labs to scan, prioritize, and fix security risks across your software supply chain",
+  "category": "security"
  },
  "airtable": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.airtable.com&sz=128",
@@ -1047,7 +1048,8 @@
  "brightdata-plugin": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.brightdata.com&sz=128",
   "displayName": "Brightdata Plugin",
-  "description": "Web scraping, Google search, structured data extraction, and MCP server integration powered by Bright Data. Includes 7 skills: scrape any webpage as markdown (with bot detection/CAPTCHA bypass), search Google with structured JSON results, extract data from 40+ websites (Amazon, LinkedIn, Instagram, TikTok, YouTube, and more), orchestrate Bright Data's 60+ MCP tools, built-in best practices for Web Unlocker, SERP API, Web Scraper API, and Browser API, Python SDK best practices for the brightda..."
+  "description": "Web scraping, Google search, structured data extraction, and MCP server integration powered by Bright Data. Includes 7 skills: scrape any webpage as markdown (with bot detection/CAPTCHA bypass), search Google with structured JSON results, extract data from 40+ websites (Amazon, LinkedIn, Instagram, TikTok, YouTube, and more), orchestrate Bright Data's 60+ MCP tools, built-in best practices for Web Unlocker, SERP API, Web Scraper API, and Browser API, Python SDK best practices for the brightda...",
+  "category": "data-analytics"
  },
  "browse": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/46cbee47bf3f2eaf.png",
@@ -1437,7 +1439,8 @@
    "isVerified": true
   },
   "displayName": "Cloudinary",
-  "description": "Use Cloudinary directly in Corepass. Upload, manage, optimize, and transform images and videos at scale using natural language."
+  "description": "Use Cloudinary directly in Corepass. Upload, manage, optimize, and transform images and videos at scale using natural language.",
+  "category": "design"
  },
  "cockroachdb": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/0c91120e5687e924.png",
@@ -1799,7 +1802,8 @@
  },
  "data-engineering": {
   "displayName": "Data Engineering",
-  "description": "Data engineering plugin - warehouse exploration, pipeline authoring, Airflow integration"
+  "description": "Data engineering plugin - warehouse exploration, pipeline authoring, Airflow integration",
+  "category": "data-analytics"
  },
  "databases-on-aws": {
   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
@@ -2178,7 +2182,8 @@
    "cdn"
   ],
   "displayName": "Fastly Agent Toolkit",
-  "description": "Fastly development tools and platform skills"
+  "description": "Fastly development tools and platform skills",
+  "category": "infrastructure"
  },
  "fathom": {
   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/fathom/assets/logo.png",
@@ -2206,7 +2211,8 @@
  "fiftyone": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.voxel51.com&sz=128",
   "displayName": "Fiftyone",
-  "description": "Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins."
+  "description": "Build high-quality datasets and computer vision models. Visualize datasets, analyze models, find duplicates, run inference, evaluate predictions, and develop custom plugins.",
+  "category": "data-analytics"
  },
  "figma": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/4ecab9250310ceb3.png",
@@ -3525,7 +3531,8 @@
  },
  "nightvision": {
   "displayName": "Nightvision",
-  "description": "Skills for working with NightVision, a DAST and API Discovery platform that finds exploitable vulnerabilities in web applications and REST APIs"
+  "description": "Skills for working with NightVision, a DAST and API Discovery platform that finds exploitable vulnerabilities in web applications and REST APIs",
+  "category": "security"
  },
  "nimble": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.nimbleway.com&sz=128",
@@ -3546,7 +3553,8 @@
    "business-intelligence"
   ],
   "displayName": "Nimble",
-  "description": "Nimble web data toolkit — search, extract, map, crawl the web and work with structured data agents"
+  "description": "Nimble web data toolkit — search, extract, map, crawl the web and work with structured data agents",
+  "category": "data-analytics"
  },
  "noibu": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=help.noibu.com&sz=128",
@@ -4287,7 +4295,8 @@
  },
  "remember": {
   "displayName": "Remember",
-  "description": "Continuous memory for Claude Code. Extracts, summarizes, and compresses conversations into tiered daily logs. Claude remembers what you did yesterday."
+  "description": "Continuous memory for Claude Code. Extracts, summarizes, and compresses conversations into tiered daily logs. Claude remembers what you did yesterday.",
+  "category": "productivity"
  },
  "render": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/148d6bcac8d86594.png",
@@ -5698,5 +5707,11 @@
   "displayName": "Zyte Web Data",
   "description": "Web scraping skills for Claude Code powered by the Zyte API — scrape sites, generate and run Scrapy spiders, define extraction schemas, and ship to Scrapy Cloud.",
   "category": "AUTOMATION"
+ },
+ "aikido": {
+  "category": "security"
+ },
+ "prisma": {
+  "category": "database"
  }
 }
