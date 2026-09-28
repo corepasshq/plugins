@@ -203,7 +203,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/agent-sdk-dev",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -454,7 +454,7 @@
    ],
    "skills": [
     {
-     "name": "issues",
+     "name": "aikido-issues",
      "description": "List, count, summarize, or triage security issues from the Aikido security feed. Use when the user asks about Aikido findings, vulnerabilities, leaked secrets, SAST/IaC/SCA results, cloud or container security issues, or EOL/license/malware alerts surfaced by Aikido.",
      "path": "skills/issues/SKILL.md"
     },
@@ -1006,42 +1006,42 @@
     {
      "name": "hyperloom-workload-optimizer",
      "description": ">-",
-     "path": "skills/hyperloom-workload-optimizer"
+     "path": "skills/hyperloom-workload-optimizer/SKILL.md"
     },
     {
      "name": "lemonade-router-builder",
      "description": ">-",
-     "path": "skills/lemonade-router-builder"
+     "path": "skills/lemonade-router-builder/SKILL.md"
     },
     {
      "name": "local-ai-app-integration",
      "description": ">-",
-     "path": "skills/local-ai-app-integration"
+     "path": "skills/local-ai-app-integration/SKILL.md"
     },
     {
      "name": "local-ai-use",
      "description": ">-",
-     "path": "skills/local-ai-use"
+     "path": "skills/local-ai-use/SKILL.md"
     },
     {
      "name": "magpie-kernel-evaluator",
      "description": "Benchmarks LLM inference and drives GPU kernel optimization with Magpie. Use when the user wants to benchmark vLLM, SGLang, or Atom; capture torch traces; post-process inference traces with TraceLens into prefill/decode and roofline reports; identify top bottleneck kernels or map profiler names to source; analyze or compare HIP, CUDA, PyTorch, or Triton kernels; validate and rank optimized variants; run local, container, or Ray workloads; or mentions Magpie, TraceLens, gap analysis, TTFT, TPOT, kernel evaluation, or AMD GPU optimization.",
-     "path": "skills/magpie-kernel-evaluator"
+     "path": "skills/magpie-kernel-evaluator/SKILL.md"
     },
     {
      "name": "serving-llms-on-epyc",
      "description": ">-",
-     "path": "skills/serving-llms-on-epyc"
+     "path": "skills/serving-llms-on-epyc/SKILL.md"
     },
     {
      "name": "serving-llms-on-instinct",
      "description": ">-",
-     "path": "skills/serving-llms-on-instinct"
+     "path": "skills/serving-llms-on-instinct/SKILL.md"
     },
     {
      "name": "tracelens-analysis-orchestrator",
      "description": ">-",
-     "path": "skills/tracelens-analysis-orchestrator"
+     "path": "skills/tracelens-analysis-orchestrator/SKILL.md"
     }
    ],
    "logoUrl": "https://www.google.com/s2/favicons?domain=developer.amd.com&sz=128",
@@ -1096,7 +1096,7 @@
      "path": "skills/analyze-dashboard/SKILL.md"
     },
     {
-     "name": "analyze-experiment",
+     "name": "analyze-experiments",
      "description": "Designs A/B tests with proper metrics and variants, analyzes running or completed experiments, and interprets results with statistical rigor. Use when setting up experiments, checking experiment status, analyzing results, or making ship decisions.",
      "path": "skills/analyze-experiment/SKILL.md"
     },
@@ -1572,7 +1572,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/asana",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -1855,11 +1855,6 @@
    ],
    "skills": [
     {
-     "name": "README",
-     "description": "",
-     "path": "skills/README.md"
-    },
-    {
      "name": "capture-tasks-from-meeting-notes",
      "description": "Analyze meeting notes to find action items and create Jira tasks for assigned work. When an agent needs to: (1) Create Jira tasks or tickets from meeting notes, (2) Extract or find action items from notes or Confluence pages, (3) Parse meeting notes for assigned tasks, or (4) Analyze notes and generate tasks for team members. Identifies assignees, looks up account IDs, and creates tasks with proper context.",
      "path": "skills/capture-tasks-from-meeting-notes/SKILL.md"
@@ -1890,9 +1885,34 @@
      "path": "skills/triage-issue/SKILL.md"
     },
     {
-     "name": "v1",
-     "description": "",
-     "path": "skills/v1"
+     "name": "v1:capture-tasks-from-meeting-notes",
+     "description": "Analyze meeting notes to find action items and create Jira tasks for assigned work. When an agent needs to: (1) Create Jira tasks or tickets from meeting notes, (2) Extract or find action items from notes or Confluence pages, (3) Parse meeting notes for assigned tasks, or (4) Analyze notes and generate tasks for team members. Identifies assignees, looks up account IDs, and creates tasks with proper context.",
+     "path": "skills/v1/capture-tasks-from-meeting-notes/SKILL.md"
+    },
+    {
+     "name": "v1:generate-status-report",
+     "description": "Generate project status reports from Jira issues and publish to Confluence. When an agent needs to: (1) Create a status report for a project, (2) Summarize project progress or updates, (3) Generate weekly/daily reports from Jira, (4) Publish status summaries to Confluence, or (5) Analyze project blockers and completion. Queries Jira issues, categorizes by status/priority, and creates formatted reports for delivery managers and executives.",
+     "path": "skills/v1/generate-status-report/SKILL.md"
+    },
+    {
+     "name": "v1:jira-sprint-dashboard",
+     "description": ">-",
+     "path": "skills/v1/jira-sprint-dashboard/SKILL.md"
+    },
+    {
+     "name": "v1:search-company-knowledge",
+     "description": "Search across company knowledge bases (Confluence, Jira, internal docs) to find and explain internal concepts, processes, and technical details. When an agent needs to: (1) Find or search for information about systems, terminology, processes, deployment, authentication, infrastructure, architecture, or technical concepts, (2) Search internal documentation, knowledge base, company docs, or our docs, (3) Explain what something is, how it works, or look up information, or (4) Synthesize information from multiple sources. Searches in parallel and provides cited answers.",
+     "path": "skills/v1/search-company-knowledge/SKILL.md"
+    },
+    {
+     "name": "v1:spec-to-backlog",
+     "description": "Automatically convert Confluence specification documents into structured Jira backlogs with Epics and implementation tickets. When an agent needs to: (1) Create Jira tickets from a Confluence page, (2) Generate a backlog from a specification, (3) Break down a spec into implementation tasks, or (4) Convert requirements into Jira issues. Handles reading Confluence pages, analyzing specifications, creating Epics with proper structure, and generating detailed implementation tickets linked to the Epic.",
+     "path": "skills/v1/spec-to-backlog/SKILL.md"
+    },
+    {
+     "name": "v1:triage-issue",
+     "description": "Intelligently triage bug reports and error messages by searching for duplicates in Jira and offering to create new issues or add comments to existing ones. When an agent needs to: (1) Triage a bug report or error message, (2) Check if an issue is a duplicate, (3) Find similar past issues, (4) Create a new bug ticket with proper context, or (5) Add information to an existing ticket. Searches Jira for similar issues, identifies duplicates, checks fix history, and helps create well-structured bug reports.",
+     "path": "skills/v1/triage-issue/SKILL.md"
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/bf7719b83588a5fa.png",
@@ -3056,11 +3076,6 @@
      "path": "skills/prompt-library-for-startups/SKILL.md"
     },
     {
-     "name": "shared",
-     "description": "",
-     "path": "skills/shared"
-    },
-    {
      "name": "start-building-for-startups",
      "description": "Interactive discovery + implementation workflow that gathers requirements through picker-based questions (intent, scope, constraints, preferences), scans the codebase for what it can already infer, then writes an AWS architectural scaffold and implementation directly into the project. Use when the user wants to build a new app, scaffold a project, or expand/refactor an existing one on AWS \u2014 anything that calls for a structured discovery flow followed by code changes, not a one-off lookup. Do not use for: factual lookups about AWS Activate / programs / credits, requests for a single copy-paste prompt, non-AWS architectural work, architecture advice/recommendations without code changes (see architect-for-startups), a new idea centered on an AI agent \u2014 runtime selection, agentic architecture, or an agent POC (see agent-advisor), or migrating an existing GCP/Heroku workload or an LLM SDK rewrite (see gcp-to-aws / heroku-to-aws / llm-to-bedrock).",
      "path": "skills/start-building-for-startups/SKILL.md"
@@ -3460,11 +3475,6 @@
     "vector-search"
    ],
    "skills": [
-    {
-     "name": "README",
-     "description": "",
-     "path": "skills/README.md"
-    },
     {
      "name": "azuresql-db-auth",
      "description": ">-",
@@ -4181,7 +4191,7 @@
      "path": "skills/discover-api/SKILL.md"
     },
     {
-     "name": "js-sdk-best-practices",
+     "name": "brightdata-sdk-js",
      "description": "|",
      "path": "skills/js-sdk-best-practices/SKILL.md"
     },
@@ -4196,12 +4206,12 @@
      "path": "skills/price-comparison/SKILL.md"
     },
     {
-     "name": "proxy",
+     "name": "brightdata-proxy",
      "description": "Generate working code that routes HTTP requests through Bright Data proxy networks (Datacenter, ISP, Residential, Mobile) and help users decide which network and IP pool type to use (shared pool, shared IPs, or dedicated IPs). Use this skill whenever the user mentions Bright Data, brightdata.com, BD proxies, brd.superproxy.io, geo.brdtest.com, a brd-customer- proxy username, a Bright Data zone, the superproxy host, or wants to scrape or route requests through Bright Data \u2014 including questions about proxy URL format, country or session or IP or sticky-session targeting, SSL certificate setup for residential or mobile proxies, KYC verification, ignoring SSL errors, choosing between shared pool and shared IPs and dedicated IPs, or integrating Bright Data into Python requests/httpx/aiohttp, Node fetch/axios, Playwright, Puppeteer, Selenium, or Scrapy.",
      "path": "skills/proxy/SKILL.md"
     },
     {
-     "name": "python-sdk-best-practices",
+     "name": "brightdata-sdk",
      "description": "|",
      "path": "skills/python-sdk-best-practices/SKILL.md"
     },
@@ -4352,32 +4362,32 @@
    ],
    "skills": [
     {
-     "name": "brand-check",
+     "name": "canva-brand-check",
      "description": "Check a Canva design against a brand kit and report where it diverges \u2014 off-palette colors, non-brand fonts, logo misuse, and off-tone copy. Read-only; makes no changes. Use when the user asks \"is this on brand\", \"check this against our brand kit\", \"do a brand review\", \"does this match our brand guidelines\", or \"brand-check my design\".",
      "path": "skills/brand-check/SKILL.md"
     },
     {
-     "name": "bulk-create",
+     "name": "canva-bulk-create",
      "description": "Bulk-create Canva designs from tabular data using a brand template with autofill fields, producing one design per row. Use when users say \"bulk create designs from this CSV\", \"generate one design per row\", \"create a design for each product\", \"batch generate from a template\", or \"autofill a template from a spreadsheet\". Accepts any tabular data source \u2014 uploaded files, pasted tables, JSON, or URLs.",
      "path": "skills/bulk-create/SKILL.md"
     },
     {
-     "name": "edit-design",
+     "name": "canva-edit-design",
      "description": "Make edits to an existing Canva design \u2014 change or fix text, replace/insert/delete images and videos, reformat text (size, weight, style, color, alignment, lists, line height), reposition or resize elements, and update the title. Use when the user wants to change, edit, update, fix, translate, replace, or reformat content in a specific Canva design. This is the safe edit engine that other Canva skills (e.g. implement-feedback) build on.",
      "path": "skills/edit-design/SKILL.md"
     },
     {
-     "name": "get-design-feedback",
+     "name": "canva-design-feedback",
      "description": "Read a Canva design and return structured, actionable design feedback \u2014 visual hierarchy, copy/messaging, layout & spacing, consistency, readability, and accessibility. Read-only; makes no changes to the design. Use when the user asks to \"review my design\", \"give me feedback on this\", \"critique my deck/poster/flyer\", \"how can I improve this design\", or \"what's wrong with this slide\".",
      "path": "skills/get-design-feedback/SKILL.md"
     },
     {
-     "name": "implement-feedback",
+     "name": "canva-implement-feedback",
      "description": "Implement reviewer feedback on a Canva design. Reads all comment threads, synthesises what reviewers want, makes the clear-cut changes directly, and flags anything that needs a human decision. Use when the user asks to \"implement feedback on my deck\", \"address comments on a design\", \"apply review feedback\", \"fix the comments on my presentation\", or \"implement the feedback\".",
      "path": "skills/implement-feedback/SKILL.md"
     },
     {
-     "name": "resize-for-social-media",
+     "name": "canva-resize-for-social-media",
      "description": "Resize a Canva design into multiple social media formats (Facebook post, Facebook story, Instagram post, Instagram story, LinkedIn post). Use this skill when users want to resize Canva designs specifically for multiple social media platforms in one operation, rather than resizing to a single format manually.",
      "path": "skills/resize-for-social-media/SKILL.md"
     }
@@ -4420,7 +4430,7 @@
     "url": "https://github.com/carta/plugins.git",
     "path": "plugins/carta-cap-table",
     "ref": "main",
-    "sha": "e0b245f0621c5333ecae47a256c851c4b2e79cb4"
+    "sha": "6ab81016389cac69e03ed79114d75f31bc8e7bfd"
    },
    "category": "productivity",
    "strict": null,
@@ -4582,7 +4592,7 @@
     "url": "https://github.com/carta/plugins.git",
     "path": "plugins/carta-crm",
     "ref": "main",
-    "sha": "9970737943d11af5de5ebaae592aed42bcdc6ae7"
+    "sha": "6ab81016389cac69e03ed79114d75f31bc8e7bfd"
    },
    "category": "sales",
    "strict": null,
@@ -4773,7 +4783,7 @@
     "url": "https://github.com/carta/plugins.git",
     "path": "plugins/carta-investors",
     "ref": "main",
-    "sha": "e0b245f0621c5333ecae47a256c851c4b2e79cb4"
+    "sha": "6ab81016389cac69e03ed79114d75f31bc8e7bfd"
    },
    "category": "productivity",
    "strict": null,
@@ -4869,6 +4879,11 @@
      "path": "skills/carta-manco-reporting/SKILL.md"
     },
     {
+     "name": "carta-portfolio-analytics-app",
+     "description": ">",
+     "path": "skills/carta-portfolio-analytics-app/SKILL.md"
+    },
+    {
      "name": "carta-portfolio-analytics-routing",
      "description": ">",
      "path": "skills/carta-portfolio-analytics-routing/SKILL.md"
@@ -4886,14 +4901,14 @@
    ],
    "commands": [
     {
-     "name": "financials-review",
-     "description": "Open a financials extraction session for review and publish it. Deterministic entry into the carta-financials skill's review route.",
-     "path": "commands/financials-review.md"
+     "name": "portco-financials-and-kpis-review",
+     "description": "Open a financials extraction session for review and publish it. Deterministic entry into the carta-portco-financials-and-kpis skill's review route.",
+     "path": "commands/portco-financials-and-kpis-review.md"
     },
     {
-     "name": "financials-upload",
-     "description": "Upload a portfolio company's financial document (or pasted figures) to Carta for extraction. Deterministic entry into the carta-financials skill's upload route.",
-     "path": "commands/financials-upload.md"
+     "name": "portco-financials-and-kpis-upload",
+     "description": "Upload a portfolio company's financial document (or pasted figures) to Carta for extraction. Deterministic entry into the carta-portco-financials-and-kpis skill's upload route.",
+     "path": "commands/portco-financials-and-kpis-upload.md"
     }
    ],
    "hooks": [
@@ -5505,7 +5520,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/clangd-lsp",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": false,
@@ -5549,7 +5564,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/claude-md-management",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -5589,7 +5604,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/claude-security",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "security",
    "strict": null,
@@ -5617,14 +5632,14 @@
    "skills": [
     {
      "name": "claude-security",
-     "description": "The Claude Security menu \u2014 pick a job: scan the codebase (the whole repository or a scoped part of it), scan changes (this branch's or a pull request's diff, or one commit), or suggest patches (findings turned into targeted patch files, each verified by a panel of agents, that you apply when you choose).",
+     "description": "Claude Security: scan the codebase (the whole repository or a scoped part of it), scan changes (this branch's or a pull request's diff, or one commit), or suggest patches (findings turned into targeted patch files, each verified by a panel of agents, that you apply when you choose). Use when the user asks to scan, audit or check code with Claude Security, to scan their changes with Claude Security, or to fix or patch Claude Security findings.",
      "path": "skills/claude-security/SKILL.md"
     }
    ],
    "agents": [
     {
      "name": "claude-security",
-     "description": "The dedicated Claude Security orchestrator. Hand it an unattended job \u2014 \"fully scan this repository and patch what you find; I understand it will use a lot of tokens\" \u2014 and it runs the whole thing itself: capturing the revision, driving the multi-agent scan through the claude-security:scan workflow, assembling the verified report, and turning survivors into targeted patch files you apply when you choose, each verified by a panel of agents before it is written. Best as the main agent of a session.",
+     "description": "The Claude Security orchestrator, for use only as the main agent of a session (claude --agent claude-security:claude-security), where it runs a scan end to end and can turn its findings into targeted patch files, each verified by a panel of agents. Never dispatch it as a subagent: it cannot scan from there. When a user asks for Claude Security in a conversation, use the claude-security:claude-security skill instead.",
      "path": "agents/claude-security.md"
     },
     {
@@ -5649,8 +5664,13 @@
     },
     {
      "name": "scan-loader",
-     "description": "Restricted read-only loader dispatched by the Claude Security scan workflow to return one candidates file from the run directory; not for direct invocation.",
+     "description": "Restricted read-only loader dispatched by the Claude Security scan workflow to return one JSON file from the run directory; not for direct invocation.",
      "path": "agents/scan-loader.md"
+    },
+    {
+     "name": "scan-redactor",
+     "description": "Restricted agent dispatched by the Claude Security scan jobs to replace the credential values in a finished scan's report files with [REDACTED]; not for direct invocation.",
+     "path": "agents/scan-redactor.md"
     },
     {
      "name": "scan-researcher",
@@ -5665,18 +5685,23 @@
    ],
    "hooks": [
     {
+     "name": "PermissionRequest",
+     "description": "Shows the Claude Security banner when the /claude-security menu opens, reports usage counts after the plugin's helper scripts run, closes the yes/no question asked before a scan starts if it is left unanswered for 60 seconds, and suggests a scan of the changes after a branch is pushed or a pull request opened.",
+     "path": "hooks/hooks.json"
+    },
+    {
      "name": "PostToolUse",
-     "description": "Shows the Claude Security banner when the /claude-security menu opens and reports usage counts after the plugin's helper scripts run.",
+     "description": "Shows the Claude Security banner when the /claude-security menu opens, reports usage counts after the plugin's helper scripts run, closes the yes/no question asked before a scan starts if it is left unanswered for 60 seconds, and suggests a scan of the changes after a branch is pushed or a pull request opened.",
      "path": "hooks/hooks.json"
     },
     {
      "name": "PostToolUseFailure",
-     "description": "Shows the Claude Security banner when the /claude-security menu opens and reports usage counts after the plugin's helper scripts run.",
+     "description": "Shows the Claude Security banner when the /claude-security menu opens, reports usage counts after the plugin's helper scripts run, closes the yes/no question asked before a scan starts if it is left unanswered for 60 seconds, and suggests a scan of the changes after a branch is pushed or a pull request opened.",
      "path": "hooks/hooks.json"
     },
     {
      "name": "UserPromptExpansion",
-     "description": "Shows the Claude Security banner when the /claude-security menu opens and reports usage counts after the plugin's helper scripts run.",
+     "description": "Shows the Claude Security banner when the /claude-security menu opens, reports usage counts after the plugin's helper scripts run, closes the yes/no question asked before a scan starts if it is left unanswered for 60 seconds, and suggests a scan of the changes after a branch is pushed or a pull request opened.",
      "path": "hooks/hooks.json"
     }
    ],
@@ -6372,54 +6397,174 @@
    ],
    "skills": [
     {
-     "name": "cockroachdb-application-development",
-     "description": "",
-     "path": "skills/cockroachdb-application-development"
+     "name": "cockroachdb-application-development:benchmarking-transaction-patterns",
+     "description": "Guides benchmarking and comparing explicit multi-statement transactions versus single-statement CTE transactions in CockroachDB, with fair test methodology, contention analysis, and performance interpretation. Use when comparing transaction formulations, benchmarking CockroachDB workloads under contention, investigating retry pressure, or deciding whether to rewrite multi-step application flows into single SQL statements.",
+     "path": "skills/cockroachdb-application-development/benchmarking-transaction-patterns/SKILL.md"
     },
     {
-     "name": "cockroachdb-cost-and-usage-management",
-     "description": "",
-     "path": "skills/cockroachdb-cost-and-usage-management"
+     "name": "cockroachdb-application-development:designing-application-transactions",
+     "description": "Guides application developers in designing correct and performant transaction patterns for CockroachDB, covering transaction lifetime, implicit vs explicit transactions, retry handling with exponential backoff, pushing invariants into SQL, selective pessimistic locking, set-based operations, connection pooling, prepared statements, keyset pagination, follower reads, and separating business logic from database logic. Use when building applications on CockroachDB, designing transaction workflows, handling retries, optimizing application-layer database interactions, or configuring connection pools.",
+     "path": "skills/cockroachdb-application-development/designing-application-transactions/SKILL.md"
     },
     {
-     "name": "cockroachdb-integrations-and-ecosystem",
-     "description": "",
-     "path": "skills/cockroachdb-integrations-and-ecosystem"
+     "name": "cockroachdb-application-development:designing-multi-region-applications",
+     "description": "Guides developers in selecting and implementing multi-region patterns for CockroachDB applications, covering active-passive vs active-active architectures, REGIONAL BY ROW, GLOBAL tables, manual geo-partitioning with lease preferences, and live demo setup with validation queries. Use when designing multi-region database topologies, choosing between REGIONAL BY ROW and manual partitioning, building multi-region demos, or optimizing cross-region latency.",
+     "path": "skills/cockroachdb-application-development/designing-multi-region-applications/SKILL.md"
     },
     {
-     "name": "cockroachdb-observability-and-diagnostics",
-     "description": "",
-     "path": "skills/cockroachdb-observability-and-diagnostics"
+     "name": "cockroachdb-observability-and-diagnostics:analyzing-range-distribution",
+     "description": "Analyzes CockroachDB range distribution across tables and indexes using SHOW RANGES to identify range count, size patterns, leaseholder placement, and replication health. Use when investigating hotspots, uneven data distribution, range fragmentation, or validating zone configuration effects without DB Console access.",
+     "path": "skills/cockroachdb-observability-and-diagnostics/analyzing-range-distribution/SKILL.md"
     },
     {
-     "name": "cockroachdb-onboarding-and-migrations",
-     "description": "",
-     "path": "skills/cockroachdb-onboarding-and-migrations"
+     "name": "cockroachdb-observability-and-diagnostics:analyzing-schema-change-storage-risk",
+     "description": "Estimates storage requirements for CockroachDB online schema change backfills using SHOW RANGES WITH DETAILS, KEYS, INDEXES. Use before CREATE INDEX, ADD COLUMN with INDEX/UNIQUE, ALTER PRIMARY KEY, CREATE MATERIALIZED VIEW, CREATE TABLE AS, REFRESH, or SET LOCALITY on tables with large per-index footprints, to avoid mid-backfill disk exhaustion.",
+     "path": "skills/cockroachdb-observability-and-diagnostics/analyzing-schema-change-storage-risk/SKILL.md"
     },
     {
-     "name": "cockroachdb-operations-and-lifecycle",
-     "description": "",
-     "path": "skills/cockroachdb-operations-and-lifecycle"
+     "name": "cockroachdb-observability-and-diagnostics:auditing-table-statistics",
+     "description": "Audits optimizer table statistics for staleness, missing coverage, and data quality issues using SHOW STATISTICS. Use when diagnosing poor query performance, unexpected plan changes, or after bulk data changes to identify stale statistics requiring refresh via CREATE STATISTICS.",
+     "path": "skills/cockroachdb-observability-and-diagnostics/auditing-table-statistics/SKILL.md"
     },
     {
-     "name": "cockroachdb-performance-and-scaling",
-     "description": "",
-     "path": "skills/cockroachdb-performance-and-scaling"
+     "name": "cockroachdb-observability-and-diagnostics:monitoring-background-jobs",
+     "description": "Monitors CockroachDB background job health by identifying failed, paused, and long-running jobs using SHOW JOBS and SHOW AUTOMATIC JOBS. Surfaces schema changes, backups/restores, automatic statistics collection, and SQL stats compaction jobs without DB Console access. Use when investigating schema change delays, failed backups, or automatic job issues.",
+     "path": "skills/cockroachdb-observability-and-diagnostics/monitoring-background-jobs/SKILL.md"
     },
     {
-     "name": "cockroachdb-query-and-schema-design",
-     "description": "",
-     "path": "skills/cockroachdb-query-and-schema-design"
+     "name": "cockroachdb-observability-and-diagnostics:profiling-statement-fingerprints",
+     "description": "Ranks and analyzes statement fingerprints using aggregated SQL statistics from crdb_internal.statement_statistics to identify slow, resource-intensive, or error-prone query patterns. Use when investigating historical performance trends, identifying optimization opportunities, or diagnosing recurring slowness without DB Console access.",
+     "path": "skills/cockroachdb-observability-and-diagnostics/profiling-statement-fingerprints/SKILL.md"
     },
     {
-     "name": "cockroachdb-resilience-and-disaster-recovery",
-     "description": "",
-     "path": "skills/cockroachdb-resilience-and-disaster-recovery"
+     "name": "cockroachdb-observability-and-diagnostics:profiling-transaction-fingerprints",
+     "description": "Analyzes transaction fingerprints using aggregated statistics from crdb_internal.transaction_statistics to identify high-retry transactions, contention patterns, and commit latency issues. Provides historical transaction-level analysis to understand which statement combinations are causing retries, contention, or performance degradation. Use when investigating transaction retry storms, analyzing commit latency trends, or understanding statement composition of problematic transactions without DB Console access.",
+     "path": "skills/cockroachdb-observability-and-diagnostics/profiling-transaction-fingerprints/SKILL.md"
     },
     {
-     "name": "cockroachdb-security-and-governance",
-     "description": "",
-     "path": "skills/cockroachdb-security-and-governance"
+     "name": "cockroachdb-observability-and-diagnostics:triaging-live-sql-activity",
+     "description": "Diagnoses live CockroachDB cluster performance issues by identifying long-running queries, busy sessions, and active transactions using SQL-only interfaces. Use when users report cluster slowness, high CPU, or need to find runaway queries and their source applications without DB Console access.",
+     "path": "skills/cockroachdb-observability-and-diagnostics/triaging-live-sql-activity/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-onboarding-and-migrations:molt-fetch",
+     "description": "Guide for using molt fetch to migrate data from PostgreSQL, MySQL, Oracle, or MSSQL to CockroachDB. Use when running molt fetch commands, configuring storage backends, handling fetch failures/resumption, or chaining fetch with verify.",
+     "path": "skills/cockroachdb-onboarding-and-migrations/molt-fetch/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-onboarding-and-migrations:molt-replicator",
+     "description": "Guide for using the CockroachDB replicator to continuously replicate changes from PostgreSQL, MySQL, or Oracle to CockroachDB after an initial molt fetch data load. Use when setting up CDC replication, configuring pglogical/mylogical/oraclelogminer, or managing the fetch \u2192 replicator cutover workflow.",
+     "path": "skills/cockroachdb-onboarding-and-migrations/molt-replicator/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-onboarding-and-migrations:molt-verify",
+     "description": "Guide for using molt verify to compare source and target databases for schema and row-level consistency after a migration. Use when running verify commands, tuning concurrency/sharding, handling schema mismatches, or validating data integrity post-migration.",
+     "path": "skills/cockroachdb-onboarding-and-migrations/molt-verify/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-onboarding-and-migrations:setting-up-local-cluster",
+     "description": "Downloads and starts a local CockroachDB cluster for development using the official binary. Use when a developer needs a local CockroachDB instance, when no cluster is available, or when setting up a new development environment.",
+     "path": "skills/cockroachdb-onboarding-and-migrations/setting-up-local-cluster/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-operations-and-lifecycle:managing-certificates-and-encryption",
+     "description": "Manages TLS certificate and encryption key lifecycle across all tiers. Self-Hosted covers certificate expiry monitoring, node/CA/client cert rotation, and Kubernetes cert management. Advanced/BYOC covers managed TLS (no action) and CMEK (Customer-Managed Encryption Key) rotation in your KMS. Standard and Basic have fully managed TLS and encryption with no customer action. CMEK is only available on Advanced. Use when monitoring cert health, performing rotation, managing CMEK, or responding to key compromise.",
+     "path": "skills/cockroachdb-operations-and-lifecycle/managing-certificates-and-encryption/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-operations-and-lifecycle:managing-cluster-capacity",
+     "description": "Manages CockroachDB cluster capacity across all tiers. Self-Hosted covers node decommissioning for permanent removal and adding nodes for expansion. Advanced/BYOC covers scaling node count and machine size via Cloud Console, API, or Terraform. Standard covers adjusting provisioned compute (vCPUs). Basic auto-scales \u2014 guidance covers spending limits and cost management. Use when scaling capacity up or down, permanently removing nodes, or managing costs.",
+     "path": "skills/cockroachdb-operations-and-lifecycle/managing-cluster-capacity/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-operations-and-lifecycle:managing-cluster-settings",
+     "description": "Reviews, audits, and modifies CockroachDB cluster settings. Self-Hosted has full control over all settings and start flags. Advanced/BYOC can modify most SQL-level settings but infrastructure settings are managed by CRL. Standard has limited settings access \u2014 session variables are the primary tuning mechanism. Basic has minimal settings \u2014 use session variables and Cloud Console. Use when auditing configuration, tuning performance, or troubleshooting settings-related issues.",
+     "path": "skills/cockroachdb-operations-and-lifecycle/managing-cluster-settings/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-operations-and-lifecycle:performing-cluster-maintenance",
+     "description": "Manages planned cluster maintenance across all tiers. Self-Hosted covers node drain procedures for OS patching, hardware changes, and configuration updates. Advanced/BYOC covers maintenance window configuration, patch scheduling, deferral policies, and monitoring during CRL-managed maintenance. Standard and Basic maintenance is fully managed with no customer action. Use when planning maintenance, configuring maintenance windows, or preparing applications for maintenance events.",
+     "path": "skills/cockroachdb-operations-and-lifecycle/performing-cluster-maintenance/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-operations-and-lifecycle:provisioning-cluster-for-production",
+     "description": "Guides initial CockroachDB cluster provisioning and production deployment. Self-Hosted covers cockroach start/init, Kubernetes deployment (Operator, Helm), hardware sizing, and production configuration. Advanced/BYOC covers Cloud Console, API, and Terraform provisioning with production settings. Standard covers cluster creation and provisioned compute selection. Basic covers cluster creation and spending limits. Use when creating a new cluster, preparing for production go-live, or validating deployment configuration.",
+     "path": "skills/cockroachdb-operations-and-lifecycle/provisioning-cluster-for-production/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-operations-and-lifecycle:reviewing-cluster-health",
+     "description": "Performs a comprehensive health check of a CockroachDB cluster. Gathers deployment context first, then provides tier-appropriate diagnostics. Self-Hosted uses SQL against node-level system tables and CLI. Advanced/BYOC use Cloud Console and SQL with node visibility. Standard monitors provisioned compute and workload via Cloud Console. Basic monitors Request Unit consumption and connectivity. Use for daily checks, pre-maintenance validation, post-incident verification, or production readiness assessment.",
+     "path": "skills/cockroachdb-operations-and-lifecycle/reviewing-cluster-health/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-operations-and-lifecycle:upgrading-cluster-version",
+     "description": "Guides CockroachDB version upgrades with tier-appropriate procedures. Self-Hosted covers manual rolling binary replacement with finalization control. Advanced/BYOC covers Console-initiated major upgrades, maintenance windows for patches, and release channel selection. Standard and Basic upgrades are fully automatic with no customer action required. Use when planning, executing, or monitoring a version upgrade.",
+     "path": "skills/cockroachdb-operations-and-lifecycle/upgrading-cluster-version/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-query-and-schema-design:cockroachdb-sql",
+     "description": "Use when writing, generating, or optimizing SQL for CockroachDB, designing CockroachDB schemas, or when the user asks about CockroachDB-specific SQL patterns, type mappings, and distributed database best practices. Also use when encountering CockroachDB anti-patterns like missing primary keys, sequential ID hotspots, or incorrect type usage.",
+     "path": "skills/cockroachdb-query-and-schema-design/cockroachdb-sql/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-security-and-governance:auditing-cis-benchmark",
+     "description": "Audits a self-hosted CockroachDB cluster against the CIS CockroachDB Benchmark v1.0.0 Level 1 controls. Supports two audit depths \u2014 quick automated scans and full CIS audit procedures. Produces a structured PASS/FAIL/MANUAL report covering installation, system hardening, logging, user access, data protection, and CockroachDB settings. Use when preparing for CIS compliance assessments, hardening self-hosted deployments, or validating security posture against industry benchmarks.",
+     "path": "skills/cockroachdb-security-and-governance/auditing-cis-benchmark/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-security-and-governance:auditing-cloud-cluster-security",
+     "description": "Audits the security posture of a CockroachDB cluster (Cloud or self-hosted) across network, authentication, authorization, encryption, audit logging, and backup dimensions. Use when assessing cluster security readiness, preparing for compliance reviews, or investigating security configuration gaps.",
+     "path": "skills/cockroachdb-security-and-governance/auditing-cloud-cluster-security/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-security-and-governance:configuring-audit-logging",
+     "description": "Configures SQL audit logging on CockroachDB clusters to capture security-relevant events including authentication, privilege changes, and sensitive data access. Use when enabling audit logging for compliance, setting up role-based audit policies, or verifying audit configuration.",
+     "path": "skills/cockroachdb-security-and-governance/configuring-audit-logging/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-security-and-governance:configuring-ip-allowlists",
+     "description": "Configures and hardens IP allowlists for CockroachDB Cloud clusters to restrict network access to authorized CIDR ranges. Use when tightening network security, removing overly permissive allowlist entries like 0.0.0.0/0, or setting up allowlists for a new cluster.",
+     "path": "skills/cockroachdb-security-and-governance/configuring-ip-allowlists/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-security-and-governance:configuring-log-export",
+     "description": "Configures log and metric export for CockroachDB Cloud clusters to external monitoring services including AWS CloudWatch, GCP Cloud Logging, and Datadog. Use when setting up log export for audit compliance, configuring metric export for monitoring, or troubleshooting log delivery issues.",
+     "path": "skills/cockroachdb-security-and-governance/configuring-log-export/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-security-and-governance:configuring-private-connectivity",
+     "description": "Configures private network connectivity for CockroachDB Cloud clusters including AWS PrivateLink, GCP Private Service Connect, Azure Private Link, egress private endpoints, and VPC peering. Use when setting up private endpoints to eliminate public internet exposure, configuring egress to external services like Kafka, or establishing VPC peering.",
+     "path": "skills/cockroachdb-security-and-governance/configuring-private-connectivity/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-security-and-governance:configuring-sso-and-scim",
+     "description": "Configures SSO authentication and SCIM 2.0 provisioning for CockroachDB across four distinct layers \u2014 Cloud Console SSO (SAML/OIDC), DB Console SSO (OIDC), SQL/Cluster SSO (JWT or LDAP/AD), and SCIM 2.0 automated provisioning. Use when enabling centralized identity management, setting up SSO for compliance, or automating user lifecycle management.",
+     "path": "skills/cockroachdb-security-and-governance/configuring-sso-and-scim/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-security-and-governance:enabling-cmek-encryption",
+     "description": "Enables Customer-Managed Encryption Keys (CMEK) on CockroachDB Cloud clusters with the Advanced plan and Advanced Security Add-on to give organizations control over data-at-rest encryption keys via their cloud provider's KMS. Use when enabling CMEK for compliance, rotating encryption keys, or verifying CMEK configuration.",
+     "path": "skills/cockroachdb-security-and-governance/enabling-cmek-encryption/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-security-and-governance:enforcing-password-policies",
+     "description": "Configures and enforces password policies on CockroachDB clusters including minimum length, complexity requirements, and hash cost settings. Use when strengthening authentication requirements, setting up password policies for a new cluster, or meeting compliance password standards.",
+     "path": "skills/cockroachdb-security-and-governance/enforcing-password-policies/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-security-and-governance:hardening-user-privileges",
+     "description": "Hardens CockroachDB user privileges by auditing and tightening role-based access control, reducing admin grants, restricting PUBLIC role permissions, and applying least-privilege principles. Use when reducing excessive privileges, cleaning up admin access, or implementing RBAC best practices.",
+     "path": "skills/cockroachdb-security-and-governance/hardening-user-privileges/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-security-and-governance:managing-tls-certificates",
+     "description": "Manages TLS certificates for CockroachDB clusters including CA certificate configuration, client certificate authentication, certificate rotation, and troubleshooting SSL/TLS connection errors. Use when setting up client certificate auth, resolving SSL connection failures, rotating certificates, or configuring mTLS for CDC changefeeds.",
+     "path": "skills/cockroachdb-security-and-governance/managing-tls-certificates/SKILL.md"
+    },
+    {
+     "name": "cockroachdb-security-and-governance:preparing-compliance-documentation",
+     "description": "Guides preparation of compliance documentation for CockroachDB Cloud deployments, covering SOC 2, PCI DSS, ISO 27001, HIPAA, and GDPR certifications. Use when responding to compliance questionnaires, preparing for audits, locating certification documents, or assessing cluster configuration for compliance readiness.",
+     "path": "skills/cockroachdb-security-and-governance/preparing-compliance-documentation/SKILL.md"
     }
    ],
    "agents": [
@@ -6457,13 +6602,13 @@
   {
    "name": "code-modernization",
    "displayName": "Code Modernization",
-   "description": "Modernize legacy codebases (COBOL, legacy Java/C++, monolith web apps) with a structured preflight / assess / map / extract-rules / brief / reimagine / transform / harden workflow, an interactive topology viewer, and specialist review agents",
+   "description": "Guided modernization for any legacy codebase: start with /modernize, get an assessment, an interactive map, the business rules mined from the code, and a plan you approve, then an upgrade, a rewrite or a rebuild with independent proof that the new code behaves like the old. Includes security hardening, a one-page report, specialist agents, and an optional live progress pane (early access).",
    "source": {
     "type": "git-subdir",
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/code-modernization",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -6481,53 +6626,68 @@
    "commands": [
     {
      "name": "modernize-assess",
-     "description": "Full discovery & portfolio analysis of a legacy system \u2014 inventory, complexity, debt, relative scale",
+     "description": "What am I dealing with? Inventory, complexity, debt, security and a recommended modernization pattern",
      "path": "commands/modernize-assess.md"
     },
     {
      "name": "modernize-brief",
-     "description": "Generate a phased Modernization Brief \u2014 the approved plan that transformation agents will execute against",
+     "description": "Write the phased Modernization Brief \u2014 the plan a steering committee approves and the build commands execute against",
      "path": "commands/modernize-brief.md"
     },
     {
      "name": "modernize-extract-rules",
-     "description": "Mine business logic from legacy code into testable, human-readable rule specifications",
+     "description": "Mine the business rules out of the code into testable Given/When/Then rule cards with file:line citations",
      "path": "commands/modernize-extract-rules.md"
     },
     {
      "name": "modernize-harden",
-     "description": "Security vulnerability scan with a reviewable remediation patch \u2014 OWASP, CWE, CVE, secrets, injection",
+     "description": "Security scan of the legacy system with a reviewable remediation patch (OWASP, CWE, CVEs, secrets, injection)",
      "path": "commands/modernize-harden.md"
     },
     {
      "name": "modernize-map",
-     "description": "Dependency & topology mapping \u2014 call graphs, data lineage, batch flows, rendered as navigable diagrams",
+     "description": "Show me the structure \u2014 dependencies, data flow, entry points and business flows, as an interactive map",
      "path": "commands/modernize-map.md"
     },
     {
      "name": "modernize-preflight",
-     "description": "Environment readiness check \u2014 analysis tools, build toolchain, source completeness, telemetry access",
+     "description": "Run this first \u2014 checks the environment, records where the code lives, and says what to fix before anything else runs",
      "path": "commands/modernize-preflight.md"
     },
     {
      "name": "modernize-reimagine",
-     "description": "Multi-agent greenfield rebuild \u2014 extract specs from legacy, design AI-native, scaffold & validate with HITL",
+     "description": "Rebuild the system from its extracted intent on a new architecture, with two human checkpoints",
      "path": "commands/modernize-reimagine.md"
     },
     {
+     "name": "modernize-review",
+     "description": "Confirm or correct the business rules that need a person's judgement; the plan and the build read your answers",
+     "path": "commands/modernize-review.md"
+    },
+    {
      "name": "modernize-status",
-     "description": "Where am I in the modernization workflow \u2014 artifact inventory, staleness, secrets hygiene, next step",
+     "description": "Where am I? Progress, what is stale, and the exact next command to run \u2014 start here when unsure",
      "path": "commands/modernize-status.md"
     },
     {
      "name": "modernize-transform",
-     "description": "Transform one legacy module to the target stack \u2014 idiomatic rewrite with behavior-equivalence tests",
+     "description": "Rewrite one legacy module in the target stack, with tests that prove it behaves the same",
      "path": "commands/modernize-transform.md"
     },
     {
      "name": "modernize-uplift",
-     "description": "Same-stack version uplift (e.g. .NET Framework 4.8 \u2192 .NET 8) \u2014 preserve the code, fix the version deltas, prove equivalence by running one test suite on both runtimes",
+     "description": "Same-stack version uplift (e.g. .NET Framework 4.8 to .NET 8, Java 8 to 17) \u2014 keep the code, fix the version deltas, prove nothing changed",
      "path": "commands/modernize-uplift.md"
+    },
+    {
+     "name": "modernize-verify",
+     "description": "Prove the modernized code behaves like the legacy, with an independent re-check and one verdict per module",
+     "path": "commands/modernize-verify.md"
+    },
+    {
+     "name": "modernize",
+     "description": "Start here \u2014 say what you want done with your code and get the plan and the first step",
+     "path": "commands/modernize.md"
     }
    ],
    "agents": [
@@ -6568,8 +6728,35 @@
     },
     {
      "name": "version-delta-analyst",
-     "description": "Identifies the breaking changes between two versions of the SAME stack (e.g. .NET Framework 4.8 \u2192 .NET 8, Java 8 \u2192 17/21, Spring Boot 2 \u2192 3) that actually bite a given codebase, and drives the ecosystem's migration tooling. Use for same-stack uplifts, where code is preserved and tweaked \u2014 not rewritten from intent. (Note \u2014 some \"same-stack\" bumps are really rewrites \u2014 Python 2 \u2192 3 with pervasive str/bytes, AngularJS \u2192 Angular \u2014 where minimal-diff fails; flag those for /modernize-transform.)",
+     "description": "Identifies the breaking changes between two versions of the SAME stack (e.g. .NET Framework 4.8 \u2192 .NET 8, Java 8 \u2192 17/21, Spring Boot 2 \u2192 3) that actually bite a given codebase, and drives the ecosystem's migration tooling. Use for same-stack uplifts, where code is preserved and tweaked \u2014 not rewritten from intent. (Note \u2014 some \"same-stack\" bumps are really rewrites \u2014 Python 2 \u2192 3 with pervasive str/bytes, AngularJS \u2192 Angular \u2014 where minimal-diff fails; flag those for /code-modernization:modernize-transform.)",
      "path": "agents/version-delta-analyst.md"
+    }
+   ],
+   "hooks": [
+    {
+     "name": "PostToolUseFailure",
+     "description": "The modernization pane and estate map, x-ray reads, the rule review deck, the sign-off dialog and the fleet view, and usage counts (whole numbers only, see the README)",
+     "path": "hooks/hooks.json"
+    },
+    {
+     "name": "SessionStart",
+     "description": "The modernization pane and estate map, x-ray reads, the rule review deck, the sign-off dialog and the fleet view, and usage counts (whole numbers only, see the README)",
+     "path": "hooks/hooks.json"
+    },
+    {
+     "name": "Stop",
+     "description": "The modernization pane and estate map, x-ray reads, the rule review deck, the sign-off dialog and the fleet view, and usage counts (whole numbers only, see the README)",
+     "path": "hooks/hooks.json"
+    },
+    {
+     "name": "StopFailure",
+     "description": "The modernization pane and estate map, x-ray reads, the rule review deck, the sign-off dialog and the fleet view, and usage counts (whole numbers only, see the README)",
+     "path": "hooks/hooks.json"
+    },
+    {
+     "name": "UserPromptSubmit",
+     "description": "The modernization pane and estate map, x-ray reads, the rule review deck, the sign-off dialog and the fleet view, and usage counts (whole numbers only, see the README)",
+     "path": "hooks/hooks.json"
     }
    ],
    "marketplace": "claude-code"
@@ -6583,7 +6770,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/code-simplifier",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -6722,7 +6909,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/commit-commands",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -6968,7 +7155,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/context7",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -7422,7 +7609,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/csharp-lsp",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": false,
@@ -7455,7 +7642,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/cwc-makers",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -8580,11 +8767,6 @@
      "path": "skills/load-standards/SKILL.md"
     },
     {
-     "name": "shared-references",
-     "description": "",
-     "path": "skills/shared-references"
-    },
-    {
      "name": "using-datahub",
      "description": "|",
      "path": "skills/using-datahub/SKILL.md"
@@ -8903,11 +9085,6 @@
    ],
    "skills": [
     {
-     "name": "README",
-     "description": "",
-     "path": "skills/README.md"
-    },
-    {
      "name": "deepeval",
      "description": ">",
      "path": "skills/deepeval/SKILL.md"
@@ -9082,7 +9259,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/discord",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -9157,27 +9334,27 @@
    ],
    "skills": [
     {
-     "name": "ai-gateway",
+     "name": "domino-ai-gateway",
      "description": "Access external LLM providers through Domino AI Gateway - a secure proxy with centralized API key management, usage monitoring, and compliance. Supports OpenAI, AWS Bedrock, Azure OpenAI, Anthropic, and more. Use when calling LLMs from Domino, configuring AI Gateway endpoints, or monitoring LLM usage and costs.",
      "path": "skills/ai-gateway/SKILL.md"
     },
     {
-     "name": "apps",
+     "name": "domino-apps",
      "description": "Deploy web applications to Domino Data Lab with expertise in React apps (Vite) behind Domino's reverse proxy. Covers app.sh configuration, port configuration, base path handling for SPAs, CI/CD with GitHub Actions, and proxy troubleshooting. Use when deploying apps to Domino, setting up CI/CD pipelines, fixing broken routing, or configuring JavaScript frameworks for Domino's proxy.",
      "path": "skills/apps/SKILL.md"
     },
     {
-     "name": "data-connectivity",
+     "name": "domino-data-connectivity",
      "description": "Connect Domino workloads to external data sources including AWS S3 (via Mountpoint CSI driver), credential propagation with AWS IRSA and Azure Entra ID, and External Data Volumes. Use when configuring S3 access, setting up credential propagation, or connecting to cloud data sources from Domino.",
      "path": "skills/data-connectivity/SKILL.md"
     },
     {
-     "name": "datasets",
+     "name": "domino-datasets",
      "description": "Work with Domino Datasets - high-performance, versioned filesystem storage. Covers dataset creation, snapshots for versioning, sharing across projects, mounting paths (/domino/datasets/), and performance optimization. Use when managing data storage, creating reproducible data versions, or sharing data between projects.",
      "path": "skills/datasets/SKILL.md"
     },
     {
-     "name": "distributed-computing",
+     "name": "domino-distributed-computing",
      "description": "Work with distributed computing frameworks in Domino including Apache Spark, Ray, and Dask clusters. Covers cluster configuration, on-demand clusters, choosing between frameworks, PySpark usage, and scaling workloads. Use when processing large datasets, parallel ML training, or running distributed compute jobs.",
      "path": "skills/distributed-computing/SKILL.md"
     },
@@ -9202,47 +9379,47 @@
      "path": "skills/domino-ui-design/SKILL.md"
     },
     {
-     "name": "environments",
+     "name": "domino-environments",
      "description": "Create and customize Domino Compute Environments - Docker containers defining tools, packages, and configurations. Covers Dockerfile customization, package installation, IDE configuration, DSE (Domino Standard Environments), and troubleshooting build failures. Use when installing dependencies, customizing environments, or fixing environment issues.",
      "path": "skills/environments/SKILL.md"
     },
     {
-     "name": "experiment-tracking",
+     "name": "domino-experiment-tracking",
      "description": "Track traditional ML experiments in Domino using the MLflow-based Experiment Manager. Covers experiment setup, auto-logging for sklearn/TensorFlow/PyTorch, manual logging, artifact storage, run comparison, and model registration. Use when training ML models, logging metrics and parameters, comparing model runs, or registering models.",
      "path": "skills/experiment-tracking/SKILL.md"
     },
     {
-     "name": "flows",
+     "name": "domino-flows",
      "description": "Orchestrate multi-step ML workflows using Domino Flows (built on Flyte). Define DAGs with typed inputs/outputs, heterogeneous environments, automatic lineage, and reproducibility. Use when building data pipelines, multi-stage training workflows, or processes requiring orchestration and monitoring.",
      "path": "skills/flows/SKILL.md"
     },
     {
-     "name": "genai-tracing",
+     "name": "domino-genai-tracing",
      "description": "Trace and evaluate GenAI applications including LLM calls, agents, RAG pipelines, and multi-step AI systems in Domino. Uses the Domino SDK (@add_tracing decorator, DominoRun context) with MLflow 3.2.0. Captures token usage, latency, cost, tool calls, and errors. Supports LLM-as-judge evaluators and custom metrics. Use when building agents, debugging LLM applications, or needing audit trails for GenAI systems.",
      "path": "skills/genai-tracing/SKILL.md"
     },
     {
-     "name": "jobs",
+     "name": "domino-jobs",
      "description": "Create, run, and manage Domino Jobs - batch executions for scripts, training, and data processing. Covers job configuration, hardware tiers, scheduled jobs (cron), monitoring status, viewing logs, and API-driven execution. Use when running batch workloads, scheduling recurring tasks, or automating training pipelines.",
      "path": "skills/jobs/SKILL.md"
     },
     {
-     "name": "launchers",
+     "name": "domino-launchers",
      "description": "Create Domino Launchers - parameterized web forms for self-service job execution. Enable business users to run analyses, generate reports, and trigger batch predictions without coding. Covers parameter types, email notifications, result delivery, and access control. Use when building self-service data products or enabling non-technical users.",
      "path": "skills/launchers/SKILL.md"
     },
     {
-     "name": "model-endpoints",
+     "name": "domino-model-endpoints",
      "description": "Deploy and monitor model API endpoints in Domino. Covers creating prediction endpoints, version management, Grafana dashboards for latency/errors/resources, alerting, and GPU inference with NVIDIA Triton. Use when deploying models as APIs, monitoring production endpoints, or debugging endpoint issues.",
      "path": "skills/model-endpoints/SKILL.md"
     },
     {
-     "name": "model-monitoring",
+     "name": "domino-model-monitoring",
      "description": "Monitor deployed models in Domino including drift detection, model quality tracking, and alerting. Covers data drift analysis, prediction capture, baseline comparison, alert configuration, and remediation workflows. Use when monitoring production models, detecting drift, or setting up model health alerts.",
      "path": "skills/model-monitoring/SKILL.md"
     },
     {
-     "name": "modeling-assistant",
+     "name": "domino-modeling-assistant",
      "description": "Enable AI-assisted model development within Domino by writing needed model and training code and using MCP (Model Context Protocol) servers to execute domino jobs. AI coding assistants like Cursor and GitHub Copilot can execute commands as Domino jobs, maintaining security, governance, and reproducibility. Use when setting up AI code assistants to work with Domino, configuring MCP servers, or enabling vibe modeling workflows.",
      "path": "skills/modeling-assistant/SKILL.md"
     },
@@ -9252,12 +9429,12 @@
      "path": "skills/netapp-volumes/SKILL.md"
     },
     {
-     "name": "projects",
+     "name": "domino-projects",
      "description": "Work with Domino Projects including Git integration, DFS vs Git-based projects, collaboration, and version control. Covers project creation, Git provider setup (GitHub, GitLab, Bitbucket), branch management, collaborator permissions, and project settings. Use when creating projects, setting up Git repos, or managing team collaboration.",
      "path": "skills/projects/SKILL.md"
     },
     {
-     "name": "python-sdk",
+     "name": "domino-python-sdk",
      "description": "Programmatically interact with Domino using python-domino SDK and REST APIs. Covers authentication, running jobs, managing projects, file operations, model deployment, and automation. Use when automating Domino workflows, integrating with CI/CD, or building custom tooling around Domino.",
      "path": "skills/python-sdk/SKILL.md"
     },
@@ -9267,7 +9444,7 @@
      "path": "skills/tags-and-properties/SKILL.md"
     },
     {
-     "name": "workspaces",
+     "name": "domino-workspaces",
      "description": "Work with Domino Workspaces - interactive development environments including Jupyter, JupyterLab, VS Code, and RStudio. Covers launching workspaces, configuring hardware tiers, environment selection, volume mounting, SSH access, and package installation. Use when setting up development environments, configuring workspace settings, or troubleshooting IDE issues.",
      "path": "skills/workspaces/SKILL.md"
     }
@@ -9716,7 +9893,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/explanatory-output-style",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -9763,11 +9940,6 @@
     }
    ],
    "skills": [
-    {
-     "name": "README",
-     "description": "",
-     "path": "skills/README.md"
-    },
     {
      "name": "eas-app-stores",
      "description": "EAS service (paid). Build and submit iOS and Android apps with EAS to TestFlight, the App Store, or Google Play. Supports Expo and other React Native projects, plus existing native apps. Use for eas.json setup, release pipelines, signing, app versions and build numbers, store submissions, and listing metadata. For Expo websites and API routes, use eas-hosting; for adding React Native screens to a native app, use expo-brownfield.",
@@ -9912,7 +10084,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/fakechat",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -10020,7 +10192,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/feature-dev",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -10302,7 +10474,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/firebase",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "database",
    "strict": null,
@@ -10540,7 +10712,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/frontend-design",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -10698,7 +10870,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/github",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -10764,7 +10936,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/gitlab",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -10856,7 +11028,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/gopls-lsp",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": false,
@@ -10878,6 +11050,74 @@
      }
     }
    },
+   "marketplace": "claude-code"
+  },
+  {
+   "name": "govtribe",
+   "displayName": "Govtribe",
+   "description": "Government contracting research and capture workflows in Claude: opportunity and pipeline briefs, bid/no-bid and competitor analysis, price-to-win and proposal prep, powered by the GovTribe connector.",
+   "source": {
+    "type": "url",
+    "url": "https://github.com/GovTribe/claude-plugin.git",
+    "path": null,
+    "ref": null,
+    "sha": "d3e0c82c6c4f960320c010ceb8aabb463f1fb7d2"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "Apache-2.0",
+   "homepage": "https://govtribe.com",
+   "repository": "https://github.com/GovTribe/claude-plugin.git",
+   "author": {
+    "name": "GovTribe"
+   },
+   "publisher": {
+    "name": "govtribe",
+    "displayName": "GovTribe"
+   },
+   "mcpServers": [
+    {
+     "name": "govtribe",
+     "path": ".mcp.json"
+    }
+   ],
+   "keywords": [
+    "govtribe",
+    "government-contracting",
+    "govcon",
+    "capture",
+    "market-research",
+    "pricing",
+    "proposals"
+   ],
+   "skills": [
+    {
+     "name": "govtribe-capture-workflows",
+     "description": "Assess government contracting opportunities and pursuit decisions. Use for bid/no-bid recommendations, eligibility and vehicle-access gates, opportunity fit, pipelines, incumbents, competitors, and teaming, including concise advice based only on user-supplied facts. Apply the capture workflow before recommending pursuit posture. Not for broad market research or proposal drafting.",
+     "path": "skills/govtribe-capture-workflows/SKILL.md"
+    },
+    {
+     "name": "govtribe-deep-dive",
+     "description": "Use this skill when the user needs an evidence-backed deep dive on one GovCon record, agency, vendor, program, or jurisdiction. Do not use for broad market scans or proposal drafting.",
+     "path": "skills/govtribe-deep-dive/SKILL.md"
+    },
+    {
+     "name": "govtribe-market-intelligence",
+     "description": "Use this skill when the user needs GovCon market sizing, buyer or vendor analysis, forecasts, recompetes, or recurring intelligence. Do not use for pursuit-specific capture or proposal drafting.",
+     "path": "skills/govtribe-market-intelligence/SKILL.md"
+    },
+    {
+     "name": "govtribe-pricing-data",
+     "description": "Use this skill when the user needs GovCon labor rates, line items, staffing, pricing models, or price-to-win evidence. Do not use for broad market research or proposal drafting.",
+     "path": "skills/govtribe-pricing-data/SKILL.md"
+    },
+    {
+     "name": "govtribe-proposal-workflows",
+     "description": "Turn government solicitations and amendments into compliance checklists, requirement matrices, annotated outlines, proposal workbooks, and draft responses. Use for proposal compliance even when the user supplies the full packet or requests only a short Markdown checklist. Apply amendment precedence and source traceability before drafting. Not for capture-only bid/no-bid decisions.",
+     "path": "skills/govtribe-proposal-workflows/SKILL.md"
+    }
+   ],
+   "logoUrl": "https://www.google.com/s2/favicons?domain=govtribe.com&sz=128",
    "marketplace": "claude-code"
   },
   {
@@ -11264,7 +11504,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/hookify",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -11281,7 +11521,7 @@
    },
    "skills": [
     {
-     "name": "writing-rules",
+     "name": "writing-hookify-rules",
      "description": "This skill should be used when the user asks to \"create a hookify rule\", \"write a hook rule\", \"configure hookify\", \"add a hookify rule\", or needs guidance on hookify rule syntax and patterns.",
      "path": "skills/writing-rules/SKILL.md"
     }
@@ -11988,7 +12228,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/imessage",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -12284,7 +12524,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/jdtls-lsp",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": false,
@@ -12462,7 +12702,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/kotlin-lsp",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": false,
@@ -12500,7 +12740,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/laravel-boost",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -12617,7 +12857,7 @@
     {
      "name": "learn-with-coursera",
      "description": ">",
-     "path": "skills/learn-with-coursera"
+     "path": "skills/learn-with-coursera/SKILL.md"
     }
    ],
    "marketplace": "claude-code"
@@ -12631,7 +12871,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/learning-output-style",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -12703,7 +12943,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/linear",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -12730,6 +12970,55 @@
     "project-management",
     "productivity"
    ],
+   "marketplace": "claude-code"
+  },
+  {
+   "name": "linq-alpha",
+   "displayName": "Linq Alpha",
+   "description": "LinqAlpha financial research in Claude: guided setup for the LinqAlpha connector, capability-based source selection for fundamentals, estimates, transcripts, filings and market data, and an optional, opt-in default-source preference you can remove at any time. Requires a LinqAlpha account.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/linq-lab/linq-alpha-plugin.git",
+    "path": "plugins/linq-alpha",
+    "ref": "main",
+    "sha": "42202fdd4bd1cbb373c1f11a4114f173edffc437"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "Apache-2.0",
+   "homepage": "https://www.linqalpha.com",
+   "repository": "https://github.com/linq-lab/linq-alpha-plugin.git",
+   "author": {
+    "name": "LinqAlpha"
+   },
+   "publisher": {
+    "name": "linqalpha",
+    "displayName": "LinqAlpha"
+   },
+   "mcpServers": [
+    {
+     "name": "linqalpha",
+     "path": ".mcp.json"
+    }
+   ],
+   "skills": [
+    {
+     "name": "remove",
+     "description": "Delete the saved LinqAlpha default-source preference from Claude's memory. Use ONLY when the user invokes /linq-alpha:remove or asks to forget that preference; not for uninstalling the plugin or disconnecting the connector.",
+     "path": "skills/remove/SKILL.md"
+    },
+    {
+     "name": "research",
+     "description": "Choose and use LinqAlpha for institutional financial research involving company identity, fundamentals, estimates, ownership, prices, transcripts, disclosures, macro data, rates, FX, commodities, citations, or organization-scoped LinqAlpha data. Use this skill when deciding among overlapping financial-data connectors, when the user asks what LinqAlpha can do, or before planning a LinqAlpha research workflow.",
+     "path": "skills/research/SKILL.md"
+    },
+    {
+     "name": "setup",
+     "description": "Run the LinqAlpha setup flow \u2014 connection check, capability tour, default-source opt-in. Use ONLY when the user invokes /linq-alpha:setup or asks to set up or connect the LinqAlpha plugin; for questions about LinqAlpha's capabilities or any research request, use the research skill instead.",
+     "path": "skills/setup/SKILL.md"
+    }
+   ],
+   "logoUrl": "https://www.google.com/s2/favicons?domain=www.linqalpha.com&sz=128",
    "marketplace": "claude-code"
   },
   {
@@ -13051,7 +13340,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/lua-lsp",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": false,
@@ -13251,11 +13540,6 @@
    ],
    "skills": [
     {
-     "name": "README",
-     "description": "",
-     "path": "skills/README.md"
-    },
-    {
      "name": "mapbox-android-patterns",
      "description": "Official integration patterns for Mapbox Maps SDK on Android. Covers installation, adding markers, user location, custom data, styles, camera control, and featureset interactions. Based on official Mapbox documentation.",
      "path": "skills/mapbox-android-patterns/SKILL.md"
@@ -13368,7 +13652,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/math-olympiad",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "math",
    "strict": null,
@@ -13426,29 +13710,194 @@
    ],
    "skills": [
     {
-     "name": "deprecated",
-     "description": "",
-     "path": "skills/deprecated/README.md"
+     "name": "engineering:ask-matt",
+     "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+     "path": "skills/engineering/ask-matt/SKILL.md"
     },
     {
-     "name": "engineering",
-     "description": "",
-     "path": "skills/engineering/README.md"
+     "name": "engineering:code-review",
+     "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \\\"review since X\\\".",
+     "path": "skills/engineering/code-review/SKILL.md"
     },
     {
-     "name": "in-progress",
-     "description": "",
-     "path": "skills/in-progress/README.md"
+     "name": "engineering:codebase-design",
+     "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+     "path": "skills/engineering/codebase-design/SKILL.md"
     },
     {
-     "name": "misc",
-     "description": "",
-     "path": "skills/misc/README.md"
+     "name": "engineering:diagnosing-bugs",
+     "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+     "path": "skills/engineering/diagnosing-bugs/SKILL.md"
     },
     {
-     "name": "productivity",
-     "description": "",
-     "path": "skills/productivity/README.md"
+     "name": "engineering:domain-modeling",
+     "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a CONTEXT.md, or recording or editing an ADR.",
+     "path": "skills/engineering/domain-modeling/SKILL.md"
+    },
+    {
+     "name": "engineering:grill-with-docs",
+     "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+     "path": "skills/engineering/grill-with-docs/SKILL.md"
+    },
+    {
+     "name": "engineering:implement",
+     "description": "Implement a piece of work based on a spec or set of tickets.",
+     "path": "skills/engineering/implement/SKILL.md"
+    },
+    {
+     "name": "engineering:improve-codebase-architecture",
+     "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+     "path": "skills/engineering/improve-codebase-architecture/SKILL.md"
+    },
+    {
+     "name": "engineering:prototype",
+     "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+     "path": "skills/engineering/prototype/SKILL.md"
+    },
+    {
+     "name": "engineering:research",
+     "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+     "path": "skills/engineering/research/SKILL.md"
+    },
+    {
+     "name": "engineering:resolving-merge-conflicts",
+     "description": "Use when you need to resolve an in-progress git merge/rebase conflict.",
+     "path": "skills/engineering/resolving-merge-conflicts/SKILL.md"
+    },
+    {
+     "name": "engineering:setup-matt-pocock-skills",
+     "description": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+     "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md"
+    },
+    {
+     "name": "engineering:tdd",
+     "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+     "path": "skills/engineering/tdd/SKILL.md"
+    },
+    {
+     "name": "engineering:to-spec",
+     "description": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
+     "path": "skills/engineering/to-spec/SKILL.md"
+    },
+    {
+     "name": "engineering:to-tickets",
+     "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+     "path": "skills/engineering/to-tickets/SKILL.md"
+    },
+    {
+     "name": "engineering:triage",
+     "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+     "path": "skills/engineering/triage/SKILL.md"
+    },
+    {
+     "name": "engineering:wayfinder",
+     "description": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+     "path": "skills/engineering/wayfinder/SKILL.md"
+    },
+    {
+     "name": "engineering:wizard",
+     "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+     "path": "skills/engineering/wizard/SKILL.md"
+    },
+    {
+     "name": "in-progress:claude-handoff",
+     "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+     "path": "skills/in-progress/claude-handoff/SKILL.md"
+    },
+    {
+     "name": "in-progress:implement-spec",
+     "description": "Implement a specification in code.",
+     "path": "skills/in-progress/implement-spec/SKILL.md"
+    },
+    {
+     "name": "in-progress:loop-me",
+     "description": "Grill me about specs for the workflows I want to build, within this workspace.",
+     "path": "skills/in-progress/loop-me/SKILL.md"
+    },
+    {
+     "name": "in-progress:pr",
+     "description": "Use when writing a PR body.",
+     "path": "skills/in-progress/pr/SKILL.md"
+    },
+    {
+     "name": "in-progress:retro",
+     "description": "Conduct a retrospective on a coding session.",
+     "path": "skills/in-progress/retro/SKILL.md"
+    },
+    {
+     "name": "in-progress:setup-ts-deep-modules",
+     "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
+     "path": "skills/in-progress/setup-ts-deep-modules/SKILL.md"
+    },
+    {
+     "name": "in-progress:writing-beats",
+     "description": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+     "path": "skills/in-progress/writing-beats/SKILL.md"
+    },
+    {
+     "name": "in-progress:writing-fragments",
+     "description": "Writing, explore: mine raw fragments, no structure yet.",
+     "path": "skills/in-progress/writing-fragments/SKILL.md"
+    },
+    {
+     "name": "in-progress:writing-shape",
+     "description": "Writing, exploit: shape raw material into an article, paragraph by paragraph.",
+     "path": "skills/in-progress/writing-shape/SKILL.md"
+    },
+    {
+     "name": "misc:git-guardrails-claude-code",
+     "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+     "path": "skills/misc/git-guardrails-claude-code/SKILL.md"
+    },
+    {
+     "name": "misc:migrate-to-shoehorn",
+     "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
+     "path": "skills/misc/migrate-to-shoehorn/SKILL.md"
+    },
+    {
+     "name": "misc:scaffold-exercises",
+     "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
+     "path": "skills/misc/scaffold-exercises/SKILL.md"
+    },
+    {
+     "name": "misc:setup-pre-commit",
+     "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
+     "path": "skills/misc/setup-pre-commit/SKILL.md"
+    },
+    {
+     "name": "productivity:grill-me",
+     "description": "A relentless interview to sharpen a plan or design.",
+     "path": "skills/productivity/grill-me/SKILL.md"
+    },
+    {
+     "name": "productivity:grilling",
+     "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+     "path": "skills/productivity/grilling/SKILL.md"
+    },
+    {
+     "name": "productivity:handoff",
+     "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+     "path": "skills/productivity/handoff/SKILL.md"
+    },
+    {
+     "name": "productivity:teach",
+     "description": "Teach the user a new skill or concept, within this workspace.",
+     "path": "skills/productivity/teach/SKILL.md"
+    },
+    {
+     "name": "productivity:to-questionnaire",
+     "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+     "path": "skills/productivity/to-questionnaire/SKILL.md"
+    },
+    {
+     "name": "productivity:wait-what",
+     "description": "Stop. That last message did not land: re-pitch it.",
+     "path": "skills/productivity/wait-what/SKILL.md"
+    },
+    {
+     "name": "productivity:writing-for-agents",
+     "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+     "path": "skills/productivity/writing-for-agents/SKILL.md"
     }
    ],
    "marketplace": "claude-code"
@@ -13517,7 +13966,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/mcp-server-dev",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -13895,11 +14344,6 @@
      "name": "llm-to-bedrock",
      "description": "Use when the user wants to migrate code that calls OpenAI, Gemini/Google AI, or the Anthropic API to Amazon Bedrock \u2014 a pure model/SDK rewrite. End-to-end: assesses the codebase, then rewrites SDK calls, evaluates output quality against Bedrock, and delivers a ready-to-merge git branch. Not for: agent runtime selection, agentic architecture decisions, or agent migration planning \u2014 use agent-advisor for those. Not for standalone Bedrock cost estimates or infrastructure-only migration. REQUIRES the gcp-to-aws skill installed alongside this one \u2014 Assess is delegated entirely to it via a cross-skill invocation, with no standalone fallback if gcp-to-aws is absent.",
      "path": "skills/llm-to-bedrock/SKILL.md"
-    },
-    {
-     "name": "shared",
-     "description": "",
-     "path": "skills/shared"
     },
     {
      "name": "tf-best-practices",
@@ -14480,11 +14924,6 @@
    ],
    "skills": [
     {
-     "name": "CLAUDE",
-     "description": "",
-     "path": "skills/CLAUDE.md"
-    },
-    {
      "name": "netlify-access-control",
      "description": "Picks the right Netlify site-protection layer and disambiguates the three unrelated \"auth\" concepts users conflate \u2014 app-user login (Netlify Identity), site-load gating (Password Protection / project visibility), and dashboard SAML SSO. Use it when asked to password-protect a site or Deploy Preview, make a project private/public, restrict a site to your team, require SSO to view a site, set up company-wide app SSO, or invite users to a private project. Also use it for SSO-session symptoms on protected sites: \"logged out mid-session\", 401s after about an hour, or token expiry/refresh questions. Not for wiring auth code \u2014 route app-login setup to netlify-identity.",
      "path": "skills/netlify-access-control/SKILL.md"
@@ -15052,9 +15491,24 @@
    ],
    "skills": [
     {
-     "name": "notion",
-     "description": "",
-     "path": "skills/notion"
+     "name": "notion:notion-knowledge-capture",
+     "description": "Transforms conversations and discussions into structured documentation pages in Notion. Captures insights, decisions, and knowledge from chat context, formats appropriately, and saves to wikis or databases with proper organization and linking for easy discovery.",
+     "path": "skills/notion/knowledge-capture/SKILL.md"
+    },
+    {
+     "name": "notion:notion-meeting-intelligence",
+     "description": "Prepares meeting materials by gathering context from Notion, enriching with Claude research, and creating both an internal pre-read and external agenda saved to Notion. Helps you arrive prepared with comprehensive background and structured meeting docs.",
+     "path": "skills/notion/meeting-intelligence/SKILL.md"
+    },
+    {
+     "name": "notion:notion-research-documentation",
+     "description": "Searches across your Notion workspace, synthesizes findings from multiple pages, and creates comprehensive research documentation saved as new Notion pages. Turns scattered information into structured reports with proper citations and actionable insights.",
+     "path": "skills/notion/research-documentation/SKILL.md"
+    },
+    {
+     "name": "notion:notion-spec-to-implementation",
+     "description": "Turns product or tech specs into concrete Notion tasks that Claude code can implement. Breaks down spec pages into detailed implementation plans with clear tasks, acceptance criteria, and progress tracking to guide development from requirements to completion.",
+     "path": "skills/notion/spec-to-implementation/SKILL.md"
     }
    ],
    "commands": [
@@ -16424,7 +16878,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/php-lsp",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": false,
@@ -16799,7 +17253,7 @@
    },
    "skills": [
     {
-     "name": "pixeltable-skill",
+     "name": "pixeltable",
      "description": ">",
      "path": "skills/pixeltable-skill/SKILL.md"
     }
@@ -16885,7 +17339,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/playground",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -16918,7 +17372,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/playwright",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "testing",
    "strict": null,
@@ -16951,7 +17405,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/plugin-dev",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -18059,7 +18513,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/pr-review-toolkit",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -18266,7 +18720,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/pyright-lsp",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": false,
@@ -18318,11 +18772,6 @@
     "displayName": "Qdrant"
    },
    "skills": [
-    {
-     "name": "index",
-     "description": "",
-     "path": "skills/index.md"
-    },
     {
      "name": "qdrant-clients-sdk",
      "description": "Qdrant provides client SDKs for various programming languages, allowing easy integration with Qdrant deployments.",
@@ -18756,7 +19205,7 @@
      "path": "skills/revenuecat-entitlements-gate/SKILL.md"
     },
     {
-     "name": "revenuecat-experiment-analysis",
+     "name": "experiment-analysis",
      "description": "Use when the user asks to analyze or understand a RevenueCat experiment or its results.",
      "path": "skills/revenuecat-experiment-analysis/SKILL.md"
     },
@@ -19237,7 +19686,7 @@
      "path": "skills/revenuecat-entitlements-gate/SKILL.md"
     },
     {
-     "name": "revenuecat-experiment-analysis",
+     "name": "experiment-analysis",
      "description": "Use when the user asks to analyze or understand a RevenueCat experiment or its results.",
      "path": "skills/revenuecat-experiment-analysis/SKILL.md"
     },
@@ -19560,7 +20009,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/ruby-lsp",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": false,
@@ -19694,7 +20143,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/rust-analyzer-lsp",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": false,
@@ -21240,7 +21689,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/serena",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -21435,11 +21884,6 @@
      "name": "shipping-analysis",
      "description": "Analyze shipping costs, compare carriers, optimize package dimensions, and review historical shipping spend via the Shippo API",
      "path": "skills/shipping-analysis/SKILL.md"
-    },
-    {
-     "name": "shippo",
-     "description": "",
-     "path": "skills/shippo"
     },
     {
      "name": "shippo-best-practices",
@@ -22031,7 +22475,7 @@
      "path": "skills/ads/SKILL.md"
     },
     {
-     "name": "api-reference",
+     "name": "spotify-ads-api-reference",
      "description": "This skill should be used when the user asks to \"call the Spotify Ads API\", \"create a Spotify ad campaign\", \"manage Spotify ads\", \"pull Spotify ad reports\", \"set up ad sets or ads\", \"upload ad assets\", \"target audiences on Spotify\", \"check campaign status\", \"get ad account info\", \"look up API schema or fields\", \"check what targeting options exist\", or asks about Spotify advertising endpoints, request/response formats, enum values, or authentication.",
      "path": "skills/api-reference/SKILL.md"
     },
@@ -22765,7 +23209,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/swift-lsp",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": false,
@@ -22972,7 +23416,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/telegram",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "productivity",
    "strict": null,
@@ -23013,7 +23457,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/terraform",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": null,
@@ -23178,19 +23622,289 @@
    ],
    "skills": [
     {
-     "name": "README",
-     "description": "",
-     "path": "skills/README.md"
+     "name": "sendgrid:twilio-sendgrid-account-setup",
+     "description": ">",
+     "path": "skills/sendgrid/twilio-sendgrid-account-setup/SKILL.md"
     },
     {
-     "name": "sendgrid",
-     "description": "",
-     "path": "skills/sendgrid"
+     "name": "sendgrid:twilio-sendgrid-deliverability-advisor",
+     "description": ">",
+     "path": "skills/sendgrid/twilio-sendgrid-deliverability-advisor/SKILL.md"
     },
     {
-     "name": "twilio",
+     "name": "sendgrid:twilio-sendgrid-email-send",
+     "description": ">",
+     "path": "skills/sendgrid/twilio-sendgrid-email-send/SKILL.md"
+    },
+    {
+     "name": "sendgrid:twilio-sendgrid-email-settings",
+     "description": ">",
+     "path": "skills/sendgrid/twilio-sendgrid-email-settings/SKILL.md"
+    },
+    {
+     "name": "sendgrid:twilio-sendgrid-engagement-quality",
+     "description": ">",
+     "path": "skills/sendgrid/twilio-sendgrid-engagement-quality/SKILL.md"
+    },
+    {
+     "name": "sendgrid:twilio-sendgrid-inbound-parse",
+     "description": ">",
+     "path": "skills/sendgrid/twilio-sendgrid-inbound-parse/SKILL.md"
+    },
+    {
+     "name": "sendgrid:twilio-sendgrid-suppressions",
+     "description": ">",
+     "path": "skills/sendgrid/twilio-sendgrid-suppressions/SKILL.md"
+    },
+    {
+     "name": "sendgrid:twilio-sendgrid-webhooks",
+     "description": ">",
+     "path": "skills/sendgrid/twilio-sendgrid-webhooks/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-account-setup",
+     "description": ">",
+     "path": "skills/twilio/twilio-account-setup/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-agent-augmentation-architect",
+     "description": ">",
+     "path": "skills/twilio/twilio-agent-augmentation-architect/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-agent-connect",
      "description": "",
-     "path": "skills/twilio"
+     "path": "skills/twilio/twilio-agent-connect/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-ai-agent-architect",
+     "description": ">",
+     "path": "skills/twilio/twilio-ai-agent-architect/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-call-recordings",
+     "description": ">",
+     "path": "skills/twilio/twilio-call-recordings/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-cli-reference",
+     "description": ">",
+     "path": "skills/twilio/twilio-cli-reference/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-compliance-onboarding",
+     "description": ">",
+     "path": "skills/twilio/twilio-compliance-onboarding/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-compliance-traffic",
+     "description": ">",
+     "path": "skills/twilio/twilio-compliance-traffic/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-conference-calls",
+     "description": ">",
+     "path": "skills/twilio/twilio-conference-calls/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-content-template-builder",
+     "description": ">",
+     "path": "skills/twilio/twilio-content-template-builder/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-conversation-intelligence",
+     "description": "Twilio Conversation Intelligence development guide. Use when building real-time or post-call conversation analysis, language operator pipelines, sentiment analysis, agent assist, cross-channel analytics, or querying aggregated conversation insights (sentiment trends, escalation rates, dashboards).",
+     "path": "skills/twilio/twilio-conversation-intelligence/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-conversation-memory",
+     "description": ">",
+     "path": "skills/twilio/twilio-conversation-memory/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-conversation-orchestrator",
+     "description": ">",
+     "path": "skills/twilio/twilio-conversation-orchestrator/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-conversations-classic-api",
+     "description": ">",
+     "path": "skills/twilio/twilio-conversations-classic-api/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-customer-support-architect",
+     "description": ">",
+     "path": "skills/twilio/twilio-customer-support-architect/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-debugging-observability",
+     "description": ">",
+     "path": "skills/twilio/twilio-debugging-observability/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-email-deliverability-advisor",
+     "description": ">",
+     "path": "skills/twilio/twilio-email-deliverability-advisor/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-email-send",
+     "description": ">",
+     "path": "skills/twilio/twilio-email-send/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-enterprise-knowledge",
+     "description": ">",
+     "path": "skills/twilio/twilio-enterprise-knowledge/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-iam-auth-setup",
+     "description": ">",
+     "path": "skills/twilio/twilio-iam-auth-setup/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-identity-verification-advisor",
+     "description": ">",
+     "path": "skills/twilio/twilio-identity-verification-advisor/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-lookup-phone-intelligence",
+     "description": ">",
+     "path": "skills/twilio/twilio-lookup-phone-intelligence/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-marketing-promotions-advisor",
+     "description": ">",
+     "path": "skills/twilio/twilio-marketing-promotions-advisor/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-messaging-channel-advisor",
+     "description": ">",
+     "path": "skills/twilio/twilio-messaging-channel-advisor/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-messaging-overview",
+     "description": ">",
+     "path": "skills/twilio/twilio-messaging-overview/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-messaging-services",
+     "description": ">",
+     "path": "skills/twilio/twilio-messaging-services/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-messaging-webhooks",
+     "description": ">",
+     "path": "skills/twilio/twilio-messaging-webhooks/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-migrate-messaging-to-verify",
+     "description": ">",
+     "path": "skills/twilio/twilio-migrate-messaging-to-verify/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-notifications-alerts-advisor",
+     "description": ">",
+     "path": "skills/twilio/twilio-notifications-alerts-advisor/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-numbers-senders",
+     "description": ">",
+     "path": "skills/twilio/twilio-numbers-senders/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-organizations-setup",
+     "description": ">",
+     "path": "skills/twilio/twilio-organizations-setup/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-rcs-messaging",
+     "description": ">",
+     "path": "skills/twilio/twilio-rcs-messaging/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-regulatory-compliance-bundles",
+     "description": ">",
+     "path": "skills/twilio/twilio-regulatory-compliance-bundles/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-reliability-patterns",
+     "description": ">",
+     "path": "skills/twilio/twilio-reliability-patterns/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-security-api-auth",
+     "description": ">",
+     "path": "skills/twilio/twilio-security-api-auth/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-security-compliance-hipaa",
+     "description": ">",
+     "path": "skills/twilio/twilio-security-compliance-hipaa/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-security-hardening",
+     "description": ">",
+     "path": "skills/twilio/twilio-security-hardening/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-send-message",
+     "description": ">",
+     "path": "skills/twilio/twilio-send-message/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-isv-sms-best-practices",
+     "description": ">",
+     "path": "skills/twilio/twilio-sms-isv-setup/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-sms-send-message",
+     "description": ">",
+     "path": "skills/twilio/twilio-sms-send-message/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-studio-flows",
+     "description": ">",
+     "path": "skills/twilio/twilio-studio-flows/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-taskrouter-routing",
+     "description": ">",
+     "path": "skills/twilio/twilio-taskrouter-routing/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-verify-send-otp",
+     "description": ">",
+     "path": "skills/twilio/twilio-verify-send-otp/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-voice-conversation-relay",
+     "description": ">",
+     "path": "skills/twilio/twilio-voice-conversation-relay/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-voice-outbound-calls",
+     "description": ">",
+     "path": "skills/twilio/twilio-voice-outbound-calls/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-voice-twiml",
+     "description": ">",
+     "path": "skills/twilio/twilio-voice-twiml/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-webhook-architecture",
+     "description": ">",
+     "path": "skills/twilio/twilio-webhook-architecture/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-whatsapp-manage-senders",
+     "description": ">",
+     "path": "skills/twilio/twilio-whatsapp-manage-senders/SKILL.md"
+    },
+    {
+     "name": "twilio:twilio-whatsapp-send-message",
+     "description": ">",
+     "path": "skills/twilio/twilio-whatsapp-send-message/SKILL.md"
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/twilio.png",
@@ -23205,7 +23919,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/typescript-lsp",
     "ref": "main",
-    "sha": "6bfd4e0c6d3da6050984fa5ed8281d915fa7ed69"
+    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
    "category": "development",
    "strict": false,
@@ -23899,6 +24613,52 @@
    "marketplace": "claude-code"
   },
   {
+   "name": "vanguard-advisor-tools",
+   "displayName": "Vanguard Advisor Tools",
+   "description": "Vanguard Advisor Tools for financial professionals: research and compare funds and ETFs across the industry and prepare for client conversations, using Vanguard's advisor connector in Claude.",
+   "source": {
+    "type": "url",
+    "url": "https://github.com/Vanguard-oss/vanguard-advisor-tools.git",
+    "path": null,
+    "ref": null,
+    "sha": "328fe9f61fe7a375b87a6492e265b4a5a955b0ce"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "Apache-2.0",
+   "homepage": "https://advisors.vanguard.com",
+   "repository": "https://github.com/Vanguard-oss/vanguard-advisor-tools.git",
+   "author": {
+    "name": "Vanguard"
+   },
+   "publisher": {
+    "name": "vanguard",
+    "displayName": "Vanguard"
+   },
+   "mcpServers": [
+    {
+     "name": "vanguard-advisors",
+     "path": ".claude-plugin/plugin.json"
+    }
+   ],
+   "keywords": [
+    "investments",
+    "funds",
+    "etf",
+    "fund-comparison",
+    "financial-advisor"
+   ],
+   "skills": [
+    {
+     "name": "model-prep",
+     "description": "Help a financial advisor find Vanguard model portfolios that match a client need, understand how those models are built, and produce a meeting-ready advisor one-pager \u2014 as text and as a styled PDF \u2014 with optional client-facing material. Use when an advisor asks about model portfolios, model series, prebuilt or off-the-shelf portfolios, outsourcing portfolio construction, wants a PDF of a model one-pager, or wants to prepare for a client conversation about a model approach. Also use when an advisor describes a client need or goal \u2014 income, growth, retirement, \"something safer\" \u2014 and asks what portfolio to show, present, put in front of, or build for them, even when they never say the word \"model\" and name no specific funds. That phrasing is how advisors actually open this request. This skill covers model portfolios rather than individual funds, so weighing two or more specific tickers against each other is a fund-comparison question and outside its scope.",
+     "path": "skills/model-prep/SKILL.md"
+    }
+   ],
+   "logoUrl": "https://www.google.com/s2/favicons?domain=advisors.vanguard.com&sz=128",
+   "marketplace": "claude-code"
+  },
+  {
    "name": "vanta",
    "displayName": "Vanta",
    "description": "The Vanta plugin connects Claude Code to Vanta's security and compliance platform through the Vanta MCP server. It combines Vanta's test-specific remediation intelligence with your local repository context to help you fix compliance failures faster.",
@@ -24481,11 +25241,6 @@
    ],
    "skills": [
     {
-     "name": "README",
-     "description": "",
-     "path": "skills/README.md"
-    },
-    {
      "name": "wix-app",
      "description": "Build and review Wix CLI app extensions \u2014 dashboard pages, modals, plugins, menu plugins, custom element widgets, Editor React components, site plugins, embedded scripts, backend APIs, backend events, service plugins, data collections, and App Market readiness. Use when building ANY feature or extension for a Wix CLI app or preparing a Wix app for App Market review. Triggers on: add, build, create, implement, help me, dashboard, widget, plugin, backend, API, event, collection, embedded script, service plugin, Editor React component, checkout, shipping, tax, discount, SPI, CMS, schema, tracking, popup, admin panel, menu item, modal, validate, test, verify, register extension, App Market, app review, submission readiness.",
      "path": "skills/wix-app/SKILL.md"
@@ -24526,7 +25281,7 @@
      "path": "skills/wix-manage/SKILL.md"
     },
     {
-     "name": "wix-replatform",
+     "name": "replatform",
      "description": ">-",
      "path": "skills/wix-replatform/SKILL.md"
     },
@@ -25048,12 +25803,12 @@
      "path": "skills/choose-zoom-approach/SKILL.md"
     },
     {
-     "name": "cobrowse-sdk",
+     "name": "zoom-cobrowse-sdk",
      "description": "Reference skill for Zoom Cobrowse SDK. Use after routing to a collaborative-support workflow when implementing browser co-browsing, annotation tools, privacy masking, remote assist, or PIN-based session sharing.",
      "path": "skills/cobrowse-sdk/SKILL.md"
     },
     {
-     "name": "contact-center",
+     "name": "build-zoom-contact-center-app",
      "description": "Reference skill for Zoom Contact Center. Use after routing to a contact-center workflow when implementing app, web, or native integrations; engagement context and state handling; campaigns; callbacks; or version-drift troubleshooting.",
      "path": "skills/contact-center/SKILL.md"
     },
@@ -25073,22 +25828,22 @@
      "path": "skills/design-mcp-workflow/SKILL.md"
     },
     {
-     "name": "general",
+     "name": "zoom-general",
      "description": "Cross-product Zoom reference skill. Use after the workflow is clear when you need shared platform guidance, app-model comparisons, authentication context, scopes, marketplace considerations, or API-vs-MCP routing.",
      "path": "skills/general/SKILL.md"
     },
     {
-     "name": "meeting-sdk",
+     "name": "build-zoom-meeting-sdk-app",
      "description": "Reference skill for Zoom Meeting SDK. Use after routing to a meeting-embed workflow when implementing real Zoom meeting joins, platform-specific SDK behavior, auth and join flows, waiting room issues, or meeting bot patterns.",
      "path": "skills/meeting-sdk/SKILL.md"
     },
     {
-     "name": "oauth",
+     "name": "zoom-oauth",
      "description": "Reference skill for Zoom authentication. Use after routing to an auth workflow when choosing app credentials, grant types, scopes, token refresh behavior, or debugging Zoom OAuth failures.",
      "path": "skills/oauth/SKILL.md"
     },
     {
-     "name": "phone",
+     "name": "build-zoom-phone-integration",
      "description": "Reference skill for Zoom Phone. Use after routing to a phone workflow when implementing OAuth, Phone APIs, webhooks, Smart Embed events, URI schemes, CRM or CTI dialers, or call handling automation.",
      "path": "skills/phone/SKILL.md"
     },
@@ -25108,7 +25863,7 @@
      "path": "skills/probe-sdk/SKILL.md"
     },
     {
-     "name": "rest-api",
+     "name": "build-zoom-rest-api-app",
      "description": "Reference skill for Zoom REST API. Use after choosing an API-based workflow when you need endpoint selection, resource-management patterns, OAuth requirements, rate-limit awareness, or API error debugging.",
      "path": "skills/rest-api/SKILL.md"
     },
@@ -25118,7 +25873,7 @@
      "path": "skills/rivet-sdk/SKILL.md"
     },
     {
-     "name": "rtms",
+     "name": "zoom-rtms",
      "description": "Reference skill for Zoom RTMS. Use after routing to a live-media workflow when processing real-time audio, video, chat, transcripts, screen share, or contact-center voice streams.",
      "path": "skills/rtms/SKILL.md"
     },
@@ -25153,7 +25908,7 @@
      "path": "skills/summarizer/SKILL.md"
     },
     {
-     "name": "team-chat",
+     "name": "build-zoom-team-chat-app",
      "description": "Reference skill for Zoom Team Chat. Use after routing to a chat workflow when building user-scoped messaging integrations, chatbot experiences, rich cards, buttons, slash commands, or chat webhooks.",
      "path": "skills/team-chat/SKILL.md"
     },
@@ -25168,22 +25923,22 @@
      "path": "skills/ui-toolkit/SKILL.md"
     },
     {
-     "name": "video-sdk",
+     "name": "build-zoom-video-sdk-app",
      "description": "Reference skill for Zoom Video SDK. Use after routing to a custom-session workflow when the user needs full control over the video experience rather than an actual Zoom meeting.",
      "path": "skills/video-sdk/SKILL.md"
     },
     {
-     "name": "virtual-agent",
+     "name": "build-zoom-virtual-agent",
      "description": "Reference skill for Zoom Virtual Agent. Use after routing to a virtual-agent workflow when implementing web embeds, Android or iOS wrapper integrations, knowledge-base sync, lifecycle handling, or troubleshooting.",
      "path": "skills/virtual-agent/SKILL.md"
     },
     {
-     "name": "webhooks",
+     "name": "setup-zoom-webhooks",
      "description": "Reference skill for Zoom webhooks. Use after routing to an event-driven workflow when implementing subscriptions, signature verification, delivery handling, retries, or event-type selection.",
      "path": "skills/webhooks/SKILL.md"
     },
     {
-     "name": "websockets",
+     "name": "setup-zoom-websockets",
      "description": "Reference skill for Zoom WebSockets. Use after routing to a low-latency event workflow when persistent connections, faster event delivery, or security constraints make WebSockets preferable to webhooks.",
      "path": "skills/websockets/SKILL.md"
     },
@@ -25510,44 +26265,214 @@
    ],
    "skills": [
     {
-     "name": "cross-product",
-     "description": "",
-     "path": "skills/cross-product"
+     "name": "cross-product:cross-product-troubleshoot-user-connectivity",
+     "description": "Cross-product troubleshooting of user connectivity issues spanning ZPA, ZIA, ZDX, and ZCC. Investigates end-to-end: (1) ZCC client status and enrollment, (2) ZDX digital experience scores and metrics, (3) ZPA application segment and access policy configuration, (4) ZIA URL filtering and SSL inspection policies. Use when an administrator reports 'user cannot access application', 'connectivity issues', or 'application is slow.",
+     "path": "skills/cross-product/troubleshoot-user-connectivity/SKILL.md"
     },
     {
-     "name": "easm",
-     "description": "",
-     "path": "skills/easm"
+     "name": "easm:easm-review-attack-surface",
+     "description": "Review the organization's external attack surface using Zscaler EASM. Lists organizations, retrieves findings (exposed services, vulnerabilities, misconfigurations), checks for lookalike domains, and generates a prioritized risk summary. Use when a security team asks: 'What is our external exposure?', 'Are there any critical findings?', or 'Check for lookalike domains.",
+     "path": "skills/easm/review-attack-surface/SKILL.md"
     },
     {
-     "name": "zcc",
-     "description": "",
-     "path": "skills/zcc"
+     "name": "zcc:zcc-generate-logout-otp",
+     "description": "Generate a One-Time Logout Password (OTP) for a Zscaler Client Connector (ZCC) user. Walks the admin from a user identifier (email or device name) through device lookup \u2192 confirmation \u2192 OTP retrieval \u2192 secure delivery, surfacing logout_otp from the ZCC OTP bundle. Use when an admin needs to remotely sign a specific user out of ZCC \u2014 for example after a credential reset, lost / decommissioned device, suspected compromise (incident response), or routine offboarding. DO NOT USE WHEN: the admin needs to uninstall ZCC, exit ZCC, revert to a prior ZCC version, or temporarily disable a service (ZIA/ZPA/ZDX/ZDP) on the device \u2014 those use other OTPs from the same bundle and warrant their own confirmation flow.",
+     "path": "skills/zcc/generate-logout-otp/SKILL.md"
     },
     {
-     "name": "zdx",
-     "description": "",
-     "path": "skills/zdx/README.md"
+     "name": "zdx:zdx-analyze-application-health",
+     "description": "Analyze the health of one or more monitored applications across the organization using ZDX scores, metrics, and affected-user breakdowns. Identifies which applications are degraded, which metrics are the bottleneck, and which users are most impacted. Aligned with ZDX Copilot analytics use cases. Use when an administrator asks: 'How are my applications performing?', 'Which apps have low ZDX scores?', 'Show me the number of applications impacted by alerts', or 'What is the ZDX Score for Zoom?",
+     "path": "skills/zdx/analyze-application-health/SKILL.md"
     },
     {
-     "name": "zia",
-     "description": "",
-     "path": "skills/zia"
+     "name": "zdx:zdx-audit-software-inventory",
+     "description": "Audit the software inventory across devices in the organization using ZDX data. Lists installed software, filters by location, department, or user, and drills into specific software version details. Use for compliance audits, security vulnerability assessments, or identifying outdated software. Use when an administrator asks: 'What software is installed on our devices?', 'Find all devices running Chrome version X', 'Audit software versions across the organization', or 'Which departments have outdated Java?",
+     "path": "skills/zdx/audit-software-inventory/SKILL.md"
     },
     {
-     "name": "zins",
-     "description": "",
-     "path": "skills/zins"
+     "name": "zdx:zdx-compare-location-experience",
+     "description": "Compare digital experience across locations, departments, and geolocations using ZDX data. Identifies which offices or regions have the best and worst experience for specific applications, detects location-specific issues, and provides optimization recommendations. Aligned with ZDX Copilot analytics and optimization use cases. Use when an administrator asks: 'Which office has the worst experience?', 'Compare application performance between locations', 'Is the Dallas office having network issues?', or 'Show me ZDX scores by department.",
+     "path": "skills/zdx/compare-location-experience/SKILL.md"
     },
     {
-     "name": "zms",
-     "description": "",
-     "path": "skills/zms"
+     "name": "zdx:zdx-diagnose-deeptrace",
+     "description": "Run a ZDX deep trace diagnostics session to investigate network and device issues. Start new sessions, analyze web probe metrics, cloud path topology, device health, top processes, and event timelines to pinpoint root cause. Use when an administrator asks: 'Start a deep trace for this user', 'Analyze the diagnostics session', 'Why is the network path slow?', 'Check cloud path for packet loss', or 'What happened during the trace?",
+     "path": "skills/zdx/diagnose-deeptrace/SKILL.md"
     },
     {
-     "name": "zpa",
-     "description": "",
-     "path": "skills/zpa"
+     "name": "zdx:zdx-investigate-alerts",
+     "description": "Investigate active and historical ZDX alerts to understand their scope, root cause, and impact. Drills into affected devices, correlates with application metrics, and identifies patterns across time. Aligned with ZDX Copilot troubleshooting use cases. Use when an administrator asks: 'Show me ongoing alerts', 'What incidents happened in the last 48 hours?', 'How many users are affected by this alert?', or 'Is there an ISP issue?",
+     "path": "skills/zdx/investigate-alerts/SKILL.md"
+    },
+    {
+     "name": "zdx:zdx-investigate-multi-app-outage",
+     "description": "Diagnose a multi-application outage scoped to one location by correlating ZDX alerts, affected devices, and shared cloud-path hops. Identifies the devices affected at a specific office, compares the per-application network path across multiple SaaS apps to surface the common network bottleneck, and produces an evidence-backed recommendation. Use when an admin reports: 'A ZDX alert shows users in the Columbus office cannot reach Salesforce and ServiceNow', 'Identify affected devices and the common network path issue', 'Multiple users at Dallas are having issues with several SaaS apps', 'What do these failing apps have in common at this office?', or 'Find the shared network bottleneck for the New York users hitting Workday and Box.",
+     "path": "skills/zdx/investigate-multi-app-outage/SKILL.md"
+    },
+    {
+     "name": "zdx:zdx-troubleshoot-user-experience",
+     "description": "Troubleshoot a user's digital experience using ZDX data. Investigates device health, application scores, network path metrics, and active alerts to identify performance bottlenecks. Use when an administrator reports: 'User says app is slow', 'Check user experience', or 'Why is the application score low?",
+     "path": "skills/zdx/troubleshoot-user-experience/SKILL.md"
+    },
+    {
+     "name": "zia:zia-audit-ssl-inspection-bypass",
+     "description": "Audit ZIA SSL inspection rules to identify which applications, URL categories, users, or groups are subject to INSPECT, DO_NOT_INSPECT, or DO_NOT_DECRYPT actions. This skill focuses exclusively on SSL inspection rules and their configuration. Use when a security administrator asks: 'What SSL rules are in decryption mode?', 'What is bypassing SSL inspection?', 'Are there SSL bypass exceptions?', or 'Audit our SSL inspection policy.",
+     "path": "skills/zia/audit-ssl-inspection-bypass/SKILL.md"
+    },
+    {
+     "name": "zia:zia-check-user-url-access",
+     "description": "Determine whether a specific user or group is allowed to access a given URL by evaluating all applicable ZIA policies in order. Performs URL category lookup, then evaluates URL filtering rules, SSL inspection rules, DLP rules, and cloud firewall rules in priority order to produce a definitive access verdict. Use when an administrator asks: 'Can user X access site Y?', 'Why is a URL blocked?', or 'What policies apply to this user and URL?",
+     "path": "skills/zia/check-user-url-access/SKILL.md"
+    },
+    {
+     "name": "zia:zia-create-cloud-app-control-rule",
+     "description": "Create ZIA Cloud App Control rules that enforce granular, action-level decisions on cloud applications (Dropbox, OneDrive, Google Drive, ChatGPT, GitHub, YouTube, Slack, etc.). Cloud App Control is action-level, not block/allow at the connection layer \u2014 actions are things like ALLOW_FILE_SHARE_UPLOAD, BLOCK_WEBMAIL_ATTACH, ISOLATE_AI_ML_WEB_USE, DENY_AI_ML_CHAT, BLOCK_SOCIAL_NETWORKING_POST. Each rule belongs to a category (rule_type) such as FILE_SHARE, WEBMAIL, AI_ML, SYSTEM_AND_DEVELOPMENT, SOCIAL_NETWORKING, STREAMING_MEDIA, etc. Action vocabulary is surfaced at the category level, but the API validates per (rule_type, application, action) tuple \u2014 combining multiple apps in a single rule frequently fails with INVALID_INPUT_ARGUMENT, so this skill creates one rule per cloud application when the admin names multiple apps. Use when an admin asks to 'allow Dropbox uploads', 'block ChatGPT', 'restrict GitHub edits', 'isolate AI tools', 'block YouTube uploads', 'allow only viewing on OneDrive', 'block file uploads to personal cloud storage (Dropbox, Google Drive, OneDrive)', or 'create a Cloud App Control rule for X'. Chains to `zia-look-up-cloud-app-name` and `zia-manage-time-interval` when needed.",
+     "path": "skills/zia/create-cloud-app-control-rule/SKILL.md"
+    },
+    {
+     "name": "zia:zia-create-firewall-filtering-rule",
+     "description": "Create a ZIA Cloud Firewall Filtering rule that controls network traffic by source/destination IP, country, network application, network service, device trust level, user/group/department, location, and optional time-of-day schedule (Time Interval). Supported actions: ALLOW, BLOCK_DROP, BLOCK_RESET, BLOCK_ICMP, EVAL_NWAPP. Use when an admin asks to 'create a firewall rule', 'block traffic to X', 'allow traffic from Y', 'block country Z', 'restrict access during business hours', or 'add a firewall exception'. This skill creates exactly one Cloud Firewall rule and chains to `zia-manage-time-interval` when the admin's request includes a recurring schedule.",
+     "path": "skills/zia/create-firewall-filtering-rule/SKILL.md"
+    },
+    {
+     "name": "zia:zia-create-ssl-inspection-rule",
+     "description": "Create a ZIA SSL Inspection rule that controls how Zscaler handles SSL/TLS encrypted traffic \u2014 BLOCK (drop the SSL connection), DECRYPT (decrypt and inspect), or DO_NOT_DECRYPT (pass through without decryption). Scopes the rule by cloud applications, URL categories, users, groups, departments, locations, device trust levels, platforms, source/destination IP groups, and ZPA application segments. SSL Inspection rules do NOT support a recurring time-of-day schedule \u2014 for time-of-day enforcement, use a different rule type (Cloud Firewall Filtering, URL Filtering, etc.). Use when an admin asks to 'create an SSL inspection rule', 'do not decrypt traffic to X', 'decrypt SSL for Y', 'block SSL for Z', or 'add an SSL bypass exception'. For pure auditing of existing SSL bypass posture, see `zia-audit-ssl-inspection-bypass` (read-only).",
+     "path": "skills/zia/create-ssl-inspection-rule/SKILL.md"
+    },
+    {
+     "name": "zia:zia-create-url-filtering-rule",
+     "description": "Create a ZIA URL Filtering rule that controls user access to web content by URL category, protocol, request method, user agent, user/group/department, location, device trust level, and optional time-of-day schedule (Time Interval). Supported actions: ALLOW, BLOCK, CAUTION, ISOLATE. Use when an admin asks to 'create a URL filtering rule', 'block category X', 'allow category Y', 'show a caution page for Z', 'isolate access to risky sites', 'block social media during work hours', or 'add a URL filtering exception'. Supports both recurring schedules (`time_windows`) and one-shot date-range validity (`enforce_time_validity`). This skill creates exactly one URL Filtering rule and chains to `zia-manage-time-interval` when the admin's request includes a recurring schedule.",
+     "path": "skills/zia/create-url-filtering-rule/SKILL.md"
+    },
+    {
+     "name": "zia:zia-investigate-sandbox",
+     "description": "Investigate ZIA Sandbox file analysis results, quarantine issues, and security policy enforcement. Uses sandbox report, quota, behavioral analysis, and file hash tools combined with SSL inspection checks to diagnose why files are blocked, allowed, or stuck in quarantine. Incorporates runbook knowledge for Malware Protection, ATP, and Sandbox policy troubleshooting. Use when an administrator asks 'why is this file blocked?', 'check sandbox report for this hash', 'file stuck in quarantine', or 'sandbox is not analyzing files.",
+     "path": "skills/zia/investigate-sandbox/SKILL.md"
+    },
+    {
+     "name": "zia:zia-investigate-url-category",
+     "description": "Investigate where a specific URL or URL category is referenced across all ZIA policy rules. Searches URL filtering rules, DLP web rules, SSL inspection rules, and cloud firewall rules to provide a comprehensive view of how a category is used. Use when an administrator asks: 'Where is this URL category used?', 'What rules apply to this URL?', or 'Show me the policy impact of this category.",
+     "path": "skills/zia/investigate-url-category/SKILL.md"
+    },
+    {
+     "name": "zia:zia-look-up-cloud-app-name",
+     "description": "Look up the canonical ZIA cloud-application name (e.g. ONEDRIVE, GOOGLE_DRIVE, SHAREPOINT_ONLINE, DROPBOX) given whatever the admin typed \u2014 friendly names like 'OneDrive', 'Google Drive', 'share point online', loose phrasings like 'sharepoint', or even numeric Shadow IT IDs. Cloud App Control, SSL Inspection, Web DLP, File Type Control, Bandwidth Classes, and Advanced Settings rules all require the canonical ZIA name in their `cloud_applications` field; passing the friendly name or a Shadow IT ID silently coerces to `NONE` and the rule does nothing. Use whenever an admin asks to add, remove, or filter on cloud applications in any policy rule, or asks 'what's the right name for X?'.",
+     "path": "skills/zia/look-up-cloud-app-name/SKILL.md"
+    },
+    {
+     "name": "zia:zia-look-up-rule-targets",
+     "description": "Look up the shared 'who/where/when/what-device' fields that every ZIA rule resource scopes by \u2014 users, groups, departments, locations, location_groups, url_categories, devices, device_groups, workload_groups, labels, and time_windows \u2014 and return the IDs (or canonical strings) the rule API expects. Use this skill from inside any ZIA rule create/update workflow (Cloud Firewall, DNS, IPS, URL Filtering, SSL Inspection, Web DLP, File Type Control, Sandbox, Cloud App Control) when the admin names a user, group, location, label, etc. by display name and you need the ID before building the rule payload. Centralises the read-before-write lookup convention so individual rule skills stay short and accurate. The skill enforces the project's hard rules: empty list = does not exist, never invent IDs, never silently substitute, never fan-out retries.",
+     "path": "skills/zia/look-up-rule-targets/SKILL.md"
+    },
+    {
+     "name": "zia:zia-manage-time-interval",
+     "description": "Find an existing ZIA Time Interval by name, or create a new one when no match exists, then return the interval ID so the caller can attach it to a policy rule via its `time_windows` field. Time Intervals are reusable schedule objects (start time, end time, days of the week) that ZIA Cloud Firewall Filtering, URL Filtering, Cloud App Control, File Type Control, and Sandbox rules reference to enforce recurring time-of-day / day-of-week schedules (e.g. 'only between 8am-5pm Monday-Friday'). Note: SSL Inspection rules do NOT support `time_windows` and cannot consume the output of this skill. Use when an admin asks for 'a schedule', 'business hours', 'after-hours', 'weekends only', 'time window', 'time interval', or any rule that should fire on a recurring time pattern. Other ZIA rule-creation skills chain to this one when the admin's request includes a schedule.",
+     "path": "skills/zia/manage-time-interval/SKILL.md"
+    },
+    {
+     "name": "zia:zia-onboard-location",
+     "description": "End-to-end onboarding of a new ZIA location with its traffic forwarding dependencies. Walks through the full dependency chain: (1) Create a static IP for the site's egress point, (2) Create VPN credentials (UFQDN or IP-based) for the IPSec tunnel, (3) Create the location referencing the static IP and VPN credentials, (4) Optionally create a sub-location. Covers both UFQDN-based (simple) and IP-based (requires static IP first) VPN credential flows. Use when an administrator asks: 'Add a new office location', 'Onboard a branch office', or 'Set up traffic forwarding for a new site.",
+     "path": "skills/zia/onboard-location/SKILL.md"
+    },
+    {
+     "name": "zins:zins-analyze-web-traffic",
+     "description": "Analyze web traffic patterns using Zscaler Analytics (Z-Insights). Examines traffic distribution by location, protocol breakdown (HTTP vs HTTPS), threat categories, DLP violations, and volume trends over time. Use when an administrator asks: 'Show me web traffic by location', 'What protocols are in use?', 'Are there any DLP violations?', 'What does our traffic look like?', or 'Show traffic trends.",
+     "path": "skills/zins/analyze-web-traffic/SKILL.md"
+    },
+    {
+     "name": "zins:zins-assess-network-security",
+     "description": "Assess network security posture using Zscaler Analytics (Z-Insights). Analyzes Zero Trust Firewall effectiveness by action distribution (allow/block ratios), location-based firewall activity, network service usage, and firewall rule hit counts. Use when a security team asks: 'How effective is our firewall?', 'What is being blocked?', 'Show firewall activity by location', 'Which network services are in use?', or 'Generate a firewall report.",
+     "path": "skills/zins/assess-network-security/SKILL.md"
+    },
+    {
+     "name": "zins:zins-audit-shadow-it",
+     "description": "Audit shadow IT and SaaS application usage using Zscaler Analytics (Z-Insights). Discovers unsanctioned applications, assesses risk scores, monitors CASB-protected SaaS usage, tracks data transfers to shadow apps, and reviews IoT device inventory. Use when a security team asks: 'What shadow IT apps are being used?', 'Show me unsanctioned SaaS usage', 'What is our SaaS risk exposure?', 'How many IoT devices are on our network?', or 'Generate a shadow IT report.",
+     "path": "skills/zins/audit-shadow-it/SKILL.md"
+    },
+    {
+     "name": "zins:zins-investigate-security-incident",
+     "description": "Investigate security incidents using Zscaler Z-Insights analytics. Correlates threat categories, cyber incident trends, firewall actions, web traffic patterns, and shadow IT data to build a comprehensive incident timeline. Use when a security analyst asks: 'What threats were detected?', 'Show me incident trends', 'Investigate this security event', or 'What shadow IT is being used?",
+     "path": "skills/zins/investigate-security-incident/SKILL.md"
+    },
+    {
+     "name": "zms:zms-analyze-policy-rules",
+     "description": "Analyze Zscaler Microsegmentation (ZMS) policy rules for optimization opportunities. Reviews custom and default policy rules, identifies stale or unused rules, detects overly permissive rules, maps cross-zone communication patterns, and assesses default security posture. Use when an administrator asks: 'Are there unused policy rules?', 'Which rules are too broad?', 'Optimize our segmentation policies', 'Review our default deny posture', 'Show me policy rule coverage', or 'Analyze our ZMS policies.",
+     "path": "skills/zms/analyze-policy-rules/SKILL.md"
+    },
+    {
+     "name": "zms:zms-assess-workload-protection",
+     "description": "Assess Zscaler Microsegmentation (ZMS) workload protection coverage and identify protection gaps. Investigates resource protection status, resource group membership, unprotected workloads by cloud and region, and resource group coverage gaps. Use when an administrator asks: 'Which workloads are unprotected?', 'What is our microsegmentation coverage?', 'Find protection gaps', 'Which resource groups have no policies?', 'Show me unprotected resources', or 'What is our workload coverage percentage?",
+     "path": "skills/zms/assess-workload-protection/SKILL.md"
+    },
+    {
+     "name": "zms:zms-audit-microsegmentation-posture",
+     "description": "Audit the overall Zscaler Microsegmentation (ZMS) deployment posture. Reviews agent fleet health, workload protection coverage, resource group structure, policy rules, app zones, application catalog, and tag-based classification. Use when an administrator asks: 'What is our microsegmentation coverage?', 'How many workloads are protected?', 'Show me our ZMS policies', 'Review our microsegmentation deployment', or 'Audit our ZMS posture.",
+     "path": "skills/zms/audit-microsegmentation-posture/SKILL.md"
+    },
+    {
+     "name": "zms:zms-review-tag-classification",
+     "description": "Review Zscaler Microsegmentation (ZMS) tag classification, application discovery, and tag-to-resource-group mapping. Investigates tag namespaces (CUSTOM, EXTERNAL, ML), tag keys and values, application catalog entries, and how tags drive managed resource group membership. Use when an administrator asks: 'Show me our tag structure', 'What cloud tags are imported?', 'How are resource groups using tags?', 'What applications were discovered?', 'Review tag classification', or 'Are ML tags being used?",
+     "path": "skills/zms/review-tag-classification/SKILL.md"
+    },
+    {
+     "name": "zms:zms-troubleshoot-agent-deployment",
+     "description": "Troubleshoot Zscaler Microsegmentation (ZMS) agent deployment and connectivity issues. Investigates agent fleet health, connection status, version compliance, agent group configuration, provisioning keys, and TOTP secrets. Use when an administrator reports: 'Agents are disconnected', 'Agent enrollment failing', 'How do I provision new agents?', 'Check agent versions', or 'Agent not connecting.",
+     "path": "skills/zms/troubleshoot-agent-deployment/SKILL.md"
+    },
+    {
+     "name": "zpa:application_segment-ba-onboard",
+     "description": "End-to-end onboarding of a new Browser Access (BA) application in Zscaler Private Access. Walks through the full dependency chain \u2014 App connector group, server group, segment group, BA TLS certificate, BA application segment with apps_config, and access policy rule \u2014 for web apps that should be reachable through the browser without Zscaler Client Connector. Use only when the admin explicitly asks for Browser Access. DO NOT USE WHEN: the admin wants a regular client-routed application segment (use zpa-application_segment-onboard instead).",
+     "path": "skills/zpa/application_segment-ba-onboard/SKILL.md"
+    },
+    {
+     "name": "zpa:application_segment-onboard",
+     "description": "End-to-end onboarding of a new application in Zscaler Private Access. Walks through the complete dependency chain: (1) App connector group, (2) Server group, (3) Segment group, (4) Application segment with domain names and ports, (5) Access policy rule to grant user/group access. Use when an administrator needs to make an internal application accessible through ZPA.",
+     "path": "skills/zpa/application_segment-onboard/SKILL.md"
+    },
+    {
+     "name": "zpa:application_segment-pra-onboard",
+     "description": "End-to-end onboarding of a new Privileged Remote Access (PRA) application in Zscaler Private Access. Walks through the full dependency chain \u2014 App connector group, server group, segment group, PRA credential, PRA portal, PRA application segment with apps_config (RDP/SSH targets), and access policy rule \u2014 for RDP and SSH targets brokered through the PRA portal without requiring a native RDP/SSH client or Zscaler Client Connector. Use only when the admin explicitly asks for Privileged Remote Access (PRA), RDP, SSH, jump-host, or bastion access. DO NOT USE WHEN: the admin wants a regular client-routed application segment (use zpa-application_segment-onboard) or a clientless web app (use zpa-application_segment-ba-onboard).",
+     "path": "skills/zpa/application_segment-pra-onboard/SKILL.md"
+    },
+    {
+     "name": "zpa:zpa-audit-baseline-compliance",
+     "description": "Read-only audit of a ZPA tenant against the Zscaler ZPA Baseline Recommendations v1.0 document. Inventories app connector groups, server groups, application segments, access policy rules, forwarding policy rules, timeout policy rules, and (when available) LSS configs, then scores ~26 configuration-only checks across 7 categories and renders an interactive Zscaler-styled web report (single-file HTML, plus an optional .jsx component) \u2014 searchable, filterable by category, severity, and security framework (NIST SP 800-53 Rev. 5 and CIS Critical Security Controls v8), with per-finding evidence, remediation, and framework citations suitable as supporting evidence for SOC 2, FedRAMP, ISO 27001, and NIST CSF assessments, and printable to PDF from the browser. Use when an administrator asks to audit ZPA against best practices, run a baseline-compliance review, get a ZPA health check, gather compliance evidence, or see how their tenant compares to the recommended baseline. NEVER mutates the tenant \u2014 read-only.",
+     "path": "skills/zpa/audit-baseline-compliance/SKILL.md"
+    },
+    {
+     "name": "zpa:zpa-create-access-policy-rule",
+     "description": "Create ZPA access policy rules with v2 conditions. Supports all condition object types: APP, APP_GROUP, SAML, SCIM, SCIM_GROUP, PLATFORM, COUNTRY_CODE, POSTURE, TRUSTED_NETWORK, RISK_FACTOR_TYPE, CLIENT_TYPE, MACHINE_GRP, LOCATION, and CHROME_ENTERPRISE. Walks through: (1) gathering requirements, (2) looking up identity attributes (SAML/SCIM), (3) building the conditions payload, (4) creating the rule. Includes ready-to-use examples for common scenarios: SCIM group access, SAML attribute matching, platform restrictions, country-based access, posture checks, and combined conditions.",
+     "path": "skills/zpa/create-access-policy-rule/SKILL.md"
+    },
+    {
+     "name": "zpa:zpa-create-conditional-access-rule",
+     "description": "Create a ZPA Access Policy rule that gates access to a private application on multiple combined checks: identity (SCIM group / SAML), one or more named device posture profiles (associated by UDID; ZPA does not introspect what each profile checks), platform reported by ZCC, country, and risk-score level. Use when an admin asks for 'conditional access', 'multi-check access rule', 'attach posture profile X and risk level low to this rule', or 'allow only if posture passes and risk is low' for a private application. For session-duration / re-auth requirements, see `zpa-create-session-duration-rule` (separate ZPA resource type).",
+     "path": "skills/zpa/create-conditional-access-rule/SKILL.md"
+    },
+    {
+     "name": "zpa:zpa-create-forwarding-policy-rule",
+     "description": "Create ZPA client forwarding policy rules that control how traffic is routed from the Zscaler Client Connector. Supports actions: BYPASS (direct internet), INTERCEPT (route through ZPA), INTERCEPT_ACCESSIBLE (route only if reachable). Conditions support APP, APP_GROUP, SAML, SCIM, SCIM_GROUP, PLATFORM, COUNTRY_CODE, POSTURE, TRUSTED_NETWORK, and CLIENT_TYPE. Use when an administrator asks: 'Bypass ZPA for specific apps', 'Route traffic directly', or 'Create a forwarding exception.",
+     "path": "skills/zpa/create-forwarding-policy-rule/SKILL.md"
+    },
+    {
+     "name": "zpa:zpa-create-server-group",
+     "description": "Create a ZPA server group with all required dependencies. Server groups require app connector groups to exist first. This skill walks through the dependency chain: (1) Check for existing app connector groups, (2) Create an app connector group if none exist, (3) Create the server group referencing the connector group IDs, (4) Verify the server group was created correctly. Use when an administrator needs to set up a new server group for application access.",
+     "path": "skills/zpa/create-server-group/SKILL.md"
+    },
+    {
+     "name": "zpa:zpa-create-session-duration-rule",
+     "description": "Create a ZPA Timeout Policy rule that enforces session duration \u2014 i.e. forces re-authentication after N minutes/hours/days, optionally with an idle-timeout. Use this skill when an admin asks for 'session duration', 'auto-revoke', 're-authentication interval', 'force re-auth after X hours', or 'session must expire after a workday' for ZPA. Scopes by SCIM group, SAML attribute, application segment, platform, and posture. ZPA Timeout Policy is a separate resource type from Access Policy; this skill creates timeout rules only and does not modify or pair with access rules.",
+     "path": "skills/zpa/create-session-duration-rule/SKILL.md"
+    },
+    {
+     "name": "zpa:zpa-create-timeout-policy-rule",
+     "description": "Create ZPA timeout policy rules that control session re-authentication and idle timeout behavior. Configures how long a user session remains active (reauth_timeout) and how long an idle session persists (reauth_idle_timeout) before requiring re-authentication. Supports conditions: APP, APP_GROUP, CLIENT_TYPE, SAML, SCIM, SCIM_GROUP, PLATFORM, and POSTURE. Use when an administrator asks: 'Set session timeout', 'Configure idle timeout', 'Require re-authentication after X hours', or 'Set different timeouts per app or user group.",
+     "path": "skills/zpa/create-timeout-policy-rule/SKILL.md"
+    },
+    {
+     "name": "zpa:zpa-troubleshoot-app-connector",
+     "description": "Troubleshoot ZPA App Connector issues including enrollment failures, upgrade problems, Public Service Edge connectivity, and high CPU/memory/disk utilization. Uses MCP tools to inspect connector groups, provisioning keys, server groups, and application segments, then provides runbook-guided remediation steps. Use when an administrator reports 'connector is down', 'connector not enrolling', 'connector upgrade failed', or 'connector high CPU.",
+     "path": "skills/zpa/troubleshoot-app-connector/SKILL.md"
     }
    ],
    "commands": [
@@ -26383,7 +27308,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "teaching",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -26421,7 +27346,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "thermos",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "development",
    "strict": null,
@@ -26482,7 +27407,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "agent-compatibility",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "development",
    "strict": null,
@@ -26543,7 +27468,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cli-for-agent",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "development",
    "strict": null,
@@ -26581,7 +27506,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "grok-voice",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "development",
    "strict": null,
@@ -26634,7 +27559,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gmail",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -26666,7 +27591,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-drive",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -26699,7 +27624,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-calendar",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -26732,7 +27657,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-docs",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -26772,7 +27697,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-sheets",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -26812,7 +27737,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-slides",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -26852,7 +27777,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gong",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "sales",
    "strict": null,
@@ -26901,7 +27826,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/salesforce",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "sales",
    "strict": null,
@@ -26950,7 +27875,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ashby",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -26984,7 +27909,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/hubspot",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "sales",
    "strict": null,
@@ -27034,7 +27959,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/zoom",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27083,7 +28008,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "marketing",
    "strict": null,
@@ -27133,7 +28058,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/docusign",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27182,7 +28107,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/navan",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -27216,7 +28141,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/profound",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "marketing",
    "strict": null,
@@ -27251,7 +28176,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/juicebox",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27285,7 +28210,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outreach",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "sales",
    "strict": null,
@@ -27319,7 +28244,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/amplemarket",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "sales",
    "strict": null,
@@ -27353,7 +28278,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/klaviyo",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "marketing",
    "strict": null,
@@ -27387,7 +28312,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/customer-io",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "marketing",
    "strict": null,
@@ -27421,7 +28346,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mailerlite",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "marketing",
    "strict": null,
@@ -27455,7 +28380,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brevo",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "marketing",
    "strict": null,
@@ -27498,7 +28423,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/typeform",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27531,7 +28456,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/jotform",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27563,7 +28488,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/semrush",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "marketing",
    "strict": null,
@@ -27597,7 +28522,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ahrefs",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "marketing",
    "strict": null,
@@ -27631,7 +28556,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/godaddy",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27664,7 +28589,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/upwork",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27698,7 +28623,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/workable",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27732,7 +28657,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brex",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -27766,7 +28691,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mercury",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -27799,7 +28724,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/todoist",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27832,7 +28757,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/calendly",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27865,7 +28790,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/smartsheet",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27907,7 +28832,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/wrike",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27949,7 +28874,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coda",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -27982,7 +28907,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/guru",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28015,7 +28940,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fireflies",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28048,7 +28973,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/otter",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28081,7 +29006,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fathom",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28114,7 +29039,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/craft",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28147,7 +29072,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mem",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28180,7 +29105,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/readwise",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28213,7 +29138,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/similarweb",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "marketing",
    "strict": null,
@@ -28255,7 +29180,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/xero",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -28305,7 +29230,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outlook",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28337,7 +29262,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outlook-calendar",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28370,7 +29295,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/onedrive",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28402,7 +29327,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/sharepoint",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28435,7 +29360,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/teams",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28467,7 +29392,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/finance",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -28502,7 +29427,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x-ads",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "marketing",
    "strict": null,
@@ -28537,7 +29462,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/attio",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "sales",
    "strict": null,
@@ -28572,7 +29497,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gamma",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "productivity",
    "strict": null,
@@ -28607,7 +29532,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/webull",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -28642,7 +29567,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/sp-global",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -28677,7 +29602,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/interactive-brokers",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -28712,7 +29637,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/meltwater",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "marketing",
    "strict": null,
@@ -28747,7 +29672,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/daloopa",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -28782,7 +29707,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/excalidraw",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "design",
    "strict": null,
@@ -28817,7 +29742,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-cloud-bigquery",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "database",
    "strict": null,
@@ -28852,7 +29777,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/statsig",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "development",
    "strict": null,
@@ -28887,7 +29812,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/robinhood",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -28924,7 +29849,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coinbase",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -28959,7 +29884,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/etoro-trading",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -28996,7 +29921,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x-money",
     "ref": "main",
-    "sha": "12d587dfb20741cafc376c42c696c5f6e2a64487"
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
    "category": "finance",
    "strict": null,
@@ -29031,6 +29956,259 @@
      "path": "skills/x-money-guide/SKILL.md"
     }
    ],
+   "marketplace": "cursor"
+  },
+  {
+   "name": "shopify-store",
+   "displayName": "Shopify Store",
+   "description": "Connect your Shopify store so Grok can answer questions about your products, orders, customers, inventory, and sales. You sign in with Shopify and approve the store access Grok requests; Grok keeps that authorization so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. xAI never sees or stores your Shopify password, and you can disconnect the store anytime from grok.com.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/shopify-store",
+    "ref": "main",
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "shopify",
+     "path": "mcp.json"
+    }
+   ],
+   "homepage": "https://grok.com/connectors",
+   "keywords": [
+    "shopify",
+    "store",
+    "orders",
+    "products",
+    "customers",
+    "inventory",
+    "ecommerce",
+    "grok",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/shopify-store/assets/logo.png",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "tinyfish",
+   "displayName": "Tinyfish",
+   "description": "Browse and automate the web with TinyFish: run multi-step web automations, search the web, extract clean page content, and drive remote stealth browser sessions.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/tinyfish",
+    "ref": "main",
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "tinyfish",
+     "path": "mcp.json"
+    }
+   ],
+   "homepage": "https://docs.tinyfish.ai/mcp-integration",
+   "keywords": [
+    "tinyfish",
+    "web automation",
+    "browser agent",
+    "web search",
+    "scraping",
+    "content extraction",
+    "browser sessions",
+    "playwright",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/tinyfish/assets/logo.png",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "beehiiv",
+   "displayName": "Beehiiv",
+   "description": "Run your beehiiv newsletter from chat: draft and edit posts, organize subscribers with tags, custom fields, and segments, build automations, and review publication, post, and website performance.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/beehiiv",
+    "ref": "main",
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "beehiiv",
+     "path": "mcp.json"
+    }
+   ],
+   "homepage": "https://www.beehiiv.com/support/article/39255979546263-getting-started-with-the-beehiiv-mcp",
+   "keywords": [
+    "beehiiv",
+    "newsletter",
+    "email marketing",
+    "subscribers",
+    "segments",
+    "posts",
+    "automations",
+    "creator",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/beehiiv/assets/logo.png",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "trello",
+   "displayName": "Trello",
+   "description": "Manage your Trello workspace from chat: browse and create boards, view and move lists, create, update, move, archive, and complete cards with labels and due dates, manage checklists, capture Inbox cards, schedule Planner focus time, and search across boards.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/trello",
+    "ref": "main",
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "trello",
+     "path": "mcp.json"
+    }
+   ],
+   "homepage": "https://github.com/atlassian/trello-mcp-server",
+   "keywords": [
+    "trello",
+    "atlassian",
+    "kanban",
+    "boards",
+    "cards",
+    "checklists",
+    "project management",
+    "task management",
+    "planner",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/trello/assets/logo.png",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "buffer",
+   "displayName": "Buffer",
+   "description": "Manage social media with Buffer: draft, schedule, and publish posts across connected channels, manage the queue and ideas, and review post performance.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/buffer",
+    "ref": "main",
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "buffer",
+     "path": "mcp.json"
+    }
+   ],
+   "homepage": "https://developers.buffer.com/guides/integrations/mcp.html",
+   "keywords": [
+    "buffer",
+    "social media",
+    "scheduling",
+    "publishing",
+    "content calendar",
+    "queue",
+    "analytics",
+    "ideas",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/buffer/assets/logo.png",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "plaud",
+   "displayName": "Plaud",
+   "description": "Work with your Plaud recordings: list and search meetings and voice notes, read full transcripts with speaker labels, and pull AI summaries, action items, and key topics into your workflow.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/plaud",
+    "ref": "main",
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "plaud",
+     "path": "mcp.json"
+    }
+   ],
+   "homepage": "https://docs.plaud.ai/plaud-mcp-cli/mcp",
+   "keywords": [
+    "plaud",
+    "meeting notes",
+    "transcripts",
+    "recordings",
+    "voice notes",
+    "ai notetaker",
+    "summaries",
+    "action items",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/plaud/assets/logo.png",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "posthog-mcp",
+   "displayName": "Posthog Mcp",
+   "description": "Work with PostHog from chat: query product analytics and run SQL, manage feature flags and experiments, triage error tracking issues, and review session replays, surveys, and dashboards (URL-only connector to PostHog's hosted MCP server).",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/posthog-mcp",
+    "ref": "main",
+    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "posthog",
+     "path": "mcp.json"
+    }
+   ],
+   "homepage": "https://posthog.com/docs/model-context-protocol",
+   "keywords": [
+    "posthog",
+    "product analytics",
+    "feature flags",
+    "experiments",
+    "error tracking",
+    "session replay",
+    "hogql",
+    "sql",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/posthog-mcp/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -29118,95 +30296,118 @@
  "excluded": {
   "advisor": {
    "kind": "cursor-only",
-   "reason": "Runs on Cursor hook events (afterFileEdit, afterAgentResponse, stop) and a Grok-pinned Cursor subagent."
+   "reason": "Runs on Cursor hook events (afterFileEdit, afterAgentResponse, stop) and a Grok-pinned Cursor subagent.",
+   "marketplace": "cursor"
   },
   "browser-use": {
    "kind": "builtin-overlap",
-   "reason": "Remy's built-in browser and Chrome plugins already drive a real browser."
+   "reason": "Remy's built-in browser and Chrome plugins already drive a real browser.",
+   "marketplace": "claude-code"
   },
   "chrome-devtools-mcp": {
    "kind": "builtin-overlap",
-   "reason": "Remy's built-in Chrome/CDP plugins already inspect and control a live Chrome."
+   "reason": "Remy's built-in Chrome/CDP plugins already inspect and control a live Chrome.",
+   "marketplace": "claude-code"
   },
   "claude-code-setup": {
    "kind": "claude-code-only",
-   "reason": "Recommends and writes Claude Code automations, and shells out to the claude CLI."
+   "reason": "Recommends and writes Claude Code automations, and shells out to the claude CLI.",
+   "marketplace": "claude-code"
   },
   "code-review": {
    "kind": "builtin-overlap",
-   "reason": "Remy's built-in code-review skill already reviews a change with specialised passes."
+   "reason": "Remy's built-in code-review skill already reviews a change with specialised passes.",
+   "marketplace": "claude-code"
   },
   "continual-learning": {
    "kind": "cursor-only",
-   "reason": "Mines Cursor agent transcripts from a Cursor stop hook, which Remy does not fire."
+   "reason": "Mines Cursor agent transcripts from a Cursor stop hook, which Remy does not fire.",
+   "marketplace": "cursor"
   },
   "create-plugin": {
    "kind": "cursor-only",
-   "reason": "Scaffolds and validates Cursor-format plugins."
+   "reason": "Scaffolds and validates Cursor-format plugins.",
+   "marketplace": "cursor"
   },
   "cursor-sdk": {
    "kind": "cursor-only",
-   "reason": "Skills for building on the Cursor SDK."
+   "reason": "Skills for building on the Cursor SDK.",
+   "marketplace": "cursor"
   },
   "cursor-team-kit": {
    "kind": "cursor-only",
-   "reason": "Cursor's internal engineering workflows (control-cli, their CI)."
+   "reason": "Cursor's internal engineering workflows (control-cli, their CI).",
+   "marketplace": "cursor"
   },
   "dash0": {
    "kind": "claude-code-only",
-   "reason": "OpenTelemetry for Claude Code sessions; ten of the 24 hook events it traces are ones Remy does not fire."
+   "reason": "OpenTelemetry for Claude Code sessions; ten of the 24 hook events it traces are ones Remy does not fire.",
+   "marketplace": "claude-code"
   },
   "docs-canvas": {
    "kind": "cursor-only",
-   "reason": "Renders documentation into Cursor's canvas surface."
+   "reason": "Renders documentation into Cursor's canvas surface.",
+   "marketplace": "cursor"
   },
   "langfuse-observability": {
    "kind": "claude-code-only",
-   "reason": "Exports Claude Code transcripts (the hook's transcript_path) to Langfuse; Remy hands hooks no transcript."
+   "reason": "Exports Claude Code transcripts (the hook's transcript_path) to Langfuse; Remy hands hooks no transcript.",
+   "marketplace": "claude-code"
   },
   "mcp-tunnels": {
    "kind": "claude-code-only",
-   "reason": "Drives Anthropic's MCP tunnel product, which needs an Anthropic API key."
+   "reason": "Drives Anthropic's MCP tunnel product, which needs an Anthropic API key.",
+   "marketplace": "claude-code"
   },
   "orchestrate": {
    "kind": "cursor-only",
-   "reason": "Fans work out to Cursor cloud agents through the Cursor SDK."
+   "reason": "Fans work out to Cursor cloud agents through the Cursor SDK.",
+   "marketplace": "cursor"
   },
   "pr-review-canvas": {
    "kind": "cursor-only",
-   "reason": "Renders PR diffs into Cursor's canvas surface."
+   "reason": "Renders PR diffs into Cursor's canvas surface.",
+   "marketplace": "cursor"
   },
   "project-artifact": {
    "kind": "claude-code-only",
-   "reason": "Generates and publishes its status page through the claude CLI."
+   "reason": "Generates and publishes its status page through the claude CLI.",
+   "marketplace": "claude-code"
   },
   "pstack": {
    "kind": "cursor-only",
-   "reason": "A workflow kit built around Cursor automations, cursor-agent worktrees and Cursor subagents; only its principle notes work elsewhere."
+   "reason": "A workflow kit built around Cursor automations, cursor-agent worktrees and Cursor subagents; only its principle notes work elsewhere.",
+   "marketplace": "cursor"
   },
   "ralph-loop": {
    "kind": "claude-code-only",
-   "reason": "Its loop is a Stop hook that re-reads the Claude Code transcript, which Remy does not hand to hooks."
+   "reason": "Its loop is a Stop hook that re-reads the Claude Code transcript, which Remy does not hand to hooks.",
+   "marketplace": "claude-code"
   },
   "receipts": {
    "kind": "claude-code-only",
-   "reason": "Mines Claude Code transcripts for its usage report."
+   "reason": "Mines Claude Code transcripts for its usage report.",
+   "marketplace": "claude-code"
   },
   "remember": {
    "kind": "claude-code-only",
-   "reason": "Builds its memory from Claude Code transcripts and summarises them with the claude CLI."
+   "reason": "Builds its memory from Claude Code transcripts and summarises them with the claude CLI.",
+   "marketplace": "claude-code"
   },
   "security-guidance": {
    "kind": "claude-code-only",
-   "reason": "Its LLM diff review runs on the Claude Agent SDK with Claude credentials."
+   "reason": "Its LLM diff review runs on the Claude Agent SDK with Claude credentials.",
+   "marketplace": "claude-code"
   },
   "session-report": {
    "kind": "claude-code-only",
-   "reason": "Reports on Claude Code session logs under ~/.claude/projects."
+   "reason": "Reports on Claude Code session logs under ~/.claude/projects.",
+   "marketplace": "claude-code"
   },
   "skill-creator": {
    "kind": "builtin-overlap",
-   "reason": "Remy ships its own skill-creator skill; this one also scores skills by shelling out to the claude CLI."
+   "reason": "Remy ships its own skill-creator skill; this one also scores skills by shelling out to the claude CLI.",
+   "marketplace": "claude-code"
   }
  }
 }
