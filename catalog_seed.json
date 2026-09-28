@@ -11,6 +11,86 @@
   "azure-skills": "azure",
   "sonarqube-agent-plugins": "sonarqube"
  },
+ "categories": [
+  {
+   "name": "productivity",
+   "displayName": "Productivity",
+   "sortOrder": 10
+  },
+  {
+   "name": "development",
+   "displayName": "Development",
+   "sortOrder": 20
+  },
+  {
+   "name": "database",
+   "displayName": "Database",
+   "sortOrder": 30
+  },
+  {
+   "name": "data-analytics",
+   "displayName": "Data & Analytics",
+   "sortOrder": 40
+  },
+  {
+   "name": "design",
+   "displayName": "Design",
+   "sortOrder": 50
+  },
+  {
+   "name": "agent-orchestration",
+   "displayName": "Agent Orchestration",
+   "sortOrder": 60
+  },
+  {
+   "name": "deployment",
+   "displayName": "Deployment",
+   "sortOrder": 70
+  },
+  {
+   "name": "infrastructure",
+   "displayName": "Infrastructure",
+   "sortOrder": 80
+  },
+  {
+   "name": "monitoring",
+   "displayName": "Monitoring",
+   "sortOrder": 90
+  },
+  {
+   "name": "security",
+   "displayName": "Security",
+   "sortOrder": 100
+  },
+  {
+   "name": "sales",
+   "displayName": "Sales",
+   "sortOrder": 110
+  },
+  {
+   "name": "marketing",
+   "displayName": "Marketing",
+   "sortOrder": 120
+  },
+  {
+   "name": "finance",
+   "displayName": "Finance",
+   "sortOrder": 130
+  },
+  {
+   "name": "payments",
+   "displayName": "Payments",
+   "sortOrder": 140
+  }
+ ],
+ "retiredCategories": {
+  "automation": "agent-orchestration",
+  "testing": "development",
+  "migration": "development",
+  "location": "development",
+  "learning": "productivity",
+  "math": "productivity"
+ },
  "plugins": [
   {
    "name": "42crunch-api-security-testing",

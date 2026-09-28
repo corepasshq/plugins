@@ -39,6 +39,7 @@ To run it by hand from a `remy` checkout next to this one:
 python scripts/generate_catalog_seed.py \
   --out ../corepasshq-plugins --cursor-out ../corepasshq-plugins \
   --overlay ../corepasshq-plugins/catalog_display_overlay.json \
+  --categories ../corepasshq-plugins/catalog_categories.json \
   --exclusions ../corepasshq-plugins/catalog_exclusions.json \
   --vendored-root ../corepasshq-plugins --merge-cursor
 ```
@@ -51,8 +52,20 @@ plugins remain under their own licences.
 Keyed by plugin name. `logoUrl`, `publisher` and `featured` are the overlay's
 own; `displayName`, `description`, `category` and `keywords` fill in only where
 upstream is silent; `categoryOverride` places a plugin in a category even when
-upstream names a different one. Categories must be in user-center's
-`uc_plugin_category` vocabulary, or the importer drops them.
+upstream names a different one. Either must name a category in
+`catalog_categories.json`, or the generator drops it.
+
+### Curating: `catalog_categories.json`
+
+The one category vocabulary. Each category has a slug `name`, the storefront
+heading `displayName`, a `sortOrder` and the upstream spellings (`aliases`) the
+generator reads as it. `retired` maps a category that no longer exists to the
+one its plugins move to. The generator carries `categories` and
+`retiredCategories` into the feed; on sync, user-center makes
+`uc_plugin_category` match them — moving every plugin out of a retired category
+before deleting it — and attaches each plugin's category heading and order to
+the public feed, which is where the storefront reads them. Adding, renaming,
+reordering or merging a category is an edit here and nothing else.
 
 ## Track 2 — marketplace (hand-maintained, vendored)
 

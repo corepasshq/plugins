@@ -1,0 +1,97 @@
+{
+ "_comment": "The one category vocabulary. The feed generator places plugins with it, carries it in catalog_seed.json, and user-center's importer makes uc_plugin_category match it; the storefront titles and orders groups from it. `aliases` are upstream spellings that mean the category (matched lower-cased, with spaces and underscores read as hyphens). `retired` maps a category that no longer exists to the one its plugins move to; the generator reads it as an alias and the importer moves every row across before deleting the old one. `integrations` is deliberately no alias: it is Cursor's word for 'talks to a third-party service', which says nothing about what the service is for, so catalog_display_overlay.json places each such plugin.",
+ "categories": [
+  {
+   "name": "productivity",
+   "displayName": "Productivity",
+   "sortOrder": 10,
+   "aliases": ["utilities", "utility", "search", "communication", "messaging", "support"]
+  },
+  {
+   "name": "development",
+   "displayName": "Development",
+   "sortOrder": 20,
+   "aliases": ["developer-tools", "devtools", "dev", "engineering", "software-engineering"]
+  },
+  {
+   "name": "database",
+   "displayName": "Database",
+   "sortOrder": 30,
+   "aliases": []
+  },
+  {
+   "name": "data-analytics",
+   "displayName": "Data & Analytics",
+   "sortOrder": 40,
+   "aliases": ["analytics", "data"]
+  },
+  {
+   "name": "design",
+   "displayName": "Design",
+   "sortOrder": 50,
+   "aliases": ["content", "media", "docs"]
+  },
+  {
+   "name": "agent-orchestration",
+   "displayName": "Agent Orchestration",
+   "sortOrder": 60,
+   "aliases": ["agents", "ai"]
+  },
+  {
+   "name": "deployment",
+   "displayName": "Deployment",
+   "sortOrder": 70,
+   "aliases": ["devops"]
+  },
+  {
+   "name": "infrastructure",
+   "displayName": "Infrastructure",
+   "sortOrder": 80,
+   "aliases": ["infra"]
+  },
+  {
+   "name": "monitoring",
+   "displayName": "Monitoring",
+   "sortOrder": 90,
+   "aliases": ["observability"]
+  },
+  {
+   "name": "security",
+   "displayName": "Security",
+   "sortOrder": 100,
+   "aliases": []
+  },
+  {
+   "name": "sales",
+   "displayName": "Sales",
+   "sortOrder": 110,
+   "aliases": ["crm"]
+  },
+  {
+   "name": "marketing",
+   "displayName": "Marketing",
+   "sortOrder": 120,
+   "aliases": ["advertising", "ads"]
+  },
+  {
+   "name": "finance",
+   "displayName": "Finance",
+   "sortOrder": 130,
+   "aliases": ["accounting", "banking", "trading"]
+  },
+  {
+   "name": "payments",
+   "displayName": "Payments",
+   "sortOrder": 140,
+   "aliases": []
+  }
+ ],
+ "retired": {
+  "automation": "agent-orchestration",
+  "testing": "development",
+  "migration": "development",
+  "location": "development",
+  "learning": "productivity",
+  "math": "productivity"
+ }
+}
