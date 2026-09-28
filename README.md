@@ -39,6 +39,7 @@ To run it by hand from a `remy` checkout next to this one:
 python scripts/generate_catalog_seed.py \
   --out ../corepasshq-plugins --cursor-out ../corepasshq-plugins \
   --overlay ../corepasshq-plugins/catalog_display_overlay.json \
+  --exclusions ../corepasshq-plugins/catalog_exclusions.json \
   --vendored-root ../corepasshq-plugins --merge-cursor
 ```
 

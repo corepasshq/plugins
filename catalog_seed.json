@@ -939,7 +939,7 @@
     "ref": "main",
     "sha": "097fe8ad56d8a1d5e2c81d7880adf145553cf244"
    },
-   "category": "location",
+   "category": "development",
    "strict": null,
    "license": "Apache-2.0",
    "homepage": "https://github.com/awslabs/agent-plugins",
@@ -3143,7 +3143,7 @@
     "ref": "main",
     "sha": "097fe8ad56d8a1d5e2c81d7880adf145553cf244"
    },
-   "category": "migration",
+   "category": "development",
    "strict": null,
    "license": "Apache-2.0",
    "homepage": "https://github.com/awslabs/agent-plugins",
@@ -10872,7 +10872,7 @@
     "ref": "main",
     "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
-   "category": "productivity",
+   "category": "development",
    "strict": null,
    "license": "Apache-2.0",
    "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/github",
@@ -12841,7 +12841,7 @@
     "ref": "main",
     "sha": "ac28fd6ebf8584e3ee196159bd6d4514fa07de0f"
    },
-   "category": "learning",
+   "category": "productivity",
    "strict": false,
    "license": "Apache-2.0",
    "homepage": "https://github.com/coursera/skills",
@@ -13518,7 +13518,7 @@
     "ref": null,
     "sha": "aab3a6fef5c62b7c42c1f68e05885a1b50c42d24"
    },
-   "category": "location",
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "homepage": "https://www.mapbox.com",
@@ -13654,7 +13654,7 @@
     "ref": "main",
     "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
-   "category": "math",
+   "category": "productivity",
    "strict": null,
    "license": "Apache-2.0",
    "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/math-olympiad",
@@ -17374,7 +17374,7 @@
     "ref": "main",
     "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
    },
-   "category": "testing",
+   "category": "development",
    "strict": null,
    "license": "Apache-2.0",
    "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/playwright",
@@ -23244,7 +23244,7 @@
     "ref": "main",
     "sha": "205871ee83508502d2c982ee1bb7e65a2a29190b"
    },
-   "category": "automation",
+   "category": "agent-orchestration",
    "strict": null,
    "license": "MIT",
    "homepage": "https://synthflow.ai",
@@ -29969,7 +29969,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -30005,7 +30005,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "agent-orchestration",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -30041,7 +30041,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -30077,7 +30077,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -30114,7 +30114,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -30150,7 +30150,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -30186,7 +30186,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "data-analytics",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",

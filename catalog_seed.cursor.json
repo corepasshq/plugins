@@ -1375,7 +1375,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1408,7 +1408,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "development",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -1702,7 +1702,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3694,7 +3694,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "sales",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3730,7 +3730,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "agent-orchestration",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3766,7 +3766,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3802,7 +3802,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3839,7 +3839,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "marketing",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3875,7 +3875,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
@@ -3911,7 +3911,7 @@
     "ref": "main",
     "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
    },
-   "category": null,
+   "category": "data-analytics",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",

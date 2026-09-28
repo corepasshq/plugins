@@ -1279,7 +1279,8 @@
   ],
   "category": "integrations",
   "displayName": "Circleback",
-  "description": "Search meetings, transcripts, action items, and emails."
+  "description": "Search meetings, transcripts, action items, and emails.",
+  "categoryOverride": "productivity"
  },
  "ckeditor": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=ckeditor.com&sz=128",
@@ -2388,7 +2389,8 @@
   ],
   "category": "integrations",
   "displayName": "Github",
-  "description": "Manage repos, issues, pull requests, and Actions."
+  "description": "Manage repos, issues, pull requests, and Actions.",
+  "categoryOverride": "development"
  },
  "gitkraken": {
   "logoUrl": "https://www.google.com/s2/favicons?domain=www.gitkraken.com&sz=128",
@@ -4059,7 +4061,8 @@
   ],
   "category": "integrations",
   "displayName": "Playwright",
-  "description": "Navigate, click, screenshot, and test in a real browser."
+  "description": "Navigate, click, screenshot, and test in a real browser.",
+  "categoryOverride": "development"
  },
  "plugin-dev": {
   "publisher": {
@@ -5128,7 +5131,7 @@
   "category": "automation",
   "displayName": "Synthflow",
   "description": "Connects Claude Code to the Synthflow AI voice-agent platform through its hosted MCP server, with skills for reviewing calls and auditing agent prompts, plus a docs-search connector.",
-  "categoryOverride": "automation"
+  "categoryOverride": "agent-orchestration"
  },
  "tabnine": {
   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/b1a35c718e41c46b.png",
@@ -5807,6 +5810,27 @@
   "categoryOverride": "finance"
  },
  "browser-use": {
-  "categoryOverride": "automation"
+  "categoryOverride": "agent-orchestration"
+ },
+ "tinyfish": {
+  "categoryOverride": "agent-orchestration"
+ },
+ "shopify-store": {
+  "categoryOverride": "sales"
+ },
+ "beehiiv": {
+  "categoryOverride": "marketing"
+ },
+ "buffer": {
+  "categoryOverride": "marketing"
+ },
+ "trello": {
+  "categoryOverride": "productivity"
+ },
+ "plaud": {
+  "categoryOverride": "productivity"
+ },
+ "posthog-mcp": {
+  "categoryOverride": "data-analytics"
  }
 }
