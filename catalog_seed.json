@@ -10322,40 +10322,6 @@
    "marketplace": "claude-code"
   },
   {
-   "name": "github",
-   "displayName": "Github",
-   "description": "Official GitHub MCP server for repository management. Create issues, manage pull requests, review code, search repositories, and interact with GitHub's full API directly from Claude Code.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/anthropics/claude-plugins-official",
-    "path": "external_plugins/github",
-    "ref": "main",
-    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
-   },
-   "category": "development",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/github",
-   "repository": "https://github.com/anthropics/claude-plugins-official",
-   "mcpServers": [
-    {
-     "name": "github",
-     "path": ".mcp.json"
-    }
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/github/assets/logo.svg",
-   "keywords": [
-    "github",
-    "git",
-    "repositories",
-    "pull-requests",
-    "issues",
-    "actions",
-    "mcp"
-   ],
-   "marketplace": "claude-code"
-  },
-  {
    "name": "gitkraken",
    "displayName": "Gitkraken",
    "description": "Gives Claude access to your real Git and project context: commits, branches, pull requests, and issues across every repo you work in. Works with GitHub, GitLab, Azure DevOps, Bitbucket, and Jira.",
@@ -27387,6 +27353,38 @@
    "mcpServers": [
     {
      "name": "kanban",
+     "path": ".mcp.json"
+    }
+   ],
+   "marketplace": "corepass"
+  },
+  {
+   "name": "github",
+   "displayName": "GitHub",
+   "description": "GitHub integration \u2014 manage repositories, issues, pull requests, and workflows through natural language, via the remote GitHub MCP server.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/corepasshq/plugins",
+    "path": "plugins/github",
+    "ref": null,
+    "sha": "dd3e8a42ecb82251c2deb8a2211c00fbd0d87180"
+   },
+   "license": "MIT",
+   "category": "development",
+   "featured": null,
+   "repository": "https://github.com/github/github-mcp-server",
+   "publisher": {
+    "name": "github",
+    "displayName": "GitHub"
+   },
+   "_provenance": {
+    "upstream": "https://github.com/github/github-mcp-server",
+    "sha": "eb088dfe9d854dab6453a8d4ae5871a5ced20974",
+    "license": "MIT"
+   },
+   "mcpServers": [
+    {
+     "name": "github",
      "path": ".mcp.json"
     }
    ],
