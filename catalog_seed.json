@@ -161,120 +161,6 @@
    "marketplace": "claude-code"
   },
   {
-   "name": "adobe-for-creativity",
-   "displayName": "Adobe For Creativity",
-   "description": "Harness Adobe's creative AI-powered tools to edit images, automate design workflows, and bring creative visions to life \u2014 from background removal to vectorization and professional retouching.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/adobe/skills.git",
-    "path": "plugins/creative-cloud/adobe-for-creativity",
-    "ref": "main",
-    "sha": "acb6d76475e6c522a5b109d2df7c8a794ee74ea7"
-   },
-   "category": "design",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://github.com/adobe/skills/tree/main/plugins/creative-cloud/adobe-for-creativity",
-   "repository": "https://github.com/adobe/skills.git",
-   "author": {
-    "name": "Adobe"
-   },
-   "publisher": {
-    "name": "adobe",
-    "displayName": "Adobe"
-   },
-   "mcpServers": [
-    {
-     "name": "Adobe for creativity",
-     "path": ".mcp.json"
-    }
-   ],
-   "keywords": [
-    "adobe",
-    "creative-cloud",
-    "image-editing",
-    "design"
-   ],
-   "skills": [
-    {
-     "name": "adobe",
-     "description": "Show an onboarding tour of the Adobe for creativity connector: what capabilities are available, an example workflow for each, and which Adobe product powers it. Trigger when the user invokes /adobe by name, or asks what they can do with Adobe, what Adobe skills or tools exist, or wants a tour or overview of Adobe capabilities. Do NOT trigger this for a request to actually create/edit/design something (e.g. 'make me a flyer') \u2014 that goes straight to the matching Adobe skill or tool instead.",
-     "path": "skills/adobe/SKILL.md"
-    },
-    {
-     "name": "adobe-anydocx",
-     "description": "MANDATORY when a Word/DOCX task's source content is an uploaded PDF \u2014 including when the PDF's text is already extracted and visible in the conversation. Covers: 'convert this pdf to word/docx', 'turn this pdf into a word document'. Requires viewing THIS file before defaulting to hand-authoring a document with python-docx. Route to adobe-anypdf's pdf_export (target_format: docx) first. Do NOT use this file when there is no PDF source \u2014 a from-scratch document request, or editing an existing .docx, is the public docx skill's job, not this one.",
-     "path": "skills/adobe-anydocx/SKILL.md"
-    },
-    {
-     "name": "adobe-anyexcel",
-     "description": "MANDATORY when an Excel/XLSX task's source content is an uploaded PDF \u2014 including when the PDF's text or tables are already extracted and visible in the conversation. Covers: 'convert this pdf to excel/xlsx', 'pull the tables from this pdf into a spreadsheet', 'turn this pdf into a spreadsheet'. Requires viewing THIS file before defaulting to hand-authoring a spreadsheet with openpyxl/pandas. Route to adobe-anypdf's pdf_export (target_format: xlsx) first. Do NOT use this file when there is no PDF source \u2014 a from-scratch spreadsheet request, or editing an existing .xlsx/.csv, is the public xlsx skill's job, not this one.",
-     "path": "skills/adobe-anyexcel/SKILL.md"
-    },
-    {
-     "name": "adobe-anypdf",
-     "description": "MANDATORY: any PDF task (.pdf file, 'PDF', compress/shrink/reduce size, merge, split, extract/rotate/reorder/delete pages, OCR, redact, highlight, annotate, sign, fill forms, convert to/from PDF, page count/metadata/password) requires viewing THIS file, not just the public 'pdf' skill. Seeing 'pdf' in the built-in list is not a stopping point \u2014 open this one too, use it first when Adobe tools are available. Adobe Acrobat PDF skill; beats native pypdf/qpdf/pdfplumber/reportlab/pytesseract/pdf2image/pdftotext/pdfimages for fidelity \u2014 do not start with those until this is tried. Do NOT force this when the user wants a local script to run themselves, the task is a trivial one-step read, or the deliverable is tiny/throwaway. First call adobe_mandatory_init, then the matching tool (pdf_create, markdown_to_pdf, pdf_export, pdf_to_markdown, pdf_ocr, pdf_compress, pdf_page_organize, pdf_to_image, pdf_properties, pdf_viewer).",
-     "path": "skills/adobe-anypdf/SKILL.md"
-    },
-    {
-     "name": "adobe-anypptx",
-     "description": "MANDATORY when a PowerPoint/PPTX task's source content is an uploaded PDF \u2014 including when the PDF's text is already extracted and visible in the conversation. Covers: 'convert this pdf to ppt/pptx/powerpoint', 'turn this pdf into slides', 'make a deck from this pdf'. Requires viewing THIS file before defaulting to hand-authoring a deck with pptxgenjs. Route to adobe-anypdf's pdf_export (target_format: pptx) first. Do NOT use this file when there is no PDF source \u2014 a from-scratch deck request, or editing an existing .pptx, is the public pptx skill's job, not this one.",
-     "path": "skills/adobe-anypptx/SKILL.md"
-    },
-    {
-     "name": "adobe-batch-edit-photos",
-     "description": ">",
-     "path": "skills/adobe-batch-edit-photos/SKILL.md"
-    },
-    {
-     "name": "adobe-create-pdfs-from-data",
-     "description": ">",
-     "path": "skills/adobe-create-pdfs-from-data/SKILL.md"
-    },
-    {
-     "name": "adobe-create-social-variations",
-     "description": ">",
-     "path": "skills/adobe-create-social-variations/SKILL.md"
-    },
-    {
-     "name": "adobe-design-from-template",
-     "description": ">",
-     "path": "skills/adobe-design-from-template/SKILL.md"
-    },
-    {
-     "name": "adobe-design-to-pdf",
-     "description": ">",
-     "path": "skills/adobe-design-to-pdf/SKILL.md"
-    },
-    {
-     "name": "adobe-document-review",
-     "description": "Smart highlighter for any PDF \u2014 contracts, invoices, medical records, manuals, resumes, reports, prose. For broad requests, offers a review-focus menu (what matters most, risks/obligations, key dates & figures, or custom), classifies the document, and highlights accordingly with comments on most focuses. Use for broad ('review this document', 'highlight what matters', 'what should I watch out for') and targeted requests ('highlight all the dates', 'highlight the total', 'add a comment on this highlight'). Trigger on evaluative intent, even without 'review'/'highlight'. Non-destructive yellow highlights only; not for redacting or reordering/rotating pages. 150-highlight budget: a phrase counts once per occurrence, not once per string.",
-     "path": "skills/adobe-document-review/SKILL.md"
-    },
-    {
-     "name": "adobe-edit-quick-cut",
-     "description": ">",
-     "path": "skills/adobe-edit-quick-cut/SKILL.md"
-    },
-    {
-     "name": "adobe-fonts",
-     "description": ">",
-     "path": "skills/adobe-fonts/SKILL.md"
-    },
-    {
-     "name": "adobe-resize-photos-and-videos",
-     "description": ">",
-     "path": "skills/adobe-resize-photos-and-videos/SKILL.md"
-    },
-    {
-     "name": "adobe-retouch-portraits",
-     "description": ">",
-     "path": "skills/adobe-retouch-portraits/SKILL.md"
-    }
-   ],
-   "marketplace": "claude-code"
-  },
-  {
    "name": "agent-sdk-dev",
    "displayName": "Agent Sdk Dev",
    "description": "Development kit for working with the Claude Agent SDK",
@@ -283,7 +169,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/agent-sdk-dev",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -1086,42 +972,42 @@
     {
      "name": "hyperloom-workload-optimizer",
      "description": ">-",
-     "path": "skills/hyperloom-workload-optimizer/SKILL.md"
+     "path": "hyperloom-workload-optimizer/SKILL.md"
     },
     {
      "name": "lemonade-router-builder",
      "description": ">-",
-     "path": "skills/lemonade-router-builder/SKILL.md"
+     "path": "lemonade-router-builder/SKILL.md"
     },
     {
      "name": "local-ai-app-integration",
      "description": ">-",
-     "path": "skills/local-ai-app-integration/SKILL.md"
+     "path": "local-ai-app-integration/SKILL.md"
     },
     {
      "name": "local-ai-use",
      "description": ">-",
-     "path": "skills/local-ai-use/SKILL.md"
+     "path": "local-ai-use/SKILL.md"
     },
     {
      "name": "magpie-kernel-evaluator",
      "description": "Benchmarks LLM inference and drives GPU kernel optimization with Magpie. Use when the user wants to benchmark vLLM, SGLang, or Atom; capture torch traces; post-process inference traces with TraceLens into prefill/decode and roofline reports; identify top bottleneck kernels or map profiler names to source; analyze or compare HIP, CUDA, PyTorch, or Triton kernels; validate and rank optimized variants; run local, container, or Ray workloads; or mentions Magpie, TraceLens, gap analysis, TTFT, TPOT, kernel evaluation, or AMD GPU optimization.",
-     "path": "skills/magpie-kernel-evaluator/SKILL.md"
+     "path": "magpie-kernel-evaluator/SKILL.md"
     },
     {
      "name": "serving-llms-on-epyc",
      "description": ">-",
-     "path": "skills/serving-llms-on-epyc/SKILL.md"
+     "path": "serving-llms-on-epyc/SKILL.md"
     },
     {
      "name": "serving-llms-on-instinct",
      "description": ">-",
-     "path": "skills/serving-llms-on-instinct/SKILL.md"
+     "path": "serving-llms-on-instinct/SKILL.md"
     },
     {
      "name": "tracelens-analysis-orchestrator",
      "description": ">-",
-     "path": "skills/tracelens-analysis-orchestrator/SKILL.md"
+     "path": "tracelens-analysis-orchestrator/SKILL.md"
     }
    ],
    "logoUrl": "https://www.google.com/s2/favicons?domain=developer.amd.com&sz=128",
@@ -1652,7 +1538,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/asana",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -3701,201 +3587,6 @@
    "marketplace": "claude-code"
   },
   {
-   "name": "bigdata-com",
-   "displayName": "Bigdata Com",
-   "description": "Official Bigdata.com plugin providing financial research, analytics, and intelligence tools powered by Bigdata MCP.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/Bigdata-com/bigdata-plugins-marketplace.git",
-    "path": "plugins/bigdata-com",
-    "ref": "main",
-    "sha": "2a52a001366227e205cfa7565d78e8198dc42fa8"
-   },
-   "category": "finance",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://docs.bigdata.com",
-   "repository": "https://github.com/Bigdata-com/bigdata-plugins-marketplace.git",
-   "author": {
-    "name": "RavenPack"
-   },
-   "publisher": {
-    "name": "ravenpack",
-    "displayName": "RavenPack"
-   },
-   "mcpServers": [
-    {
-     "name": "bigdata.com",
-     "path": ".mcp.json"
-    }
-   ],
-   "keywords": [
-    "Bigdata",
-    "finance",
-    "RavenPack",
-    "stocks",
-    "companies",
-    "sectors",
-    "economies",
-    "valuation",
-    "peers",
-    "investment memos",
-    "earnings",
-    "risk",
-    "catalysts",
-    "moats",
-    "governance",
-    "thematic research",
-    "sector research",
-    "cross-sector comparisons",
-    "regional comparisons",
-    "country analysis",
-    "macro analysis",
-    "G7 benchmarking",
-    "scenario analysis",
-    "company briefs"
-   ],
-   "skills": [
-    {
-     "name": "bigdata-catalyst-monitor",
-     "description": ">",
-     "path": "skills/bigdata-catalyst-monitor/SKILL.md"
-    },
-    {
-     "name": "bigdata-company-brief",
-     "description": ">",
-     "path": "skills/bigdata-company-brief/SKILL.md"
-    },
-    {
-     "name": "bigdata-country-analysis",
-     "description": ">",
-     "path": "skills/bigdata-country-analysis/SKILL.md"
-    },
-    {
-     "name": "bigdata-country-sector-analysis",
-     "description": ">",
-     "path": "skills/bigdata-country-sector-analysis/SKILL.md"
-    },
-    {
-     "name": "bigdata-cross-sector",
-     "description": ">",
-     "path": "skills/bigdata-cross-sector/SKILL.md"
-    },
-    {
-     "name": "bigdata-earnings-digest",
-     "description": ">",
-     "path": "skills/bigdata-earnings-digest/SKILL.md"
-    },
-    {
-     "name": "bigdata-earnings-preview",
-     "description": ">",
-     "path": "skills/bigdata-earnings-preview/SKILL.md"
-    },
-    {
-     "name": "bigdata-earnings-quality-screen",
-     "description": ">",
-     "path": "skills/bigdata-earnings-quality-screen/SKILL.md"
-    },
-    {
-     "name": "bigdata-earnings-reaction",
-     "description": ">",
-     "path": "skills/bigdata-earnings-reaction/SKILL.md"
-    },
-    {
-     "name": "bigdata-g7-comparison",
-     "description": ">",
-     "path": "skills/bigdata-g7-comparison/SKILL.md"
-    },
-    {
-     "name": "bigdata-investment-memo",
-     "description": ">",
-     "path": "skills/bigdata-investment-memo/SKILL.md"
-    },
-    {
-     "name": "bigdata-moat-governance-review",
-     "description": ">",
-     "path": "skills/bigdata-moat-governance-review/SKILL.md"
-    },
-    {
-     "name": "bigdata-peer-comparables",
-     "description": ">",
-     "path": "skills/bigdata-peer-comparables/SKILL.md"
-    },
-    {
-     "name": "bigdata-post-ipo-day1",
-     "description": ">",
-     "path": "skills/bigdata-post-ipo-day1/SKILL.md"
-    },
-    {
-     "name": "bigdata-post-ipo-day14",
-     "description": ">",
-     "path": "skills/bigdata-post-ipo-day14/SKILL.md"
-    },
-    {
-     "name": "bigdata-post-ipo-day179",
-     "description": ">",
-     "path": "skills/bigdata-post-ipo-day179/SKILL.md"
-    },
-    {
-     "name": "bigdata-post-ipo-day365",
-     "description": ">",
-     "path": "skills/bigdata-post-ipo-day365/SKILL.md"
-    },
-    {
-     "name": "bigdata-pre-ipo-analysis",
-     "description": ">",
-     "path": "skills/bigdata-pre-ipo-analysis/SKILL.md"
-    },
-    {
-     "name": "bigdata-quick-take",
-     "description": ">",
-     "path": "skills/bigdata-quick-take/SKILL.md"
-    },
-    {
-     "name": "bigdata-regional-comparison",
-     "description": ">",
-     "path": "skills/bigdata-regional-comparison/SKILL.md"
-    },
-    {
-     "name": "bigdata-risk-assessment",
-     "description": ">",
-     "path": "skills/bigdata-risk-assessment/SKILL.md"
-    },
-    {
-     "name": "bigdata-scenario-analysis",
-     "description": ">",
-     "path": "skills/bigdata-scenario-analysis/SKILL.md"
-    },
-    {
-     "name": "bigdata-sector-analysis",
-     "description": ">",
-     "path": "skills/bigdata-sector-analysis/SKILL.md"
-    },
-    {
-     "name": "bigdata-sector-playbook",
-     "description": ">",
-     "path": "skills/bigdata-sector-playbook/SKILL.md"
-    },
-    {
-     "name": "bigdata-thematic-research",
-     "description": ">",
-     "path": "skills/bigdata-thematic-research/SKILL.md"
-    },
-    {
-     "name": "bigdata-valuation-snapshot",
-     "description": ">",
-     "path": "skills/bigdata-valuation-snapshot/SKILL.md"
-    },
-    {
-     "name": "bigdata-variant-perception",
-     "description": ">",
-     "path": "skills/bigdata-variant-perception/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.bigdata.com&sz=128",
-   "marketplace": "claude-code"
-  },
-  {
    "name": "bigquery-data-analytics",
    "displayName": "Bigquery Data Analytics",
    "description": "Connect, query, and generate data insights for BigQuery datasets and data.",
@@ -4016,140 +3707,6 @@
     }
    ],
    "logoUrl": "https://www.google.com/s2/favicons?domain=boltz.bio&sz=128",
-   "marketplace": "claude-code"
-  },
-  {
-   "name": "blackrock-advisor-center-plugin",
-   "displayName": "Blackrock Advisor Center Plugin",
-   "description": "BlackRock Advisor Center 360\u00b0 skills for financial advisors: portfolio review, opportunity and fund-health checks, guided benchmark selection, guided portfolio building, wealth projections, and routing to Advisor Center web workflows. Requires the BlackRock Advisor Center connector and an Advisor Center account.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/blackrock/advisor-center-agent-skills.git",
-    "path": null,
-    "ref": null,
-    "sha": "591c758960c18c26fe8342ddb8ad3ba4dcfac6fe"
-   },
-   "category": "finance",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://github.com/blackrock/advisor-center-agent-skills",
-   "repository": "https://github.com/blackrock/advisor-center-agent-skills.git",
-   "author": {
-    "name": "BlackRock Advisor Center"
-   },
-   "publisher": {
-    "name": "blackrock-advisor-center",
-    "displayName": "BlackRock Advisor Center"
-   },
-   "mcpServers": [
-    {
-     "name": "blackrock-advisor-center",
-     "path": ".mcp.json"
-    }
-   ],
-   "keywords": [
-    "advisor-center",
-    "advisor-center-360",
-    "portfolio-analysis",
-    "wealth-management"
-   ],
-   "skills": [
-    {
-     "name": "ac360-capability-router",
-     "description": "Routes Advisor Center workflow requests that belong in the web experience or cannot be completed by another loaded skill or direct tool. Use when asked to open the tax evaluator, run a tax analysis, run income projections, import a book of business, import client accounts, analyze imported accounts, enroll or service a Separately Managed Account (SMA) or My Managed Accounts (MMA) account, get documentation, access a report workflow, or continue a known Advisor Center workflow unavailable in this chat. Skip when another skill or tool can directly complete the request.",
-     "path": "skills/ac360-capability-router/SKILL.md"
-    },
-    {
-     "name": "guided-benchmark-selection",
-     "description": "Helps choose or confirm a benchmark subject for portfolio comparison. Use when asked what benchmark fits, to compare a portfolio to a model or index, to set a benchmark, or to use an advisor-saved portfolio as the benchmark. Skip when a benchmark is already selected and the advisor is asking for the analysis itself.",
-     "path": "skills/guided-benchmark-selection/SKILL.md"
-    },
-    {
-     "name": "guided-portfolio-builder",
-     "description": "Builds, imports, modifies or clones portfolios after the advisor confirms the holdings and write action. Use when asked to build from tickers or weights, create a portfolio from a statement, start from a model or saved portfolio, create a comparison portfolio, or explore a specific what-if variation. Skip when the portfolio already exists and the advisor is only asking for review or analysis.",
-     "path": "skills/guided-portfolio-builder/SKILL.md"
-    },
-    {
-     "name": "portfolio-observations-and-opportunities",
-     "description": "Reviews returned portfolio opportunity checks, fund-health details, Funds to Explore, and approved follow-up links. Use when asked to show opportunities, explain why a fund is flagged, open fund details, show fund health, list clear checks, find Funds to Explore, or identify the next path from an opportunity. Skip when the advisor asks for a broad portfolio review before narrowing to opportunities.",
-     "path": "skills/portfolio-observations-and-opportunities/SKILL.md"
-    },
-    {
-     "name": "portfolio-review",
-     "description": "Reviews a saved portfolio, household or model with Advisor Center analytics in three sections rendered inline in the chat \u2014 portfolio snapshot, stress scenarios, then opportunities, fund health and Funds to Explore \u2014 closing with follow-ups earned by what it found. Use when asked to review a portfolio, run a portfolio review, analyse holdings, pull up a client's account, run the numbers on a portfolio, look at concentration or downside exposure, find issues or opportunities in a portfolio, check whether a client's funds are healthy, or prepare for a client review meeting. Skip this skill when the advisor already named one specific analysis \u2014 \"what's the risk on this\", \"run the stress scenarios\", \"how does this compare to the model\" \u2014 and call that tool directly instead of running the three-section pass.",
-     "path": "skills/portfolio-review/SKILL.md"
-    },
-    {
-     "name": "wealth-projections",
-     "description": "Explains modeled performance, projected wealth, methodology, advisory-fee treatment, and unsupported performance or projection requests. Use when asked to show modeled performance, project wealth, explain projection assumptions, check whether fees are included, or handle an unavailable horizon or configuration. Skip when the advisor asks for a broad portfolio review or only needs benchmark setup.",
-     "path": "skills/wealth-projections/SKILL.md"
-    }
-   ],
-   "marketplace": "claude-code"
-  },
-  {
-   "name": "box",
-   "displayName": "Box",
-   "description": "Work with your Box content directly from Claude Code \u2014 search files, organize folders, collaborate with your team, and use Box AI to answer questions, summarize documents, and extract data without leaving your workflow.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/box/skills.git",
-    "path": null,
-    "ref": null,
-    "sha": "35567f913a2bfd7f8b59367c9df3ae14b5ad4cfe"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "homepage": "https://github.com/box/skills",
-   "repository": "https://github.com/box/skills.git",
-   "mcpServers": [
-    {
-     "name": "box",
-     "path": "mcp.json"
-    }
-   ],
-   "keywords": [
-    "box",
-    "content",
-    "cloud-storage",
-    "file-management",
-    "collaboration"
-   ],
-   "skills": [
-    {
-     "name": "box",
-     "description": ">",
-     "path": "skills/box/SKILL.md"
-    },
-    {
-     "name": "box-legal-workflows",
-     "description": "Shared building blocks for Box-based legal workflows \u2014 Box collaboration role definitions, Box AI usage boundaries (what AI must not decide), and reusable human-in-the-loop confirmation phrasings. Referenced by box-legal-workflows-ma, box-legal-workflows-intake, and box-legal-workflows-contract skills.",
-     "path": "skills/box-legal-workflows/SKILL.md"
-    },
-    {
-     "name": "box-legal-workflows-contract",
-     "description": "Automate contract review and monitoring with Box MCP \u2014 find new or expiring contracts, compare them against firm templates to flag material variances, write structured contract metadata back to Box for searchability, and produce variance reports with citations. Use this skill when the user mentions contract review or monitoring, NDA or MSA review, contract expiration or renewals, contract metadata, or variance analysis, even if they don't name a specific Box tool.",
-     "path": "skills/box-legal-workflows-contract/SKILL.md"
-    },
-    {
-     "name": "box-legal-workflows-intake",
-     "description": "Automate legal client intake and onboarding with Box MCP \u2014 review intake documents for completeness against firm requirements, summarize risk for attorney review, route incomplete or high-risk submissions to the right attorney, extract client and matter metadata to Box, and generate engagement letters from Box DocGen templates. Use this skill when the user mentions client intake, client onboarding, new client review, intake documents, or engagement letters.",
-     "path": "skills/box-legal-workflows-intake/SKILL.md"
-    },
-    {
-     "name": "box-legal-workflows-ma",
-     "description": "Build and manage M&A virtual data rooms with Box MCP \u2014 create secure due-diligence folder structures, scope role-based access for internal teams and external parties, validate permissions before sharing, and answer cross-document due-diligence questions with Box AI. Use this skill when the user mentions M&A, deal rooms, data rooms, VDRs, due diligence, or mergers and acquisitions.",
-     "path": "skills/box-legal-workflows-ma/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/bb3c80081bf5db9d.png",
-   "publisher": {
-    "name": "box",
-    "displayName": "Box",
-    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/box-logo.png",
-    "isVerified": true
-   },
    "marketplace": "claude-code"
   },
   {
@@ -5600,7 +5157,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/clangd-lsp",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": false,
@@ -5644,7 +5201,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/claude-md-management",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -5684,7 +5241,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/claude-security",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "security",
    "strict": null,
@@ -6352,80 +5909,6 @@
    "marketplace": "claude-code"
   },
   {
-   "name": "cloudinary",
-   "displayName": "Cloudinary",
-   "description": "Use Cloudinary directly in Claude. Manage assets, apply transformations, optimize media, and more through natural conversation.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/cloudinary-devs/cloudinary-plugin.git",
-    "path": null,
-    "ref": null,
-    "sha": "86be53409e3fb1c465cd5ff4d1dc937a2860f45c"
-   },
-   "category": "design",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://cloudinary.com/documentation",
-   "repository": "https://github.com/cloudinary-devs/cloudinary-plugin.git",
-   "mcpServers": [
-    {
-     "name": "cloudinary-asset-mgmt",
-     "path": "mcp.json"
-    },
-    {
-     "name": "cloudinary-env-config",
-     "path": "mcp.json"
-    },
-    {
-     "name": "cloudinary-smd",
-     "path": "mcp.json"
-    },
-    {
-     "name": "cloudinary-analysis",
-     "path": "mcp.json"
-    },
-    {
-     "name": "cloudinary-mediaflows",
-     "path": "mcp.json"
-    }
-   ],
-   "keywords": [
-    "cloudinary",
-    "media",
-    "images",
-    "video",
-    "transformations",
-    "asset-management",
-    "optimization",
-    "mcp"
-   ],
-   "skills": [
-    {
-     "name": "claimable-cloud",
-     "description": "Provision a working Cloudinary cloud with no signup (a Claimable Cloud) when the user wants to build with Cloudinary but has no credentials. Use when a Cloudinary task such as an upload, transformation or SDK setup can't proceed because no CLOUDINARY_URL or API credentials are available. Do not use when working credentials already exist.",
-     "path": "skills/claimable-cloud/SKILL.md"
-    },
-    {
-     "name": "cloudinary-docs",
-     "description": "Looks up implementation details in the latest Cloudinary docs via the relevant llms.txt file. Use when building code or answering questions relating to image or video uploads, management, SDKs, APIs, webhooks, or integrations. For topics covered by a specialized Cloudinary skill, prefer that skill. Use this skill alongside it when the full use-case requires capabilities outside that skill's scope.",
-     "path": "skills/cloudinary-docs/SKILL.md"
-    },
-    {
-     "name": "cloudinary-transformations",
-     "description": "Create and debug Cloudinary transformation URLs from natural language instructions. Use when building Cloudinary delivery URLs, applying image/video transformations, optimizing media, or debugging transformation syntax errors.",
-     "path": "skills/cloudinary-transformations/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/56eb69e76edaa72c.png",
-   "publisher": {
-    "name": "cloudinary",
-    "displayName": "Cloudinary",
-    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/cloudinary-logo.png",
-    "isVerified": true
-   },
-   "marketplace": "claude-code"
-  },
-  {
    "name": "cockroachdb",
    "displayName": "Cockroachdb",
    "description": "Connect Claude Code directly to your CockroachDB clusters for hands-on database work \u2014 explore schemas, write optimized SQL, debug queries, and manage distributed database clusters. This plugin provides 14 tools across two active MCP backends (self-hosted MCP Toolbox and managed CockroachDB Cloud MCP Server), three specialized agents (DBA, Developer, Operator), 32 skills across 6 operational domains, and built-in safety hooks.",
@@ -6688,7 +6171,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/code-modernization",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -6850,7 +6333,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/code-simplifier",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -6989,7 +6472,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/commit-commands",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -7235,7 +6718,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/context7",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -7689,7 +7172,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/csharp-lsp",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": false,
@@ -7722,7 +7205,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/cwc-makers",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -9339,7 +8822,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/discord",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -9973,7 +9456,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/explanatory-output-style",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -10164,7 +9647,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/fakechat",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -10272,7 +9755,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/feature-dev",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -10443,109 +9926,6 @@
    "marketplace": "claude-code"
   },
   {
-   "name": "figma",
-   "displayName": "Figma",
-   "description": "Figma design platform integration. Access design files, extract component information, read design tokens, and translate designs into code. Bridge the gap between design and development workflows.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/figma/mcp-server-guide.git",
-    "path": null,
-    "ref": null,
-    "sha": "172920731eedf414e9b22ae60017d9a5b6c9f81f"
-   },
-   "category": "design",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://github.com/figma/mcp-server-guide",
-   "repository": "https://github.com/figma/mcp-server-guide.git",
-   "mcpServers": [
-    {
-     "name": "figma",
-     "path": ".mcp.json"
-    }
-   ],
-   "skills": [
-    {
-     "name": "figma-code-connect",
-     "description": "Creates and maintains Figma Code Connect template files that map Figma components to code snippets. Use when the user mentions Code Connect, Figma component mapping, design-to-code translation, or asks to create/update .figma.ts or .figma.js files.",
-     "path": "skills/figma-code-connect/SKILL.md"
-    },
-    {
-     "name": "figma-create-new-file",
-     "description": "Always use this skill when the user wants to create a new Figma Design, FigJam, or Slides file. You MUST invoke this skill BEFORE every `create_new_file` tool call.",
-     "path": "skills/figma-create-new-file/SKILL.md"
-    },
-    {
-     "name": "figma-design-to-code",
-     "description": "**MANDATORY prerequisite** \u2014 you MUST invoke this skill BEFORE calling the `get_design_context` Figma MCP tool. You MUST trigger this skill whenever the user wants to implement, build, port, or code up a Figma design as code. Example prompts (not exhaustive) are 'implement this Figma design', 'build this screen from Figma', 'turn this Figma into code', 'design to code'. This skill provides critical instructions and steps to the agent on how to correctly implement Figma designs in code and must NOT be skipped.",
-     "path": "skills/figma-design-to-code/SKILL.md"
-    },
-    {
-     "name": "figma-generate-design",
-     "description": "Use this skill alongside figma-use when the task involves translating an application page, view, or multi-section layout into Figma. Triggers: 'write to Figma', 'create in Figma from code', 'push page to Figma', 'take this app/page and build it in Figma', 'create a screen', 'build a landing page in Figma', 'update the Figma screen to match code', 'convert this modal/dialog/drawer/panel to Figma'. This is the preferred workflow skill whenever the user wants to build or update a full page, modal, dialog, drawer, sidebar, panel, or any composed multi-section view in Figma from code or a description. Discovers design system components, variables, and styles from Code Connect files, existing screens, and library search, then imports them and assembles views incrementally section-by-section using design system tokens instead of hardcoded values.",
-     "path": "skills/figma-generate-design/SKILL.md"
-    },
-    {
-     "name": "figma-generate-diagram",
-     "description": "MANDATORY prerequisite \u2014 load this skill BEFORE every `generate_diagram` tool call. NEVER call `generate_diagram` directly without loading this skill first. Trigger whenever the user asks to create, generate, draw, render, sketch, or build a diagram \u2014 flowchart, architecture diagram, sequence diagram, ERD or entity-relationship diagram, state diagram or state machine, gantt chart, or timeline. Also trigger when the user mentions Mermaid syntax or wants a system architecture, decision tree, dependency graph, API call flow, auth handshake, schema, or pipeline visualized in FigJam. Routes to type-specific guidance, sets universal Mermaid constraints, and tells you when to use a different diagram type or skip the tool entirely (mindmaps, pie charts, class diagrams, etc.).",
-     "path": "skills/figma-generate-diagram/SKILL.md"
-    },
-    {
-     "name": "figma-generate-library",
-     "description": "Build or update a professional-grade design system in Figma from a codebase. Use when the user wants to create variables/tokens, build component libraries, create individual components with proper variant sets and variable bindings, set up theming (light/dark modes), document foundations, or reconcile gaps between code and Figma. Also use when the user asks to create or generate any component in Figma \u2014 even a single one \u2014 since components require proper variable foundations, variant states, and design token bindings to be production-quality. This skill teaches WHAT to build and in WHAT ORDER \u2014 it complements the `figma-use` skill which teaches HOW to call the Plugin API. Both skills should be loaded together.",
-     "path": "skills/figma-generate-library/SKILL.md"
-    },
-    {
-     "name": "figma-generative-plugins",
-     "description": "**MANDATORY prerequisite** \u2014 load this skill before calling `create_generative_plugin` or `update_generative_plugin`. Use when the user asks to create, author, change, fix, or extend a reusable generative Figma plugin.",
-     "path": "skills/figma-generative-plugins/SKILL.md"
-    },
-    {
-     "name": "figma-implement-motion",
-     "description": "Translates Figma motion and animations into production-ready application code. Use when implementing animation/motion from a Figma design \u2014 user mentions \"implement this motion\", \"add animation from Figma\", \"animate this component\", provides a Figma URL whose node is animated, or when `get_design_context` returns motion data or instructs you to call `get_motion_context`.",
-     "path": "skills/figma-implement-motion/SKILL.md"
-    },
-    {
-     "name": "figma-shaders",
-     "description": "**MANDATORY prerequisite** \u2014 load this skill before calling `create_shader` or `update_shader`. Use when the user asks to create, author, change, fix, or iterate on a shader effect, shader fill, custom effect, custom fill, or procedural shader in Figma.",
-     "path": "skills/figma-shaders/SKILL.md"
-    },
-    {
-     "name": "figma-swiftui",
-     "description": "SwiftUI \u2194 Figma translation. Use whenever the user mentions Swift, SwiftUI, iOS, iPhone, or iPad \u2014 in EITHER direction \u2014 translating a Figma design into SwiftUI (design \u2192 code), or pushing SwiftUI views / screens / tokens back into a Figma file (code \u2192 design). Triggers on phrases like 'implement this Figma design in SwiftUI', 'build this screen in Swift', 'push this SwiftUI view to Figma', 'mirror my Swift code in a Figma file', or whenever a Figma URL appears alongside `.swift` files / an `.xcodeproj`. Routes to a direction-specific reference doc; loads alongside `figma-use` for the code \u2192 design path.",
-     "path": "skills/figma-swiftui/SKILL.md"
-    },
-    {
-     "name": "figma-use",
-     "description": "**MANDATORY prerequisite** \u2014 you MUST invoke this skill BEFORE every `use_figma` tool call. NEVER call `use_figma` directly without loading this skill first. Skipping it causes common, hard-to-debug failures. Trigger whenever the user wants to perform a write action or a unique read action that requires JavaScript execution in the Figma file context \u2014 e.g. create/edit/delete nodes, set up variables or tokens, build components and variants, modify auto-layout or fills, bind variables to properties, or inspect file structure programmatically.",
-     "path": "skills/figma-use/SKILL.md"
-    },
-    {
-     "name": "figma-use-figjam",
-     "description": "This skill helps agents use Figma's use_figma MCP tool in the FigJam context. Can be used alongside figma-use which has foundational context for using the use_figma tool.",
-     "path": "skills/figma-use-figjam/SKILL.md"
-    },
-    {
-     "name": "figma-use-motion",
-     "description": "Motion / animation context for the `use_figma` MCP tool \u2014 animating Figma nodes via manual keyframes, animation styles, easing, and timeline duration. Load alongside figma-use whenever a task involves adding, editing, or inspecting animation on a node.",
-     "path": "skills/figma-use-motion/SKILL.md"
-    },
-    {
-     "name": "figma-use-slides",
-     "description": "This skill helps agents use Figma's use_figma MCP tool in the Slides context. Can be used alongside figma-use which has foundational context for using the use_figma tool.",
-     "path": "skills/figma-use-slides/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/4ecab9250310ceb3.png",
-   "publisher": {
-    "name": "figma",
-    "displayName": "Figma",
-    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/figma-2x.png",
-    "isVerified": true
-   },
-   "marketplace": "claude-code"
-  },
-  {
    "name": "firebase",
    "displayName": "Firebase",
    "description": "Google Firebase MCP integration. Manage Firestore databases, authentication, cloud functions, hosting, and storage. Build and manage your Firebase backend directly from your development workflow.",
@@ -10554,7 +9934,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/firebase",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "database",
    "strict": null,
@@ -10792,7 +10172,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/frontend-design",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -10950,7 +10330,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/github",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -11016,7 +10396,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/gitlab",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -11108,7 +10488,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/gopls-lsp",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": false,
@@ -11584,7 +10964,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/hookify",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -12308,7 +11688,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/imessage",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -12604,7 +11984,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/jdtls-lsp",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": false,
@@ -12782,7 +12162,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/kotlin-lsp",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": false,
@@ -12820,7 +12200,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/laravel-boost",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -12937,7 +12317,7 @@
     {
      "name": "learn-with-coursera",
      "description": ">",
-     "path": "skills/learn-with-coursera/SKILL.md"
+     "path": "learn-with-coursera/SKILL.md"
     }
    ],
    "marketplace": "claude-code"
@@ -12951,7 +12331,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/learning-output-style",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -13023,7 +12403,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/linear",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -13420,7 +12800,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/lua-lsp",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": false,
@@ -13732,7 +13112,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/math-olympiad",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -14046,7 +13426,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/mcp-server-dev",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -14833,77 +14213,6 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/mongodb-logo.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
-  },
-  {
-   "name": "mongodb-atlas",
-   "displayName": "Mongodb Atlas",
-   "description": "Connect to MongoDB Atlas clusters only through the Atlas Managed MCP Server. Sign in with your Atlas account to explore data, manage collections, optimize queries, generate reliable code with MongoDB best practices, and manage Atlas resources such as clusters, projects, database users, and network access. If you are running a different MongoDB deployment or want to run a local MongoDB MCP Server, install the MongoDB (Self-Managed MCP) plugin instead.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/mongodb/agent-skills.git",
-    "path": "plugins/mongodb-atlas",
-    "ref": "main",
-    "sha": "1e72df255e54e81eff078054c2cfb2b5d8c13503"
-   },
-   "category": "database",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://www.mongodb.com/docs/mcp-server/get-started/",
-   "repository": "https://github.com/mongodb/agent-skills.git",
-   "author": {
-    "name": "MongoDB"
-   },
-   "publisher": {
-    "name": "mongodb",
-    "displayName": "MongoDB"
-   },
-   "mcpServers": [
-    {
-     "name": "mongodb-atlas",
-     "path": ".claude-plugin/plugin.json"
-    }
-   ],
-   "keywords": [
-    "mongodb",
-    "atlas",
-    "database",
-    "mcp",
-    "vector-search"
-   ],
-   "skills": [
-    {
-     "name": "mongodb-atlas-stream-processing",
-     "description": "Manages MongoDB Atlas Stream Processing (ASP) workflows. Handles workspace provisioning, data source/sink connections, processor lifecycle operations, debugging diagnostics, and tier sizing. Supports Kafka, Atlas clusters, S3, HTTPS, and Lambda integrations for streaming data workloads and event processing. NOT for general MongoDB queries or Atlas cluster management. Requires MongoDB MCP Server with Atlas API credentials.",
-     "path": "skills/mongodb-atlas-stream-processing/SKILL.md"
-    },
-    {
-     "name": "mongodb-connection",
-     "description": "Optimize MongoDB client connection configuration (pools, timeouts, patterns) for any supported driver language. Use this skill when working/updating/reviewing on functions that instantiate or configure a MongoDB client (eg, when calling `connect()`), configuring connection pools, troubleshooting connection errors (ECONNREFUSED, timeouts, pool exhaustion), optimizing performance issues related to connections. This includes scenarios like building serverless functions with MongoDB, creating API endpoints that use MongoDB, optimizing high-traffic MongoDB applications, creating long-running tasks and concurrency, or debugging connection-related failures.",
-     "path": "skills/mongodb-connection/SKILL.md"
-    },
-    {
-     "name": "mongodb-natural-language-querying",
-     "description": "Generate read-only MongoDB queries (find) or aggregation pipelines using natural language, with collection schema context and sample documents. Use this skill whenever the user asks to write, create, or generate MongoDB queries, wants to filter/query/aggregate data in MongoDB, asks \"how do I query...\", needs help with query syntax, or discusses finding/filtering/grouping MongoDB documents. Also use for translating SQL-like requests to MongoDB syntax. Does NOT handle Atlas Search ($search operator), vector/semantic search ($vectorSearch operator), fuzzy matching, autocomplete indexes, or relevance scoring - use search-and-ai for those. Does NOT analyze or optimize existing queries - use mongodb-query-optimizer for that. Does NOT handle aggregation pipelines that involve write operations. Requires MongoDB MCP server.",
-     "path": "skills/mongodb-natural-language-querying/SKILL.md"
-    },
-    {
-     "name": "mongodb-query-optimizer",
-     "description": ">-",
-     "path": "skills/mongodb-query-optimizer/SKILL.md"
-    },
-    {
-     "name": "mongodb-schema-design",
-     "description": "MongoDB schema design patterns and anti-patterns. Use when designing data models, reviewing schemas, migrating from SQL, or troubleshooting performance issues caused by schema problems. Triggers on \"design schema\", \"embed vs reference\", \"MongoDB data model\", \"schema review\", \"unbounded arrays\", \"one-to-many\", \"tree structure\", \"16MB limit\", \"schema validation\", \"JSON Schema\", \"time series\", \"schema migration\", \"polymorphic\", \"TTL\", \"data lifecycle\", \"archive\", \"index explosion\", \"unnecessary indexes\", \"approximation pattern\", \"document versioning\".",
-     "path": "skills/mongodb-schema-design/SKILL.md"
-    },
-    {
-     "name": "mongodb-search-and-ai",
-     "description": "|",
-     "path": "skills/mongodb-search-and-ai/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.mongodb.com&sz=128",
    "marketplace": "claude-code"
   },
   {
@@ -16958,7 +16267,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/php-lsp",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": false,
@@ -16983,220 +16292,6 @@
      }
     }
    },
-   "marketplace": "claude-code"
-  },
-  {
-   "name": "pigment",
-   "displayName": "Pigment",
-   "description": "Analyze business data and build custom Pigment models, metrics, and boards through natural language.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/gopigment/ai-plugins.git",
-    "path": null,
-    "ref": null,
-    "sha": "6fec49f4ce9db90b0e42436e3bcb5034c1cb233d"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://www.pigment.com",
-   "repository": "https://github.com/gopigment/ai-plugins.git",
-   "author": {
-    "name": "Pigment"
-   },
-   "publisher": {
-    "name": "Pigment",
-    "displayName": "Pigment"
-   },
-   "mcpServers": [
-    {
-     "name": "pigment",
-     "path": ".mcp.json"
-    }
-   ],
-   "skills": [
-    {
-     "name": "aggregating-view-data",
-     "description": "Execution skill. Use when a View needs totals or subtotals, when a value must roll up with something other than Sum (average, min, max, count, last), when a snapshot metric adds up across time instead of holding, or when a ratio, percentage, growth or variance metric shows a wrong total. Covers metric default aggregators, pivot versus hidden-dimension aggregation, the aggregator reference per value type, and Advanced Aggregators on Table Views.",
-     "path": "skills/aggregating-view-data/SKILL.md"
-    },
-    {
-     "name": "analyzing-pigment-data",
-     "description": "Always use this skill when querying, exploring, or analyzing existing data in a Pigment workspace. Covers the analysis workflow, query formulation, data concepts, analysis patterns, ambiguity handling, and result interpretation.",
-     "path": "skills/analyzing-pigment-data/SKILL.md"
-    },
-    {
-     "name": "architecting-multi-application-solutions",
-     "description": "Planning skill. Use when deciding how to split work across Pigment applications, designing Hub-and-spoke data flows, or planning Test & Deploy across environments.",
-     "path": "skills/architecting-multi-application-solutions/SKILL.md"
-    },
-    {
-     "name": "auditing-a-pigment-application",
-     "description": "Execution skill. Use when auditing, reviewing, or health-checking a Pigment application. Covers the structured audit checklist, severity classification, and output format. Also triggers on requests to clean up, find unused blocks, assess model quality, or find what is wrong with an application.",
-     "path": "skills/auditing-a-pigment-application/SKILL.md"
-    },
-    {
-     "name": "building-a-full-application",
-     "description": "Planning skill. Use when building a complete Pigment application from scratch or when the request spans multiple modeling phases. This skill, together with any other planning skill the request calls for, is sufficient to produce the full architecture spec; do not load execution skills until the spec is approved and you begin building blocks.",
-     "path": "skills/building-a-full-application/SKILL.md"
-    },
-    {
-     "name": "building-pigment-frames",
-     "description": "Use this skill whenever you're building, updating, or troubleshooting a Pigment Frame \u2014 a full-page, custom-coded visualisation (JavaScript, canvas, or inline SVG) that reads Pigment data through the PigmentSDK. Reach for it any time a native View (Grid, Chart, KPI) or Board can't produce what's being asked for - a bespoke chart, a custom canvas drawing, an interactive widget, or a standalone page in the left navigation that behaves like a small app. Also use it if a Frame you've already built shows up blank or broken and needs debugging.",
-     "path": "skills/building-pigment-frames/SKILL.md"
-    },
-    {
-     "name": "building-versions-and-planning-cycles",
-     "description": "Execution skill. Use when implementing versions, planning cycles, or actuals vs forecast separation, and whenever realized data is extended into a plan or budget \u2014 loading actuals then planning the remaining periods, forecasting forward from actuals, Actual/Budget/Plan layering, plan vs actual variance \u2014 even when the request never uses the word version. Covers Version Dimensions, Switchover patterns, Actual/Forecast layering, Native Scenarios, and Snapshots.",
-     "path": "skills/building-versions-and-planning-cycles/SKILL.md"
-    },
-    {
-     "name": "choosing-formula-patterns",
-     "description": "Planning skill. Use before writing formulas to decide which patterns and modifiers are needed for the use case. Maps business requirements to formula pattern combinations.",
-     "path": "skills/choosing-formula-patterns/SKILL.md"
-    },
-    {
-     "name": "copying-metric-data",
-     "description": "Use this skill when a user wants to create a Pigment metric-to-metric copy import/config to freeze formula values, reduce recalculation, seed/refresh a metric, stage validated data, prepare export metrics, or copy data between metrics. It cannot run, schedule, delete, update existing configs, use snapshots/recovered apps, or configure selective mappings. Do NOT use for CSV/file imports or formulas.",
-     "path": "skills/copying-metric-data/SKILL.md"
-    },
-    {
-     "name": "creating-dimensions-and-hierarchies",
-     "description": "Execution skill. Use when creating or modifying dimension lists (hierarchies) and dimension properties",
-     "path": "skills/creating-dimensions-and-hierarchies/SKILL.md"
-    },
-    {
-     "name": "creating-metrics-and-tables",
-     "description": "Execution skill. Load it before the first `create_metric` or `update_metric` call; never create or change a metric without loading it first. Use when creating metrics or tables, selecting metric data types, or finalizing metric structure.",
-     "path": "skills/creating-metrics-and-tables/SKILL.md"
-    },
-    {
-     "name": "creating-transaction-lists",
-     "description": "Execution skill. Use when creating a transaction list, and whenever you aggregate rows from a transaction list into a metric \u2014 including a list that already exists in the application.",
-     "path": "skills/creating-transaction-lists/SKILL.md"
-    },
-    {
-     "name": "designing-boards-and-views",
-     "description": "Execution skill. Use when creating or editing a Board, a dashboard, or a View -- board sections and layout on the 12-column grid, widgets and their sizing (KPI, chart, grid, text, spacer, action button), board page selectors and their defaults, view pivots (rows / columns / pages), breaking down by or per a dimension, filters, sorts, totals, chart type and configuration, cell formatting, and draft views.",
-     "path": "skills/designing-boards-and-views/SKILL.md"
-    },
-    {
-     "name": "designing-pigment-frames",
-     "description": "Apply Pigment's visual design language to a Frame that already renders \u2014 use when an existing Frame must look on-brand, native, or less generic. Not for initial Frame creation. Build it with skill:building-pigment-frames first, then come back here for the design passes.",
-     "path": "skills/designing-pigment-frames/SKILL.md"
-    },
-    {
-     "name": "diagnosing-performance-issues",
-     "description": "Execution skill. Use when a Pigment application has slow calculations, timeouts, or when diagnosing performance bottlenecks. Covers profiler interpretation, scope chip reading, systematic troubleshooting workflow, and iterative calculation optimization.",
-     "path": "skills/diagnosing-performance-issues/SKILL.md"
-    },
-    {
-     "name": "editing-an-existing-application",
-     "description": "Planning skill. Use when modifying, extending, refactoring, or restructuring an existing Pigment application. Covers discovery, impact analysis, change planning, and phased execution. Do not use for greenfield builds (use building-a-full-application instead).",
-     "path": "skills/editing-an-existing-application/SKILL.md"
-    },
-    {
-     "name": "forecasting-in-pigment",
-     "description": "Execution skill. Use when creating forecasts or choosing between growth-rate hypotheses and statistical forecasting functions.",
-     "path": "skills/forecasting-in-pigment/SKILL.md"
-    },
-    {
-     "name": "formatting-and-highlighting",
-     "description": "Execution skill. Use when applying metric default formatting \u2014 decimals, prefix, suffix, currency ($/\u20ac), percent (%), K/M/bp/thousand/million scaling, thousand separator, sign / zero / negative handling, text mode (Text / Rich Text / URL / Image / LocaleDateTime), boolean display (checkbox / button). Load it when creating a metric whose values are not plain counts -- a ratio, percentage, growth, currency, boolean or text metric (comments, notes, links, URLs) -- even if the user said nothing about formatting.",
-     "path": "skills/formatting-and-highlighting/SKILL.md"
-    },
-    {
-     "name": "gathering-architecture-requirements",
-     "description": "Planning skill. Use before building anything to gather requirements through structured discovery questions. Covers dimensions, UX, data, governance, and planning cycles. Load this skill during Phase 0 of building-a-full-application.",
-     "path": "skills/gathering-architecture-requirements/SKILL.md"
-    },
-    {
-     "name": "iterating-with-previous-and-cycles",
-     "description": "Execution skill. Use when writing PREVIOUS, PREVIOUSOF, or PREVIOUSBASE formulas, configuring iterative calculation cycles, or debugging circular dependency errors.",
-     "path": "skills/iterating-with-previous-and-cycles/SKILL.md"
-    },
-    {
-     "name": "naming-and-organizing-applications",
-     "description": "Execution skill. Use when naming or organizing Pigment Applications, folders, and blocks so models stay navigable, formula-safe, and consistent across teams.",
-     "path": "skills/naming-and-organizing-applications/SKILL.md"
-    },
-    {
-     "name": "securing-with-access-rights",
-     "description": "Execution skill. Use when restricting which users can read or write specific data cells based on dimension values, building AR metrics, or debugging access issues. Do NOT use for managing Roles or Permissions.",
-     "path": "skills/securing-with-access-rights/SKILL.md"
-    },
-    {
-     "name": "setting-up-calendar",
-     "description": "Execution skill. Use when configuring an application calendar \u2014 choosing calendar type, fiscal year, date range, and time dimensions.",
-     "path": "skills/setting-up-calendar/SKILL.md"
-    },
-    {
-     "name": "sharing-data-between-applications",
-     "description": "Execution skill. Use when sharing metrics or lists between Pigment Applications via Libraries and cross-Application formula references.",
-     "path": "skills/sharing-data-between-applications/SKILL.md"
-    },
-    {
-     "name": "solving-financial-planning",
-     "description": "Planning skill. FP&A use cases: budget/expense planning, revenue forecasting, P&L reporting, multi-currency, financial consolidation. Each use case has inline guidance; load sub-files only for advanced patterns.",
-     "path": "skills/solving-financial-planning/SKILL.md"
-    },
-    {
-     "name": "solving-sales-performance",
-     "description": "Planning skill. Sales performance use cases: quota planning, commission calculations, territory assignment, attainment tracking, pipeline coverage. Each use case has inline guidance.",
-     "path": "skills/solving-sales-performance/SKILL.md"
-    },
-    {
-     "name": "solving-supply-chain",
-     "description": "Planning skill. Supply chain use cases: demand planning, inventory management, procurement planning, S&OP alignment. Each use case has inline guidance.",
-     "path": "skills/solving-supply-chain/SKILL.md"
-    },
-    {
-     "name": "solving-workforce-planning",
-     "description": "Planning skill. Workforce planning use cases: headcount tracking, hiring pipeline, compensation planning, employee transfers, HRIS integration. Each use case has inline guidance; load sub-files only for advanced patterns.",
-     "path": "skills/solving-workforce-planning/SKILL.md"
-    },
-    {
-     "name": "understanding-pigment-modeling",
-     "description": "Foundational skill. Read first before any modeling task. Provides the mental model (in-memory sparse multidimensional engine), block-type taxonomy, engine vocabulary, common decision mistakes, and hard rules.",
-     "path": "skills/understanding-pigment-modeling/SKILL.md"
-    },
-    {
-     "name": "using-formula-functions",
-     "description": "Execution skill. Use when drafting or debugging a Pigment formula that calls built-in functions. Covers all function signatures, parameters, return types, and usage examples grouped by category.",
-     "path": "skills/using-formula-functions/SKILL.md"
-    },
-    {
-     "name": "using-formula-modifiers",
-     "description": "Execution skill. Use when a formula's source metric dimensions differ from the target metric \u2014 apply BY, ADD, REMOVE, KEEP, SELECT, FILTER, EXCLUDE, TOPARENTLIST, or TOSUBSET. Also covers arrow-mapping syntax (BY ... ->) and tiered lookup patterns.",
-     "path": "skills/using-formula-modifiers/SKILL.md"
-    },
-    {
-     "name": "using-list-subsets",
-     "description": "Execution skill. Use when creating, modifying, or reasoning about List Subsets \u2014 mirror dimensions, same-dimension-on-two-axes, cohort modeling, restricted dropdowns, iterative performance optimization, or any request involving subsets.",
-     "path": "skills/using-list-subsets/SKILL.md"
-    },
-    {
-     "name": "using-mapped-dimensions",
-     "description": "Execution skill. Use when modeling dynamic or time-dependent hierarchies, card metrics for flexible reporting (e.g. headcount by team/function via BY-arrow mappings), or any scenario where reporting breakdowns must differ from the structural dimensions on the metric.",
-     "path": "skills/using-mapped-dimensions/SKILL.md"
-    },
-    {
-     "name": "using-search-tools",
-     "description": ">-",
-     "path": "skills/using-search-tools/SKILL.md"
-    },
-    {
-     "name": "writing-performant-formulas",
-     "description": "Execution skill. Use when reviewing or finalizing Pigment formulas before delivery. Provides the mandatory pre-delivery checklist, sparsity preservation rules, scope-first patterns, and anti-patterns to avoid.",
-     "path": "skills/writing-performant-formulas/SKILL.md"
-    },
-    {
-     "name": "writing-pigment-formulas",
-     "description": "Execution skill. Use when writing, editing, or debugging Pigment metric formulas \u2014 quoting, references, data types, BLANK, and comments.",
-     "path": "skills/writing-pigment-formulas/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.pigment.com&sz=128",
    "marketplace": "claude-code"
   },
   {
@@ -17419,7 +16514,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/playground",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -17452,7 +16547,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/playwright",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -17485,7 +16580,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/plugin-dev",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -18593,7 +17688,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/pr-review-toolkit",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -18800,7 +17895,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/pyright-lsp",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": false,
@@ -19022,100 +18117,6 @@
    "marketplace": "claude-code"
   },
   {
-   "name": "qt-development-skills",
-   "displayName": "Qt Development Skills",
-   "description": "Agentic engineering skills for Qt software development \u2014 Qt C++/QML code review, QML coding, and Qt C++/QML code documentation.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/TheQtCompanyRnD/agent-skills.git",
-    "path": null,
-    "ref": null,
-    "sha": "71d6c10da78b9a764468ae11c86ab3bc4ca4921f"
-   },
-   "category": "development",
-   "strict": null,
-   "license": "BSD-3-Clause",
-   "homepage": "https://www.qt.io/",
-   "repository": "https://github.com/TheQtCompanyRnD/agent-skills.git",
-   "author": {
-    "name": "Qt Group"
-   },
-   "publisher": {
-    "name": "Qt Group",
-    "displayName": "Qt Group"
-   },
-   "mcpServers": [
-    {
-     "name": "qt-docs",
-     "path": ".mcp.json"
-    }
-   ],
-   "skills": [
-    {
-     "name": "qt-cmake-project",
-     "description": ">-",
-     "path": "skills/qt-cmake-project/SKILL.md"
-    },
-    {
-     "name": "qt-cpp-docs",
-     "description": ">-",
-     "path": "skills/qt-cpp-docs/SKILL.md"
-    },
-    {
-     "name": "qt-cpp-review",
-     "description": ">-",
-     "path": "skills/qt-cpp-review/SKILL.md"
-    },
-    {
-     "name": "qt-figma-component-generation",
-     "description": ">",
-     "path": "skills/qt-figma-component-generation/SKILL.md"
-    },
-    {
-     "name": "qt-figma-token-extraction",
-     "description": ">",
-     "path": "skills/qt-figma-token-extraction/SKILL.md"
-    },
-    {
-     "name": "qt-qml",
-     "description": ">-",
-     "path": "skills/qt-qml/SKILL.md"
-    },
-    {
-     "name": "qt-qml-docs",
-     "description": ">-",
-     "path": "skills/qt-qml-docs/SKILL.md"
-    },
-    {
-     "name": "qt-qml-profiler",
-     "description": ">-",
-     "path": "skills/qt-qml-profiler/SKILL.md"
-    },
-    {
-     "name": "qt-qml-review",
-     "description": ">-",
-     "path": "skills/qt-qml-review/SKILL.md"
-    },
-    {
-     "name": "qt-qml-test",
-     "description": ">-",
-     "path": "skills/qt-qml-test/SKILL.md"
-    },
-    {
-     "name": "qt-qml-test-run",
-     "description": ">-",
-     "path": "skills/qt-qml-test-run/SKILL.md"
-    },
-    {
-     "name": "qt-ui-design",
-     "description": ">-",
-     "path": "skills/qt-ui-design/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.qt.io&sz=128",
-   "marketplace": "claude-code"
-  },
-  {
    "name": "quarkus-agent",
    "displayName": "Quarkus Agent",
    "description": "MCP server for AI coding agents to create, manage, and interact with Quarkus applications. Provides tools for project scaffolding, dev mode lifecycle, extension skills, Dev MCP proxy, and documentation search.",
@@ -19199,166 +18200,6 @@
    "marketplace": "claude-code"
   },
   {
-   "name": "rc",
-   "displayName": "Rc",
-   "description": "Configure RevenueCat projects, apps, products, entitlements, and offerings directly from Claude Code. Manage your in-app purchase backend without leaving your development workflow.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/RevenueCat/rc-claude-code-plugin.git",
-    "path": "revenuecat",
-    "ref": null,
-    "sha": "ac20d26b35be0d01d0dbd3130c1b34932d402e5d"
-   },
-   "category": "development",
-   "strict": null,
-   "license": "MIT",
-   "homepage": "https://www.revenuecat.com",
-   "repository": "https://github.com/RevenueCat/rc-claude-code-plugin.git",
-   "mcpServers": [
-    {
-     "name": "RevenueCat",
-     "path": "mcp.json"
-    }
-   ],
-   "keywords": [
-    "revenuecat",
-    "in-app-purchases",
-    "subscriptions",
-    "monetization",
-    "iap",
-    "mcp"
-   ],
-   "skills": [
-    {
-     "name": "create-revenuecat-project",
-     "description": "Set up a complete RevenueCat project from scratch \u2014 creates apps, products, entitlements, offerings, and packages in the correct order. Use when the user wants to create a new RevenueCat project, configure in-app purchases, set up subscriptions or monetization, or bootstrap IAP infrastructure for iOS, Android, or Web.",
-     "path": "skills/create-revenuecat-project/SKILL.md"
-    },
-    {
-     "name": "integrate-revenuecat",
-     "description": "End-to-end RevenueCat integration \u2014 sets up the dashboard side via the RevenueCat MCP or the `rc` CLI (project, app, public API key) and installs/configures the Purchases SDK in the app. Use when the user asks to add RevenueCat, integrate Purchases, install the RevenueCat SDK, set up a RevenueCat API key, configure Purchases on launch, or set up a brand new RevenueCat integration on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/integrate-revenuecat/SKILL.md"
-    },
-    {
-     "name": "revenuecat",
-     "description": "Used for all interaction with RevenueCat not covered by a different skill",
-     "path": "skills/revenuecat/SKILL.md"
-    },
-    {
-     "name": "revenuecat-app-valuation",
-     "description": "",
-     "path": "skills/revenuecat-app-valuation/SKILL.md"
-    },
-    {
-     "name": "revenuecat-audiences",
-     "description": ">",
-     "path": "skills/revenuecat-audiences/SKILL.md"
-    },
-    {
-     "name": "revenuecat-billing",
-     "description": "",
-     "path": "skills/revenuecat-billing/SKILL.md"
-    },
-    {
-     "name": "revenuecat-charts",
-     "description": "",
-     "path": "skills/revenuecat-charts/SKILL.md"
-    },
-    {
-     "name": "revenuecat-cli",
-     "description": "Drive RevenueCat from the terminal with the `rc` CLI, an alternative to the RevenueCat MCP server for humans, CI, and agents. Covers install, authentication, command discovery, and output conventions. Referenced by the other RevenueCat skills whenever they offer a CLI path.",
-     "path": "skills/revenuecat-cli/SKILL.md"
-    },
-    {
-     "name": "revenuecat-customer-center",
-     "description": "Add the RevenueCat Customer Center (self service subscription management UI) to an app. Use when the user asks to add a customer center, build a self service subscriptions screen, let users manage subscriptions in app, add a subscription management screen, present CustomerCenterView, call presentCustomerCenter, or wire a 'manage subscription' button to the RevenueCat customer center on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-customer-center/SKILL.md"
-    },
-    {
-     "name": "revenuecat-dashboard-links",
-     "description": "",
-     "path": "skills/revenuecat-dashboard-links/SKILL.md"
-    },
-    {
-     "name": "revenuecat-entitlements-gate",
-     "description": "Check whether a RevenueCat user currently has access to a paid feature via entitlements. Use when the user asks to gate a feature behind premium, check if the user has a pro subscription, read customerInfo active entitlements, show or hide a feature based on subscription status, react to entitlement changes, or 'is the user subscribed' on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-entitlements-gate/SKILL.md"
-    },
-    {
-     "name": "experiment-analysis",
-     "description": "Use when the user asks to analyze or understand a RevenueCat experiment or its results.",
-     "path": "skills/revenuecat-experiment-analysis/SKILL.md"
-    },
-    {
-     "name": "revenuecat-experiments",
-     "description": "Use when the user asks to create, prepare, or set up a RevenueCat experiment (A/B test), to prepare its variant offerings or paywalls, or to start, pause, resume, or stop an experiment via the RevenueCat MCP experiment tools",
-     "path": "skills/revenuecat-experiments/SKILL.md"
-    },
-    {
-     "name": "revenuecat-forecasting",
-     "description": "",
-     "path": "skills/revenuecat-forecasting/SKILL.md"
-    },
-    {
-     "name": "revenuecat-identify-user",
-     "description": "Tie RevenueCat identity to your app's auth system. Use when the user asks to log in to RevenueCat, sync a user with RevenueCat, switch RevenueCat user on login, log out of RevenueCat, move a user from anonymous to identified, set appUserID, or handle account switching on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-identify-user/SKILL.md"
-    },
-    {
-     "name": "revenuecat-migrate",
-     "description": "Migrate to RevenueCat from raw StoreKit or Google Play Billing, or upgrade the RevenueCat SDK across a major version. Use when the user says migrate to RevenueCat, switch from StoreKit to RC, upgrade RevenueCat SDK, from v4 to v5, observer mode, RevenueCat major version upgrade, or already have in app purchases and want to add RevenueCat on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-migrate/SKILL.md"
-    },
-    {
-     "name": "revenuecat-paywall",
-     "description": "Display a RevenueCat paywall inside an app using the RevenueCatUI SDK. Use when the user asks to add a paywall, show a RevenueCat paywall, present PaywallView, integrate RevenueCatUI, gate a premium screen with a paywall, launch PaywallActivity, call presentPaywall or presentPaywallIfNeeded, or show the dashboard configured paywall UI on iOS, Android, Kotlin Multiplatform, Flutter, or React Native. To create, edit, evaluate, or audit the dashboard paywall itself, use revenuecat-paywall-design.",
-     "path": "skills/revenuecat-paywall/SKILL.md"
-    },
-    {
-     "name": "revenuecat-paywall-design",
-     "description": "",
-     "path": "skills/revenuecat-paywall-design/SKILL.md"
-    },
-    {
-     "name": "revenuecat-purchase-flow",
-     "description": "Implement the RevenueCat purchase and restore flow. Use when the user asks to buy a package, purchase a subscription, fetch offerings, build paywall purchase logic, handle purchase errors, detect user cancelled, or restore previous purchases on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-purchase-flow/SKILL.md"
-    },
-    {
-     "name": "revenuecat-sdk-compatibility",
-     "description": "Check whether an SDK version supports a RevenueCat feature, whether an SDK upgrade is required, why an SDK-gated feature is not working, or how much of a project's recent subscriber base is on incompatible SDK versions. Use for questions about RevenueCat SDK compatibility, feature gates, minimum SDK versions, SDK adoption, upgrade impact, and rollout risk.",
-     "path": "skills/revenuecat-sdk-compatibility/SKILL.md"
-    },
-    {
-     "name": "revenuecat-status",
-     "description": "Get a quick overview of your RevenueCat project configuration including apps, products, entitlements, offerings, and webhooks.",
-     "path": "skills/revenuecat-status/SKILL.md"
-    },
-    {
-     "name": "revenuecat-store-state",
-     "description": "Use when the user wants to inspect or change the state of products in App Store Connect, Google Play Console, RC Billing, or Test Store (prices, availability, localizations, review screenshots) via RevenueCat product-store-state plans",
-     "path": "skills/revenuecat-store-state/SKILL.md"
-    },
-    {
-     "name": "revenuecat-testing-setup",
-     "description": "Set up a testing environment for RevenueCat purchases without charging real money. Use when the user says test RevenueCat purchases, sandbox setup, StoreKit configuration file, license tester, how do I test purchases without real money, set up sandbox account, internal testing track, or test paywall on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-testing-setup/SKILL.md"
-    },
-    {
-     "name": "revenuecat-troubleshoot",
-     "description": "Diagnose and resolve RevenueCat integration issues \u2014 inspects dashboard configuration through the RevenueCat MCP, walks the SDK debug logs, and covers code-side gotchas. Use when the user says offerings are empty, products not loading, entitlement not active after purchase, paywall won't load, transactions not appearing, customer info shows no entitlements, sandbox purchase not working, or RevenueCat is broken on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-troubleshoot/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/af5f7399e562c864.png",
-   "publisher": {
-    "name": "revenuecat",
-    "displayName": "RevenueCat",
-    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/revenuecat-app-icon-1.png"
-   },
-   "marketplace": "claude-code"
-  },
-  {
    "name": "redis-development",
    "displayName": "Redis Development",
    "description": "Redis development best practices \u2014 data structures, query engine, vector search, caching, and performance optimization",
@@ -19437,181 +18278,6 @@
    "marketplace": "claude-code"
   },
   {
-   "name": "render",
-   "displayName": "Render",
-   "description": "Deploy, debug, and monitor applications on Render. Includes skills, an agent, slash commands, and a render.yaml validation hook.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/render-oss/render-plugin-claude-code.git",
-    "path": null,
-    "ref": null,
-    "sha": "e8f889396634dbc8c368448a7f3de993ed4a5ac1"
-   },
-   "category": "deployment",
-   "strict": null,
-   "license": "MIT",
-   "homepage": "https://render.com",
-   "repository": "https://github.com/render-oss/render-plugin-claude-code.git",
-   "author": {
-    "name": "Render"
-   },
-   "publisher": {
-    "name": "render",
-    "displayName": "Render",
-    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/render-logo.png",
-    "isVerified": true
-   },
-   "mcpServers": [
-    {
-     "name": "render",
-     "path": ".mcp.json"
-    }
-   ],
-   "keywords": [
-    "render",
-    "deploy",
-    "cloud",
-    "blueprint",
-    "monitoring",
-    "debugging"
-   ],
-   "skills": [
-    {
-     "name": "render-background-workers",
-     "description": ">-",
-     "path": "skills/render-background-workers/SKILL.md"
-    },
-    {
-     "name": "render-blueprints",
-     "description": ">-",
-     "path": "skills/render-blueprints/SKILL.md"
-    },
-    {
-     "name": "render-cli",
-     "description": ">-",
-     "path": "skills/render-cli/SKILL.md"
-    },
-    {
-     "name": "render-cron-jobs",
-     "description": ">-",
-     "path": "skills/render-cron-jobs/SKILL.md"
-    },
-    {
-     "name": "render-debug",
-     "description": "Debug failed Render deployments by analyzing logs, metrics, and database state. Identifies errors (missing env vars, port binding, OOM, etc.) and suggests fixes. Use when deployments fail, services won't start, or users mention errors, logs, or debugging.",
-     "path": "skills/render-debug/SKILL.md"
-    },
-    {
-     "name": "render-deploy",
-     "description": "Deploy applications to Render by analyzing codebases, generating render.yaml Blueprints, and providing Dashboard deeplinks. Use when the user wants to deploy, host, publish, or set up their application on Render's cloud platform.",
-     "path": "skills/render-deploy/SKILL.md"
-    },
-    {
-     "name": "render-disks",
-     "description": ">-",
-     "path": "skills/render-disks/SKILL.md"
-    },
-    {
-     "name": "render-docker",
-     "description": ">-",
-     "path": "skills/render-docker/SKILL.md"
-    },
-    {
-     "name": "render-domains",
-     "description": ">-",
-     "path": "skills/render-domains/SKILL.md"
-    },
-    {
-     "name": "render-env-vars",
-     "description": ">-",
-     "path": "skills/render-env-vars/SKILL.md"
-    },
-    {
-     "name": "render-keyvalue",
-     "description": ">-",
-     "path": "skills/render-keyvalue/SKILL.md"
-    },
-    {
-     "name": "render-mcp",
-     "description": ">-",
-     "path": "skills/render-mcp/SKILL.md"
-    },
-    {
-     "name": "render-migrate-from-heroku",
-     "description": "Migrate from Heroku to Render by reading local project files and generating equivalent Render services. Triggers: any mention of migrating from Heroku, moving off Heroku, Heroku to Render migration, or switching from Heroku. Reads Procfile, dependency files, and app config from the local repo. Optionally uses Heroku MCP to enrich with live config vars, add-on details, and dyno sizes. Uses Render MCP or Blueprint YAML to create services.",
-     "path": "skills/render-migrate-from-heroku/SKILL.md"
-    },
-    {
-     "name": "render-monitor",
-     "description": "Monitor Render services in real-time. Check health, performance metrics, logs, and resource usage. Use when users want to check service status, view metrics, monitor performance, or verify deployments are healthy.",
-     "path": "skills/render-monitor/SKILL.md"
-    },
-    {
-     "name": "render-networking",
-     "description": ">-",
-     "path": "skills/render-networking/SKILL.md"
-    },
-    {
-     "name": "render-postgres",
-     "description": ">-",
-     "path": "skills/render-postgres/SKILL.md"
-    },
-    {
-     "name": "render-private-services",
-     "description": ">-",
-     "path": "skills/render-private-services/SKILL.md"
-    },
-    {
-     "name": "render-scaling",
-     "description": ">-",
-     "path": "skills/render-scaling/SKILL.md"
-    },
-    {
-     "name": "render-static-sites",
-     "description": ">-",
-     "path": "skills/render-static-sites/SKILL.md"
-    },
-    {
-     "name": "render-web-services",
-     "description": ">-",
-     "path": "skills/render-web-services/SKILL.md"
-    },
-    {
-     "name": "render-workflows",
-     "description": "Sets up, develops, tests, and deploys Render Workflows. Covers first-time scaffolding (via CLI or manual), SDK installation (Python or TypeScript), task patterns (retries, subtasks, fan-out), local development, Dashboard deployment, and troubleshooting. Use when a user wants to set up Render Workflows for the first time, scaffold a workflow service, add or modify workflow tasks, test workflows locally, or deploy workflows to Render.",
-     "path": "skills/render-workflows/SKILL.md"
-    }
-   ],
-   "commands": [
-    {
-     "name": "check-render-status",
-     "description": "Check the health and status of Render services.",
-     "path": "commands/check-render-status.md"
-    },
-    {
-     "name": "deploy-to-render",
-     "description": "Deploy the current project to Render.",
-     "path": "commands/deploy-to-render.md"
-    }
-   ],
-   "agents": [
-    {
-     "name": "render-assistant",
-     "description": "Render deployment specialist that helps with render.yaml authoring, service configuration, debugging, and monitoring.",
-     "path": "agents/render-assistant.md"
-    }
-   ],
-   "hooks": [
-    {
-     "name": "PostToolUse",
-     "description": "",
-     "path": "hooks/hooks.json"
-    }
-   ],
-   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/148d6bcac8d86594.png",
-   "marketplace": "claude-code"
-  },
-  {
    "name": "resend",
    "displayName": "Resend",
    "description": "Agent skills for working with Resend to send and receive emails \u2014 email API integration, agent inbox, CLI, React Email components, and deliverability best practices. Includes the Resend MCP server.",
@@ -19677,245 +18343,6 @@
      "path": "skills/resend-cli/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
-  },
-  {
-   "name": "revenuecat",
-   "displayName": "Revenuecat",
-   "description": "Configure RevenueCat projects, apps, products, entitlements, and offerings directly from Claude Code. Manage your in-app purchase backend without leaving your development workflow.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/RevenueCat/rc-claude-code-plugin.git",
-    "path": "revenuecat",
-    "ref": null,
-    "sha": "ac20d26b35be0d01d0dbd3130c1b34932d402e5d"
-   },
-   "category": "development",
-   "strict": null,
-   "license": "MIT",
-   "homepage": "https://www.revenuecat.com",
-   "repository": "https://github.com/RevenueCat/rc-claude-code-plugin.git",
-   "mcpServers": [
-    {
-     "name": "RevenueCat",
-     "path": "mcp.json"
-    }
-   ],
-   "keywords": [
-    "revenuecat",
-    "in-app-purchases",
-    "subscriptions",
-    "monetization",
-    "iap",
-    "mcp"
-   ],
-   "skills": [
-    {
-     "name": "create-revenuecat-project",
-     "description": "Set up a complete RevenueCat project from scratch \u2014 creates apps, products, entitlements, offerings, and packages in the correct order. Use when the user wants to create a new RevenueCat project, configure in-app purchases, set up subscriptions or monetization, or bootstrap IAP infrastructure for iOS, Android, or Web.",
-     "path": "skills/create-revenuecat-project/SKILL.md"
-    },
-    {
-     "name": "integrate-revenuecat",
-     "description": "End-to-end RevenueCat integration \u2014 sets up the dashboard side via the RevenueCat MCP or the `rc` CLI (project, app, public API key) and installs/configures the Purchases SDK in the app. Use when the user asks to add RevenueCat, integrate Purchases, install the RevenueCat SDK, set up a RevenueCat API key, configure Purchases on launch, or set up a brand new RevenueCat integration on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/integrate-revenuecat/SKILL.md"
-    },
-    {
-     "name": "revenuecat",
-     "description": "Used for all interaction with RevenueCat not covered by a different skill",
-     "path": "skills/revenuecat/SKILL.md"
-    },
-    {
-     "name": "revenuecat-app-valuation",
-     "description": "",
-     "path": "skills/revenuecat-app-valuation/SKILL.md"
-    },
-    {
-     "name": "revenuecat-audiences",
-     "description": ">",
-     "path": "skills/revenuecat-audiences/SKILL.md"
-    },
-    {
-     "name": "revenuecat-billing",
-     "description": "",
-     "path": "skills/revenuecat-billing/SKILL.md"
-    },
-    {
-     "name": "revenuecat-charts",
-     "description": "",
-     "path": "skills/revenuecat-charts/SKILL.md"
-    },
-    {
-     "name": "revenuecat-cli",
-     "description": "Drive RevenueCat from the terminal with the `rc` CLI, an alternative to the RevenueCat MCP server for humans, CI, and agents. Covers install, authentication, command discovery, and output conventions. Referenced by the other RevenueCat skills whenever they offer a CLI path.",
-     "path": "skills/revenuecat-cli/SKILL.md"
-    },
-    {
-     "name": "revenuecat-customer-center",
-     "description": "Add the RevenueCat Customer Center (self service subscription management UI) to an app. Use when the user asks to add a customer center, build a self service subscriptions screen, let users manage subscriptions in app, add a subscription management screen, present CustomerCenterView, call presentCustomerCenter, or wire a 'manage subscription' button to the RevenueCat customer center on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-customer-center/SKILL.md"
-    },
-    {
-     "name": "revenuecat-dashboard-links",
-     "description": "",
-     "path": "skills/revenuecat-dashboard-links/SKILL.md"
-    },
-    {
-     "name": "revenuecat-entitlements-gate",
-     "description": "Check whether a RevenueCat user currently has access to a paid feature via entitlements. Use when the user asks to gate a feature behind premium, check if the user has a pro subscription, read customerInfo active entitlements, show or hide a feature based on subscription status, react to entitlement changes, or 'is the user subscribed' on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-entitlements-gate/SKILL.md"
-    },
-    {
-     "name": "experiment-analysis",
-     "description": "Use when the user asks to analyze or understand a RevenueCat experiment or its results.",
-     "path": "skills/revenuecat-experiment-analysis/SKILL.md"
-    },
-    {
-     "name": "revenuecat-experiments",
-     "description": "Use when the user asks to create, prepare, or set up a RevenueCat experiment (A/B test), to prepare its variant offerings or paywalls, or to start, pause, resume, or stop an experiment via the RevenueCat MCP experiment tools",
-     "path": "skills/revenuecat-experiments/SKILL.md"
-    },
-    {
-     "name": "revenuecat-forecasting",
-     "description": "",
-     "path": "skills/revenuecat-forecasting/SKILL.md"
-    },
-    {
-     "name": "revenuecat-identify-user",
-     "description": "Tie RevenueCat identity to your app's auth system. Use when the user asks to log in to RevenueCat, sync a user with RevenueCat, switch RevenueCat user on login, log out of RevenueCat, move a user from anonymous to identified, set appUserID, or handle account switching on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-identify-user/SKILL.md"
-    },
-    {
-     "name": "revenuecat-migrate",
-     "description": "Migrate to RevenueCat from raw StoreKit or Google Play Billing, or upgrade the RevenueCat SDK across a major version. Use when the user says migrate to RevenueCat, switch from StoreKit to RC, upgrade RevenueCat SDK, from v4 to v5, observer mode, RevenueCat major version upgrade, or already have in app purchases and want to add RevenueCat on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-migrate/SKILL.md"
-    },
-    {
-     "name": "revenuecat-paywall",
-     "description": "Display a RevenueCat paywall inside an app using the RevenueCatUI SDK. Use when the user asks to add a paywall, show a RevenueCat paywall, present PaywallView, integrate RevenueCatUI, gate a premium screen with a paywall, launch PaywallActivity, call presentPaywall or presentPaywallIfNeeded, or show the dashboard configured paywall UI on iOS, Android, Kotlin Multiplatform, Flutter, or React Native. To create, edit, evaluate, or audit the dashboard paywall itself, use revenuecat-paywall-design.",
-     "path": "skills/revenuecat-paywall/SKILL.md"
-    },
-    {
-     "name": "revenuecat-paywall-design",
-     "description": "",
-     "path": "skills/revenuecat-paywall-design/SKILL.md"
-    },
-    {
-     "name": "revenuecat-purchase-flow",
-     "description": "Implement the RevenueCat purchase and restore flow. Use when the user asks to buy a package, purchase a subscription, fetch offerings, build paywall purchase logic, handle purchase errors, detect user cancelled, or restore previous purchases on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-purchase-flow/SKILL.md"
-    },
-    {
-     "name": "revenuecat-sdk-compatibility",
-     "description": "Check whether an SDK version supports a RevenueCat feature, whether an SDK upgrade is required, why an SDK-gated feature is not working, or how much of a project's recent subscriber base is on incompatible SDK versions. Use for questions about RevenueCat SDK compatibility, feature gates, minimum SDK versions, SDK adoption, upgrade impact, and rollout risk.",
-     "path": "skills/revenuecat-sdk-compatibility/SKILL.md"
-    },
-    {
-     "name": "revenuecat-status",
-     "description": "Get a quick overview of your RevenueCat project configuration including apps, products, entitlements, offerings, and webhooks.",
-     "path": "skills/revenuecat-status/SKILL.md"
-    },
-    {
-     "name": "revenuecat-store-state",
-     "description": "Use when the user wants to inspect or change the state of products in App Store Connect, Google Play Console, RC Billing, or Test Store (prices, availability, localizations, review screenshots) via RevenueCat product-store-state plans",
-     "path": "skills/revenuecat-store-state/SKILL.md"
-    },
-    {
-     "name": "revenuecat-testing-setup",
-     "description": "Set up a testing environment for RevenueCat purchases without charging real money. Use when the user says test RevenueCat purchases, sandbox setup, StoreKit configuration file, license tester, how do I test purchases without real money, set up sandbox account, internal testing track, or test paywall on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-testing-setup/SKILL.md"
-    },
-    {
-     "name": "revenuecat-troubleshoot",
-     "description": "Diagnose and resolve RevenueCat integration issues \u2014 inspects dashboard configuration through the RevenueCat MCP, walks the SDK debug logs, and covers code-side gotchas. Use when the user says offerings are empty, products not loading, entitlement not active after purchase, paywall won't load, transactions not appearing, customer info shows no entitlements, sandbox purchase not working, or RevenueCat is broken on iOS, Android, Kotlin Multiplatform, Flutter, or React Native.",
-     "path": "skills/revenuecat-troubleshoot/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://cursor-cdn.com/plugin-logos/production/af5f7399e562c864.png",
-   "publisher": {
-    "name": "revenuecat",
-    "displayName": "RevenueCat",
-    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/revenuecat-app-icon-1.png"
-   },
-   "marketplace": "claude-code"
-  },
-  {
-   "name": "rill",
-   "displayName": "Rill",
-   "description": "Skills for developing and querying projects in the Rill business intelligence platform",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/rilldata/agent-skills.git",
-    "path": null,
-    "ref": null,
-    "sha": "a0a211654875ce8a113a2a5c4915dc01b3d38658"
-   },
-   "category": "development",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://docs.rilldata.com/developers/build/ai-configuration",
-   "repository": "https://github.com/rilldata/agent-skills.git",
-   "author": {
-    "name": "Rill Data"
-   },
-   "publisher": {
-    "name": "Rill Data",
-    "displayName": "Rill Data"
-   },
-   "mcpServers": [
-    {
-     "name": "rill-developer",
-     "path": ".mcp.json"
-    }
-   ],
-   "skills": [
-    {
-     "name": "rill-analysis",
-     "description": "Overview of how to analyze data in a Rill project",
-     "path": "skills/rill-analysis/SKILL.md"
-    },
-    {
-     "name": "rill-canvas",
-     "description": "Detailed instructions and examples for developing canvas dashboard resources in Rill",
-     "path": "skills/rill-canvas/SKILL.md"
-    },
-    {
-     "name": "rill-connector",
-     "description": "Detailed instructions and examples for developing connector resources in Rill",
-     "path": "skills/rill-connector/SKILL.md"
-    },
-    {
-     "name": "rill-development",
-     "description": "Overview of how to develop a Rill project",
-     "path": "skills/rill-development/SKILL.md"
-    },
-    {
-     "name": "rill-explore",
-     "description": "Detailed instructions and examples for developing explore dashboard resources in Rill",
-     "path": "skills/rill-explore/SKILL.md"
-    },
-    {
-     "name": "rill-metrics-view",
-     "description": "Detailed instructions and examples for developing metrics view resources in Rill",
-     "path": "skills/rill-metrics-view/SKILL.md"
-    },
-    {
-     "name": "rill-model",
-     "description": "Detailed instructions and examples for developing model resources in Rill",
-     "path": "skills/rill-model/SKILL.md"
-    },
-    {
-     "name": "rill-rillyaml",
-     "description": "Detailed instructions and examples for developing the rill.yaml file",
-     "path": "skills/rill-rillyaml/SKILL.md"
-    },
-    {
-     "name": "rill-theme",
-     "description": "Detailed instructions and examples for developing theme resources in Rill",
-     "path": "skills/rill-theme/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.rilldata.com&sz=128",
    "marketplace": "claude-code"
   },
   {
@@ -20089,7 +18516,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/ruby-lsp",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": false,
@@ -20223,7 +18650,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/rust-analyzer-lsp",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": false,
@@ -21769,7 +20196,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/serena",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -22145,108 +20572,6 @@
     }
    ],
    "logoUrl": "https://www.google.com/s2/favicons?domain=shopify.dev&sz=128",
-   "marketplace": "claude-code"
-  },
-  {
-   "name": "slack",
-   "displayName": "Slack",
-   "description": "Slack workspace integration. Search messages, access channels, read threads, and stay connected with your team's communications while coding. Find relevant discussions and context quickly.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/slackapi/slack-mcp-plugin.git",
-    "path": null,
-    "ref": null,
-    "sha": "8044341769fa84f85ee952dceddb67ef165ab110"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "homepage": "https://github.com/slackapi/slack-mcp-plugin/tree/main",
-   "repository": "https://github.com/slackapi/slack-mcp-plugin.git",
-   "mcpServers": [
-    {
-     "name": "slack",
-     "path": ".mcp.json"
-    }
-   ],
-   "skills": [
-    {
-     "name": "block-kit",
-     "description": "Use when a developer wants to build or validate Block Kit layouts for Slack messages, modals, or Home tabs: message layouts, modals/forms/dialogs, Home tab interfaces, interactive buttons or menus, or modifying existing Block Kit JSON. Also trigger on any Slack UI component (sections, actions, inputs, headers, alerts, tables, carousels), the words \"blocks\" or \"Block Kit Builder\", a request to preview rendered blocks, or pasted JSON like \"type\": \"section\". Validates via the blocks.validate API method.",
-     "path": "skills/block-kit/SKILL.md"
-    },
-    {
-     "name": "create-slack-app",
-     "description": "Use when a developer wants to create, scaffold, or bootstrap a new Slack app or agent from scratch with the Slack CLI. Covers prerequisites, authentication, choosing a workspace to install into, and creating + running a project from a Bolt (JS or Python) template locally. Trigger on \"create a Slack app\", \"new Bolt app\", \"start a Slack agent\".",
-     "path": "skills/create-slack-app/SKILL.md"
-    },
-    {
-     "name": "slack-api",
-     "description": "Use when a developer asks which Slack Web API method does something, needs a method's OAuth scopes or token type, wants to call or test a family.method endpoint (chat.postMessage, conversations.history, users.info, views.open), is handling cursor pagination (next_cursor) or rate limits (tier/ratelimited/Retry-After), or is debugging errors like missing_scope, invalid_auth, or channel_not_found. Also trigger on a pasted slack.com/api/ URL or docs.slack.dev/reference/methods link.",
-     "path": "skills/slack-api/SKILL.md"
-    },
-    {
-     "name": "slack-cli",
-     "description": "Use when a developer works with the Slack CLI (slack command) to create, run, or manage a Slack app from the terminal: logging in or authenticating (slack login), adding a team or switching workspaces, running locally (slack run), deploying, editing the app manifest, calling Web API methods (slack api), or searching Slack docs (slack docs search).",
-     "path": "skills/slack-cli/SKILL.md"
-    },
-    {
-     "name": "slack-docs",
-     "description": "Use when answering a conceptual or how-to question about Slack platform features, or when asked to look up, fetch, or summarize a docs.slack.dev page, including a pasted docs.slack.dev link. Covers finding and reading official Slack docs as clean markdown.",
-     "path": "skills/slack-docs/SKILL.md"
-    },
-    {
-     "name": "slack-messaging",
-     "description": "Use when writing, drafting, scheduling, or improving a Slack message, announcement, or reply sent via the Slack MCP tools (slack_send_message, slack_send_message_draft, slack_schedule_message). Covers Slack markdown formatting, message structure, thread etiquette, reactions, and scheduling, and points to the right dialect for canvases and Block Kit.",
-     "path": "skills/slack-messaging/SKILL.md"
-    },
-    {
-     "name": "slack-search",
-     "description": "Use when locating messages, files, channels, or people across Slack, or gathering context before answering, with the search MCP tools (slack_search_public, slack_search_public_and_private, slack_search_channels, slack_search_users). Covers search modifiers (in:, from:, before:), file-type filters, natural-language vs. keyword search, and reading results in context.",
-     "path": "skills/slack-search/SKILL.md"
-    },
-    {
-     "name": "test-slack-app",
-     "description": "Use when a developer wants to test, try out, smoke-test, verify, or confirm that a Slack app built with the Slack CLI (or a plain Bolt app) actually works, by running it in a developer sandbox or a Free Team, never a workspace with real users, with `slack run` and exercising its real slash commands, shortcuts, events, actions, modals, App Home, and assistant surfaces. Also covers `slack doctor` and `slack manifest validate` health checks before hands-on testing.",
-     "path": "skills/test-slack-app/SKILL.md"
-    }
-   ],
-   "commands": [
-    {
-     "name": "channel-digest",
-     "description": "Get a digest of recent activity across multiple Slack channels",
-     "path": "commands/channel-digest.md"
-    },
-    {
-     "name": "draft-announcement",
-     "description": "Draft a well-formatted Slack announcement and save it as a draft",
-     "path": "commands/draft-announcement.md"
-    },
-    {
-     "name": "find-discussions",
-     "description": "Find discussions about a specific topic across Slack channels",
-     "path": "commands/find-discussions.md"
-    },
-    {
-     "name": "standup",
-     "description": "Generate a standup update based on your recent Slack activity",
-     "path": "commands/standup.md"
-    },
-    {
-     "name": "summarize-channel",
-     "description": "Summarize recent activity in a Slack channel",
-     "path": "commands/summarize-channel.md"
-    }
-   ],
-   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/slack-2x.png",
-   "publisher": {
-    "name": "slack",
-    "displayName": "Slack",
-    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/slack-2x.png",
-    "isVerified": true
-   },
-   "featured": true,
-   "keywords": [],
    "marketplace": "claude-code"
   },
   {
@@ -22973,63 +21298,6 @@
    "marketplace": "claude-code"
   },
   {
-   "name": "sumup",
-   "displayName": "Sumup",
-   "description": "SumUp payment integrations across terminal and online checkout flows. Build Android and iOS POS apps with SumUp card readers, online checkout with server SDKs and the checkout widget, and control card readers remotely via Cloud API.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/sumup/sumup-skills.git",
-    "path": null,
-    "ref": null,
-    "sha": "cb72003b417cec5e717c6b788d63394b7e921938"
-   },
-   "category": "payments",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://www.sumup.com/",
-   "repository": "https://github.com/sumup/sumup-skills.git",
-   "mcpServers": [
-    {
-     "name": "sumup",
-     "path": "mcp.json"
-    }
-   ],
-   "skills": [
-    {
-     "name": "sumup",
-     "description": "Implement SumUp checkout flows end-to-end. Use when writing or reviewing SumUp Checkouts API calls, Card Widget mounts, Hosted Checkout setup, recurring tokenization, Terminal SDK / Cloud API reader checkouts, or 3DS / webhook handling.",
-     "path": "skills/sumup/SKILL.md"
-    },
-    {
-     "name": "sumup-best-practices",
-     "description": "Pick the right SumUp integration path and apply security best practices. Use when deciding between Hosted Checkout, Card Widget, Checkouts API, mobile SDKs, terminal SDKs, or Cloud API; choosing API key vs OAuth vs restricted keys; or reviewing SumUp integration security.",
-     "path": "skills/sumup-best-practices/SKILL.md"
-    },
-    {
-     "name": "sumup-debug",
-     "description": "Troubleshoot common SumUp integration failures. Use when SumUp HMAC signature checks fail, checkout sessions expire, scopes aren't activated, widget mount is blocked, affiliate keys don't match, or `checkout_reference` collides.",
-     "path": "skills/sumup-debug/SKILL.md"
-    },
-    {
-     "name": "sumup-mcp",
-     "description": "Use the SumUp MCP server (https://mcp.sumup.com/mcp) from Cursor, Claude Code, Codex, or any MCP-capable client. Use when the user mentions SumUp MCP, needs to wire mcp.sumup.com, or wants tool-based access to SumUp APIs.",
-     "path": "skills/sumup-mcp/SKILL.md"
-    },
-    {
-     "name": "sumup-testing",
-     "description": "Set up and run SumUp sandbox tests. Use when configuring a SumUp test merchant, picking test cards, triggering deliberate failure (`amount = 11`), or building a SumUp end-to-end test harness.",
-     "path": "skills/sumup-testing/SKILL.md"
-    },
-    {
-     "name": "upgrade-sumup",
-     "description": "Guide for upgrading SumUp API versions and server/mobile SDKs (@sumup/sdk, sumup-go, sumup Python, PHP, Java, Rust, .NET, iOS Terminal, Android Reader, Swift Checkout, React Native). Use when bumping SumUp SDK versions or migrating off deprecated endpoints.",
-     "path": "skills/upgrade-sumup/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.sumup.com&sz=128",
-   "marketplace": "claude-code"
-  },
-  {
    "name": "supabase",
    "displayName": "Supabase",
    "description": "Supabase MCP integration for database operations, authentication, storage, and real-time subscriptions. Manage your Supabase projects, run SQL queries, and interact with your backend directly.",
@@ -23289,7 +21557,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/swift-lsp",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": false,
@@ -23496,7 +21764,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/telegram",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "productivity",
    "strict": null,
@@ -23537,7 +21805,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "external_plugins/terraform",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": null,
@@ -23999,7 +22267,7 @@
     "url": "https://github.com/anthropics/claude-plugins-official",
     "path": "plugins/typescript-lsp",
     "ref": "main",
-    "sha": "fa59bc9037741ecfa131aa27938272605710d7b2"
+    "sha": "fbe07fb6ce7d51d8e86ca6efdf050059894cdb80"
    },
    "category": "development",
    "strict": false,
@@ -24690,52 +22958,6 @@
     }
    ],
    "logoUrl": "https://www.google.com/s2/favicons?domain=val.town&sz=128",
-   "marketplace": "claude-code"
-  },
-  {
-   "name": "vanguard-advisor-tools",
-   "displayName": "Vanguard Advisor Tools",
-   "description": "Vanguard Advisor Tools for financial professionals: research and compare funds and ETFs across the industry and prepare for client conversations, using Vanguard's advisor connector in Claude.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/Vanguard-oss/vanguard-advisor-tools.git",
-    "path": null,
-    "ref": null,
-    "sha": "328fe9f61fe7a375b87a6492e265b4a5a955b0ce"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://advisors.vanguard.com",
-   "repository": "https://github.com/Vanguard-oss/vanguard-advisor-tools.git",
-   "author": {
-    "name": "Vanguard"
-   },
-   "publisher": {
-    "name": "vanguard",
-    "displayName": "Vanguard"
-   },
-   "mcpServers": [
-    {
-     "name": "vanguard-advisors",
-     "path": ".claude-plugin/plugin.json"
-    }
-   ],
-   "keywords": [
-    "investments",
-    "funds",
-    "etf",
-    "fund-comparison",
-    "financial-advisor"
-   ],
-   "skills": [
-    {
-     "name": "model-prep",
-     "description": "Help a financial advisor find Vanguard model portfolios that match a client need, understand how those models are built, and produce a meeting-ready advisor one-pager \u2014 as text and as a styled PDF \u2014 with optional client-facing material. Use when an advisor asks about model portfolios, model series, prebuilt or off-the-shelf portfolios, outsourcing portfolio construction, wants a PDF of a model one-pager, or wants to prepare for a client conversation about a model approach. Also use when an advisor describes a client need or goal \u2014 income, growth, retirement, \"something safer\" \u2014 and asks what portfolio to show, present, put in front of, or build for them, even when they never say the word \"model\" and name no specific funds. That phrasing is how advisors actually open this request. This skill covers model portfolios rather than individual funds, so weighing two or more specific tickers against each other is a fund-comparison question and outside its scope.",
-     "path": "skills/model-prep/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=advisors.vanguard.com&sz=128",
    "marketplace": "claude-code"
   },
   {
@@ -25805,238 +24027,6 @@
    "marketplace": "claude-code"
   },
   {
-   "name": "zoom-plugin",
-   "displayName": "Zoom Plugin",
-   "description": "Claude plugin for planning, building, and debugging Zoom integrations across REST APIs, SDKs, webhooks, bots, and MCP workflows.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/zoom/zoom-plugin.git",
-    "path": null,
-    "ref": null,
-    "sha": "9311dd4b31e8e55c27b95479a84601576e449e97"
-   },
-   "category": "development",
-   "strict": null,
-   "license": "MIT",
-   "homepage": "https://developers.zoom.us/",
-   "repository": "https://github.com/zoom/zoom-plugin.git",
-   "mcpServers": [
-    {
-     "name": "zoom-mcp",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "zoom-meetings-mcp",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "zoom-canvas-mcp",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "zoom-chat-mcp",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "zoom-tasks-mcp",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "zoom-revenue-accelerator-mcp",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "zoom-whiteboard-mcp",
-     "path": ".mcp.json"
-    }
-   ],
-   "keywords": [
-    "zoom",
-    "claude-plugin",
-    "rest-api",
-    "meeting-sdk",
-    "video-sdk",
-    "webhooks",
-    "oauth",
-    "marketplace",
-    "app-manifest",
-    "ai-services",
-    "summarizer",
-    "translator",
-    "team-chat",
-    "mcp"
-   ],
-   "skills": [
-    {
-     "name": "build-zoom-bot",
-     "description": "Build a Zoom meeting bot, recorder, or real-time media workflow. Use when joining meetings programmatically, processing live media or transcripts, or combining Meeting SDK, RTMS, and backend services.",
-     "path": "skills/build-zoom-bot/SKILL.md"
-    },
-    {
-     "name": "build-zoom-meeting-app",
-     "description": "Build or embed a Zoom meeting flow. Use when implementing Meeting SDK joins, web or mobile meeting embeds, meeting lifecycle flows, or when deciding between Meeting SDK and Video SDK.",
-     "path": "skills/build-zoom-meeting-app/SKILL.md"
-    },
-    {
-     "name": "choose-zoom-approach",
-     "description": "Choose the right Zoom architecture for a use case. Use when deciding between REST API, Webhooks, WebSockets, Meeting SDK, Video SDK, Zoom Apps SDK, Zoom MCP, Phone, Contact Center, or a hybrid approach.",
-     "path": "skills/choose-zoom-approach/SKILL.md"
-    },
-    {
-     "name": "zoom-cobrowse-sdk",
-     "description": "Reference skill for Zoom Cobrowse SDK. Use after routing to a collaborative-support workflow when implementing browser co-browsing, annotation tools, privacy masking, remote assist, or PIN-based session sharing.",
-     "path": "skills/cobrowse-sdk/SKILL.md"
-    },
-    {
-     "name": "build-zoom-contact-center-app",
-     "description": "Reference skill for Zoom Contact Center. Use after routing to a contact-center workflow when implementing app, web, or native integrations; engagement context and state handling; campaigns; callbacks; or version-drift troubleshooting.",
-     "path": "skills/contact-center/SKILL.md"
-    },
-    {
-     "name": "debug-zoom",
-     "description": "Debug a broken Zoom integration by isolating the failure point and routing into the right Zoom references. Use when auth, API, webhook, SDK, or MCP behavior is failing and you need a ranked hypothesis list plus verification steps.",
-     "path": "skills/debug-zoom/SKILL.md"
-    },
-    {
-     "name": "debug-zoom-integration",
-     "description": "Debug broken Zoom implementations quickly. Use when auth, webhooks, SDK joins, MCP transport, or real-time media workflows are failing and you need to isolate the layer before proposing a fix.",
-     "path": "skills/debug-zoom-integration/SKILL.md"
-    },
-    {
-     "name": "design-mcp-workflow",
-     "description": "Design a Zoom MCP workflow for Claude. Use when deciding whether Zoom MCP fits a task, when planning tool-based AI workflows, or when separating MCP responsibilities from REST API responsibilities.",
-     "path": "skills/design-mcp-workflow/SKILL.md"
-    },
-    {
-     "name": "zoom-general",
-     "description": "Cross-product Zoom reference skill. Use after the workflow is clear when you need shared platform guidance, app-model comparisons, authentication context, scopes, marketplace considerations, or API-vs-MCP routing.",
-     "path": "skills/general/SKILL.md"
-    },
-    {
-     "name": "build-zoom-meeting-sdk-app",
-     "description": "Reference skill for Zoom Meeting SDK. Use after routing to a meeting-embed workflow when implementing real Zoom meeting joins, platform-specific SDK behavior, auth and join flows, waiting room issues, or meeting bot patterns.",
-     "path": "skills/meeting-sdk/SKILL.md"
-    },
-    {
-     "name": "zoom-oauth",
-     "description": "Reference skill for Zoom authentication. Use after routing to an auth workflow when choosing app credentials, grant types, scopes, token refresh behavior, or debugging Zoom OAuth failures.",
-     "path": "skills/oauth/SKILL.md"
-    },
-    {
-     "name": "build-zoom-phone-integration",
-     "description": "Reference skill for Zoom Phone. Use after routing to a phone workflow when implementing OAuth, Phone APIs, webhooks, Smart Embed events, URI schemes, CRM or CTI dialers, or call handling automation.",
-     "path": "skills/phone/SKILL.md"
-    },
-    {
-     "name": "plan-zoom-integration",
-     "description": "Turn a Zoom integration idea into an implementation plan with architecture, auth, and delivery milestones. Use when you need a practical build plan, phased delivery sequence, risk list, and next-step recommendation.",
-     "path": "skills/plan-zoom-integration/SKILL.md"
-    },
-    {
-     "name": "plan-zoom-product",
-     "description": "Choose the right Zoom building surface for a use case and explain the tradeoffs clearly. Use when deciding between REST API, Webhooks, WebSockets, Meeting SDK, Video SDK, Zoom Apps SDK, Phone, Contact Center, or MCP for a specific product idea or integration goal.",
-     "path": "skills/plan-zoom-product/SKILL.md"
-    },
-    {
-     "name": "probe-sdk",
-     "description": "Reference skill for Zoom Probe SDK. Use after routing to a preflight workflow when testing browser compatibility, media permissions, audio or video diagnostics, and network readiness before users join.",
-     "path": "skills/probe-sdk/SKILL.md"
-    },
-    {
-     "name": "build-zoom-rest-api-app",
-     "description": "Reference skill for Zoom REST API. Use after choosing an API-based workflow when you need endpoint selection, resource-management patterns, OAuth requirements, rate-limit awareness, or API error debugging.",
-     "path": "skills/rest-api/SKILL.md"
-    },
-    {
-     "name": "rivet-sdk",
-     "description": "Reference skill for Zoom Rivet SDK. Use after routing to a Rivet-based server workflow when implementing auth handling, webhook consumers, API wrappers, multi-module composition, or Lambda receiver patterns.",
-     "path": "skills/rivet-sdk/SKILL.md"
-    },
-    {
-     "name": "zoom-rtms",
-     "description": "Reference skill for Zoom RTMS. Use after routing to a live-media workflow when processing real-time audio, video, chat, transcripts, screen share, or contact-center voice streams.",
-     "path": "skills/rtms/SKILL.md"
-    },
-    {
-     "name": "scribe",
-     "description": "Reference skill for Zoom AI Services Scribe. Use after routing to a transcription workflow when handling live audio, uploaded or stored media, Build-platform JWT auth, Live/Fast/Batch processing modes, or transcript pipeline design.",
-     "path": "skills/scribe/SKILL.md"
-    },
-    {
-     "name": "setup-zoom-marketplace-app",
-     "description": "Create, update, select, or validate the Zoom Marketplace app that owns an integration. Use for General App manifests, Server-to-Server OAuth apps, Meeting SDK apps, scopes, event subscriptions, app-owned credentials, or choosing a scenario template before product implementation.",
-     "path": "skills/setup-zoom-marketplace-app/SKILL.md"
-    },
-    {
-     "name": "setup-zoom-mcp",
-     "description": "Decide when Zoom MCP is the right fit and produce a safe setup plan for Claude. Use when planning AI workflows over Zoom data, deciding between MCP and REST, or defining a hybrid MCP architecture.",
-     "path": "skills/setup-zoom-mcp/SKILL.md"
-    },
-    {
-     "name": "setup-zoom-oauth",
-     "description": "Implement Zoom authentication correctly. Use when setting up app credentials, choosing an OAuth grant, requesting scopes, handling token refresh, or debugging auth failures.",
-     "path": "skills/setup-zoom-oauth/SKILL.md"
-    },
-    {
-     "name": "start",
-     "description": "Start here for any Zoom integration or app idea. Use when you need to choose the right Zoom surface, shape the architecture, or route into the correct implementation skill without reading the whole Zoom doc set first.",
-     "path": "skills/start/SKILL.md"
-    },
-    {
-     "name": "summarizer",
-     "description": "Reference skill for Zoom AI Services Summarizer. Use after routing to transcript summarization, meeting recap, action item extraction, Build-platform JWT auth, fast mode summarization, batch jobs, or summary pipeline design.",
-     "path": "skills/summarizer/SKILL.md"
-    },
-    {
-     "name": "build-zoom-team-chat-app",
-     "description": "Reference skill for Zoom Team Chat. Use after routing to a chat workflow when building user-scoped messaging integrations, chatbot experiences, rich cards, buttons, slash commands, or chat webhooks.",
-     "path": "skills/team-chat/SKILL.md"
-    },
-    {
-     "name": "translator",
-     "description": "Reference skill for Zoom AI Services Translator. Use after routing to text translation, one-target-language jobs, Build-platform JWT auth, fast mode translation, batch file translation, or translation pipeline design.",
-     "path": "skills/translator/SKILL.md"
-    },
-    {
-     "name": "ui-toolkit",
-     "description": "Reference skill for Zoom Video SDK UI Toolkit. Use after routing to a web video workflow when you want prebuilt React UI instead of building a fully custom Video SDK interface.",
-     "path": "skills/ui-toolkit/SKILL.md"
-    },
-    {
-     "name": "build-zoom-video-sdk-app",
-     "description": "Reference skill for Zoom Video SDK. Use after routing to a custom-session workflow when the user needs full control over the video experience rather than an actual Zoom meeting.",
-     "path": "skills/video-sdk/SKILL.md"
-    },
-    {
-     "name": "build-zoom-virtual-agent",
-     "description": "Reference skill for Zoom Virtual Agent. Use after routing to a virtual-agent workflow when implementing web embeds, Android or iOS wrapper integrations, knowledge-base sync, lifecycle handling, or troubleshooting.",
-     "path": "skills/virtual-agent/SKILL.md"
-    },
-    {
-     "name": "setup-zoom-webhooks",
-     "description": "Reference skill for Zoom webhooks. Use after routing to an event-driven workflow when implementing subscriptions, signature verification, delivery handling, retries, or event-type selection.",
-     "path": "skills/webhooks/SKILL.md"
-    },
-    {
-     "name": "setup-zoom-websockets",
-     "description": "Reference skill for Zoom WebSockets. Use after routing to a low-latency event workflow when persistent connections, faster event delivery, or security constraints make WebSockets preferable to webhooks.",
-     "path": "skills/websockets/SKILL.md"
-    },
-    {
-     "name": "zoom-apps-sdk",
-     "description": "Reference skill for Zoom Apps SDK. Use after routing to an in-client app workflow when building web apps that run inside Zoom meetings, webinars, the main client, or Zoom Phone.",
-     "path": "skills/zoom-apps-sdk/SKILL.md"
-    },
-    {
-     "name": "zoom-mcp",
-     "description": "Guidance for Zoom's MCP server catalog. Use after routing to an MCP workflow when planning or troubleshooting tool-based access to Meetings, Canvas, Chat, Tasks, Revenue Accelerator, Whiteboard, recordings, meeting assets, transcripts, Zoom-wide search, or Docs. Use the current server catalog for endpoints and scopes.",
-     "path": "skills/zoom-mcp/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=developers.zoom.us&sz=128",
-   "marketplace": "claude-code"
-  },
-  {
    "name": "zoominfo",
    "displayName": "Zoominfo",
    "description": "Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows.",
@@ -26876,108 +24866,6 @@
    "marketplace": "claude-code"
   },
   {
-   "name": "hubspot-sales",
-   "displayName": "HubSpot Sales",
-   "description": "Run your HubSpot sales workflow directly from Claude. Adds skills that cover the full sales day: import contacts and deals into HubSpot, get a prioritised morning brief, prep for any call with full CRM context, draft personalised follow-ups grounded in deal history, log calls and update records by describing what happened, and review your pipeline to surface stalling deals. Everything writes back to HubSpot.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/HubSpot/hubspot-mcp-plugins.git",
-    "path": "HubSpot-Sales",
-    "ref": "main",
-    "sha": "a0c59600fc1ddcf03ceca71aebf0c28aa55f49e3"
-   },
-   "category": "sales",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://www.hubspot.com",
-   "repository": "https://github.com/HubSpot/hubspot-mcp-plugins.git",
-   "author": {
-    "name": "HubSpot"
-   },
-   "publisher": {
-    "name": "hubspot",
-    "displayName": "HubSpot"
-   },
-   "mcpServers": [
-    {
-     "name": "hubspot",
-     "path": ".mcp.json"
-    }
-   ],
-   "keywords": [
-    "hubspot",
-    "sales",
-    "crm",
-    "outreach",
-    "call-prep",
-    "daily-brief",
-    "log-call",
-    "contact-lookup",
-    "pipeline-pulse"
-   ],
-   "skills": [
-    {
-     "name": "call-prep",
-     "description": ">",
-     "path": "skills/call-prep/SKILL.md"
-    },
-    {
-     "name": "contact-lookup",
-     "description": ">",
-     "path": "skills/contact-lookup/SKILL.md"
-    },
-    {
-     "name": "daily-brief",
-     "description": ">",
-     "path": "skills/daily-brief/SKILL.md"
-    },
-    {
-     "name": "follow-up",
-     "description": ">",
-     "path": "skills/follow-up/SKILL.md"
-    },
-    {
-     "name": "hubspot",
-     "description": ">",
-     "path": "skills/hubspot/SKILL.md"
-    },
-    {
-     "name": "import-contacts",
-     "description": ">",
-     "path": "skills/import-contacts/SKILL.md"
-    },
-    {
-     "name": "log-call",
-     "description": ">",
-     "path": "skills/log-call/SKILL.md"
-    },
-    {
-     "name": "onboarding",
-     "description": ">",
-     "path": "skills/onboarding/SKILL.md"
-    },
-    {
-     "name": "pipeline-pulse",
-     "description": ">",
-     "path": "skills/pipeline-pulse/SKILL.md"
-    }
-   ],
-   "agents": [
-    {
-     "name": "account-research",
-     "description": ">",
-     "path": "agents/account-research.md"
-    },
-    {
-     "name": "brief-fetcher",
-     "description": ">",
-     "path": "agents/brief-fetcher.md"
-    }
-   ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.hubspot.com&sz=128",
-   "marketplace": "claude-code"
-  },
-  {
    "name": "dynatrace",
    "displayName": "Dynatrace",
    "description": "Dynatrace observability skills: DQL query patterns, application and infrastructure monitoring, log analysis, problem investigation, and incident response workflows, with the Dynatrace MCP server for live platform access.",
@@ -27264,122 +25152,6 @@
    "marketplace": "claude-code"
   },
   {
-   "name": "amazon-selling-partner",
-   "displayName": "Amazon Selling Partner",
-   "description": "Connect your Amazon Seller Central account to Claude. Ask about sales, inventory, and listing performance and get recommendations grounded in your own data, then review and approve every listing, inventory or FBA action before it runs. Bundles the Amazon Selling Partner MCP server (Seller Central OAuth on first use). Currently in beta.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/amzn/selling-partner-agentic-toolkit.git",
-    "path": null,
-    "ref": null,
-    "sha": "10573bac239b7062a476667eaa574d400335c70e"
-   },
-   "category": "sales",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://github.com/amzn/selling-partner-agentic-toolkit",
-   "repository": "https://github.com/amzn/selling-partner-agentic-toolkit.git",
-   "author": {
-    "name": "Amazon"
-   },
-   "publisher": {
-    "name": "amazon",
-    "displayName": "Amazon"
-   },
-   "mcpServers": [
-    {
-     "name": "amazon-selling-partner",
-     "path": ".mcp.json"
-    }
-   ],
-   "keywords": [
-    "amazon",
-    "seller",
-    "selling-partner",
-    "sp-api",
-    "fba",
-    "listings",
-    "inventory",
-    "analytics",
-    "compliance"
-   ],
-   "skills": [
-    {
-     "name": "fba-inbound-management",
-     "description": ">-",
-     "path": "skills/fba-inbound-management/SKILL.md"
-    },
-    {
-     "name": "invite-secondary-users",
-     "description": ">-",
-     "path": "skills/invite-secondary-users/SKILL.md"
-    },
-    {
-     "name": "listing-buyability",
-     "description": ">-",
-     "path": "skills/listing-buyability/SKILL.md"
-    },
-    {
-     "name": "listing-compliance",
-     "description": ">-",
-     "path": "skills/listing-compliance/SKILL.md"
-    },
-    {
-     "name": "listing-issues",
-     "description": ">-",
-     "path": "skills/listing-issues/SKILL.md"
-    },
-    {
-     "name": "listing-searchability",
-     "description": ">-",
-     "path": "skills/listing-searchability/SKILL.md"
-    },
-    {
-     "name": "listing-troubleshooter",
-     "description": ">-",
-     "path": "skills/listing-troubleshooter/SKILL.md"
-    },
-    {
-     "name": "seller-analytics",
-     "description": ">-",
-     "path": "skills/seller-analytics/SKILL.md"
-    },
-    {
-     "name": "sp-api-knowledge",
-     "description": ">-",
-     "path": "skills/sp-api-knowledge/SKILL.md"
-    },
-    {
-     "name": "stockout-prevention",
-     "description": ">-",
-     "path": "skills/stockout-prevention/SKILL.md"
-    },
-    {
-     "name": "support-case-helper",
-     "description": ">-",
-     "path": "skills/support-case-helper/SKILL.md"
-    }
-   ],
-   "commands": [
-    {
-     "name": "sp-fix-listing",
-     "description": "Find your suppressed/inactive listings and fix them (with your approval)",
-     "path": "commands/sp-fix-listing.md"
-    },
-    {
-     "name": "sp-sales-drop",
-     "description": "Diagnose why your Amazon sales dropped and get safe next steps",
-     "path": "commands/sp-sales-drop.md"
-    },
-    {
-     "name": "sp-stockout-check",
-     "description": "Check your FBA inventory for stockout risk and get restock/price options (with your approval)",
-     "path": "commands/sp-stockout-check.md"
-    }
-   ],
-   "marketplace": "claude-code"
-  },
-  {
    "name": "teaching",
    "displayName": "Teaching",
    "description": "Skill mapping, practice plans, and learning retrospectives.",
@@ -27388,7 +25160,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "teaching",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -27426,7 +25198,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "thermos",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -27487,7 +25259,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "agent-compatibility",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -27548,7 +25320,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cli-for-agent",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -27586,7 +25358,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "grok-voice",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -27639,7 +25411,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gmail",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -27671,7 +25443,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-drive",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -27693,6 +25465,13 @@
     "workspace"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-drive/assets/logo.svg",
+   "skills": [
+    {
+     "name": "google-drive",
+     "description": "Work with Google Drive through its MCP tools - search, read, create, organize, share, comment, and export files. Use when creating files in specific folders, moving or renaming, converting Markdown/CSV into Docs/Sheets, managing comments, or exporting a rendered PDF.",
+     "path": "skills/google-drive/SKILL.md"
+    }
+   ],
    "marketplace": "cursor"
   },
   {
@@ -27704,7 +25483,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-calendar",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -27729,175 +25508,6 @@
    "marketplace": "cursor"
   },
   {
-   "name": "google-docs",
-   "displayName": "Google Docs",
-   "description": "Read, create, and edit documents.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/google-docs",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "google-docs",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-docs",
-   "keywords": [
-    "google-docs",
-    "docs",
-    "google",
-    "mcp",
-    "documents",
-    "workspace"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-docs/assets/logo.svg",
-   "skills": [
-    {
-     "name": "google-docs",
-     "description": "Author and edit Google Docs with the google-docs tools - structured writing, character and paragraph styling, lists, tables, images, headers/footers. Use when creating a formatted document, editing document content, or applying styles.",
-     "path": "skills/google-docs/SKILL.md"
-    }
-   ],
-   "marketplace": "cursor"
-  },
-  {
-   "name": "google-sheets",
-   "displayName": "Google Sheets",
-   "description": "Read, write, and append spreadsheet data.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/google-sheets",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "google-sheets",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-sheets",
-   "keywords": [
-    "google-sheets",
-    "sheets",
-    "google",
-    "mcp",
-    "spreadsheets",
-    "workspace"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-sheets/assets/logo.svg",
-   "skills": [
-    {
-     "name": "google-sheets",
-     "description": "Build and edit Google Sheets with the google-sheets tools - values, formatting, charts, conditional formatting, structure, validation, named and protected ranges. Use when creating a spreadsheet or dashboard, formatting cells, adding or fixing charts, or reorganizing tabs and rows.",
-     "path": "skills/google-sheets/SKILL.md"
-    }
-   ],
-   "marketplace": "cursor"
-  },
-  {
-   "name": "google-slides",
-   "displayName": "Google Slides",
-   "description": "Create, edit, and render presentations.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/google-slides",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "google-slides",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-slides",
-   "keywords": [
-    "google-slides",
-    "slides",
-    "google",
-    "mcp",
-    "presentations",
-    "workspace"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-slides/assets/logo.svg",
-   "skills": [
-    {
-     "name": "google-slides",
-     "description": "Build and edit Google Slides through the google-slides MCP tools - slides, grids of cards and columns, text boxes, shapes, images, tables, styling, layout inspection, and per-slide PNG rendering. Use when creating a deck, laying out slide elements, matching a template, or verifying how a slide looks.",
-     "path": "skills/google-slides/SKILL.md"
-    }
-   ],
-   "marketplace": "cursor"
-  },
-  {
-   "name": "gong",
-   "displayName": "Gong",
-   "description": "Pull account summaries, deal insights, and call briefs.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/gong",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "sales",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "gong",
-     "path": "mcp.json"
-    }
-   ],
-   "userConfig": {
-    "CLIENT_ID": {
-     "type": "string",
-     "title": "Gong Client ID",
-     "description": "OAuth Client ID from Gong Admin \u2192 Company Settings \u2192 Ecosystem \u2192 API \u2192 Integrations (MCP integration).",
-     "required": true,
-     "sensitive": false
-    },
-    "CLIENT_SECRET": {
-     "type": "string",
-     "title": "Gong Client Secret",
-     "description": "OAuth Client Secret from the same Gong MCP integration.",
-     "required": true,
-     "sensitive": true
-    }
-   },
-   "homepage": "https://help.gong.io/docs/about-gong-mcp-server",
-   "keywords": [
-    "gong",
-    "mcp",
-    "revenue",
-    "sales",
-    "calls",
-    "deals"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gong/assets/logo.png",
-   "marketplace": "cursor"
-  },
-  {
    "name": "salesforce",
    "displayName": "Salesforce",
    "description": "Query, create, and update records in your org.",
@@ -27906,7 +25516,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/salesforce",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -27955,7 +25565,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ashby",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -27981,204 +25591,6 @@
    "marketplace": "cursor"
   },
   {
-   "name": "hubspot",
-   "displayName": "Hubspot",
-   "description": "Search and update contacts, companies, deals, and tickets.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/hubspot",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "sales",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "hubspot",
-     "path": "mcp.json"
-    }
-   ],
-   "userConfig": {
-    "CLIENT_ID": {
-     "type": "string",
-     "title": "HubSpot Client ID",
-     "description": "OAuth Client ID from Development \u2192 MCP Auth Apps \u2192 your app.",
-     "required": true,
-     "sensitive": false
-    },
-    "CLIENT_SECRET": {
-     "type": "string",
-     "title": "HubSpot Client Secret",
-     "description": "OAuth Client Secret from the same HubSpot MCP auth app.",
-     "required": true,
-     "sensitive": true
-    }
-   },
-   "homepage": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
-   "keywords": [
-    "hubspot",
-    "crm",
-    "mcp",
-    "sales",
-    "marketing",
-    "contacts",
-    "deals"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/hubspot/assets/logo.png",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "zoom",
-   "displayName": "Zoom",
-   "description": "Search meetings, pull transcripts, and work with Zoom Docs.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/zoom",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "zoom",
-     "path": "mcp.json"
-    }
-   ],
-   "userConfig": {
-    "CLIENT_ID": {
-     "type": "string",
-     "title": "Zoom Client ID",
-     "description": "OAuth Client ID from your Zoom App Marketplace General app \u2192 Basic Information \u2192 App Credentials.",
-     "required": true,
-     "sensitive": false
-    },
-    "CLIENT_SECRET": {
-     "type": "string",
-     "title": "Zoom Client Secret",
-     "description": "OAuth Client Secret from the same Zoom General app.",
-     "required": true,
-     "sensitive": true
-    }
-   },
-   "homepage": "https://developers.zoom.us/docs/mcp/",
-   "keywords": [
-    "zoom",
-    "mcp",
-    "meetings",
-    "recordings",
-    "transcripts",
-    "docs"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/zoom/assets/logo.png",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "x",
-   "displayName": "X",
-   "description": "Search posts, read timelines, pull trends, manage bookmarks, and access X Chat.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/x",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "marketing",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "x",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://docs.x.com/tools/mcp",
-   "keywords": [
-    "x",
-    "twitter",
-    "posts",
-    "search",
-    "trends",
-    "news",
-    "lists",
-    "bookmarks",
-    "chat",
-    "social",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/x/assets/logo.svg",
-   "skills": [
-    {
-     "name": "x-api-mcp-guide",
-     "description": ">-",
-     "path": "skills/x-api-mcp-guide/SKILL.md"
-    },
-    {
-     "name": "x-chat",
-     "description": ">-",
-     "path": "skills/x-chat/SKILL.md"
-    }
-   ],
-   "marketplace": "cursor"
-  },
-  {
-   "name": "docusign",
-   "displayName": "Docusign",
-   "description": "Manage envelopes, templates, workflows, and agreements.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/docusign",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "docusign",
-     "path": "mcp.json"
-    }
-   ],
-   "userConfig": {
-    "CLIENT_ID": {
-     "type": "string",
-     "title": "Docusign Integration Key",
-     "description": "Integration Key from Docusign Apps and Keys (Settings \u2192 Apps and Keys \u2192 your app).",
-     "required": true,
-     "sensitive": false
-    },
-    "CLIENT_SECRET": {
-     "type": "string",
-     "title": "Docusign Secret Key",
-     "description": "Secret Key from the same Docusign Apps and Keys app.",
-     "required": true,
-     "sensitive": true
-    }
-   },
-   "homepage": "https://developers.docusign.com/platform/mcp-server/",
-   "keywords": [
-    "docusign",
-    "esignature",
-    "agreements",
-    "mcp",
-    "envelopes",
-    "contracts"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/docusign/assets/logo.png",
-   "marketplace": "cursor"
-  },
-  {
    "name": "navan",
    "displayName": "Navan",
    "description": "Query expenses, travel bookings, policies, and cards.",
@@ -28187,7 +25599,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/navan",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -28221,7 +25633,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/profound",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -28256,7 +25668,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/juicebox",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -28290,7 +25702,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outreach",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -28324,7 +25736,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/amplemarket",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -28358,7 +25770,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/klaviyo",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -28392,7 +25804,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/customer-io",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -28426,7 +25838,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mailerlite",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -28460,7 +25872,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brevo",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -28503,7 +25915,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/typeform",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -28536,7 +25948,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/jotform",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -28568,7 +25980,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/semrush",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -28602,7 +26014,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ahrefs",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -28636,7 +26048,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/godaddy",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -28669,7 +26081,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/upwork",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -28703,7 +26115,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/workable",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -28737,7 +26149,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brex",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -28771,7 +26183,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mercury",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -28804,7 +26216,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/todoist",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -28837,7 +26249,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/calendly",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -28870,7 +26282,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/smartsheet",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -28912,7 +26324,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/wrike",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -28954,7 +26366,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coda",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -28987,7 +26399,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/guru",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -29020,7 +26432,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fireflies",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -29053,7 +26465,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/otter",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -29086,7 +26498,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fathom",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -29119,7 +26531,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/craft",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -29152,7 +26564,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mem",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -29185,7 +26597,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/readwise",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -29210,48 +26622,6 @@
    "marketplace": "cursor"
   },
   {
-   "name": "similarweb",
-   "displayName": "Similarweb",
-   "description": "Analyze website traffic, audiences, and competitors.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/similarweb",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "marketing",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "similarweb",
-     "path": "mcp.json"
-    }
-   ],
-   "userConfig": {
-    "SIMILARWEB_API_KEY": {
-     "type": "string",
-     "title": "Similarweb API key",
-     "description": "REST API key from Similarweb under Account Settings \u2192 Data Tools \u2192 REST API.",
-     "required": true,
-     "sensitive": true
-    }
-   },
-   "homepage": "https://docs.similarweb.com/api-v5/similarweb-mcp",
-   "keywords": [
-    "similarweb",
-    "traffic",
-    "analytics",
-    "competitive-intelligence",
-    "audience",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/similarweb/assets/logo.png",
-   "marketplace": "cursor"
-  },
-  {
    "name": "xero",
    "displayName": "Xero",
    "description": "Read and write invoices, contacts, reports, and payroll.",
@@ -29260,7 +26630,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/xero",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -29302,238 +26672,6 @@
    "marketplace": "cursor"
   },
   {
-   "name": "outlook",
-   "displayName": "Outlook",
-   "description": "Search, read, and send Microsoft Outlook email, and look up contacts.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/outlook",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "outlook",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/outlook",
-   "keywords": [
-    "outlook",
-    "email",
-    "microsoft",
-    "mcp",
-    "contacts"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outlook/assets/logo.svg",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "outlook-calendar",
-   "displayName": "Outlook Calendar",
-   "description": "List, create, update, and cancel Microsoft Outlook calendar events.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/outlook-calendar",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "outlook-calendar",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/outlook-calendar",
-   "keywords": [
-    "outlook-calendar",
-    "calendar",
-    "outlook",
-    "microsoft",
-    "mcp",
-    "events"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outlook-calendar/assets/logo.svg",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "onedrive",
-   "displayName": "Onedrive",
-   "description": "Browse, search, and read Microsoft OneDrive files.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/onedrive",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "onedrive",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/onedrive",
-   "keywords": [
-    "onedrive",
-    "files",
-    "microsoft",
-    "mcp",
-    "storage"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/onedrive/assets/logo.svg",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "sharepoint",
-   "displayName": "Sharepoint",
-   "description": "Search and read Microsoft SharePoint sites, document libraries, files, and lists.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/sharepoint",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "sharepoint",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/sharepoint",
-   "keywords": [
-    "sharepoint",
-    "sites",
-    "files",
-    "lists",
-    "microsoft",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/sharepoint/assets/logo.svg",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "teams",
-   "displayName": "Teams",
-   "description": "Search, read, and send Microsoft Teams chats and channel messages.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/teams",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "teams",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/teams",
-   "keywords": [
-    "teams",
-    "chat",
-    "microsoft",
-    "mcp",
-    "channels"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/teams/assets/logo.svg",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "finance",
-   "displayName": "Finance",
-   "description": "Link your bank, card, and investment accounts through Plaid so Grok can answer questions about balances, spending, subscriptions, and investments. You'll share contact details, account and balance info, transactions, credit and loans, and investments. Grok syncs and stores your linked account data so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. Access is read-only, xAI never sees or stores your bank login, and you can unlink accounts anytime from cursor.com.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/finance",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "finance",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "finance",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://grok.com/connectors",
-   "keywords": [
-    "finance",
-    "accounts",
-    "spending",
-    "subscriptions",
-    "balances",
-    "investments",
-    "grok",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/finance/assets/logo.svg",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "x-ads",
-   "displayName": "X Ads",
-   "description": "Manage ad campaigns, create ads, track conversions, and pull performance stats.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/x-ads",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "marketing",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "x-ads",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://docs.x.com/x-ads-api/introduction",
-   "keywords": [
-    "x",
-    "twitter",
-    "ads",
-    "advertising",
-    "campaigns",
-    "conversions",
-    "analytics",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/x-ads/assets/logo.png",
-   "marketplace": "cursor"
-  },
-  {
    "name": "attio",
    "displayName": "Attio",
    "description": "Search and update CRM records, lists, notes, and tasks.",
@@ -29542,7 +26680,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/attio",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -29569,41 +26707,6 @@
    "marketplace": "cursor"
   },
   {
-   "name": "gamma",
-   "displayName": "Gamma",
-   "description": "Generate presentations, documents, and webpages.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/gamma",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "gamma",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://developers.gamma.app/mcp/gamma-mcp-server.md",
-   "keywords": [
-    "gamma",
-    "presentations",
-    "slides",
-    "documents",
-    "webpages",
-    "design",
-    "export",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gamma/assets/logo.png",
-   "marketplace": "cursor"
-  },
-  {
    "name": "webull",
    "displayName": "Webull",
    "description": "View accounts, positions, orders, watchlists, and market data.",
@@ -29612,7 +26715,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/webull",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -29647,7 +26750,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/sp-global",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -29682,7 +26785,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/interactive-brokers",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -29717,7 +26820,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/meltwater",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -29752,7 +26855,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/daloopa",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -29787,7 +26890,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/excalidraw",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "design",
    "strict": null,
@@ -29822,7 +26925,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-cloud-bigquery",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "database",
    "strict": null,
@@ -29857,7 +26960,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/statsig",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -29892,7 +26995,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/robinhood",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -29929,7 +27032,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coinbase",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -29956,89 +27059,6 @@
    "marketplace": "cursor"
   },
   {
-   "name": "etoro-trading",
-   "displayName": "Etoro Trading",
-   "description": "View your eToro portfolio, balances, positions, and watchlists, research instruments and traders, and prepare and place trades.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/etoro-trading",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "finance",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "etoro-trading",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://api-portal.etoro.com/core/vibe-code/cursor",
-   "keywords": [
-    "etoro",
-    "brokerage",
-    "trading",
-    "portfolio",
-    "stocks",
-    "crypto",
-    "copy trading",
-    "market data",
-    "watchlists",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/etoro-trading/assets/logo.png",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "x-money",
-   "displayName": "X Money",
-   "description": "Use your X Money Card, send money to users on X, manage your finances, view your balance and browse through your transaction history.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/x-money",
-    "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
-   },
-   "category": "finance",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "x-money",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://x.com/i/money",
-   "keywords": [
-    "x money",
-    "xmoney",
-    "x",
-    "payments",
-    "balance",
-    "transactions",
-    "send money",
-    "p2p",
-    "virtual card",
-    "wallet",
-    "finance",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/x-money/assets/logo.png",
-   "skills": [
-    {
-     "name": "x-money-guide",
-     "description": ">-",
-     "path": "skills/x-money-guide/SKILL.md"
-    }
-   ],
-   "marketplace": "cursor"
-  },
-  {
    "name": "shopify-store",
    "displayName": "Shopify Store",
    "description": "Connect your Shopify store so Grok can answer questions about your products, orders, customers, inventory, and sales. You sign in with Shopify and approve the store access Grok requests; Grok keeps that authorization so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. xAI never sees or stores your Shopify password, and you can disconnect the store anytime from grok.com.",
@@ -30047,7 +27067,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/shopify-store",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -30071,7 +27091,7 @@
     "grok",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/shopify-store/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/shopify-store/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -30083,7 +27103,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/tinyfish",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "agent-orchestration",
    "strict": null,
@@ -30107,7 +27127,7 @@
     "playwright",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/tinyfish/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/tinyfish/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -30119,7 +27139,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/beehiiv",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -30143,7 +27163,7 @@
     "creator",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/beehiiv/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/beehiiv/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -30155,7 +27175,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/trello",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -30180,7 +27200,7 @@
     "planner",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/trello/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/trello/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -30192,7 +27212,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/buffer",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -30216,7 +27236,7 @@
     "ideas",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/buffer/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/buffer/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -30228,7 +27248,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/plaud",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -30252,7 +27272,7 @@
     "action items",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/plaud/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/plaud/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -30264,7 +27284,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/posthog-mcp",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "data-analytics",
    "strict": null,
@@ -30288,7 +27308,7 @@
     "sql",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/posthog-mcp/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/posthog-mcp/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -30374,10 +27394,35 @@
   }
  ],
  "excluded": {
+  "adobe-for-creativity": {
+   "kind": "partner-gated",
+   "reason": "Its MCP server (adobe-creativity.adobe.io/mcp) answers every non-partner client 403 with no auth challenge, with or without a valid Adobe token; Adobe ships it to Claude as a partner connector, and its skills only drive that server.",
+   "marketplace": "claude-code"
+  },
   "advisor": {
    "kind": "cursor-only",
    "reason": "Runs on Cursor hook events (afterFileEdit, afterAgentResponse, stop) and a Grok-pinned Cursor subagent.",
    "marketplace": "cursor"
+  },
+  "amazon-selling-partner": {
+   "kind": "auth-unsupported",
+   "reason": "Its MCP server needs a vendor-registered OAuth app: its authorization server offers no dynamic client registration and the plugin ships no client id.",
+   "marketplace": "claude-code"
+  },
+  "bigdata-com": {
+   "kind": "auth-unsupported",
+   "reason": "Its MCP server needs a vendor-registered OAuth app: its authorization server offers no dynamic client registration and the plugin ships no client id.",
+   "marketplace": "claude-code"
+  },
+  "blackrock-advisor-center-plugin": {
+   "kind": "endpoint-unusable",
+   "reason": "Its MCP server answers an Akamai 'Access Denied' page; possibly an IP or region block.",
+   "marketplace": "claude-code"
+  },
+  "box": {
+   "kind": "auth-unsupported",
+   "reason": "Its MCP server needs a vendor-registered OAuth app: its authorization server offers no dynamic client registration and the plugin ships no client id.",
+   "marketplace": "claude-code"
   },
   "browser-use": {
    "kind": "builtin-overlap",
@@ -30392,6 +27437,11 @@
   "claude-code-setup": {
    "kind": "claude-code-only",
    "reason": "Recommends and writes Claude Code automations, and shells out to the claude CLI.",
+   "marketplace": "claude-code"
+  },
+  "cloudinary": {
+   "kind": "auth-unsupported",
+   "reason": "Four of its five MCP servers are standard OAuth and work, but cloudinary-mediaflows ships literal header values (cloud_name, api_key, api_secret) that no user setting can replace, and an unavailable server blocks every send that references the plugin.",
    "marketplace": "claude-code"
   },
   "code-review": {
@@ -30429,6 +27479,61 @@
    "reason": "Renders documentation into Cursor's canvas surface.",
    "marketplace": "cursor"
   },
+  "docusign": {
+   "kind": "partner-gated",
+   "reason": "Its MCP server (mcp.docusign.com/mcp) answers every request 'RBAC: access denied' at the gateway, and its authorization server offers no client registration.",
+   "marketplace": "cursor"
+  },
+  "etoro-trading": {
+   "kind": "cursor-only",
+   "reason": "Its dynamic client registration accepts only a cursor:// redirect URI; loopback and https are rejected.",
+   "marketplace": "cursor"
+  },
+  "figma": {
+   "kind": "partner-gated",
+   "reason": "Its authorization server refuses dynamic client registration with 403 Forbidden for every client; Figma admits only approved MCP clients.",
+   "marketplace": "claude-code"
+  },
+  "finance": {
+   "kind": "partner-gated",
+   "reason": "Its MCP server lives on Grok's connector gateway (connectors-gateway.grok.com), which refuses every other client with 403.",
+   "marketplace": "cursor"
+  },
+  "gamma": {
+   "kind": "partner-gated",
+   "reason": "Its dynamic client registration rejects every redirect URI tried (localhost, 127.0.0.1, https, custom schemes): a fixed allowlist of partner clients.",
+   "marketplace": "cursor"
+  },
+  "gong": {
+   "kind": "auth-unsupported",
+   "reason": "Its dynamic client registration accepts only an https redirect with a confidential client (token_endpoint_auth_method none is unsupported); needs an Edge-held client and https callback relay.",
+   "marketplace": "cursor"
+  },
+  "google-docs": {
+   "kind": "cursor-only",
+   "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth); its one skill only drives that server.",
+   "marketplace": "cursor"
+  },
+  "google-sheets": {
+   "kind": "cursor-only",
+   "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth); its one skill only drives that server.",
+   "marketplace": "cursor"
+  },
+  "google-slides": {
+   "kind": "cursor-only",
+   "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth); its one skill only drives that server.",
+   "marketplace": "cursor"
+  },
+  "hubspot": {
+   "kind": "auth-unsupported",
+   "reason": "Its MCP server needs a vendor-registered OAuth app: its authorization server offers no dynamic client registration and the plugin ships no client id.",
+   "marketplace": "cursor"
+  },
+  "hubspot-sales": {
+   "kind": "auth-unsupported",
+   "reason": "Its MCP server needs a vendor-registered OAuth app: its authorization server offers no dynamic client registration and the plugin ships no client id.",
+   "marketplace": "claude-code"
+  },
   "langfuse-observability": {
    "kind": "claude-code-only",
    "reason": "Exports Claude Code transcripts (the hook's transcript_path) to Langfuse; Remy hands hooks no transcript.",
@@ -30439,10 +27544,35 @@
    "reason": "Drives Anthropic's MCP tunnel product, which needs an Anthropic API key.",
    "marketplace": "claude-code"
   },
+  "mongodb-atlas": {
+   "kind": "auth-unsupported",
+   "reason": "Its client id is Claude Code's Client ID Metadata Document; Remy does not sign in under another product's identity. Needs Remy's own CIMD (or a MongoDB-registered client).",
+   "marketplace": "claude-code"
+  },
+  "onedrive": {
+   "kind": "cursor-only",
+   "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth).",
+   "marketplace": "cursor"
+  },
   "orchestrate": {
    "kind": "cursor-only",
    "reason": "Fans work out to Cursor cloud agents through the Cursor SDK.",
    "marketplace": "cursor"
+  },
+  "outlook": {
+   "kind": "cursor-only",
+   "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth).",
+   "marketplace": "cursor"
+  },
+  "outlook-calendar": {
+   "kind": "cursor-only",
+   "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth).",
+   "marketplace": "cursor"
+  },
+  "pigment": {
+   "kind": "endpoint-unusable",
+   "reason": "Its MCP URL holds a literal {your-mcp-id} placeholder.",
+   "marketplace": "claude-code"
   },
   "pr-review-canvas": {
    "kind": "cursor-only",
@@ -30459,9 +27589,19 @@
    "reason": "A workflow kit built around Cursor automations, cursor-agent worktrees and Cursor subagents; only its principle notes work elsewhere.",
    "marketplace": "cursor"
   },
+  "qt-development-skills": {
+   "kind": "endpoint-unusable",
+   "reason": "Its MCP server answers the MCP initialize request with 400.",
+   "marketplace": "claude-code"
+  },
   "ralph-loop": {
    "kind": "claude-code-only",
    "reason": "Its loop is a Stop hook that re-reads the Claude Code transcript, which Remy does not hand to hooks.",
+   "marketplace": "claude-code"
+  },
+  "rc": {
+   "kind": "auth-unsupported",
+   "reason": "Same MCP server as revenuecat, whose dynamic client registration answers invalid_client: contact support.",
    "marketplace": "claude-code"
   },
   "receipts": {
@@ -30474,6 +27614,21 @@
    "reason": "Builds its memory from Claude Code transcripts and summarises them with the claude CLI.",
    "marketplace": "claude-code"
   },
+  "render": {
+   "kind": "auth-unsupported",
+   "reason": "It ships the client id 'claude', registered for Claude; Remy does not sign in under another product's identity, and Render offers no dynamic registration. Needs a Remy Render app.",
+   "marketplace": "claude-code"
+  },
+  "revenuecat": {
+   "kind": "auth-unsupported",
+   "reason": "Its dynamic client registration answers invalid_client: the client is not registered, contact support.",
+   "marketplace": "claude-code"
+  },
+  "rill": {
+   "kind": "endpoint-unusable",
+   "reason": "Its MCP URL is a local Rill Developer server (localhost:9009).",
+   "marketplace": "claude-code"
+  },
   "security-guidance": {
    "kind": "claude-code-only",
    "reason": "Its LLM diff review runs on the Claude Agent SDK with Claude credentials.",
@@ -30484,9 +27639,64 @@
    "reason": "Reports on Claude Code session logs under ~/.claude/projects.",
    "marketplace": "claude-code"
   },
+  "sharepoint": {
+   "kind": "cursor-only",
+   "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth).",
+   "marketplace": "cursor"
+  },
+  "similarweb": {
+   "kind": "auth-unsupported",
+   "reason": "Its dynamic client registration endpoint answers every request 403 at CloudFront.",
+   "marketplace": "cursor"
+  },
   "skill-creator": {
    "kind": "builtin-overlap",
    "reason": "Remy ships its own skill-creator skill; this one also scores skills by shelling out to the claude CLI.",
+   "marketplace": "claude-code"
+  },
+  "slack": {
+   "kind": "auth-unsupported",
+   "reason": "It ships Slack's client id registered for Claude Code; Remy does not sign in under another product's identity, and Slack offers no dynamic registration. Needs a Remy Slack app.",
+   "marketplace": "claude-code"
+  },
+  "sumup": {
+   "kind": "auth-unsupported",
+   "reason": "Its MCP server needs a vendor-registered OAuth app: its authorization server offers no dynamic client registration and the plugin ships no client id.",
+   "marketplace": "claude-code"
+  },
+  "teams": {
+   "kind": "cursor-only",
+   "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth).",
+   "marketplace": "cursor"
+  },
+  "vanguard-advisor-tools": {
+   "kind": "endpoint-unusable",
+   "reason": "Its MCP URL redirects to a not-found page.",
+   "marketplace": "claude-code"
+  },
+  "x": {
+   "kind": "auth-unsupported",
+   "reason": "Its MCP server needs a vendor-registered OAuth app: its authorization server offers no dynamic client registration and the plugin ships no client id.",
+   "marketplace": "cursor"
+  },
+  "x-ads": {
+   "kind": "auth-unsupported",
+   "reason": "Its MCP server needs a vendor-registered OAuth app: its authorization server offers no dynamic client registration and the plugin ships no client id.",
+   "marketplace": "cursor"
+  },
+  "x-money": {
+   "kind": "auth-unsupported",
+   "reason": "Its MCP server needs a vendor-registered OAuth app: its authorization server offers no dynamic client registration and the plugin ships no client id.",
+   "marketplace": "cursor"
+  },
+  "zoom": {
+   "kind": "auth-unsupported",
+   "reason": "Its MCP server needs a vendor-registered OAuth app: its authorization server offers no dynamic client registration and the plugin ships no client id.",
+   "marketplace": "cursor"
+  },
+  "zoom-plugin": {
+   "kind": "auth-unsupported",
+   "reason": "Its seven MCP servers take Zoom user OAuth access tokens pasted into settings (they expire hourly); mcp.zoom.us offers no dynamic registration, so a usable sign-in needs a Remy Zoom app. Claude uses its own directory connector instead.",
    "marketplace": "claude-code"
   }
  }

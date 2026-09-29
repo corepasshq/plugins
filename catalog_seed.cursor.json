@@ -91,7 +91,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "teaching",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -129,7 +129,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "continual-learning",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -180,7 +180,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cursor-team-kit",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -316,7 +316,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "thermos",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -377,7 +377,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "create-plugin",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -425,7 +425,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "ralph-loop",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -485,7 +485,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "agent-compatibility",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -546,7 +546,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cli-for-agent",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -584,7 +584,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "pr-review-canvas",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -622,7 +622,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "docs-canvas",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -660,7 +660,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cursor-sdk",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -700,7 +700,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "orchestrate",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -739,7 +739,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "pstack",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -1020,7 +1020,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "grok-voice",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -1073,7 +1073,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "advisor",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -1137,7 +1137,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gmail",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -1169,7 +1169,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-drive",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -1191,6 +1191,13 @@
     "workspace"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-drive/assets/logo.svg",
+   "skills": [
+    {
+     "name": "google-drive",
+     "description": "Work with Google Drive through its MCP tools - search, read, create, organize, share, comment, and export files. Use when creating files in specific folders, moving or renaming, converting Markdown/CSV into Docs/Sheets, managing comments, or exporting a rendered PDF.",
+     "path": "skills/google-drive/SKILL.md"
+    }
+   ],
    "marketplace": "cursor"
   },
   {
@@ -1202,7 +1209,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-calendar",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -1235,7 +1242,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-docs",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -1275,7 +1282,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-sheets",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -1315,7 +1322,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-slides",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -1355,7 +1362,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gong",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -1404,7 +1411,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/salesforce",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -1453,7 +1460,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/playwright",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -1486,7 +1493,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/github",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -1529,7 +1536,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ashby",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -1563,7 +1570,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/hubspot",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -1613,7 +1620,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/intercom",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -1647,7 +1654,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/zoom",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -1696,7 +1703,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -1746,7 +1753,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/clay",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -1780,7 +1787,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/circleback",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -1813,7 +1820,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/docusign",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -1862,7 +1869,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/navan",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -1896,7 +1903,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/profound",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -1931,7 +1938,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/juicebox",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -1965,7 +1972,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outreach",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -1999,7 +2006,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/amplemarket",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -2033,7 +2040,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/klaviyo",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -2067,7 +2074,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/customer-io",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -2101,7 +2108,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mailerlite",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -2135,7 +2142,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brevo",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -2178,7 +2185,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/typeform",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2211,7 +2218,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/jotform",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2243,7 +2250,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/semrush",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -2277,7 +2284,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ahrefs",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -2311,7 +2318,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/godaddy",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2344,7 +2351,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/upwork",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2378,7 +2385,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/workable",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2412,7 +2419,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brex",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -2446,7 +2453,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mercury",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -2479,7 +2486,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/todoist",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2512,7 +2519,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/calendly",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2545,7 +2552,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/smartsheet",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2587,7 +2594,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/wrike",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2629,7 +2636,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coda",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2662,7 +2669,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/guru",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2695,7 +2702,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fireflies",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2728,7 +2735,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/otter",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2761,7 +2768,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fathom",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2794,7 +2801,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/craft",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2827,7 +2834,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mem",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2860,7 +2867,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/readwise",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -2893,7 +2900,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/similarweb",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -2935,7 +2942,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/xero",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -2985,7 +2992,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outlook",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -3017,7 +3024,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outlook-calendar",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -3050,7 +3057,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/onedrive",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -3082,7 +3089,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/sharepoint",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -3115,7 +3122,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/teams",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -3147,7 +3154,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/finance",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -3182,7 +3189,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x-ads",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -3217,7 +3224,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/attio",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -3252,7 +3259,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/hunter",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -3302,7 +3309,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gamma",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -3337,7 +3344,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/webull",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -3372,7 +3379,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/sp-global",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -3407,7 +3414,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/interactive-brokers",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -3442,7 +3449,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/meltwater",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -3477,7 +3484,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/daloopa",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -3512,7 +3519,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/excalidraw",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "design",
    "strict": null,
@@ -3547,7 +3554,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-cloud-bigquery",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "database",
    "strict": null,
@@ -3582,7 +3589,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/statsig",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "development",
    "strict": null,
@@ -3617,7 +3624,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/robinhood",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -3654,7 +3661,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coinbase",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -3689,7 +3696,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/etoro-trading",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -3726,7 +3733,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x-money",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "finance",
    "strict": null,
@@ -3772,7 +3779,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/shopify-store",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "sales",
    "strict": null,
@@ -3796,7 +3803,7 @@
     "grok",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/shopify-store/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/shopify-store/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3808,7 +3815,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/tinyfish",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "agent-orchestration",
    "strict": null,
@@ -3832,7 +3839,7 @@
     "playwright",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/tinyfish/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/tinyfish/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3844,7 +3851,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/beehiiv",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -3868,7 +3875,7 @@
     "creator",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/beehiiv/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/beehiiv/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3880,7 +3887,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/trello",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -3905,7 +3912,7 @@
     "planner",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/trello/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/trello/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3917,7 +3924,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/buffer",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "marketing",
    "strict": null,
@@ -3941,7 +3948,7 @@
     "ideas",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/buffer/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/buffer/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3953,7 +3960,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/plaud",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "productivity",
    "strict": null,
@@ -3977,7 +3984,7 @@
     "action items",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/plaud/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/plaud/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3989,7 +3996,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/posthog-mcp",
     "ref": "main",
-    "sha": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db"
+    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
    },
    "category": "data-analytics",
    "strict": null,
@@ -4013,7 +4020,7 @@
     "sql",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ecc249f1e306fc64ddf83c7bed16cacf7c2239db/third_party/posthog-mcp/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/posthog-mcp/assets/logo.png",
    "marketplace": "cursor"
   }
  ]
