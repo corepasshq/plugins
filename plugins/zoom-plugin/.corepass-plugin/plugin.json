@@ -1,0 +1,29 @@
+{
+  "name": "zoom-plugin",
+  "displayName": "Zoom",
+  "description": "Plan, build and debug Zoom integrations across REST APIs, SDKs, webhooks, bots and MCP, with Zoom's MCP servers for meetings, recordings, Docs, Chat, Tasks, Revenue Accelerator and Whiteboard.",
+  "version": "1.2.0",
+  "author": {
+    "name": "Zoom",
+    "url": "https://developers.zoom.us/"
+  },
+  "homepage": "https://developers.zoom.us/",
+  "repository": "https://github.com/youlandinc/plugins",
+  "license": "MIT",
+  "keywords": [
+    "zoom",
+    "claude-plugin",
+    "rest-api",
+    "meeting-sdk",
+    "video-sdk",
+    "webhooks",
+    "oauth",
+    "marketplace",
+    "app-manifest",
+    "ai-services",
+    "summarizer",
+    "translator",
+    "team-chat",
+    "mcp"
+  ]
+}

@@ -37,12 +37,24 @@
       "name": "github",
       "source": "./plugins/github",
       "displayName": "GitHub",
-      "description": "GitHub integration \u2014 manage repositories, issues, pull requests, and workflows through natural language, via the remote GitHub MCP server.",
+      "description": "GitHub integration — manage repositories, issues, pull requests, and workflows through natural language, via the remote GitHub MCP server.",
       "category": "development",
       "logoUrl": "https://raw.githubusercontent.com/youlandinc/plugins/main/plugins/github/assets/logo.svg",
       "_provenance": {
         "upstream": "https://github.com/github/github-mcp-server",
         "sha": "eb088dfe9d854dab6453a8d4ae5871a5ced20974",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "zoom-plugin",
+      "source": "./plugins/zoom-plugin",
+      "displayName": "Zoom",
+      "description": "Plan, build and debug Zoom integrations across REST APIs, SDKs, webhooks, bots and MCP, with Zoom's MCP servers for meetings, recordings, Docs, Chat, Tasks, Revenue Accelerator and Whiteboard.",
+      "category": "development",
+      "_provenance": {
+        "upstream": "https://github.com/zoom/zoom-plugin",
+        "sha": "86e2592334f5fb563ed273e26035844004e66165",
         "license": "MIT"
       }
     }

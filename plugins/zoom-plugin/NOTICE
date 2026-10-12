@@ -1,0 +1,30 @@
+Zoom Plugin
+Copyright (c) 2025 Zoom Video Communications, Inc.
+
+Vendored from https://github.com/zoom/zoom-plugin at commit 86e25923,
+licensed under MIT (see LICENSE).
+
+Vendored UNMODIFIED
+===================
+
+`skills/` (33 skills and their references), `.claude-plugin/plugin.json` and
+`LICENSE` are copied byte-for-byte, except the one skill named below.
+
+Adapted by Corepass
+===================
+
+The upstream MCP servers authenticate with a bearer token the user pastes
+(`Authorization: Bearer ${ZOOM_*_MCP_ACCESS_TOKEN}`): Claude Code users run
+Zoom's OAuth themselves and export the token, which expires hourly. In Remy
+the servers sign in through Remy's own Zoom app instead, so:
+
+- `.mcp.json`: the same seven endpoints, without the `Authorization` headers.
+  Remy matches each URL to its Zoom provider and signs in through it.
+- `CONNECTORS.md` "Authentication", the install paragraph of `README.md`, and
+  the "Claude Code" auth rule in `skills/setup-zoom-mcp/SKILL.md` describe
+  Remy's Connect step instead of exporting tokens.
+
+Added by Corepass
+=================
+
+`.corepass-plugin/plugin.json` (display name and description), this NOTICE.
