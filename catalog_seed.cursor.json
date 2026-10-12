@@ -91,7 +91,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "teaching",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -129,7 +129,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "continual-learning",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -180,7 +180,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cursor-team-kit",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -316,7 +316,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "thermos",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -377,7 +377,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "create-plugin",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -425,7 +425,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "ralph-loop",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -485,7 +485,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "agent-compatibility",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -546,7 +546,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cli-for-agent",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -584,7 +584,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "pr-review-canvas",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -622,7 +622,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "docs-canvas",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -660,7 +660,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cursor-sdk",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -692,6 +692,44 @@
    "marketplace": "cursor"
   },
   {
+   "name": "origin-apps",
+   "displayName": "Origin Apps",
+   "description": "Skills for building on the Cursor Origin API. Fetch the live spec first, then follow the Origin rules for credentials, scopes, webhooks, paging, and errors. Includes a skill that plans the port of an existing GitHub App.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "origin-apps",
+    "ref": "main",
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://cursor.com/docs/api/origin",
+   "keywords": [
+    "origin",
+    "origin-api",
+    "origin-app",
+    "webhooks",
+    "github-app"
+   ],
+   "skills": [
+    {
+     "name": "origin-api",
+     "description": ">-",
+     "path": "skills/origin-api/SKILL.md"
+    },
+    {
+     "name": "port-github-app-to-origin",
+     "description": ">-",
+     "path": "skills/port-github-app-to-origin/SKILL.md"
+    }
+   ],
+   "logoUrl": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+   "marketplace": "cursor"
+  },
+  {
    "name": "orchestrate",
    "displayName": "Orchestrate",
    "description": "Fan large tasks out across parallel cloud agents with planners, workers, verifiers, and structured handoffs.",
@@ -700,7 +738,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "orchestrate",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -739,7 +777,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "pstack",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -773,6 +811,11 @@
      "path": "skills/automate-me/SKILL.md"
     },
     {
+     "name": "benchmark-checklist",
+     "description": "Vet a perf measurement (limiter, tuning, limits, errors, repeatability, relevance, and whether the work happened) before you report or act on it. Use when you run a benchmark or report a speedup or regression you measured.",
+     "path": "skills/benchmark-checklist/SKILL.md"
+    },
+    {
      "name": "blast-radius",
      "description": "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe because of by running real code instead of writing it up. Use for 'blast radius of X', 'what could this break', or reviewing a small diff you don't trust.",
      "path": "skills/blast-radius/SKILL.md"
@@ -783,13 +826,18 @@
      "path": "skills/bro/SKILL.md"
     },
     {
+     "name": "correct",
+     "description": "Find the mistakes agents keep repeating in this repo and make each one impossible. Try architecture first, then types, then a lint whose error names the fix, then a test, and write docs last. Prove each check fails on a real past mistake. Repeat this each time the operator corrects you. Use for /correct.",
+     "path": "skills/correct/SKILL.md"
+    },
+    {
      "name": "create-verification-skill",
      "description": "Generate a project-local verification skill that drives your app the way a user does \u2014 any language, framework, or platform. Use for /create-verification-skill, \\\"make a control skill for this repo\\\", or when a project has no scripted way to prove UI/CLI/service behavior.",
      "path": "skills/create-verification-skill/SKILL.md"
     },
     {
      "name": "figure-it-out",
-     "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions via show-me-your-work. Use for /figure-it-out, 'figure it out', a large migration, or when no narrower playbook applies.",
+     "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions. Use for /figure-it-out or 'figure it out'.",
      "path": "skills/figure-it-out/SKILL.md"
     },
     {
@@ -801,6 +849,11 @@
      "name": "interrogate",
      "description": "Use for \\\"interrogate\\\", \\\"adversarial review\\\", \\\"multi-model review\\\", \\\"challenge this\\\", \\\"stress test this code\\\", \\\"find blind spots\\\", or \\\"tear this apart\\\". Multiple LLM reviewers challenge changes from independent angles.",
      "path": "skills/interrogate/SKILL.md"
+    },
+    {
+     "name": "ketchup",
+     "description": "Catch the user up on everything in this chat since their last message, in plain words. Give each action item an executive summary with enough context to make the call. Use for /ketchup.",
+     "path": "skills/ketchup/SKILL.md"
     },
     {
      "name": "maintain-verification-skill",
@@ -816,6 +869,11 @@
      "name": "no-comments",
      "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
      "path": "skills/no-comments/SKILL.md"
+    },
+    {
+     "name": "poteto-help",
+     "description": "Guides users through pstack setup, /poteto-mode, and picking the skill, playbook, or principle for a task. Type /poteto-help with a question.",
+     "path": "skills/poteto-help/SKILL.md"
     },
     {
      "name": "poteto-mode",
@@ -851,6 +909,11 @@
      "name": "principle-experience-first",
      "description": "Apply when product, UX, or feature-scope tradeoffs come up. Choose user delight over implementation convenience; ship fewer polished features over more rough ones.",
      "path": "skills/principle-experience-first/SKILL.md"
+    },
+    {
+     "name": "principle-explain-the-number",
+     "description": "Apply before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
+     "path": "skills/principle-explain-the-number/SKILL.md"
     },
     {
      "name": "principle-fix-root-causes",
@@ -889,12 +952,12 @@
     },
     {
      "name": "principle-model-the-domain",
-     "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files. Encode the domain in a structure instead of scattered conditionals.",
+     "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files.",
      "path": "skills/principle-model-the-domain/SKILL.md"
     },
     {
      "name": "principle-never-block-on-the-human",
-     "description": "Apply when tempted to ask 'should I do X?' on reversible work. Proceed, present the result, let the human course-correct after the fact; reserve confirmation for irreversible actions.",
+     "description": "Apply when tempted to ask 'should I do X?' on reversible work.",
      "path": "skills/principle-never-block-on-the-human/SKILL.md"
     },
     {
@@ -909,7 +972,7 @@
     },
     {
      "name": "principle-redesign-from-first-principles",
-     "description": "Apply when integrating a new requirement into an existing design. Redesign as if the requirement had been a foundational assumption from day one, instead of bolting it on.",
+     "description": "Apply when integrating a new requirement into an existing design.",
      "path": "skills/principle-redesign-from-first-principles/SKILL.md"
     },
     {
@@ -929,7 +992,7 @@
     },
     {
      "name": "principle-test-behavior-not-implementation",
-     "description": "Apply when you write, change, or keep a test. Call the code the way its users do and assert the result they observe against a literal expected value. If the test would still pass when every imported function returns undefined, rewrite the assertion or delete the test.",
+     "description": "Apply when you write, change, or keep a test. Call the code as its users do and assert the exact result they see. Rewrite or delete a test that would pass if every imported function returned undefined.",
      "path": "skills/principle-test-behavior-not-implementation/SKILL.md"
     },
     {
@@ -1001,7 +1064,7 @@
     },
     {
      "name": "poteto-agent",
-     "description": "Routing target for `/poteto-mode` and any request for poteto's style. Resume an existing `poteto-agent` for the conversation rather than spawning a sibling. Reads the `poteto-mode` skill's `SKILL.md` in full before any work, including its inline Principles index. Substituting `generalPurpose` skips that read and drifts.",
+     "description": "Routing target for `/poteto-mode` and any request for poteto's style. Spawn a fresh `poteto-agent` for each new task, and resume one only in the strict cases that poteto-mode's Subagents section names. Reads the `poteto-mode` skill's `SKILL.md` in full before any work, including its inline Principles index. Substituting `generalPurpose` skips that read and drifts.",
      "path": "agents/poteto-agent.md"
     }
    ],
@@ -1009,6 +1072,67 @@
     "name": "cursor",
     "displayName": "Cursor"
    },
+   "marketplace": "cursor"
+  },
+  {
+   "name": "dyl-stack",
+   "displayName": "Dyl Stack",
+   "description": "Dylan's agent style on top of pstack: root causes over symptom patches, The Algorithm before design, terse verified delivery, a PR review that fits in a paste, and Figma-to-UI with a visual judge.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "dyl-stack",
+    "ref": "main",
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
+   },
+   "category": "development",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins/tree/main/dyl-stack",
+   "keywords": [
+    "dyl-stack",
+    "dyl-mode",
+    "pstack",
+    "figma",
+    "code-review",
+    "agent-style"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/dyl-stack/assets/logo.png",
+   "skills": [
+    {
+     "name": "build-figma",
+     "description": "Use for \\\"/build-figma\\\", a figma.com/design URL with node-id, or \\\"implement this Figma\\\" into a web, desktop, or shared UI. Orchestrates Figma MCP intake, maps nodes to the repo's own design system, then a verify-this visual judge. Do not paste Figma Tailwind.",
+     "path": "skills/build-figma/SKILL.md"
+    },
+    {
+     "name": "dyl-mode",
+     "description": ">-",
+     "path": "skills/dyl-mode/SKILL.md"
+    },
+    {
+     "name": "dyl-ready-pr",
+     "description": ">-",
+     "path": "skills/dyl-ready-pr/SKILL.md"
+    },
+    {
+     "name": "dyl-review",
+     "description": ">-",
+     "path": "skills/dyl-review/SKILL.md"
+    },
+    {
+     "name": "principle-the-algorithm",
+     "description": ">-",
+     "path": "skills/principle-the-algorithm/SKILL.md"
+    }
+   ],
+   "agents": [
+    {
+     "name": "dyl-agent",
+     "description": "Routing target for `/dyl-mode` and any request for Dylan's style. Resume an existing `dyl-agent` for the conversation rather than spawning a sibling. Reads the `dyl-mode` skill's `SKILL.md` in full before any work, then the pstack `poteto-mode` skill it layers on. Substituting `generalPurpose` skips those reads and drifts.",
+     "path": "agents/dyl-agent.md"
+    }
+   ],
    "marketplace": "cursor"
   },
   {
@@ -1020,7 +1144,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "grok-voice",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -1073,7 +1197,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "advisor",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -1137,7 +1261,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gmail",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -1169,7 +1293,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-drive",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -1209,7 +1333,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-calendar",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -1242,7 +1366,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-docs",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -1282,7 +1406,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-sheets",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -1322,7 +1446,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-slides",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -1362,7 +1486,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gong",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "sales",
    "strict": null,
@@ -1411,7 +1535,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/salesforce",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "sales",
    "strict": null,
@@ -1452,6 +1576,62 @@
    "marketplace": "cursor"
   },
   {
+   "name": "salesforce-headless-360",
+   "displayName": "Salesforce Headless 360",
+   "description": "Manage records, users, and org setup across Salesforce.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/salesforce-headless-360",
+    "ref": "main",
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "salesforce-headless-360",
+     "path": "mcp.json"
+    }
+   ],
+   "userConfig": {
+    "SALESFORCE_MCP_URL": {
+     "type": "string",
+     "title": "Salesforce MCP server URL (set by your Salesforce admin)",
+     "description": "Headless 360 server URL from Salesforce Setup \u2192 MCP Servers. Production and Developer orgs: https://api.salesforce.com/platform/mcp/v1/platform/headless-360. Sandbox and scratch orgs: https://api.salesforce.com/platform/mcp/v1/sandbox/platform/headless-360.",
+     "required": true,
+     "sensitive": false
+    },
+    "CLIENT_ID": {
+     "type": "string",
+     "title": "Salesforce Consumer Key (set by your Salesforce admin)",
+     "description": "Your Salesforce admin creates the External Client App and enters its Consumer Key here once for the whole team (Setup \u2192 External Client App Manager \u2192 your app \u2192 Settings \u2192 Consumer Key and Secret). Team members don't need this value; they only sign in to Salesforce.",
+     "required": true,
+     "sensitive": false
+    },
+    "CLIENT_SECRET": {
+     "type": "string",
+     "title": "Salesforce Consumer Secret (set by your Salesforce admin)",
+     "description": "Consumer Secret from the same External Client App, entered once by your Salesforce admin for the whole team. Team members don't need this value.",
+     "required": true,
+     "sensitive": true
+    }
+   },
+   "homepage": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/headless-360-mcp.html",
+   "keywords": [
+    "salesforce",
+    "crm",
+    "mcp",
+    "sales",
+    "headless-360",
+    "admin"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/salesforce-headless-360/assets/logo.svg",
+   "marketplace": "cursor"
+  },
+  {
    "name": "playwright",
    "displayName": "Playwright",
    "description": "Navigate, click, screenshot, and test in a real browser.",
@@ -1460,7 +1640,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/playwright",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -1493,7 +1673,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/github",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -1536,7 +1716,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ashby",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -1562,6 +1742,40 @@
    "marketplace": "cursor"
   },
   {
+   "name": "greenhouse",
+   "displayName": "Greenhouse",
+   "description": "Search candidates, jobs, and applications, and review scorecards in Greenhouse Recruiting.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/greenhouse",
+    "ref": "main",
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "greenhouse",
+     "path": "mcp.json"
+    }
+   ],
+   "homepage": "https://support.greenhouse.io/hc/en-us/articles/52090956642075-Greenhouse-MCP",
+   "keywords": [
+    "greenhouse",
+    "ats",
+    "recruiting",
+    "hiring",
+    "candidates",
+    "interviews",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/greenhouse/assets/logo.png",
+   "marketplace": "cursor"
+  },
+  {
    "name": "hubspot",
    "displayName": "Hubspot",
    "description": "Search and update contacts, companies, deals, and tickets.",
@@ -1570,7 +1784,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/hubspot",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "sales",
    "strict": null,
@@ -1586,15 +1800,15 @@
     "CLIENT_ID": {
      "type": "string",
      "title": "HubSpot Client ID",
-     "description": "OAuth Client ID from Development \u2192 MCP Auth Apps \u2192 your app.",
-     "required": true,
+     "description": "Optional. Leave blank to use Grok's HubSpot app when it is available to you. To use your own, the OAuth Client ID from Development \u2192 MCP Auth Apps \u2192 your app.",
+     "required": false,
      "sensitive": false
     },
     "CLIENT_SECRET": {
      "type": "string",
      "title": "HubSpot Client Secret",
-     "description": "OAuth Client Secret from the same HubSpot MCP auth app.",
-     "required": true,
+     "description": "Optional. Only needed with your own Client ID: the OAuth Client Secret from the same HubSpot MCP auth app.",
+     "required": false,
      "sensitive": true
     }
    },
@@ -1620,7 +1834,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/intercom",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -1654,7 +1868,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/zoom",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -1670,15 +1884,15 @@
     "CLIENT_ID": {
      "type": "string",
      "title": "Zoom Client ID",
-     "description": "OAuth Client ID from your Zoom App Marketplace General app \u2192 Basic Information \u2192 App Credentials.",
+     "description": "Public Client ID (recommended) or Client ID from your Zoom App Marketplace General app \u2192 Basic Information \u2192 App Credentials. The Public Client ID appears after turning on Use Public Client OAuth.",
      "required": true,
      "sensitive": false
     },
     "CLIENT_SECRET": {
      "type": "string",
      "title": "Zoom Client Secret",
-     "description": "OAuth Client Secret from the same Zoom General app.",
-     "required": true,
+     "description": "Optional. Leave blank with a Public Client ID; Cursor then signs in with PKCE and no secret. Only set it alongside the confidential Client ID from the same app.",
+     "required": false,
      "sensitive": true
     }
    },
@@ -1703,7 +1917,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -1735,11 +1949,6 @@
      "name": "x-api-mcp-guide",
      "description": ">-",
      "path": "skills/x-api-mcp-guide/SKILL.md"
-    },
-    {
-     "name": "x-chat",
-     "description": ">-",
-     "path": "skills/x-chat/SKILL.md"
     }
    ],
    "marketplace": "cursor"
@@ -1753,7 +1962,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/clay",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "sales",
    "strict": null,
@@ -1787,7 +1996,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/circleback",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -1820,7 +2029,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/docusign",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -1869,7 +2078,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/navan",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "finance",
    "strict": null,
@@ -1903,7 +2112,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/profound",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -1938,7 +2147,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/juicebox",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -1972,7 +2181,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outreach",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "sales",
    "strict": null,
@@ -2006,7 +2215,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/amplemarket",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "sales",
    "strict": null,
@@ -2040,7 +2249,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/klaviyo",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -2074,7 +2283,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/customer-io",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -2108,7 +2317,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mailerlite",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -2142,7 +2351,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brevo",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -2185,7 +2394,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/typeform",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2218,7 +2427,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/jotform",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2250,7 +2459,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/semrush",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -2284,7 +2493,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ahrefs",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -2318,7 +2527,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/godaddy",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2351,7 +2560,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/upwork",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2385,7 +2594,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/workable",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2419,7 +2628,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brex",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "finance",
    "strict": null,
@@ -2445,39 +2654,6 @@
    "marketplace": "cursor"
   },
   {
-   "name": "mercury",
-   "displayName": "Mercury",
-   "description": "Read balances, transactions, statements, and cards.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/mercury",
-    "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
-   },
-   "category": "finance",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "mercury",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://docs.mercury.com/docs/what-is-mercury-mcp",
-   "keywords": [
-    "mercury",
-    "banking",
-    "finance",
-    "transactions",
-    "statements",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mercury/assets/logo.png",
-   "marketplace": "cursor"
-  },
-  {
    "name": "todoist",
    "displayName": "Todoist",
    "description": "Create, find, and complete tasks and projects.",
@@ -2486,7 +2662,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/todoist",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2519,7 +2695,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/calendly",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2552,7 +2728,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/smartsheet",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2594,7 +2770,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/wrike",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2636,7 +2812,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coda",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2669,7 +2845,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/guru",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2702,7 +2878,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fireflies",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2735,7 +2911,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/otter",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2768,7 +2944,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fathom",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2801,7 +2977,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/craft",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2834,7 +3010,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mem",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2867,7 +3043,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/readwise",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -2900,7 +3076,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/similarweb",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -2942,7 +3118,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/xero",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "finance",
    "strict": null,
@@ -2992,7 +3168,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outlook",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -3024,7 +3200,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outlook-calendar",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -3057,7 +3233,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/onedrive",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -3089,7 +3265,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/sharepoint",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -3122,7 +3298,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/teams",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -3154,7 +3330,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/finance",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "finance",
    "strict": null,
@@ -3189,7 +3365,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x-ads",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -3224,7 +3400,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/attio",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "sales",
    "strict": null,
@@ -3259,7 +3435,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/hunter",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -3309,7 +3485,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gamma",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -3344,7 +3520,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/webull",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "finance",
    "strict": null,
@@ -3379,7 +3555,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/sp-global",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "finance",
    "strict": null,
@@ -3414,7 +3590,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/interactive-brokers",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "finance",
    "strict": null,
@@ -3449,7 +3625,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/meltwater",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -3484,7 +3660,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/daloopa",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "finance",
    "strict": null,
@@ -3519,7 +3695,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/excalidraw",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "design",
    "strict": null,
@@ -3554,7 +3730,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-cloud-bigquery",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "database",
    "strict": null,
@@ -3589,7 +3765,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/statsig",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "development",
    "strict": null,
@@ -3624,7 +3800,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/robinhood",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "finance",
    "strict": null,
@@ -3661,7 +3837,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coinbase",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "finance",
    "strict": null,
@@ -3696,7 +3872,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/etoro-trading",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "finance",
    "strict": null,
@@ -3733,7 +3909,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x-money",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "finance",
    "strict": null,
@@ -3779,7 +3955,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/shopify-store",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "sales",
    "strict": null,
@@ -3803,7 +3979,7 @@
     "grok",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/shopify-store/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/shopify-store/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3815,7 +3991,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/tinyfish",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "agent-orchestration",
    "strict": null,
@@ -3839,7 +4015,7 @@
     "playwright",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/tinyfish/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/tinyfish/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3851,7 +4027,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/beehiiv",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -3875,7 +4051,7 @@
     "creator",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/beehiiv/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/beehiiv/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3887,7 +4063,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/trello",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -3912,7 +4088,7 @@
     "planner",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/trello/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/trello/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3924,7 +4100,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/buffer",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "marketing",
    "strict": null,
@@ -3948,7 +4124,7 @@
     "ideas",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/buffer/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/buffer/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3960,7 +4136,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/plaud",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "productivity",
    "strict": null,
@@ -3984,7 +4160,7 @@
     "action items",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/plaud/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/plaud/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3996,7 +4172,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/posthog-mcp",
     "ref": "main",
-    "sha": "adf3218ca2f5b9971eedc07a76bef22df7701539"
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
    },
    "category": "data-analytics",
    "strict": null,
@@ -4020,7 +4196,107 @@
     "sql",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/adf3218ca2f5b9971eedc07a76bef22df7701539/third_party/posthog-mcp/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/posthog-mcp/assets/logo.png",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "quickbooks-online",
+   "displayName": "Quickbooks Online",
+   "description": "Read invoices, bills, expenses, customers, accounts, and financial reports.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/quickbooks-online",
+    "ref": "main",
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/quickbooks-online",
+   "keywords": [
+    "quickbooks",
+    "quickbooks online",
+    "qbo",
+    "intuit",
+    "accounting",
+    "bookkeeping",
+    "invoices",
+    "expenses",
+    "finance",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/quickbooks-online/assets/logo.png",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "workday",
+   "displayName": "Workday",
+   "description": "Look up workers, organizations, time off, payroll, and recruiting data in Workday.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/workday",
+    "ref": "main",
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/workday",
+   "keywords": [
+    "workday",
+    "hris",
+    "hr",
+    "human resources",
+    "people",
+    "employees",
+    "payroll",
+    "time off",
+    "recruiting",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/workday/assets/logo.png",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "square",
+   "displayName": "Square",
+   "description": "Work with payments, orders, catalog, customers, and invoices.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/square",
+    "ref": "main",
+    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
+   },
+   "category": null,
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "square",
+     "path": "mcp.json"
+    }
+   ],
+   "homepage": "https://developer.squareup.com/docs/mcp",
+   "keywords": [
+    "square",
+    "payments",
+    "point of sale",
+    "pos",
+    "orders",
+    "catalog",
+    "inventory",
+    "customers",
+    "invoices",
+    "commerce",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/square/assets/logo.png",
    "marketplace": "cursor"
   }
  ]
