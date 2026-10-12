@@ -409,6 +409,12 @@
     "vulnerability"
    ],
    "license": "Apache-2.0",
+   "mcpServers": [
+    {
+     "name": "aikido-mcp",
+     "path": ".mcp.json"
+    }
+   ],
    "name": "aikido",
    "repository": "https://github.com/AikidoSec/aikido-claude-plugin.git",
    "skills": [
@@ -3212,6 +3218,12 @@
     "diagnostics"
    ],
    "license": "MIT",
+   "mcpServers": [
+    {
+     "name": "azure",
+     "path": ".mcp.json"
+    }
+   ],
    "name": "azure",
    "repository": "https://github.com/microsoft/azure-skills.git",
    "skills": [
@@ -6827,6 +6839,12 @@
     "mcp"
    ],
    "license": "Apache-2.0",
+   "mcpServers": [
+    {
+     "name": "convex",
+     "path": ".mcp.json"
+    }
+   ],
    "name": "convex",
    "publisher": {
     "name": "convex",
@@ -7505,6 +7523,52 @@
    "license": "Apache-2.0",
    "logoUrl": "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
    "marketplace": "claude-code",
+   "mcpServers": [
+    {
+     "name": "dak-notebook",
+     "path": ".claude-plugin/mcp.json"
+    },
+    {
+     "name": "dak-viz",
+     "path": ".claude-plugin/mcp.json"
+    },
+    {
+     "name": "dak-alloydb",
+     "path": ".claude-plugin/mcp.json"
+    },
+    {
+     "name": "dak-spark",
+     "path": ".claude-plugin/mcp.json"
+    },
+    {
+     "name": "dak-bigquery",
+     "path": ".claude-plugin/mcp.json"
+    },
+    {
+     "name": "dak-bigtable-data",
+     "path": ".claude-plugin/mcp.json"
+    },
+    {
+     "name": "dak-bigtable",
+     "path": ".claude-plugin/mcp.json"
+    },
+    {
+     "name": "dak-cloudsql",
+     "path": ".claude-plugin/mcp.json"
+    },
+    {
+     "name": "dak-gcs",
+     "path": ".claude-plugin/mcp.json"
+    },
+    {
+     "name": "dak-kc",
+     "path": ".claude-plugin/mcp.json"
+    },
+    {
+     "name": "dak-spanner",
+     "path": ".claude-plugin/mcp.json"
+    }
+   ],
    "name": "data-agent-kit",
    "publisher": {
     "displayName": "Google LLC",
@@ -8224,80 +8288,6 @@
    },
    "strict": null,
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/databricks-2x.png",
-   "marketplace": "claude-code"
-  },
-  {
-   "author": {
-    "name": "Datadog"
-   },
-   "category": "monitoring",
-   "description": "Use Datadog directly in Claude Code through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview.",
-   "displayName": "Datadog",
-   "homepage": "https://www.datadoghq.com/",
-   "hooks": [
-    {
-     "description": "Datadog visualizations: renders results from the get_widget and visualize_tabular_data tools as live, interactive charts in a native side panel, then closes it when the session ends. macOS only. Falls back to the sandbox URL when unavailable.",
-     "name": "PostToolUse",
-     "path": "hooks/hooks.json"
-    },
-    {
-     "description": "Datadog visualizations: renders results from the get_widget and visualize_tabular_data tools as live, interactive charts in a native side panel, then closes it when the session ends. macOS only. Falls back to the sandbox URL when unavailable.",
-     "name": "SessionEnd",
-     "path": "hooks/hooks.json"
-    }
-   ],
-   "keywords": [
-    "datadog",
-    "infrastructure",
-    "mcp",
-    "observability",
-    "productivity"
-   ],
-   "license": "Apache-2.0",
-   "name": "datadog",
-   "publisher": {
-    "name": "datadog",
-    "displayName": "Datadog",
-    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/datadog.png",
-    "isVerified": true
-   },
-   "repository": "https://github.com/datadog-labs/claude-code-plugin.git",
-   "skills": [
-    {
-     "description": "Use ONLY when the user explicitly asks to create, scaffold, or initialize a new Datadog App project \u2014 they must use action words like \"create\", \"scaffold\", \"new\", or \"build\" together with \"Datadog App\" or \"@datadog/apps\" or \"npm create @datadog/apps\". Do NOT use for any question that does not involve creating a new project from scratch \u2014 questions about Datadog observability products (logs, metrics, APM, traces, monitors, dashboards), working inside an existing project, deploying, publishing, auth, or CI/CD.",
-     "name": "datadog-app",
-     "path": "skills/datadog-app/SKILL.md"
-    },
-    {
-     "description": "Configures or troubleshoots the plugin's Datadog MCP server. Use when the user wants to change the Datadog domain, switch organizations, or when the server was previously configured but is not responding.",
-     "name": "ddconfig",
-     "path": "skills/ddconfig/SKILL.md"
-    },
-    {
-     "description": "First-time initialization of the plugin's Datadog MCP server. When fulfilling requests that involve Datadog, use MCP tools from the plugin's Datadog MCP server over other methods. If MCP tools from the plugin's Datadog MCP server are not in your tool list, you MUST run this skill's setup procedure before attempting to fulfill the request. Relevant when the user wants to view or list dashboards or monitors, check alerts, view logs, query metrics, inspect APM traces, investigate SLOs or incidents, debug production issues, investigate errors, analyze performance, investigate a named service's health, errors, or dependencies, or access any Datadog data.",
-     "name": "ddsetup",
-     "path": "skills/ddsetup/SKILL.md"
-    },
-    {
-     "description": "Manages toolsets for the plugin's Datadog MCP server. Use when the user wants to view, enable, or disable toolsets that control which tools are available on the MCP server.",
-     "name": "ddtoolsets",
-     "path": "skills/ddtoolsets/SKILL.md"
-    },
-    {
-     "description": "Enables, disables, or reports the status of the Datadog visualization panel (ddviz). macOS only. Use when the user wants to turn ddviz on or off, or check whether it's currently enabled.",
-     "name": "ddviz",
-     "path": "skills/ddviz/SKILL.md"
-    }
-   ],
-   "source": {
-    "path": null,
-    "ref": null,
-    "sha": "195f570c002beab3d7bd342739034d0019aa4863",
-    "type": "url",
-    "url": "https://github.com/datadog-labs/claude-code-plugin.git"
-   },
-   "strict": null,
-   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/datadog.png",
    "marketplace": "claude-code"
   },
   {
@@ -9144,6 +9134,12 @@
     "export"
    ],
    "license": "Apache-2.0",
+   "mcpServers": [
+    {
+     "name": "claude_app_mcp",
+     "path": ".mcp.json"
+    }
+   ],
    "name": "dropbox",
    "publisher": {
     "name": "Dropbox",
@@ -10857,42 +10853,32 @@
    "marketplace": "claude-code"
   },
   {
-   "agents": [
-    {
-     "description": "|",
-     "name": "honeycomb-investigator",
-     "path": "agents/honeycomb-investigator.md"
-    },
-    {
-     "description": "|",
-     "name": "instrumentation-advisor",
-     "path": "agents/instrumentation-advisor.md"
-    }
-   ],
+   "name": "honeycomb",
+   "displayName": "Honeycomb",
+   "description": "Skills, agents, and workflows for Honeycomb observability \u2014 query patterns, production investigations, SLOs, OpenTelemetry instrumentation, and Beeline migration. Designed to complement the Honeycomb MCP server.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/honeycombio/agent-skill.git",
+    "path": "honeycomb",
+    "ref": "main",
+    "sha": "b169d7d1c76ab93809064226b9682efb563bed34"
+   },
+   "category": "monitoring",
+   "strict": null,
+   "license": "MIT",
+   "homepage": "https://www.honeycomb.io",
+   "repository": "https://github.com/honeycombio/agent-skill.git",
    "author": {
     "name": "Honeycomb"
    },
-   "category": "monitoring",
-   "commands": [
+   "publisher": {
+    "name": "honeycomb",
+    "displayName": "Honeycomb"
+   },
+   "mcpServers": [
     {
-     "description": "Set up the Honeycomb MCP server connection for Claude Code",
-     "name": "honeycomb-setup",
-     "path": "commands/honeycomb-setup.md"
-    }
-   ],
-   "description": "Skills, agents, and workflows for Honeycomb observability \u2014 query patterns, production investigations, SLOs, OpenTelemetry instrumentation, and Beeline migration. Designed to complement the Honeycomb MCP server.",
-   "displayName": "Honeycomb",
-   "homepage": "https://www.honeycomb.io",
-   "hooks": [
-    {
-     "description": "Pre-query column validation via schema caching. Catches unknown column errors before they hit the API by building a per-session schema cache from find_columns / get_dataset_columns / get_dataset results.",
-     "name": "PostToolUse",
-     "path": "hooks/hooks.json"
-    },
-    {
-     "description": "Pre-query column validation via schema caching. Catches unknown column errors before they hit the API by building a per-session schema cache from find_columns / get_dataset_columns / get_dataset results.",
-     "name": "PreToolUse",
-     "path": "hooks/hooks.json"
+     "name": "honeycomb",
+     "path": ".mcp.json"
     }
    ],
    "keywords": [
@@ -10905,84 +10891,94 @@
     "debugging",
     "instrumentation"
    ],
-   "license": "MIT",
-   "mcpServers": [
-    {
-     "name": "honeycomb",
-     "path": ".mcp.json"
-    }
-   ],
-   "name": "honeycomb",
-   "publisher": {
-    "displayName": "Honeycomb",
-    "name": "honeycomb"
-   },
-   "repository": "https://github.com/honeycombio/agent-skill.git",
    "skills": [
     {
-     "description": ">",
      "name": "beeline-migration",
+     "description": ">",
      "path": "skills/beeline-migration/SKILL.md"
     },
     {
-     "description": ">",
      "name": "create-honeycomb-board",
+     "description": ">",
      "path": "skills/create-honeycomb-board/SKILL.md"
     },
     {
-     "description": ">",
      "name": "metrics-queries",
+     "description": ">",
      "path": "skills/metrics-queries/SKILL.md"
     },
     {
-     "description": ">",
      "name": "observability-fundamentals",
+     "description": ">",
      "path": "skills/observability-fundamentals/SKILL.md"
     },
     {
-     "description": ">",
      "name": "otel-genai-instrumentation",
+     "description": ">",
      "path": "skills/otel-genai-instrumentation/SKILL.md"
     },
     {
-     "description": ">",
      "name": "otel-instrumentation",
+     "description": ">",
      "path": "skills/otel-instrumentation/SKILL.md"
     },
     {
-     "description": ">",
      "name": "otel-migration",
+     "description": ">",
      "path": "skills/otel-migration/SKILL.md"
     },
     {
-     "description": ">",
      "name": "production-investigation",
+     "description": ">",
      "path": "skills/production-investigation/SKILL.md"
     },
     {
-     "description": ">",
      "name": "query-patterns",
+     "description": ">",
      "path": "skills/query-patterns/SKILL.md"
     },
     {
-     "description": ">",
      "name": "slos-and-triggers",
+     "description": ">",
      "path": "skills/slos-and-triggers/SKILL.md"
     },
     {
-     "description": ">",
      "name": "verify-recent-trace",
+     "description": ">",
      "path": "skills/verify-recent-trace/SKILL.md"
     }
    ],
-   "source": {
-    "path": "honeycomb",
-    "ref": "main",
-    "sha": "b169d7d1c76ab93809064226b9682efb563bed34",
-    "type": "git-subdir",
-    "url": "https://github.com/honeycombio/agent-skill.git"
-   },
-   "strict": null,
+   "commands": [
+    {
+     "name": "honeycomb-setup",
+     "description": "Set up the Honeycomb MCP server connection for Claude Code",
+     "path": "commands/honeycomb-setup.md"
+    }
+   ],
+   "agents": [
+    {
+     "name": "honeycomb-investigator",
+     "description": "|",
+     "path": "agents/honeycomb-investigator.md"
+    },
+    {
+     "name": "instrumentation-advisor",
+     "description": "|",
+     "path": "agents/instrumentation-advisor.md"
+    }
+   ],
+   "hooks": [
+    {
+     "name": "PostToolUse",
+     "description": "Pre-query column validation via schema caching. Catches unknown column errors before they hit the API by building a per-session schema cache from find_columns / get_dataset_columns / get_dataset results.",
+     "path": "hooks/hooks.json"
+    },
+    {
+     "name": "PreToolUse",
+     "description": "Pre-query column validation via schema caching. Catches unknown column errors before they hit the API by building a per-session schema cache from find_columns / get_dataset_columns / get_dataset results.",
+     "path": "hooks/hooks.json"
+    }
+   ],
    "logoUrl": "https://www.google.com/s2/favicons?domain=www.honeycomb.io&sz=128",
    "marketplace": "claude-code"
   },
@@ -13025,6 +13021,20 @@
     "gis"
    ],
    "license": "MIT",
+   "mcpServers": [
+    {
+     "name": "mapbox-devkit",
+     "path": ".mcp.json"
+    },
+    {
+     "name": "mapbox",
+     "path": ".mcp.json"
+    },
+    {
+     "name": "mapbox-docs",
+     "path": ".mcp.json"
+    }
+   ],
    "name": "mapbox",
    "publisher": {
     "name": "Mapbox",
@@ -13623,6 +13633,12 @@
     "meli"
    ],
    "license": "Apache-2.0",
+   "mcpServers": [
+    {
+     "name": "mcp",
+     "path": ".mcp.json"
+    }
+   ],
    "name": "mercadopago",
    "publisher": {
     "displayName": "Mercado Pago Developer Experience",
@@ -23706,6 +23722,12 @@
     "wix-apps"
    ],
    "license": "MIT",
+   "mcpServers": [
+    {
+     "name": "wix-mcp",
+     "path": ".mcp.json"
+    }
+   ],
    "name": "wix",
    "repository": "https://github.com/wix/skills.git",
    "skills": [
@@ -23931,6 +23953,12 @@
     "productivity"
    ],
    "license": "MIT",
+   "mcpServers": [
+    {
+     "name": "zapier",
+     "path": ".mcp.json"
+    }
+   ],
    "name": "zapier",
    "repository": "https://github.com/zapier/zapier-mcp.git",
    "skills": [
@@ -24127,78 +24155,6 @@
    },
    "strict": null,
    "logoUrl": "https://www.google.com/s2/favicons?domain=docs.zilliz.com&sz=128",
-   "marketplace": "claude-code"
-  },
-  {
-   "author": {
-    "name": "Zocks"
-   },
-   "category": "finance",
-   "description": "Seven skills for financial advisors built on Zocks meeting intelligence: client behavioral profiles, attrition-risk ranking, held-away asset radar, client journey dossiers, household review packs, next-best-action analysis and a tax opportunity scan. Requires the Zocks connector and a Zocks account.",
-   "displayName": "Zocks Advisor",
-   "homepage": "https://github.com/zocks-communications/zocks-agent-plugins",
-   "keywords": [
-    "financial-advisor",
-    "wealth-management",
-    "meeting-intelligence",
-    "zocks",
-    "client-relationships",
-    "attrition-risk",
-    "tax-planning",
-    "held-away-assets"
-   ],
-   "license": "Apache-2.0",
-   "name": "zocks-advisor",
-   "publisher": {
-    "displayName": "Zocks",
-    "name": "zocks"
-   },
-   "repository": "https://github.com/zocks-communications/zocks-agent-plugins.git",
-   "skills": [
-    {
-     "description": "Finds the clients an advisor is quietly losing from their own book, ranking the households that have gone silent past their usual rhythm by how they felt last time, whether their sentiment was already falling, whether they stopped driving the conversation, and whether they have named another advisor. Says who to call first and how to open. Use whenever the user asks who is at risk, who has gone quiet, who they haven't spoken to in a while, who to call this week, or whether they are losing anyone \u2014 and for a re-engagement list, a brief on one household, or a draft re-engagement email. Requires Zocks MCP \u2014 will not run from transcripts, uploads, or any other source.",
-     "name": "client-attrition-risk",
-     "path": "skills/client-attrition-risk/SKILL.md"
-    },
-    {
-     "description": "Reads one advisory client or household two ways \u2014 a fast temperature check on whether they are cooling, steady or warming, and a full behavioral profile covering what motivates them, what they are afraid of, how they decide, whether their stated risk tolerance matches their behaviour, and how engaged they have been \u2014 then a calibrated stance for the next conversation. Use whenever the user asks what a client is like, how to approach them, what motivates them, how a meeting went, what the mood is, why they won't commit, or whether a relationship is cooling or warming. Requires Zocks MCP \u2014 will not run from transcripts, uploads, or any other source.",
-     "name": "client-behavioral-profile",
-     "path": "skills/client-behavioral-profile/SKILL.md"
-    },
-    {
-     "description": "Builds a client-ready Client Journey for one household \u2014 a five-stage lifecycle timeline marking where the family sits today, a relationship tree including beneficiaries never met, their outside professional team, a dated timeline of life events and turning points, and every motivator, worry and consequential fact on record with its corroboration and age \u2014 plus what they have never been asked that the rest of the book covers. Use whenever the user wants everything known about a household, a family tree or lifecycle report, who is who in a family, what is new on a client, or a comprehensive picture polished enough to walk a client through. Requires Zocks MCP \u2014 will not run from transcripts, uploads, or any other source.",
-     "name": "client-journey",
-     "path": "skills/client-journey/SKILL.md"
-    },
-    {
-     "description": "Ranked pipeline of held-away asset opportunities from the advisor's own recent meetings \u2014 old 401(k)s, outside brokerage accounts, inheritances, business sale proceeds, real estate, spouse assets \u2014 grouped by household and marked new, raised again, nothing new since, task created, or client agreed. Use whenever the user asks what held-away or outside money came up recently, wants their consolidation pipeline or money in motion, mentions old 401(k)s or outside accounts, or says things like \"run the radar\" or \"held-away opportunities\". Requires Zocks MCP \u2014 will not run from transcripts, uploads, or any other source.",
-     "name": "held-away-radar",
-     "path": "skills/held-away-radar/SKILL.md"
-    },
-    {
-     "description": "Prepares an annual or semi-annual household review from the last 12 to 24 months \u2014 goals then versus now, what changed in their finances and their life, the decisions taken, the commitments made, and the handoffs the review creates for the client's CPA, attorney and other professionals. Produces an advisor summary, and on request a client letter in a chosen tone, a client-facing review presentation on the firm's own template, and a brief for each outside professional. Use whenever the user is preparing for or writing up a client review, wants a year-in-review letter or a review deck, or asks what happened with a household this year, what they promised them, or who needs to know afterwards. Requires Zocks MCP \u2014 will not run from transcripts, uploads, or any other source.",
-     "name": "household-review-pack",
-     "path": "skills/household-review-pack/SKILL.md"
-    },
-    {
-     "description": "Deep single-household analysis naming the one highest-value next action and proving why \u2014 unused tax space, a closing Roth conversion window, RMD and IRMAA sequencing, Social Security and survivor math, irreversible pension elections, tax drag, protection and estate gaps. Never the advisor's own open tasks read back. Shows the runner-ups it rejected and names who outside the firm has to act. Use whenever the user asks what to do for a client, the best move, the biggest opportunity, what they are missing with someone, or wants a household's situation analysed. For a household's full tax picture, tax-opportunity-scan is the skill. Requires Zocks MCP \u2014 will not run from transcripts, uploads, or any other source.",
-     "name": "next-best-action",
-     "path": "skills/next-best-action/SKILL.md"
-    },
-    {
-     "description": "Builds a household's full tax opportunity picture from every analyzed meeting on record, across two horizons \u2014 current-year items with deadlines (deferral capacity, a second plan nobody checked, taxable-account drag, giving structure, equity dates, education vehicles) and multi-year strategies 3-5 years out (conversion windows, drawdown sequencing, the survivor's position, business structure, property sales). Ranks by impact, cites the meeting each item came from, names the tax questions nobody has asked, and flags what the household raised that went nowhere. Use whenever the user asks about tax planning, tax opportunities or tax exposure for a client, wants a tax review or CPA handoff, asks what they are missing on someone's taxes, mentions Roth conversions, deferral capacity, tax drag, harvesting, charitable giving or equity comp timing, or asks what to cover before year end or tax season. Advisor intelligence, not advice. Requires Zocks MCP \u2014 will not run from transcripts, uploads, or any other source.",
-     "name": "tax-opportunity-scan",
-     "path": "skills/tax-opportunity-scan/SKILL.md"
-    }
-   ],
-   "source": {
-    "path": null,
-    "ref": null,
-    "sha": "a3e445c139665055c2f22f25c9a9f8721a7c6355",
-    "type": "url",
-    "url": "https://github.com/zocks-communications/zocks-agent-plugins.git"
-   },
-   "strict": null,
    "marketplace": "claude-code"
   },
   {
@@ -25525,105 +25481,6 @@
    "marketplace": "cursor"
   },
   {
-   "name": "origin-apps",
-   "displayName": "Origin Apps",
-   "description": "Skills for building on the Cursor Origin API. Fetch the live spec first, then follow the Origin rules for credentials, scopes, webhooks, paging, and errors. Includes a skill that plans the port of an existing GitHub App.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "origin-apps",
-    "ref": "main",
-    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
-   },
-   "category": null,
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "homepage": "https://cursor.com/docs/api/origin",
-   "keywords": [
-    "origin",
-    "origin-api",
-    "origin-app",
-    "webhooks",
-    "github-app"
-   ],
-   "skills": [
-    {
-     "name": "origin-api",
-     "description": ">-",
-     "path": "skills/origin-api/SKILL.md"
-    },
-    {
-     "name": "port-github-app-to-origin",
-     "description": ">-",
-     "path": "skills/port-github-app-to-origin/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "dyl-stack",
-   "displayName": "Dyl Stack",
-   "description": "Dylan's agent style on top of pstack: root causes over symptom patches, The Algorithm before design, terse verified delivery, a PR review that fits in a paste, and Figma-to-UI with a visual judge.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "dyl-stack",
-    "ref": "main",
-    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
-   },
-   "category": "development",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "homepage": "https://github.com/cursor/plugins/tree/main/dyl-stack",
-   "keywords": [
-    "dyl-stack",
-    "dyl-mode",
-    "pstack",
-    "figma",
-    "code-review",
-    "agent-style"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/dyl-stack/assets/logo.png",
-   "skills": [
-    {
-     "name": "build-figma",
-     "description": "Use for \\\"/build-figma\\\", a figma.com/design URL with node-id, or \\\"implement this Figma\\\" into a web, desktop, or shared UI. Orchestrates Figma MCP intake, maps nodes to the repo's own design system, then a verify-this visual judge. Do not paste Figma Tailwind.",
-     "path": "skills/build-figma/SKILL.md"
-    },
-    {
-     "name": "dyl-mode",
-     "description": ">-",
-     "path": "skills/dyl-mode/SKILL.md"
-    },
-    {
-     "name": "dyl-ready-pr",
-     "description": ">-",
-     "path": "skills/dyl-ready-pr/SKILL.md"
-    },
-    {
-     "name": "dyl-review",
-     "description": ">-",
-     "path": "skills/dyl-review/SKILL.md"
-    },
-    {
-     "name": "principle-the-algorithm",
-     "description": ">-",
-     "path": "skills/principle-the-algorithm/SKILL.md"
-    }
-   ],
-   "agents": [
-    {
-     "name": "dyl-agent",
-     "description": "Routing target for `/dyl-mode` and any request for Dylan's style. Resume an existing `dyl-agent` for the conversation rather than spawning a sibling. Reads the `dyl-mode` skill's `SKILL.md` in full before any work, then the pstack `poteto-mode` skill it layers on. Substituting `generalPurpose` skips those reads and drifts.",
-     "path": "agents/dyl-agent.md"
-    }
-   ],
-   "marketplace": "cursor"
-  },
-  {
    "name": "grok-voice",
    "displayName": "Grok Voice",
    "description": "Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
@@ -25828,62 +25685,6 @@
     "sobject"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/salesforce/assets/logo.svg",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "salesforce-headless-360",
-   "displayName": "Salesforce Headless 360",
-   "description": "Manage records, users, and org setup across Salesforce.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/salesforce-headless-360",
-    "ref": "main",
-    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
-   },
-   "category": null,
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "salesforce-headless-360",
-     "path": "mcp.json"
-    }
-   ],
-   "userConfig": {
-    "SALESFORCE_MCP_URL": {
-     "type": "string",
-     "title": "Salesforce MCP server URL (set by your Salesforce admin)",
-     "description": "Headless 360 server URL from Salesforce Setup \u2192 MCP Servers. Production and Developer orgs: https://api.salesforce.com/platform/mcp/v1/platform/headless-360. Sandbox and scratch orgs: https://api.salesforce.com/platform/mcp/v1/sandbox/platform/headless-360.",
-     "required": true,
-     "sensitive": false
-    },
-    "CLIENT_ID": {
-     "type": "string",
-     "title": "Salesforce Consumer Key (set by your Salesforce admin)",
-     "description": "Your Salesforce admin creates the External Client App and enters its Consumer Key here once for the whole team (Setup \u2192 External Client App Manager \u2192 your app \u2192 Settings \u2192 Consumer Key and Secret). Team members don't need this value; they only sign in to Salesforce.",
-     "required": true,
-     "sensitive": false
-    },
-    "CLIENT_SECRET": {
-     "type": "string",
-     "title": "Salesforce Consumer Secret (set by your Salesforce admin)",
-     "description": "Consumer Secret from the same External Client App, entered once by your Salesforce admin for the whole team. Team members don't need this value.",
-     "required": true,
-     "sensitive": true
-    }
-   },
-   "homepage": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/headless-360-mcp.html",
-   "keywords": [
-    "salesforce",
-    "crm",
-    "mcp",
-    "sales",
-    "headless-360",
-    "admin"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/salesforce-headless-360/assets/logo.svg",
    "marketplace": "cursor"
   },
   {
@@ -27643,68 +27444,6 @@
    "marketplace": "cursor"
   },
   {
-   "name": "quickbooks-online",
-   "displayName": "Quickbooks Online",
-   "description": "Read invoices, bills, expenses, customers, accounts, and financial reports.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/quickbooks-online",
-    "ref": "main",
-    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
-   },
-   "category": null,
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/quickbooks-online",
-   "keywords": [
-    "quickbooks",
-    "quickbooks online",
-    "qbo",
-    "intuit",
-    "accounting",
-    "bookkeeping",
-    "invoices",
-    "expenses",
-    "finance",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/quickbooks-online/assets/logo.png",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "workday",
-   "displayName": "Workday",
-   "description": "Look up workers, organizations, time off, payroll, and recruiting data in Workday.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/workday",
-    "ref": "main",
-    "sha": "ea32d9562a1c9f077d7cdd3be53d07383eb18866"
-   },
-   "category": null,
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/workday",
-   "keywords": [
-    "workday",
-    "hris",
-    "hr",
-    "human resources",
-    "people",
-    "employees",
-    "payroll",
-    "time off",
-    "recruiting",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/ea32d9562a1c9f077d7cdd3be53d07383eb18866/third_party/workday/assets/logo.png",
-   "marketplace": "cursor"
-  },
-  {
    "name": "square",
    "displayName": "Square",
    "description": "Work with payments, orders, catalog, customers, and invoices.",
@@ -27937,6 +27676,11 @@
    "reason": "OpenTelemetry for Claude Code sessions; ten of the 24 hook events it traces are ones Remy does not fire.",
    "marketplace": "claude-code"
   },
+  "datadog": {
+   "kind": "auth-unsupported",
+   "reason": "Its MCP URL is https://${DD_MCP_DOMAIN:-not-setup}/v1/mcp: the domain is set by /ddsetup rewriting the file Claude Code installed, or by environment variables, and the plugin declares no setting Remy can show. Unset, the server is unusable.",
+   "marketplace": "claude-code"
+  },
   "docs-canvas": {
    "kind": "cursor-only",
    "reason": "Renders documentation into Cursor's canvas surface.",
@@ -27945,6 +27689,11 @@
   "docusign": {
    "kind": "partner-gated",
    "reason": "Its MCP server (mcp.docusign.com/mcp) answers every request 'RBAC: access denied' at the gateway, and its authorization server offers no client registration.",
+   "marketplace": "cursor"
+  },
+  "dyl-stack": {
+   "kind": "cursor-only",
+   "reason": "Layered on pstack, cursor-team-kit and thermos (all Cursor-only) and Cursor built-ins such as /review-bugbot; its skills route through them.",
    "marketplace": "cursor"
   },
   "etoro-trading": {
@@ -28022,6 +27771,11 @@
    "reason": "Fans work out to Cursor cloud agents through the Cursor SDK.",
    "marketplace": "cursor"
   },
+  "origin-apps": {
+   "kind": "cursor-only",
+   "reason": "Skills for building apps on Cursor's Origin platform (cursor.com/docs/api/origin).",
+   "marketplace": "cursor"
+  },
   "outlook": {
    "kind": "cursor-only",
    "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth).",
@@ -28057,6 +27811,11 @@
    "reason": "Its MCP server answers the MCP initialize request with 400.",
    "marketplace": "claude-code"
   },
+  "quickbooks-online": {
+   "kind": "cursor-only",
+   "reason": "It ships no MCP server: Cursor hosts the server and owns the Intuit client, and its README says it is reachable from Cursor only.",
+   "marketplace": "cursor"
+  },
   "ralph-loop": {
    "kind": "claude-code-only",
    "reason": "Its loop is a Stop hook that re-reads the Claude Code transcript, which Remy does not hand to hooks.",
@@ -28091,6 +27850,11 @@
    "kind": "endpoint-unusable",
    "reason": "Its MCP URL is a local Rill Developer server (localhost:9009).",
    "marketplace": "claude-code"
+  },
+  "salesforce-headless-360": {
+   "kind": "auth-unsupported",
+   "reason": "Salesforce's registration endpoint refuses dynamic registration (invalid_client), so an org admin's External Client App is required; its callback URL is fixed, while Remy signs a user-supplied client id in on an ephemeral localhost port.",
+   "marketplace": "cursor"
   },
   "security-guidance": {
    "kind": "claude-code-only",
@@ -28132,6 +27896,11 @@
    "reason": "Its MCP URL redirects to a not-found page.",
    "marketplace": "claude-code"
   },
+  "workday": {
+   "kind": "cursor-only",
+   "reason": "It ships no MCP server: Cursor hosts the server and owns the Workday client, and its README says it is reachable from Cursor only.",
+   "marketplace": "cursor"
+  },
   "x": {
    "kind": "auth-unsupported",
    "reason": "It ships a client id registered for another product; Remy does not sign in under another product's identity, and X offers no dynamic registration. Needs a Remy X app.",
@@ -28146,6 +27915,11 @@
    "kind": "auth-unsupported",
    "reason": "Its MCP server needs a vendor-registered OAuth app: its authorization server offers no dynamic client registration and the plugin ships no client id.",
    "marketplace": "cursor"
+  },
+  "zocks-advisor": {
+   "kind": "endpoint-unusable",
+   "reason": "Its MCP URL (mcp.zocks.io/mcp) answers 404 to every request, with or without a token, so no authorization challenge is ever issued.",
+   "marketplace": "claude-code"
   },
   "zoom": {
    "kind": "auth-unsupported",
