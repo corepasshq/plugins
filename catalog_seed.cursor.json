@@ -118,7 +118,8 @@
      "path": "skills/run-learning-retrospective/SKILL.md"
     }
    ],
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Map skills and plan practice"
   },
   {
    "name": "continual-learning",
@@ -366,7 +367,8 @@
     "name": "cursor",
     "displayName": "Cursor"
    },
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Run deep security and quality reviews"
   },
   {
    "name": "create-plugin",
@@ -535,7 +537,8 @@
     "name": "cursor",
     "displayName": "Cursor"
    },
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Audit repo startup, checks and docs"
   },
   {
    "name": "cli-for-agent",
@@ -573,7 +576,9 @@
     "name": "cursor",
     "displayName": "Cursor"
    },
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/cli-for-agent.png",
+   "tagline": "Design CLIs automation can run reliably"
   },
   {
    "name": "pr-review-canvas",
@@ -1186,7 +1191,8 @@
      "path": "skills/debug-voice/SKILL.md"
     }
    ],
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Add speech, dictation and read-aloud"
   },
   {
    "name": "advisor",
@@ -1282,7 +1288,8 @@
     "workspace"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gmail/assets/logo.svg",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search, read and draft email"
   },
   {
    "name": "google-drive",
@@ -1322,7 +1329,8 @@
      "path": "skills/google-drive/SKILL.md"
     }
    ],
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search, create and share files"
   },
   {
    "name": "google-calendar",
@@ -1355,7 +1363,8 @@
     "workspace"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-calendar/assets/logo.svg",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search events and schedule meetings"
   },
   {
    "name": "google-docs",
@@ -1573,7 +1582,8 @@
     "sobject"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/salesforce/assets/logo.svg",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Query and update CRM records"
   },
   {
    "name": "salesforce-headless-360",
@@ -1662,7 +1672,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/playwright/assets/logo.svg",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Automate browsers and run e2e tests"
   },
   {
    "name": "github",
@@ -1704,8 +1715,9 @@
     "actions",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/github/assets/logo.svg",
-   "marketplace": "cursor"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/github.png",
+   "marketplace": "cursor",
+   "tagline": "Triage PRs, issues and workflows"
   },
   {
    "name": "ashby",
@@ -1739,7 +1751,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/ashby/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search candidates and prep interviews"
   },
   {
    "name": "greenhouse",
@@ -1773,7 +1786,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/greenhouse/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Review candidates, jobs and scorecards"
   },
   {
    "name": "hubspot",
@@ -1823,7 +1837,8 @@
     "deals"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/hubspot/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Update contacts, deals and tickets"
   },
   {
    "name": "intercom",
@@ -1857,7 +1872,8 @@
     "customer-support"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/intercom/assets/logo.svg",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search support chats and contacts"
   },
   {
    "name": "zoom",
@@ -1906,7 +1922,8 @@
     "docs"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/zoom/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Pull meeting transcripts and docs"
   },
   {
    "name": "x",
@@ -1985,7 +2002,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/clay/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Find prospects and draft campaigns"
   },
   {
    "name": "circleback",
@@ -2018,7 +2036,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/circleback/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search meetings, emails and calendar"
   },
   {
    "name": "docusign",
@@ -2101,7 +2120,8 @@
     "bookings"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/navan/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Query travel bookings and expenses"
   },
   {
    "name": "profound",
@@ -2136,7 +2156,8 @@
     "analytics"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/profound/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Track AI visibility and citations"
   },
   {
    "name": "juicebox",
@@ -2170,7 +2191,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/juicebox/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Review sourcing shortlists and analytics"
   },
   {
    "name": "outreach",
@@ -2204,7 +2226,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outreach/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search sequences, prospects and meetings"
   },
   {
    "name": "amplemarket",
@@ -2238,7 +2261,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/amplemarket/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Find people, enrich leads, run sequences"
   },
   {
    "name": "klaviyo",
@@ -2272,7 +2296,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/klaviyo/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Manage segments, campaigns and flows"
   },
   {
    "name": "customer-io",
@@ -2306,7 +2331,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/customer-io/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Build campaigns and manage segments"
   },
   {
    "name": "mailerlite",
@@ -2340,7 +2366,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mailerlite/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Manage subscribers and email automations"
   },
   {
    "name": "brevo",
@@ -2383,7 +2410,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/brevo/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Run email and SMS campaigns and deals"
   },
   {
    "name": "typeform",
@@ -2416,7 +2444,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/typeform/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Build forms and analyze responses"
   },
   {
    "name": "jotform",
@@ -2448,7 +2477,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/jotform/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Create forms and read submissions"
   },
   {
    "name": "semrush",
@@ -2482,7 +2512,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/semrush/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Research keywords, traffic and rivals"
   },
   {
    "name": "ahrefs",
@@ -2516,7 +2547,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/ahrefs/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Research backlinks, rankings and SEO"
   },
   {
    "name": "godaddy",
@@ -2549,7 +2581,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/godaddy/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Brainstorm and check domain names"
   },
   {
    "name": "upwork",
@@ -2583,7 +2616,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/upwork/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Find talent, post jobs, manage contracts"
   },
   {
    "name": "workable",
@@ -2617,7 +2651,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/workable/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Move candidates and manage HR records"
   },
   {
    "name": "brex",
@@ -2651,7 +2686,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/brex/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Query expenses, receipts and bills"
   },
   {
    "name": "todoist",
@@ -2684,7 +2720,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/todoist/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Create, find and complete tasks"
   },
   {
    "name": "calendly",
@@ -2717,7 +2754,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/calendly/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Check availability and book meetings"
   },
   {
    "name": "smartsheet",
@@ -2759,7 +2797,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/smartsheet/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Query and update sheets and rows"
   },
   {
    "name": "wrike",
@@ -2801,7 +2840,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/wrike/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search projects and create tasks"
   },
   {
    "name": "coda",
@@ -2834,7 +2874,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/coda/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search docs and update tables"
   },
   {
    "name": "guru",
@@ -2867,7 +2908,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/guru/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search company knowledge for answers"
   },
   {
    "name": "fireflies",
@@ -2900,7 +2942,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/fireflies/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Find meeting action items and summaries"
   },
   {
    "name": "otter",
@@ -2933,7 +2976,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/otter/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search meeting history and transcripts"
   },
   {
    "name": "fathom",
@@ -2966,7 +3010,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/fathom/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Get meeting summaries and transcripts"
   },
   {
    "name": "craft",
@@ -2999,7 +3044,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/craft/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Write documents and daily notes"
   },
   {
    "name": "mem",
@@ -3032,7 +3078,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mem/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Capture, search and organize notes"
   },
   {
    "name": "readwise",
@@ -3065,7 +3112,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/readwise/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search highlights and save articles"
   },
   {
    "name": "similarweb",
@@ -3157,7 +3205,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/xero/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Manage invoices, contacts and payroll"
   },
   {
    "name": "outlook",
@@ -3424,7 +3473,8 @@
     "tasks"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/attio/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Manage CRM records, lists and tasks"
   },
   {
    "name": "hunter",
@@ -3469,12 +3519,13 @@
     "sales",
     "mcp"
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=hunter.io&sz=128",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/hunter.png",
    "publisher": {
     "name": "Hunter.io",
     "displayName": "Hunter.io"
    },
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Find and verify professional emails"
   },
   {
    "name": "gamma",
@@ -3544,7 +3595,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/webull/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "View positions, orders and market data"
   },
   {
    "name": "sp-global",
@@ -3579,7 +3631,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/sp-global/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Query company financials and transcripts"
   },
   {
    "name": "interactive-brokers",
@@ -3614,7 +3667,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/interactive-brokers/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Review positions, balances and P&L"
   },
   {
    "name": "meltwater",
@@ -3649,7 +3703,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/meltwater/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Track media and social mentions"
   },
   {
    "name": "daloopa",
@@ -3684,7 +3739,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/daloopa/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Pull sourced fundamentals and KPIs"
   },
   {
    "name": "excalidraw",
@@ -3719,7 +3775,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/excalidraw/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Draw and export hand-drawn diagrams"
   },
   {
    "name": "google-cloud-bigquery",
@@ -3754,7 +3811,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-cloud-bigquery/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Explore tables and run SQL queries"
   },
   {
    "name": "statsig",
@@ -3789,7 +3847,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/statsig/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Manage feature gates and experiments"
   },
   {
    "name": "robinhood",
@@ -3826,7 +3885,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/robinhood/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Track portfolios, watchlists and trades"
   },
   {
    "name": "coinbase",
@@ -3861,7 +3921,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/coinbase/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Check balances, get quotes and trade"
   },
   {
    "name": "etoro-trading",
@@ -3980,7 +4041,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/shopify-store/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Ask about products, orders and sales"
   },
   {
    "name": "tinyfish",
@@ -4016,7 +4078,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/tinyfish/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Automate multi-step web tasks"
   },
   {
    "name": "beehiiv",
@@ -4052,7 +4115,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/beehiiv/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Draft posts and manage subscribers"
   },
   {
    "name": "trello",
@@ -4089,7 +4153,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/trello/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Organize boards, lists and cards"
   },
   {
    "name": "buffer",
@@ -4125,7 +4190,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/buffer/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Schedule and publish social posts"
   },
   {
    "name": "plaud",
@@ -4161,7 +4227,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/plaud/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search recordings and voice notes"
   },
   {
    "name": "posthog-mcp",
@@ -4197,7 +4264,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/posthog-mcp/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Query analytics and review replays"
   },
   {
    "name": "quickbooks-online",
@@ -4297,7 +4365,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/square/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Manage payments, orders and invoices"
   }
  ]
 }

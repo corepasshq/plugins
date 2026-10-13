@@ -158,8 +158,9 @@
      "path": "skills/code-to-oas/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=42crunch.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/42crunch-api-security-testing.png",
+   "marketplace": "claude-code",
+   "tagline": "Audit and scan APIs for security flaws"
   },
   {
    "name": "agent-sdk-dev",
@@ -204,7 +205,9 @@
      "path": "agents/agent-sdk-verifier-ts.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/agent-sdk-dev.png",
+   "tagline": "Scaffold and verify SDK-based apps"
   },
   {
    "name": "agentforce-adlc",
@@ -279,7 +282,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/agentforce-adlc.png",
+   "tagline": "Author, test and ship Salesforce bots"
   },
   {
    "name": "ai-plugins",
@@ -390,8 +395,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.endorlabs.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/ai-plugins.png",
+   "marketplace": "claude-code",
+   "tagline": "Find and fix supply chain risks"
   },
   {
    "name": "aikido",
@@ -442,7 +448,9 @@
      "path": "skills/setup/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/aikido.png",
+   "tagline": "Scan code, secrets and IaC for flaws"
   },
   {
    "name": "airtable",
@@ -546,8 +554,9 @@
      "path": "skills/show-airtable-link/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.airtable.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/airtable.png",
+   "marketplace": "claude-code",
+   "tagline": "Query and update your bases"
   },
   {
    "name": "airwallex-agentos",
@@ -620,8 +629,9 @@
      "path": "skills/manage-cashflow/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.airwallex.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/airwallex-agentos.png",
+   "marketplace": "claude-code",
+   "tagline": "Manage invoices, suppliers and cash"
   },
   {
    "name": "airwallex-dev",
@@ -693,8 +703,9 @@
      "path": "skills/airwallex-split-card/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.airwallex.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/airwallex-dev.png",
+   "marketplace": "claude-code",
+   "tagline": "Add checkout and billing to your app"
   },
   {
    "name": "aiven",
@@ -746,8 +757,9 @@
      "path": "skills/aiven-getting-started/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=aiven.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/aiven.png",
+   "marketplace": "claude-code",
+   "tagline": "Deploy managed Postgres, Kafka and more"
   },
   {
    "name": "alloydb",
@@ -778,13 +790,14 @@
      "path": ".claude-plugin/plugin.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/alloydb.png",
    "keywords": [
     "alloydb",
     "postgresql",
     "database"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Create, connect and query Postgres"
   },
   {
    "name": "alloydb-omni",
@@ -832,7 +845,9 @@
     "alloydb",
     "database"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/alloydb-omni.png",
+   "tagline": "Run Postgres in containers or Kubernetes"
   },
   {
    "name": "altimate-code",
@@ -898,8 +913,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.altimate.ai&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/altimate-code.svg",
+   "marketplace": "claude-code",
+   "tagline": "Hand off dbt and warehouse work"
   },
   {
    "name": "amazon-location-service",
@@ -950,7 +966,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Add maps, geocoding and routing"
   },
   {
    "name": "amd-skills",
@@ -1017,8 +1034,9 @@
      "path": "tracelens-analysis-orchestrator/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=developer.amd.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/amd-skills.svg",
+   "marketplace": "claude-code",
+   "tagline": "Serve and tune AI models on GPUs"
   },
   {
    "name": "amplitude",
@@ -1236,7 +1254,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/amplitude-2x.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Analyze product data and experiments"
   },
   {
    "name": "apollo",
@@ -1306,7 +1325,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/apollo-logo-2.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Prospect, enrich leads and run sequences"
   },
   {
    "name": "apollo-skills",
@@ -1426,8 +1446,9 @@
      "path": "skills/skill-creator/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.apollographql.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/apollo-skills.svg",
+   "marketplace": "claude-code",
+   "tagline": "Build and optimize GraphQL APIs"
   },
   {
    "name": "appwrite",
@@ -1533,8 +1554,9 @@
      "path": "commands/deploy-site.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=appwrite.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/appwrite.png",
+   "marketplace": "claude-code",
+   "tagline": "Use SDKs and deploy functions and sites"
   },
   {
    "name": "asana",
@@ -1559,7 +1581,9 @@
      "path": "commands/asana-setup.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/asana.png",
+   "tagline": "Manage tasks and projects"
   },
   {
    "name": "astronomer-data-agents",
@@ -1761,7 +1785,9 @@
      "path": ".claude-plugin/plugin.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/astronomer-data-agents.png",
+   "tagline": "Author, debug and deploy Airflow DAGs"
   },
   {
    "name": "atlan",
@@ -1802,7 +1828,8 @@
     "displayName": "Atlan",
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/atlan-logo.png"
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Search and govern your data catalog"
   },
   {
    "name": "atlassian",
@@ -1904,7 +1931,8 @@
     "confluence",
     "skills"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Work in Jira and Confluence"
   },
   {
    "name": "atlassian-twg-cli",
@@ -1956,8 +1984,9 @@
      "path": "skills/twg-setup/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=developer.atlassian.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/atlassian-twg-cli.png",
+   "marketplace": "claude-code",
+   "tagline": "Query Jira, Confluence and Bitbucket"
   },
   {
    "name": "atomic-agents",
@@ -2024,7 +2053,9 @@
      "path": "agents/atomic-reviewer.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/atomic-agents.png",
+   "tagline": "Scaffold AI apps, schemas and tools"
   },
   {
    "name": "auth0",
@@ -2060,7 +2091,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/auth0-logo.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Add login, SSO and MFA to any app"
   },
   {
    "name": "aws-agents",
@@ -2176,7 +2208,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build, deploy and harden AI apps on AWS"
   },
   {
    "name": "aws-agents-for-devsecops",
@@ -2359,7 +2392,9 @@
      "path": "commands/spaces.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/aws-agents-for-devsecops.png",
+   "tagline": "Investigate incidents and pentest code"
   },
   {
    "name": "aws-amplify",
@@ -2407,7 +2442,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build full-stack apps with auth and data"
   },
   {
    "name": "aws-core",
@@ -2684,7 +2720,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build and run infrastructure on AWS"
   },
   {
    "name": "aws-data-analytics",
@@ -2834,7 +2871,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build data lakes with Glue and Athena"
   },
   {
    "name": "aws-serverless",
@@ -2924,7 +2962,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build Lambda apps and Step Functions"
   },
   {
    "name": "aws-startup-advisor",
@@ -3126,7 +3165,9 @@
      "path": "agents/llm2bedrock-report-generator.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/aws-startup-advisor.png",
+   "tagline": "Get AWS architecture advice for startups"
   },
   {
    "name": "aws-transform",
@@ -3188,7 +3229,9 @@
      "path": "skills/aws-transform/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/aws-transform.png",
+   "tagline": "Modernize .NET, COBOL and Java code"
   },
   {
    "name": "azure",
@@ -3383,7 +3426,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/azure-logo-2.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Deploy and diagnose cloud resources"
   },
   {
    "name": "azure-cosmos-db-assistant",
@@ -3441,7 +3485,9 @@
      "path": "agents/cosmosdb-expert.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/azure-cosmos-db-assistant.png",
+   "tagline": "Model data and tune NoSQL queries"
   },
   {
    "name": "azure-sql-developer",
@@ -3563,7 +3609,9 @@
      "path": "skills/azuresql-db-testing/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/azure-sql-developer.png",
+   "tagline": "Run a local SQL engine in a container"
   },
   {
    "name": "base44",
@@ -3619,8 +3667,9 @@
      "path": "skills/base44-troubleshooter/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.base44.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/base44.png",
+   "marketplace": "claude-code",
+   "tagline": "Build and deploy full-stack apps"
   },
   {
    "name": "bigquery-data-analytics",
@@ -3663,7 +3712,9 @@
     "data-analytics",
     "database"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/bigquery-data-analytics.png",
+   "tagline": "Query datasets and generate insights"
   },
   {
    "name": "boltz",
@@ -3742,8 +3793,9 @@
      "path": "skills/boltz-structure-and-binding/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=boltz.bio&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/boltz.svg",
+   "marketplace": "claude-code",
+   "tagline": "Predict protein structures and binders"
   },
   {
    "name": "brightdata-plugin",
@@ -3919,8 +3971,9 @@
      "path": "skills/seo-audit/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.brightdata.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/brightdata-plugin.png",
+   "marketplace": "claude-code",
+   "tagline": "Scrape websites and search Google"
   },
   {
    "name": "buildkite",
@@ -3990,7 +4043,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/9de6d5f4f0af3830.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Manage CI pipelines and migrations"
   },
   {
    "name": "canva",
@@ -4065,8 +4119,9 @@
      "path": "skills/resize-for-social-media/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.canva.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/canva.png",
+   "marketplace": "claude-code",
+   "tagline": "Create, edit and resize designs"
   },
   {
    "name": "carbone-skill",
@@ -4091,8 +4146,9 @@
     "name": "carbone",
     "displayName": "Carbone"
    },
-   "logoUrl": "https://www.google.com/s2/favicons?domain=carbone.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/carbone-skill.png",
+   "marketplace": "claude-code",
+   "tagline": "Write document templates for any format"
   },
   {
    "name": "carta-cap-table",
@@ -4253,8 +4309,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=carta.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/carta-cap-table.png",
+   "marketplace": "claude-code",
+   "tagline": "Query cap tables, grants and 409As"
   },
   {
    "name": "carta-crm",
@@ -4444,8 +4501,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=carta.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/carta-crm.png",
+   "marketplace": "claude-code",
+   "tagline": "Track investors, deals and contacts"
   },
   {
    "name": "carta-investors",
@@ -4606,8 +4664,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=carta.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/carta-investors.png",
+   "marketplace": "claude-code",
+   "tagline": "Analyze fund data and build AGM decks"
   },
   {
    "name": "catalyst-by-zoho",
@@ -4746,8 +4805,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=catalyst.zoho.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/catalyst-by-zoho.png",
+   "marketplace": "claude-code",
+   "tagline": "Build and run full-stack cloud apps"
   },
   {
    "name": "cds-mcp",
@@ -4786,8 +4846,9 @@
     "cds",
     "mcp"
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=cap.cloud.sap&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/cds-mcp.png",
+   "marketplace": "claude-code",
+   "tagline": "Search SAP CAP models and docs"
   },
   {
    "name": "chronograph-gp",
@@ -4878,8 +4939,9 @@
      "path": "agents/chronograph-tvpi-attribution-by-company.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.chronograph.pe&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/chronograph-gp.png",
+   "marketplace": "claude-code",
+   "tagline": "Monitor portfolio companies for GPs"
   },
   {
    "name": "chronograph-lp",
@@ -4960,8 +5022,9 @@
      "path": "agents/chronograph-lp-analyst.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.chronograph.pe&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/chronograph-lp.png",
+   "marketplace": "claude-code",
+   "tagline": "Forecast cashflows and pace commitments"
   },
   {
    "name": "circle-skills",
@@ -5093,8 +5156,9 @@
      "path": "skills/use-user-controlled-wallets/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.circle.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/circle-skills.svg",
+   "marketplace": "claude-code",
+   "tagline": "Build USDC payments and wallets"
   },
   {
    "name": "circleback",
@@ -5127,7 +5191,8 @@
     "calendar",
     "mcp"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Search meetings, emails and calendar"
   },
   {
    "name": "ckeditor",
@@ -5181,8 +5246,9 @@
      "path": "skills/ckeditor/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=ckeditor.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/ckeditor.png",
+   "marketplace": "claude-code",
+   "tagline": "Add a rich text editor to your app"
   },
   {
    "name": "clangd-lsp",
@@ -5226,7 +5292,9 @@
      }
     }
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/clangd-lsp.png",
+   "tagline": "Code intelligence for C and C++"
   },
   {
    "name": "claude-md-management",
@@ -5266,7 +5334,9 @@
      "path": "commands/revise-claude-md.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/claude-md-management.png",
+   "tagline": "Audit and update project memory files"
   },
   {
    "name": "claude-security",
@@ -5378,7 +5448,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/claude-security.png",
+   "tagline": "Scan your code and patch vulnerabilities"
   },
   {
    "name": "clay",
@@ -5577,7 +5649,8 @@
     "data",
     "mcp"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Find prospects and draft campaigns"
   },
   {
    "name": "clickhouse",
@@ -5627,7 +5700,9 @@
      "path": "skills/setup/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/clickhouse.png",
+   "tagline": "Browse and query your cloud databases"
   },
   {
    "name": "clickhouse-best-practices",
@@ -5717,8 +5792,9 @@
      "path": "skills/infra-postgres/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=clickhouse.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/clickhouse-best-practices.svg",
+   "marketplace": "claude-code",
+   "tagline": "Optimize schemas, queries and ingestion"
   },
   {
    "name": "cloud-sql-mysql",
@@ -5754,7 +5830,9 @@
     "mysql",
     "database"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/cloud-sql-mysql.png",
+   "tagline": "Connect to and query MySQL databases"
   },
   {
    "name": "cloud-sql-postgresql",
@@ -5785,13 +5863,14 @@
      "path": ".claude-plugin/plugin.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/cloud-sql-postgresql.png",
    "keywords": [
     "cloud-sql",
     "postgresql",
     "database"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Work with managed PostgreSQL databases"
   },
   {
    "name": "cloud-sql-sqlserver",
@@ -5827,7 +5906,9 @@
     "sql-server",
     "database"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/cloud-sql-sqlserver.png",
+   "tagline": "Connect to managed MSSQL databases"
   },
   {
    "name": "cloudflare",
@@ -5942,7 +6023,8 @@
     "storage",
     "applications"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build on Workers and Durable Objects"
   },
   {
    "name": "cockroachdb",
@@ -6196,7 +6278,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/0c91120e5687e924.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Explore schemas and tune distributed SQL"
   },
   {
    "name": "code-modernization",
@@ -6358,7 +6441,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/code-modernization.png",
+   "tagline": "Assess and modernize legacy codebases"
   },
   {
    "name": "code-simplifier",
@@ -6391,7 +6476,9 @@
      "path": "agents/code-simplifier.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/code-simplifier.png",
+   "tagline": "Simplify and refine recent code changes"
   },
   {
    "name": "coderabbit",
@@ -6446,7 +6533,9 @@
      "path": "agents/code-reviewer.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/coderabbit.png",
+   "tagline": "Catch bugs and security issues in review"
   },
   {
    "name": "codspeed",
@@ -6496,8 +6585,9 @@
      "path": "skills/codspeed-setup-harness/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=codspeed.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/codspeed.png",
+   "marketplace": "claude-code",
+   "tagline": "Benchmark and profile code performance"
   },
   {
    "name": "commit-commands",
@@ -6540,7 +6630,9 @@
      "path": "commands/commit.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/commit-commands.png",
+   "tagline": "Commit, push and open pull requests"
   },
   {
    "name": "confidence",
@@ -6743,7 +6835,8 @@
      "path": "commands/onboard-confidence.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Manage flags, experiments and migrations"
   },
   {
    "name": "context7",
@@ -6774,7 +6867,8 @@
      "path": ".mcp.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Look up current library docs and code"
   },
   {
    "name": "convex",
@@ -6949,7 +7043,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/f60016f427b085bc.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Design schemas, auth and real-time apps"
   },
   {
    "name": "crowdsec",
@@ -7003,8 +7098,9 @@
      "path": "skills/crowdsec-service-api/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.crowdsec.net&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/crowdsec.png",
+   "marketplace": "claude-code",
+   "tagline": "Install and run intrusion protection"
   },
   {
    "name": "crowdstrike-falcon-foundry",
@@ -7120,7 +7216,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/crowdstrike-falcon-foundry.png",
+   "tagline": "Build apps on the Falcon platform"
   },
   {
    "name": "crowdstrike-falcon-fusion",
@@ -7208,7 +7306,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/crowdstrike-falcon-fusion.png",
+   "tagline": "Author and run security workflows"
   },
   {
    "name": "csharp-lsp",
@@ -7241,7 +7341,9 @@
      }
     }
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/csharp-lsp.png",
+   "tagline": "Code intelligence for C# files"
   },
   {
    "name": "cwc-makers",
@@ -7296,7 +7398,8 @@
     }
    ],
    "logoUrl": "https://www.google.com/s2/favicons?domain=claude.com&sz=128",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Set up a Cardputer with one command"
   },
   {
    "name": "data",
@@ -7498,7 +7601,9 @@
      "path": ".claude-plugin/plugin.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/data.png",
+   "tagline": "Build and debug Airflow pipelines"
   },
   {
    "name": "data-agent-kit",
@@ -7768,8 +7873,9 @@
      "path": ".claude-plugin/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/data-agent-kit.png",
+   "marketplace": "claude-code",
+   "tagline": "Build data pipelines on Google Cloud"
   },
   {
    "name": "data-engineering",
@@ -7971,7 +8077,9 @@
      "path": ".claude-plugin/plugin.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/data-engineering.png",
+   "tagline": "Explore warehouses and author pipelines"
   },
   {
    "name": "databases-on-aws",
@@ -8039,7 +8147,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Design and query AWS databases"
   },
   {
    "name": "databricks",
@@ -8288,7 +8397,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/databricks-2x.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build apps, jobs and data pipelines"
   },
   {
    "name": "datahub-skills",
@@ -8444,8 +8554,9 @@
      "path": "agents/metadata-searcher.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=datahub.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/datahub-skills.png",
+   "marketplace": "claude-code",
+   "tagline": "Search, enrich and trace data lineage"
   },
   {
    "name": "dataproc",
@@ -8481,7 +8592,9 @@
     "google-cloud",
     "big-data"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/dataproc.png",
+   "tagline": "Manage compute clusters and their jobs"
   },
   {
    "name": "datarobot-agent-skills",
@@ -8580,7 +8693,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/datarobot-logo.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Train, deploy and monitor ML models"
   },
   {
    "name": "dataverse",
@@ -8657,7 +8771,8 @@
     "displayName": "Microsoft Dataverse",
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/microsoft-dataverse.png"
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Query, model and secure business data"
   },
   {
    "name": "deepeval",
@@ -8708,7 +8823,9 @@
      "path": "skills/deepeval-tracing/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/deepeval.png",
+   "tagline": "Evaluate and trace LLM applications"
   },
   {
    "name": "deploy-on-aws",
@@ -8782,7 +8899,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Deploy apps with cost estimates and IaC"
   },
   {
    "name": "desktop-commander",
@@ -8855,8 +8973,9 @@
      "path": "skills/terminal/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=desktopcommander.app&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/desktop-commander.png",
+   "marketplace": "claude-code",
+   "tagline": "Run terminal commands and edit files"
   },
   {
    "name": "discord",
@@ -8897,7 +9016,9 @@
      "path": "skills/configure/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/discord.png",
+   "tagline": "Bridge chats with access controls"
   },
   {
    "name": "dominodatalab",
@@ -9096,8 +9217,9 @@
      "path": "agents/domino-setup.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.domino.ai&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/dominodatalab.png",
+   "marketplace": "claude-code",
+   "tagline": "Run data science jobs and deploy models"
   },
   {
    "name": "dropbox",
@@ -9186,8 +9308,9 @@
      "path": "skills/share-dropbox-content/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.dropbox.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/dropbox.png",
+   "marketplace": "claude-code",
+   "tagline": "Search, organize and share files"
   },
   {
    "name": "duckdb-skills",
@@ -9278,8 +9401,9 @@
      "path": "skills/spatial/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=duckdb.org&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/duckdb-skills.png",
+   "marketplace": "claude-code",
+   "tagline": "Read data files and query databases"
   },
   {
    "name": "duende-skills",
@@ -9438,8 +9562,9 @@
      "path": "agents/oauth-oidc-specialist.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=duendesoftware.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/duende-skills.svg",
+   "marketplace": "claude-code",
+   "tagline": "Secure apps with OAuth and OpenID"
   },
   {
    "name": "exa",
@@ -9496,7 +9621,8 @@
     "linkedin",
     "crawling"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Search the web and research companies"
   },
   {
    "name": "explanatory-output-style",
@@ -9529,7 +9655,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/explanatory-output-style.png",
+   "tagline": "Explain implementation choices as you go"
   },
   {
    "name": "expo",
@@ -9687,7 +9815,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/expo.png",
+   "tagline": "Build and ship React Native apps"
   },
   {
    "name": "fakechat",
@@ -9718,7 +9848,9 @@
     "channel",
     "mcp"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/fakechat.png",
+   "tagline": "Test chat notifications on localhost"
   },
   {
    "name": "fastly-agent-toolkit",
@@ -9795,7 +9927,9 @@
      "path": "skills/xvcl/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/fastly-agent-toolkit.png",
+   "tagline": "Develop, test and tune CDN services"
   },
   {
    "name": "feature-dev",
@@ -9845,7 +9979,9 @@
      "path": "agents/code-reviewer.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/feature-dev.png",
+   "tagline": "Explore, design and review new features"
   },
   {
    "name": "fiftyone",
@@ -9973,8 +10109,9 @@
      "path": "commands/quickstart.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.voxel51.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/fiftyone.png",
+   "marketplace": "claude-code",
+   "tagline": "Curate datasets and test vision models"
   },
   {
    "name": "firebase",
@@ -10005,7 +10142,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/firebase-logo.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Manage Firestore, auth and hosting"
   },
   {
    "name": "firecrawl",
@@ -10097,7 +10235,9 @@
      "path": "commands/skill-gen.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/firecrawl.png",
+   "tagline": "Crawl websites into clean markdown"
   },
   {
    "name": "firestore-native",
@@ -10134,7 +10274,9 @@
     "database",
     "nosql"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/firestore-native.png",
+   "tagline": "Browse and edit document collections"
   },
   {
    "name": "forge-skills",
@@ -10212,7 +10354,8 @@
     "mcp",
     "skills"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build and deploy Atlassian cloud apps"
   },
   {
    "name": "frontend-design",
@@ -10245,7 +10388,9 @@
      "path": "skills/frontend-design/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/frontend-design.png",
+   "tagline": "Create distinctive web interfaces"
   },
   {
    "name": "fullstory",
@@ -10316,8 +10461,9 @@
      "path": "agents/session-context.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.fullstory.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/fullstory.png",
+   "marketplace": "claude-code",
+   "tagline": "Analyze session replays and friction"
   },
   {
    "name": "gc-ai",
@@ -10379,8 +10525,9 @@
      "path": "agents/gc-ai-analyst.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.gc.ai&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/gc-ai.png",
+   "marketplace": "claude-code",
+   "tagline": "Review legal documents from your files"
   },
   {
    "name": "gitkraken",
@@ -10411,8 +10558,9 @@
      "path": "mcp.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.gitkraken.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/gitkraken.png",
+   "marketplace": "claude-code",
+   "tagline": "Track commits, branches and PRs"
   },
   {
    "name": "gitlab",
@@ -10436,7 +10584,9 @@
      "path": ".mcp.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/gitlab.png",
+   "tagline": "Manage merge requests and pipelines"
   },
   {
    "name": "google-cloud-storage",
@@ -10494,7 +10644,7 @@
      "path": "skills/google-cloud-storage-fuse/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/google-cloud-storage.png",
    "keywords": [
     "gcs",
     "google-cloud-storage",
@@ -10504,7 +10654,8 @@
     "object storage",
     "blob storage"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Manage buckets, objects and access"
   },
   {
    "name": "gopls-lsp",
@@ -10537,7 +10688,9 @@
      }
     }
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/gopls-lsp.png",
+   "tagline": "Code intelligence for Go files"
   },
   {
    "name": "govtribe",
@@ -10604,8 +10757,9 @@
      "path": "skills/govtribe-proposal-workflows/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=govtribe.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/govtribe.png",
+   "marketplace": "claude-code",
+   "tagline": "Research government contract bids"
   },
   {
    "name": "grafana-assistant",
@@ -10646,7 +10800,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/4b1d63715cf5926f.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Use the observability assistant CLI"
   },
   {
    "name": "grafana-cloud-mcp",
@@ -10696,7 +10851,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/7ac488c9d3baad66.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Explore hosted observability data"
   },
   {
    "name": "grafana-mcp",
@@ -10742,8 +10898,9 @@
      "path": "skills/grafana-mcp-tools/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=grafana.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/grafana-mcp.png",
+   "marketplace": "claude-code",
+   "tagline": "Manage dashboards, alerts and incidents"
   },
   {
    "name": "greptile",
@@ -10795,8 +10952,9 @@
      "path": "commands/review.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.greptile.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/greptile.png",
+   "marketplace": "claude-code",
+   "tagline": "Run and resolve PR code reviews"
   },
   {
    "name": "growthbook",
@@ -10849,8 +11007,9 @@
      "path": "skills/gb-setup/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=growthbook.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/growthbook.png",
+   "marketplace": "claude-code",
+   "tagline": "Run feature flags and A/B tests"
   },
   {
    "name": "honeycomb",
@@ -10979,8 +11138,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.honeycomb.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/honeycomb.png",
+   "marketplace": "claude-code",
+   "tagline": "Query traces and investigate production"
   },
   {
    "name": "hookify",
@@ -11064,7 +11224,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/hookify.png",
+   "tagline": "Create hooks that block unwanted actions"
   },
   {
    "name": "hostinger",
@@ -11132,8 +11294,9 @@
      "path": "skills/hosting-deploy-wordpress-theme/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.hostinger.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/hostinger.png",
+   "marketplace": "claude-code",
+   "tagline": "Deploy sites and manage domains and VPS"
   },
   {
    "name": "huggingface-skills",
@@ -11300,7 +11463,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/hugging-face.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Train and use open models and datasets"
   },
   {
    "name": "hunter",
@@ -11411,8 +11575,9 @@
      "path": "skills/push-to-crm/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=hunter.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/hunter.png",
+   "marketplace": "claude-code",
+   "tagline": "Find and verify professional emails"
   },
   {
    "name": "hyperframes",
@@ -11546,7 +11711,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/ad230dbcf8e025b6.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Turn HTML into rendered videos"
   },
   {
    "name": "idmp-plugin",
@@ -11704,7 +11870,9 @@
      "path": "skills/idmp-workflow-panel-build/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/idmp-plugin.png",
+   "tagline": "Inspect industrial data and dashboards"
   },
   {
    "name": "imessage",
@@ -11745,7 +11913,8 @@
      "path": "skills/configure/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Read and send texts with access control"
   },
   {
    "name": "incident-io",
@@ -11821,8 +11990,9 @@
      "path": "skills/talking-to-the-user/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=incident.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/incident-io.png",
+   "marketplace": "claude-code",
+   "tagline": "Respond to incidents and check on-call"
   },
   {
    "name": "informatica-for-claude-platform",
@@ -11864,7 +12034,9 @@
      "path": "skills/catalog-and-data-discovery/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/informatica-for-claude-platform.png",
+   "tagline": "Discover governed tables and policies"
   },
   {
    "name": "intercom",
@@ -11920,7 +12092,8 @@
     }
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/intercom/assets/logo.svg",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Search support chats and contacts"
   },
   {
    "name": "intuit-quickbooks",
@@ -12010,7 +12183,9 @@
      "path": "skills/setup/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/intuit-quickbooks.png",
+   "tagline": "Check business health and chase invoices"
   },
   {
    "name": "jdtls-lsp",
@@ -12044,7 +12219,9 @@
      "startupTimeout": 120000
     }
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/jdtls-lsp.png",
+   "tagline": "Code intelligence for Java files"
   },
   {
    "name": "jfrog",
@@ -12151,7 +12328,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/6a7d150a055deaff.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Manage artifacts and package safety"
   },
   {
    "name": "knowledge-catalog",
@@ -12188,7 +12366,9 @@
     "google-cloud",
     "data-governance"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/knowledge-catalog.png",
+   "tagline": "Discover and govern data assets"
   },
   {
    "name": "kotlin-lsp",
@@ -12226,7 +12406,9 @@
      "startupTimeout": 120000
     }
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/kotlin-lsp.png",
+   "tagline": "Code intelligence for Kotlin files"
   },
   {
    "name": "laravel-boost",
@@ -12250,7 +12432,9 @@
      "path": ".mcp.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/laravel-boost.png",
+   "tagline": "Build PHP apps with Artisan and Eloquent"
   },
   {
    "name": "leadfeeder",
@@ -12324,8 +12508,9 @@
      "path": "skills/visitor-company-brief/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.leadfeeder.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/leadfeeder.svg",
+   "marketplace": "claude-code",
+   "tagline": "Turn website visitors into pipeline"
   },
   {
    "name": "learn-with-coursera",
@@ -12357,7 +12542,9 @@
      "path": "learn-with-coursera/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/learn-with-coursera.png",
+   "tagline": "Find the right course for any topic"
   },
   {
    "name": "learning-output-style",
@@ -12390,7 +12577,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/learning-output-style.png",
+   "tagline": "Learn by writing key code yourself"
   },
   {
    "name": "legalzoom",
@@ -12428,8 +12617,9 @@
      "path": "commands/review-contract.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.legalzoom.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/legalzoom.png",
+   "marketplace": "claude-code",
+   "tagline": "Review contracts and find an attorney"
   },
   {
    "name": "linear",
@@ -12467,7 +12657,8 @@
     "project-management",
     "productivity"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Create and track issues and projects"
   },
   {
    "name": "linq-alpha",
@@ -12515,8 +12706,9 @@
      "path": "skills/setup/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.linqalpha.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/linq-alpha.png",
+   "marketplace": "claude-code",
+   "tagline": "Research filings and earnings calls"
   },
   {
    "name": "liquid-lsp",
@@ -12547,7 +12739,8 @@
     "shopify",
     "theme"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Code intelligence for Liquid templates"
   },
   {
    "name": "liquid-skills",
@@ -12597,7 +12790,8 @@
      "path": "skills/shopify-liquid-themes/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Write accessible Shopify theme code"
   },
   {
    "name": "logfire",
@@ -12682,7 +12876,9 @@
      "path": "commands/query.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/logfire.png",
+   "tagline": "Instrument and query Python telemetry"
   },
   {
    "name": "logrocket",
@@ -12727,8 +12923,9 @@
      "path": "skills/use-logrocket/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=logrocket.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/logrocket.png",
+   "marketplace": "claude-code",
+   "tagline": "Query session replays and user issues"
   },
   {
    "name": "looker",
@@ -12769,7 +12966,9 @@
     "bi",
     "data-analytics"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/looker.png",
+   "tagline": "Explore your data with LookML"
   },
   {
    "name": "lovable",
@@ -12826,7 +13025,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/8343722c851c00e9.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build, iterate and deploy web apps"
   },
   {
    "name": "lua-lsp",
@@ -12859,7 +13059,9 @@
      }
     }
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/lua-lsp.png",
+   "tagline": "Code intelligence for Lua files"
   },
   {
    "name": "lumen",
@@ -12922,8 +13124,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.ory.sh&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/lumen.svg",
+   "marketplace": "claude-code",
+   "tagline": "Search your codebase locally by meaning"
   },
   {
    "name": "lusha",
@@ -13001,8 +13204,9 @@
      "path": "skills/signal-prospect/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.lusha.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/lusha.png",
+   "marketplace": "claude-code",
+   "tagline": "Build call-ready B2B lead lists"
   },
   {
    "name": "mapbox",
@@ -13151,8 +13355,9 @@
      "path": "skills/mapbox-web-performance-patterns/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.mapbox.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/mapbox.png",
+   "marketplace": "claude-code",
+   "tagline": "Build maps and location-aware apps"
   },
   {
    "name": "math-olympiad",
@@ -13185,7 +13390,9 @@
      "path": "skills/math-olympiad/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/math-olympiad.png",
+   "tagline": "Solve and verify competition math"
   },
   {
    "name": "math-proof",
@@ -13240,7 +13447,9 @@
      "path": "agents/math-proof-worker.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/math-proof.png",
+   "tagline": "Work hard math problems into proofs"
   },
   {
    "name": "mattpocock-skills",
@@ -13466,7 +13675,9 @@
      "path": "skills/productivity/writing-for-agents/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/mattpocock-skills.png",
+   "tagline": "Practice TDD, specs and code review"
   },
   {
    "name": "mcp-apps",
@@ -13520,8 +13731,9 @@
      "path": "skills/migrate-oai-app/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=modelcontextprotocol.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/mcp-apps.png",
+   "marketplace": "claude-code",
+   "tagline": "Create and convert interactive chat apps"
   },
   {
    "name": "mcp-server-dev",
@@ -13564,7 +13776,9 @@
      "path": "skills/build-mcpb/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/mcp-server-dev.png",
+   "tagline": "Design and build tool connectors"
   },
   {
    "name": "mercadopago",
@@ -13675,7 +13889,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/mercadopago.png",
+   "tagline": "Set up payments, webhooks and testing"
   },
   {
    "name": "mergify",
@@ -13750,8 +13966,9 @@
      "path": "skills/mergify-stack/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=mergify.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/mergify.png",
+   "marketplace": "claude-code",
+   "tagline": "Manage merge queues and stacked PRs"
   },
   {
    "name": "microsoft-docs",
@@ -13805,7 +14022,9 @@
      "path": "skills/microsoft-skill-creator/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/microsoft-docs.png",
+   "tagline": "Look up Azure, .NET and Windows docs"
   },
   {
    "name": "migration-to-aws",
@@ -13960,7 +14179,9 @@
      "path": "agents/llm2bedrock-report-generator.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/migration-to-aws.png",
+   "tagline": "Plan a GCP move with cost estimates"
   },
   {
    "name": "mintlify",
@@ -13991,8 +14212,9 @@
      "path": "skills/mintlify/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.mintlify.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/mintlify.png",
+   "marketplace": "claude-code",
+   "tagline": "Build and update documentation sites"
   },
   {
    "name": "miro",
@@ -14081,7 +14303,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/miro.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Read boards and create diagrams"
   },
   {
    "name": "modern-web-guidance",
@@ -14120,7 +14343,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/mwg-logomark.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Apply the latest web best practices"
   },
   {
    "name": "mlflow",
@@ -14152,8 +14376,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=mlflow.org&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/mlflow.png",
+   "marketplace": "claude-code",
+   "tagline": "Trace, evaluate and improve AI apps"
   },
   {
    "name": "monday-crm",
@@ -14251,7 +14476,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/monday.com.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Run deal pipelines and forecasts"
   },
   {
    "name": "mongodb",
@@ -14325,7 +14551,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/mongodb-logo.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Query, model and optimize collections"
   },
   {
    "name": "neon",
@@ -14399,7 +14626,9 @@
      "path": "skills/neon-postgres-egress-optimizer/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/neon.png",
+   "tagline": "Manage Postgres projects and branches"
   },
   {
    "name": "netlify-skills",
@@ -14506,7 +14735,8 @@
     "displayName": "Netlify",
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/netlify.png"
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Deploy sites, functions and edge code"
   },
   {
    "name": "netsuite-ai-companion",
@@ -14543,7 +14773,9 @@
      "path": "skills/netsuite-ai-connector-instructions/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/netsuite-ai-companion.png",
+   "tagline": "Query ERP data with safe guardrails"
   },
   {
    "name": "netsuite-finance-analyst",
@@ -14580,7 +14812,9 @@
      "path": "skills/netsuite-finance-analyst/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/netsuite-finance-analyst.png",
+   "tagline": "Run close, variance and cash reviews"
   },
   {
    "name": "netsuite-suitecloud",
@@ -14654,7 +14888,9 @@
      "path": "skills/netsuite-uif-spa-reference/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/netsuite-suitecloud.png",
+   "tagline": "Develop SuiteScript and SDF projects"
   },
   {
    "name": "newrelic",
@@ -14707,8 +14943,9 @@
      "path": "skills/newrelic-mcp/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=newrelic.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/newrelic.png",
+   "marketplace": "claude-code",
+   "tagline": "Investigate APM, costs and alerts"
   },
   {
    "name": "nightvision",
@@ -14761,7 +14998,9 @@
      "path": "skills/scan-triage/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/nightvision.png",
+   "tagline": "Scan web apps and APIs for exploits"
   },
   {
    "name": "nimble",
@@ -14897,8 +15136,9 @@
      "path": "agents/nimble-researcher.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.nimbleway.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/nimble.png",
+   "marketplace": "claude-code",
+   "tagline": "Search, crawl and extract web data"
   },
   {
    "name": "noibu",
@@ -14965,8 +15205,9 @@
      "path": "skills/tech-diagnosis/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=help.noibu.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/noibu.png",
+   "marketplace": "claude-code",
+   "tagline": "Find store errors that cost revenue"
   },
   {
    "name": "notion",
@@ -15065,7 +15306,8 @@
     "wiki",
     "productivity"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Search and edit your workspace"
   },
   {
    "name": "nvidia-skills",
@@ -15114,8 +15356,9 @@
      "path": "skills/nvidia-skill-finder/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=build.nvidia.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/nvidia-skills.png",
+   "marketplace": "claude-code",
+   "tagline": "Find skills for GPU and CUDA work"
   },
   {
    "name": "oracle-ai-data-platform-workbench-databricks-migrator",
@@ -15259,8 +15502,9 @@
      "path": "agents/migration-reviewer.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.oracle.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/oracle-ai-data-platform-workbench-databricks-migrator.png",
+   "marketplace": "claude-code",
+   "tagline": "Migrate Databricks notebooks and jobs"
   },
   {
    "name": "oracle-ai-data-platform-workbench-engineer-agent",
@@ -15518,8 +15762,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.oracle.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/oracle-ai-data-platform-workbench-engineer-agent.png",
+   "marketplace": "claude-code",
+   "tagline": "Run lakehouse tasks in plain English"
   },
   {
    "name": "oracle-ai-data-platform-workbench-spark-connectors",
@@ -15721,8 +15966,9 @@
      "path": "skills/aidp-streaming-kafka/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.oracle.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/oracle-ai-data-platform-workbench-spark-connectors.png",
+   "marketplace": "claude-code",
+   "tagline": "Connect Spark to 18 data sources"
   },
   {
    "name": "oracledb",
@@ -15758,7 +16004,9 @@
     "database",
     "sql"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/oracledb.png",
+   "tagline": "Connect to and query your databases"
   },
   {
    "name": "outputai",
@@ -16074,8 +16322,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=output.ai&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/outputai.png",
+   "marketplace": "claude-code",
+   "tagline": "Plan, build and debug AI workflows"
   },
   {
    "name": "pagerduty",
@@ -16118,7 +16367,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/pagerduty-logo-1.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Score deploy risk from past incidents"
   },
   {
    "name": "paypal",
@@ -16205,8 +16455,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=developer.paypal.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/paypal.png",
+   "marketplace": "claude-code",
+   "tagline": "Add payments, subscriptions and invoices"
   },
   {
    "name": "pendo-analytics",
@@ -16277,7 +16528,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/87eab61ff591b059.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Analyze feature adoption and replays"
   },
   {
    "name": "pendo-guides",
@@ -16322,7 +16574,8 @@
      "path": "skills/pendo-guide-creator/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Create in-app walkthroughs and polls"
   },
   {
    "name": "pendo-orchestrate",
@@ -16368,7 +16621,8 @@
      "path": "skills/orchestrate-journeys/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Draft multi-step email journeys"
   },
   {
    "name": "php-lsp",
@@ -16404,7 +16658,9 @@
      }
     }
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/php-lsp.png",
+   "tagline": "Code intelligence for PHP files"
   },
   {
    "name": "pinecone",
@@ -16513,7 +16769,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/pinecone-logo.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Manage vector indexes and queries"
   },
   {
    "name": "pixeltable",
@@ -16581,7 +16838,7 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.pixeltable.com&sz=128",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/pixeltable.png",
    "keywords": [
     "pixeltable",
     "multimodal",
@@ -16590,7 +16847,8 @@
     "agents",
     "computed-columns"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build multimodal apps with embeddings"
   },
   {
    "name": "planetscale",
@@ -16621,7 +16879,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/planetscale.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Query databases and find slow queries"
   },
   {
    "name": "playground",
@@ -16654,7 +16913,9 @@
      "path": "skills/playground/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/playground.png",
+   "tagline": "Build interactive single-file explorers"
   },
   {
    "name": "playwright",
@@ -16687,7 +16948,8 @@
     "e2e",
     "mcp"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Automate browsers and run e2e tests"
   },
   {
    "name": "plugin-dev",
@@ -16774,7 +17036,9 @@
      "path": "agents/skill-reviewer.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/plugin-dev.png",
+   "tagline": "Build hooks, commands and skills"
   },
   {
    "name": "posthog",
@@ -17658,7 +17922,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/posthog-color.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Explore analytics, flags and errors"
   },
   {
    "name": "postman",
@@ -17773,7 +18038,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/postman.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Mock, test and document APIs"
   },
   {
    "name": "pr-review-toolkit",
@@ -17838,7 +18104,9 @@
      "path": "agents/type-design-analyzer.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/pr-review-toolkit.png",
+   "tagline": "Review PRs for tests, errors and types"
   },
   {
    "name": "preset-cli-skills",
@@ -17885,8 +18153,9 @@
      "path": "skills/preset-cli-mutations/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.preset.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/preset-cli-skills.png",
+   "marketplace": "claude-code",
+   "tagline": "Script BI workflows from the terminal"
   },
   {
    "name": "prisma",
@@ -17914,8 +18183,9 @@
      "path": ".mcp.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=prisma.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/prisma.svg",
+   "marketplace": "claude-code",
+   "tagline": "Provision Postgres and run migrations"
   },
   {
    "name": "pydantic-ai",
@@ -17980,7 +18250,9 @@
      "path": "skills/migrating-vercel-ai-sdk-and-eve-to-pydantic-ai/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/pydantic-ai.png",
+   "tagline": "Write and migrate Python AI app code"
   },
   {
    "name": "pyright-lsp",
@@ -18017,7 +18289,9 @@
      }
     }
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/pyright-lsp.png",
+   "tagline": "Code intelligence for Python files"
   },
   {
    "name": "qdrant-skills",
@@ -18109,8 +18383,9 @@
      "path": "skills/qdrant-version-upgrade/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=skills.qdrant.tech&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/qdrant-skills.png",
+   "marketplace": "claude-code",
+   "tagline": "Tune, scale and deploy vector search"
   },
   {
    "name": "qodo",
@@ -18165,7 +18440,9 @@
      "path": "skills/qodo-setup/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/qodo.png",
+   "tagline": "Review code against team standards"
   },
   {
    "name": "qodo-standards",
@@ -18210,7 +18487,9 @@
      "path": "skills/qodo-manage-standards/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/qodo-standards.png",
+   "tagline": "Discover and manage coding rules"
   },
   {
    "name": "quarkus-agent",
@@ -18248,8 +18527,9 @@
     "dev-mode",
     "scaffolding"
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=quarkus.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/quarkus-agent.png",
+   "marketplace": "claude-code",
+   "tagline": "Scaffold and run Java apps in dev mode"
   },
   {
    "name": "railway",
@@ -18293,7 +18573,8 @@
     "displayName": "Railway",
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/railway-1-.png"
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Deploy apps, databases and infra"
   },
   {
    "name": "redis-development",
@@ -18371,7 +18652,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/e54fc5aa9fa2072f.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Apply caching and vector search patterns"
   },
   {
    "name": "resend",
@@ -18439,7 +18721,8 @@
      "path": "skills/resend-cli/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Send and receive emails from code"
   },
   {
    "name": "rootly",
@@ -18600,8 +18883,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=rootly.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/rootly.png",
+   "marketplace": "claude-code",
+   "tagline": "Run incidents, on-call and retros"
   },
   {
    "name": "ruby-lsp",
@@ -18638,7 +18922,9 @@
      }
     }
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/ruby-lsp.png",
+   "tagline": "Code intelligence for Ruby files"
   },
   {
    "name": "runway-api",
@@ -18734,8 +19020,9 @@
      "path": "skills/use-runway-api/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=runwayml.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/runway-api.png",
+   "marketplace": "claude-code",
+   "tagline": "Generate videos, images and audio"
   },
   {
    "name": "rust-analyzer-lsp",
@@ -18768,7 +19055,9 @@
      }
     }
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/rust-analyzer-lsp.png",
+   "tagline": "Code intelligence for Rust files"
   },
   {
    "name": "sagemaker-ai",
@@ -18907,7 +19196,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/aws-2x.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Fine-tune, train and deploy ML models"
   },
   {
    "name": "salesforce-development",
@@ -19267,7 +19557,9 @@
      "path": ".claude-plugin/plugin.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/salesforce-development.png",
+   "tagline": "Build apps with Apex and metadata"
   },
   {
    "name": "sanity",
@@ -19374,7 +19666,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/89f35d672e328dc6.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Model, query and author content"
   },
   {
    "name": "sap-cds-mcp",
@@ -19413,8 +19706,9 @@
     "cds",
     "mcp"
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=cap.cloud.sap&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/sap-cds-mcp.png",
+   "marketplace": "claude-code",
+   "tagline": "Look up CDS models and CAP docs"
   },
   {
    "name": "sap-fiori-mcp-server",
@@ -19492,7 +19786,9 @@
      "path": "skills/sap-fiori-tree-table/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/sap-fiori-mcp-server.png",
+   "tagline": "Build and modify Fiori apps"
   },
   {
    "name": "sap-hana-cli",
@@ -19539,7 +19835,9 @@
     "backup",
     "security"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/sap-hana-cli.png",
+   "tagline": "Query, profile and back up HANA data"
   },
   {
    "name": "sap-mdk-server",
@@ -19577,8 +19875,9 @@
     "mdk",
     "mcp"
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=help.sap.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/sap-mdk-server.png",
+   "marketplace": "claude-code",
+   "tagline": "Build mobile apps with schema lookups"
   },
   {
    "name": "save-to-spotify",
@@ -19623,7 +19922,8 @@
      "path": "skills/save-to-spotify/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Turn text into narrated audio episodes"
   },
   {
    "name": "scandit-sdk",
@@ -20111,7 +20411,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/6f4b24f3dbaa43d6.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Add barcode and ID scanning to apps"
   },
   {
    "name": "semgrep",
@@ -20169,7 +20470,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/semgrep.png",
+   "tagline": "Catch vulnerabilities as code is written"
   },
   {
    "name": "sentry",
@@ -20248,7 +20551,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/sentry-2x.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Debug production errors and stack traces"
   },
   {
    "name": "sentry-cli",
@@ -20280,8 +20584,9 @@
      "path": "skills/sentry-cli/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=sentry.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/sentry-cli.png",
+   "marketplace": "claude-code",
+   "tagline": "Inspect errors from the command line"
   },
   {
    "name": "serena",
@@ -20305,7 +20610,9 @@
      "path": ".mcp.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/serena.png",
+   "tagline": "Navigate and refactor code semantically"
   },
   {
    "name": "servicenow-sdk",
@@ -20343,8 +20650,9 @@
      "path": "skills/now-sdk/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=servicenow.github.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/servicenow-sdk.png",
+   "marketplace": "claude-code",
+   "tagline": "Create and deploy apps with Fluent"
   },
   {
    "name": "setup-agent-analytics",
@@ -20382,7 +20690,8 @@
      "path": "skills/setup-agent-analytics/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Instrument AI assistants for analytics"
   },
   {
    "name": "setup-mcp-agent-analytics",
@@ -20420,7 +20729,8 @@
      "path": "skills/setup-mcp-agent-analytics/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Track tool calls with usage analytics"
   },
   {
    "name": "shippo",
@@ -20509,8 +20819,9 @@
      "path": "skills/upgrade-shippo/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.goshippo.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/shippo.png",
+   "marketplace": "claude-code",
+   "tagline": "Compare rates and buy shipping labels"
   },
   {
    "name": "shopify-ai-toolkit",
@@ -20667,8 +20978,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=shopify.dev&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/shopify-ai-toolkit.png",
+   "marketplace": "claude-code",
+   "tagline": "Build storefronts, apps and extensions"
   },
   {
    "name": "slack",
@@ -20770,7 +21082,8 @@
    },
    "featured": true,
    "keywords": [],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Search messages and catch up on threads"
   },
   {
    "name": "snowflake-cortex-code",
@@ -20831,8 +21144,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.snowflake.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/snowflake-cortex-code.svg",
+   "marketplace": "claude-code",
+   "tagline": "Route warehouse tasks to Cortex Code"
   },
   {
    "name": "sonarqube",
@@ -20940,7 +21254,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/dd8a1ddaf2d92bb7.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Enforce quality gates on every edit"
   },
   {
    "name": "sonatype-guide",
@@ -20971,7 +21286,9 @@
      "path": "skills/sonatype-guide/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/sonatype-guide.png",
+   "tagline": "Check dependencies for vulnerabilities"
   },
   {
    "name": "sourcegraph",
@@ -21002,8 +21319,9 @@
      "path": "skills/searching-sourcegraph/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=sourcegraph.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/sourcegraph.png",
+   "marketplace": "claude-code",
+   "tagline": "Search and trace code across repos"
   },
   {
    "name": "spanner",
@@ -21039,7 +21357,9 @@
     "google-cloud",
     "database"
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/spanner.png",
+   "tagline": "Query distributed SQL in plain language"
   },
   {
    "name": "spotify-ads-api",
@@ -21177,7 +21497,9 @@
      "path": ".claude-plugin/hooks.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/spotify-ads-api.png",
+   "tagline": "Build audio ad campaigns and reports"
   },
   {
    "name": "stackhawk-hawkscan",
@@ -21235,8 +21557,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.stackhawk.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/stackhawk-hawkscan.png",
+   "marketplace": "claude-code",
+   "tagline": "Run DAST scans and prioritize fixes"
   },
   {
    "name": "stackhawk-api",
@@ -21278,8 +21601,9 @@
      "path": "skills/api/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.stackhawk.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/stackhawk-api.png",
+   "marketplace": "claude-code",
+   "tagline": "Report on security posture and findings"
   },
   {
    "name": "streaming-skills-plugin",
@@ -21356,8 +21680,9 @@
      "path": "skills/msk-migration/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.confluent.io&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/streaming-skills-plugin.png",
+   "marketplace": "claude-code",
+   "tagline": "Build Kafka and Flink streaming apps"
   },
   {
    "name": "stripe",
@@ -21493,7 +21818,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/stripe-parallelogram.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build payments and billing flows"
   },
   {
    "name": "supabase",
@@ -21574,7 +21900,9 @@
      "path": "agents/open-plugin"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/supabase.png",
+   "tagline": "Run SQL, auth and storage for your app"
   },
   {
    "name": "superdesign",
@@ -21625,8 +21953,9 @@
      "path": "skills/superdesign/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=superdesign.dev&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/superdesign.png",
+   "marketplace": "claude-code",
+   "tagline": "Design UI drafts on an infinite canvas"
   },
   {
    "name": "superpowers",
@@ -21744,7 +22073,8 @@
     "isVerified": true
    },
    "featured": false,
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Brainstorm, plan, debug and do TDD"
   },
   {
    "name": "swift-lsp",
@@ -21777,7 +22107,9 @@
      }
     }
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/swift-lsp.png",
+   "tagline": "Code intelligence for Swift files"
   },
   {
    "name": "synthflow",
@@ -21832,8 +22164,9 @@
      "path": "skills/prompt-review/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=synthflow.ai&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/synthflow.png",
+   "marketplace": "claude-code",
+   "tagline": "Review voice calls and audit prompts"
   },
   {
    "name": "tavily",
@@ -21913,7 +22246,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/tavily-logo.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Search, extract and crawl live web data"
   },
   {
    "name": "teamcity-cli",
@@ -21950,8 +22284,9 @@
      "path": "skills/teamcity-cli/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.jetbrains.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/teamcity-cli.png",
+   "marketplace": "claude-code",
+   "tagline": "Explore builds, logs and CI queues"
   },
   {
    "name": "telegram",
@@ -21992,7 +22327,9 @@
      "path": "skills/configure/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/telegram.png",
+   "tagline": "Message via a bridge with allowlists"
   },
   {
    "name": "terraform",
@@ -22024,7 +22361,9 @@
      "path": ".mcp.json"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/terraform.png",
+   "tagline": "Write and automate infrastructure code"
   },
   {
    "name": "togetherai-skills",
@@ -22132,8 +22471,9 @@
      "path": "skills/together-volcano/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.together.ai&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/togetherai-skills.png",
+   "marketplace": "claude-code",
+   "tagline": "Run inference and fine-tune open models"
   },
   {
    "name": "twilio-developer-kit",
@@ -22454,7 +22794,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/twilio.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build SMS, voice and email features"
   },
   {
    "name": "typescript-lsp",
@@ -22497,7 +22838,9 @@
      }
     }
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/typescript-lsp.png",
+   "tagline": "Code intelligence for TypeScript and JS"
   },
   {
    "name": "ui-theme-designer",
@@ -22545,7 +22888,9 @@
      "path": "skills/ui-theme-designer-help/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/ui-theme-designer.png",
+   "tagline": "Look up SAP themes and design tokens"
   },
   {
    "name": "ui5",
@@ -22633,7 +22978,9 @@
      "path": "skills/ui5-best-practices-tables/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/ui5.png",
+   "tagline": "Create, validate and lint SAP web apps"
   },
   {
    "name": "ui5-modernization",
@@ -22771,7 +23118,9 @@
      "path": "skills/modernize-ui5-app/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/ui5-modernization.png",
+   "tagline": "Modernize legacy SAP web apps"
   },
   {
    "name": "ui5-typescript-conversion",
@@ -22814,7 +23163,9 @@
      "path": "skills/ui5-typescript-conversion/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/ui5-typescript-conversion.png",
+   "tagline": "Convert SAP web apps to TypeScript"
   },
   {
    "name": "unity",
@@ -23010,8 +23361,9 @@
      "path": "skills/validate-urp-render-graph-renderer-feature/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=unity.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/unity.png",
+   "marketplace": "claude-code",
+   "tagline": "Build, monetize and optimize games"
   },
   {
    "name": "unreal-engine-skills-for-claude-code",
@@ -23060,8 +23412,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=dev.epicgames.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/unreal-engine-skills-for-claude-code.png",
+   "marketplace": "claude-code",
+   "tagline": "Control actors, blueprints and materials"
   },
   {
    "name": "valtown",
@@ -23155,8 +23508,9 @@
      "path": "skills/third-party-integrations/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=val.town&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/valtown.png",
+   "marketplace": "claude-code",
+   "tagline": "Deploy HTTP endpoints, crons and SQLite"
   },
   {
    "name": "vanta",
@@ -23220,8 +23574,9 @@
      "path": "skills/test-remediation/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=help.vanta.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/vanta.png",
+   "marketplace": "claude-code",
+   "tagline": "Fix failing compliance tests in code"
   },
   {
    "name": "vanta-mcp-plugin",
@@ -23285,8 +23640,9 @@
      "path": "skills/test-remediation/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=help.vanta.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/vanta-mcp-plugin.png",
+   "marketplace": "claude-code",
+   "tagline": "Remediate compliance test failures"
   },
   {
    "name": "vercel",
@@ -23575,7 +23931,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/vercel-2x.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Deploy, check builds and manage domains"
   },
   {
    "name": "vibe-prospecting",
@@ -23623,8 +23980,9 @@
      "path": "commands/skip_sample.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.vibeprospecting.ai&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/vibe-prospecting.png",
+   "marketplace": "claude-code",
+   "tagline": "Search, enrich and export prospects"
   },
   {
    "name": "vsql-extension-builder",
@@ -23661,8 +24019,9 @@
      "path": "skills/vsql-install-server/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=villagesql.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/vsql-extension-builder.svg",
+   "marketplace": "claude-code",
+   "tagline": "Build and port MySQL extensions"
   },
   {
    "name": "windsor-ai",
@@ -23740,8 +24099,9 @@
      "path": "agents/business-data-analyst.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=windsor.ai&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/windsor-ai.png",
+   "marketplace": "claude-code",
+   "tagline": "Query marketing data from 325+ sources"
   },
   {
    "name": "wix",
@@ -23832,7 +24192,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/wix.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Build and manage sites and apps"
   },
   {
    "name": "workos",
@@ -23878,7 +24239,8 @@
     }
    ],
    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/workos-logo.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Add SSO, directory sync and RBAC"
   },
   {
    "name": "youdotcom-agent-skills",
@@ -23959,8 +24321,9 @@
      "path": "skills/you-web/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=you.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/youdotcom-agent-skills.png",
+   "marketplace": "claude-code",
+   "tagline": "Search the web and cite research"
   },
   {
    "name": "zapier",
@@ -24033,7 +24396,8 @@
     "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/zapier-logo-2.png",
     "isVerified": true
    },
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Run actions across 8,000+ apps"
   },
   {
    "name": "zilliz",
@@ -24189,8 +24553,9 @@
      "path": "commands/status.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=docs.zilliz.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/zilliz.png",
+   "marketplace": "claude-code",
+   "tagline": "Manage vector clusters and collections"
   },
   {
    "name": "zoominfo",
@@ -24466,7 +24831,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/f37d81bdbdb295da.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Research accounts and build lead lists"
   },
   {
    "name": "zscaler",
@@ -24814,7 +25180,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/2ffde5b126a13a4d.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Manage access policies and troubleshoot"
   },
   {
    "name": "langfuse",
@@ -24857,7 +25224,8 @@
     }
    ],
    "logoUrl": "https://cursor-cdn.com/plugin-logos/production/62db91db2e9066ac.png",
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "tagline": "Trace LLM calls and manage prompts"
   },
   {
    "name": "zyte-web-data",
@@ -24916,8 +25284,9 @@
      "path": "hooks/hooks.json"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.zyte.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/zyte-web-data.png",
+   "marketplace": "claude-code",
+   "tagline": "Scrape sites and run Scrapy spiders"
   },
   {
    "name": "activecampaign",
@@ -25028,8 +25397,9 @@
      "path": "agents/marketing-planner.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.activecampaign.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/activecampaign.png",
+   "marketplace": "claude-code",
+   "tagline": "Run email campaigns and automations"
   },
   {
    "name": "hubspot-sales",
@@ -25130,8 +25500,9 @@
      "path": "agents/brief-fetcher.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.hubspot.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/hubspot-sales.png",
+   "marketplace": "claude-code",
+   "tagline": "Prep calls and draft sales follow-ups"
   },
   {
    "name": "dynatrace",
@@ -25334,8 +25705,9 @@
      "path": "skills/dt-setup-react-native/SKILL.md"
     }
    ],
-   "logoUrl": "https://www.google.com/s2/favicons?domain=www.dynatrace.com&sz=128",
-   "marketplace": "claude-code"
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/dynatrace.png",
+   "marketplace": "claude-code",
+   "tagline": "Query logs and investigate problems"
   },
   {
    "name": "wingspan",
@@ -25417,7 +25789,9 @@
      "path": "skills/using-wingspan-tools/SKILL.md"
     }
    ],
-   "marketplace": "claude-code"
+   "marketplace": "claude-code",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/wingspan.png",
+   "tagline": "Track contractors and draft payments"
   },
   {
    "name": "teaching",
@@ -25455,7 +25829,8 @@
      "path": "skills/run-learning-retrospective/SKILL.md"
     }
    ],
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Map skills and plan practice"
   },
   {
    "name": "thermos",
@@ -25516,7 +25891,8 @@
     "name": "cursor",
     "displayName": "Cursor"
    },
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Run deep security and quality reviews"
   },
   {
    "name": "agent-compatibility",
@@ -25577,7 +25953,8 @@
     "name": "cursor",
     "displayName": "Cursor"
    },
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Audit repo startup, checks and docs"
   },
   {
    "name": "cli-for-agent",
@@ -25615,7 +25992,9 @@
     "name": "cursor",
     "displayName": "Cursor"
    },
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/cli-for-agent.png",
+   "tagline": "Design CLIs automation can run reliably"
   },
   {
    "name": "grok-voice",
@@ -25668,7 +26047,8 @@
      "path": "skills/debug-voice/SKILL.md"
     }
    ],
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Add speech, dictation and read-aloud"
   },
   {
    "name": "gmail",
@@ -25700,7 +26080,8 @@
     "workspace"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gmail/assets/logo.svg",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search, read and draft email"
   },
   {
    "name": "google-drive",
@@ -25740,7 +26121,8 @@
      "path": "skills/google-drive/SKILL.md"
     }
    ],
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search, create and share files"
   },
   {
    "name": "google-calendar",
@@ -25773,7 +26155,8 @@
     "workspace"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-calendar/assets/logo.svg",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search events and schedule meetings"
   },
   {
    "name": "salesforce",
@@ -25822,7 +26205,8 @@
     "sobject"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/salesforce/assets/logo.svg",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Query and update CRM records"
   },
   {
    "name": "ashby",
@@ -25856,7 +26240,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/ashby/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search candidates and prep interviews"
   },
   {
    "name": "greenhouse",
@@ -25890,7 +26275,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/greenhouse/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Review candidates, jobs and scorecards"
   },
   {
    "name": "hubspot",
@@ -25940,7 +26326,8 @@
     "deals"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/hubspot/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Update contacts, deals and tickets"
   },
   {
    "name": "zoom",
@@ -25989,7 +26376,8 @@
     "docs"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/zoom/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Pull meeting transcripts and docs"
   },
   {
    "name": "navan",
@@ -26023,7 +26411,8 @@
     "bookings"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/navan/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Query travel bookings and expenses"
   },
   {
    "name": "profound",
@@ -26058,7 +26447,8 @@
     "analytics"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/profound/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Track AI visibility and citations"
   },
   {
    "name": "juicebox",
@@ -26092,7 +26482,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/juicebox/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Review sourcing shortlists and analytics"
   },
   {
    "name": "outreach",
@@ -26126,7 +26517,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/outreach/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search sequences, prospects and meetings"
   },
   {
    "name": "amplemarket",
@@ -26160,7 +26552,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/amplemarket/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Find people, enrich leads, run sequences"
   },
   {
    "name": "klaviyo",
@@ -26194,7 +26587,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/klaviyo/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Manage segments, campaigns and flows"
   },
   {
    "name": "customer-io",
@@ -26228,7 +26622,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/customer-io/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Build campaigns and manage segments"
   },
   {
    "name": "mailerlite",
@@ -26262,7 +26657,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mailerlite/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Manage subscribers and email automations"
   },
   {
    "name": "brevo",
@@ -26305,7 +26701,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/brevo/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Run email and SMS campaigns and deals"
   },
   {
    "name": "typeform",
@@ -26338,7 +26735,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/typeform/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Build forms and analyze responses"
   },
   {
    "name": "jotform",
@@ -26370,7 +26768,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/jotform/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Create forms and read submissions"
   },
   {
    "name": "semrush",
@@ -26404,7 +26803,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/semrush/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Research keywords, traffic and rivals"
   },
   {
    "name": "ahrefs",
@@ -26438,7 +26838,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/ahrefs/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Research backlinks, rankings and SEO"
   },
   {
    "name": "godaddy",
@@ -26471,7 +26872,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/godaddy/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Brainstorm and check domain names"
   },
   {
    "name": "upwork",
@@ -26505,7 +26907,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/upwork/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Find talent, post jobs, manage contracts"
   },
   {
    "name": "workable",
@@ -26539,7 +26942,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/workable/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Move candidates and manage HR records"
   },
   {
    "name": "brex",
@@ -26573,7 +26977,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/brex/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Query expenses, receipts and bills"
   },
   {
    "name": "todoist",
@@ -26606,7 +27011,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/todoist/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Create, find and complete tasks"
   },
   {
    "name": "calendly",
@@ -26639,7 +27045,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/calendly/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Check availability and book meetings"
   },
   {
    "name": "smartsheet",
@@ -26681,7 +27088,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/smartsheet/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Query and update sheets and rows"
   },
   {
    "name": "wrike",
@@ -26723,7 +27131,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/wrike/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search projects and create tasks"
   },
   {
    "name": "coda",
@@ -26756,7 +27165,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/coda/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search docs and update tables"
   },
   {
    "name": "guru",
@@ -26789,7 +27199,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/guru/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search company knowledge for answers"
   },
   {
    "name": "fireflies",
@@ -26822,7 +27233,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/fireflies/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Find meeting action items and summaries"
   },
   {
    "name": "otter",
@@ -26855,7 +27267,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/otter/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search meeting history and transcripts"
   },
   {
    "name": "fathom",
@@ -26888,7 +27301,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/fathom/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Get meeting summaries and transcripts"
   },
   {
    "name": "craft",
@@ -26921,7 +27335,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/craft/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Write documents and daily notes"
   },
   {
    "name": "mem",
@@ -26954,7 +27369,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/mem/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Capture, search and organize notes"
   },
   {
    "name": "readwise",
@@ -26987,7 +27403,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/readwise/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search highlights and save articles"
   },
   {
    "name": "xero",
@@ -27037,7 +27454,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/xero/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Manage invoices, contacts and payroll"
   },
   {
    "name": "attio",
@@ -27072,7 +27490,8 @@
     "tasks"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/attio/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Manage CRM records, lists and tasks"
   },
   {
    "name": "webull",
@@ -27107,7 +27526,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/webull/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "View positions, orders and market data"
   },
   {
    "name": "sp-global",
@@ -27142,7 +27562,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/sp-global/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Query company financials and transcripts"
   },
   {
    "name": "interactive-brokers",
@@ -27177,7 +27598,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/interactive-brokers/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Review positions, balances and P&L"
   },
   {
    "name": "meltwater",
@@ -27212,7 +27634,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/meltwater/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Track media and social mentions"
   },
   {
    "name": "daloopa",
@@ -27247,7 +27670,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/daloopa/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Pull sourced fundamentals and KPIs"
   },
   {
    "name": "excalidraw",
@@ -27282,7 +27706,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/excalidraw/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Draw and export hand-drawn diagrams"
   },
   {
    "name": "google-cloud-bigquery",
@@ -27317,7 +27742,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-cloud-bigquery/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Explore tables and run SQL queries"
   },
   {
    "name": "statsig",
@@ -27352,7 +27778,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/statsig/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Manage feature gates and experiments"
   },
   {
    "name": "robinhood",
@@ -27389,7 +27816,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/robinhood/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Track portfolios, watchlists and trades"
   },
   {
    "name": "coinbase",
@@ -27424,7 +27852,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/coinbase/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Check balances, get quotes and trade"
   },
   {
    "name": "shopify-store",
@@ -27460,7 +27889,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/shopify-store/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Ask about products, orders and sales"
   },
   {
    "name": "tinyfish",
@@ -27496,7 +27926,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/tinyfish/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Automate multi-step web tasks"
   },
   {
    "name": "beehiiv",
@@ -27532,7 +27963,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/beehiiv/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Draft posts and manage subscribers"
   },
   {
    "name": "trello",
@@ -27569,7 +28001,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/trello/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Organize boards, lists and cards"
   },
   {
    "name": "buffer",
@@ -27605,7 +28038,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/buffer/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Schedule and publish social posts"
   },
   {
    "name": "plaud",
@@ -27641,7 +28075,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/plaud/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Search recordings and voice notes"
   },
   {
    "name": "posthog-mcp",
@@ -27677,7 +28112,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/posthog-mcp/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Query analytics and review replays"
   },
   {
    "name": "square",
@@ -27715,7 +28151,8 @@
     "mcp"
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/square/assets/logo.png",
-   "marketplace": "cursor"
+   "marketplace": "cursor",
+   "tagline": "Manage payments, orders and invoices"
   },
   {
    "name": "sfranalytics",
@@ -27742,7 +28179,9 @@
      "path": ".mcp.json"
     }
    ],
-   "marketplace": "corepass"
+   "marketplace": "corepass",
+   "logoUrl": "https://raw.githubusercontent.com/youlandinc/plugins/main/plugins/sfranalytics/logo.svg",
+   "tagline": "Screen property deals and markets"
   },
   {
    "name": "wavus",
@@ -27769,7 +28208,9 @@
      "path": ".mcp.json"
     }
    ],
-   "marketplace": "corepass"
+   "marketplace": "corepass",
+   "logoUrl": "https://raw.githubusercontent.com/youlandinc/plugins/main/plugins/wavus/logo.svg",
+   "tagline": "Find and score prospects and investors"
   },
   {
    "name": "kanban",
@@ -27796,7 +28237,8 @@
      "path": ".mcp.json"
     }
    ],
-   "marketplace": "corepass"
+   "marketplace": "corepass",
+   "tagline": "Move and assign cards on a team board"
   },
   {
    "name": "github",
@@ -27828,7 +28270,9 @@
      "path": ".mcp.json"
     }
    ],
-   "marketplace": "corepass"
+   "marketplace": "corepass",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/github.png",
+   "tagline": "Triage PRs, issues and workflows"
   },
   {
    "name": "zoom-plugin",
@@ -28051,7 +28495,9 @@
      "path": ".mcp.json"
     }
    ],
-   "marketplace": "corepass"
+   "marketplace": "corepass",
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/zoom-plugin.png",
+   "tagline": "Plan, build and debug meeting apps"
   }
  ],
  "excluded": {
