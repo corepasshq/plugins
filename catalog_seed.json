@@ -26051,42 +26051,6 @@
    "tagline": "Add speech, dictation and read-aloud"
   },
   {
-   "name": "gmail",
-   "displayName": "Gmail",
-   "description": "Search, read, draft, and manage email.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/corepasshq/plugins",
-    "path": "plugins/gmail",
-    "ref": null,
-    "sha": "67a211c102d9dc434162693438c132c4cb84b726"
-   },
-   "license": "proprietary",
-   "category": "productivity",
-   "featured": null,
-   "repository": null,
-   "publisher": {
-    "name": "google",
-    "displayName": "Google"
-   },
-   "mcpServers": [
-    {
-     "name": "gmail",
-     "path": ".mcp.json"
-    }
-   ],
-   "marketplace": "corepass",
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gmail/assets/logo.svg",
-   "tagline": "Search, read and draft email",
-   "keywords": [
-    "gmail",
-    "email",
-    "google",
-    "mcp",
-    "workspace"
-   ]
-  },
-  {
    "name": "google-drive",
    "displayName": "Google Drive",
    "description": "Search, read, create, and share files.",
@@ -28623,6 +28587,11 @@
    "kind": "partner-gated",
    "reason": "Its dynamic client registration rejects every redirect URI tried (localhost, 127.0.0.1, https, custom schemes): a fixed allowlist of partner clients.",
    "marketplace": "cursor"
+  },
+  "gmail": {
+   "kind": "auth-unsupported",
+   "reason": "Pending a Remy Google OAuth client. Google's authorization server offers no dynamic client registration, and Remy does not sign in with a client id written into plugin config, so signing in needs a Google client registered for Remy and held by Remy's sign-in service.",
+   "marketplace": "corepass"
   },
   "gong": {
    "kind": "auth-unsupported",
