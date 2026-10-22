@@ -26056,32 +26056,35 @@
    "description": "Search, read, draft, and manage email.",
    "source": {
     "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/gmail",
-    "ref": "main",
-    "sha": "1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def"
+    "url": "https://github.com/corepasshq/plugins",
+    "path": "plugins/gmail",
+    "ref": null,
+    "sha": "67a211c102d9dc434162693438c132c4cb84b726"
    },
+   "license": "proprietary",
    "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
+   "featured": null,
+   "repository": null,
+   "publisher": {
+    "name": "google",
+    "displayName": "Google"
+   },
    "mcpServers": [
     {
      "name": "gmail",
-     "path": "mcp.json"
+     "path": ".mcp.json"
     }
    ],
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/gmail",
+   "marketplace": "corepass",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gmail/assets/logo.svg",
+   "tagline": "Search, read and draft email",
    "keywords": [
     "gmail",
     "email",
     "google",
     "mcp",
     "workspace"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/gmail/assets/logo.svg",
-   "marketplace": "cursor",
-   "tagline": "Search, read and draft email"
+   ]
   },
   {
    "name": "google-drive",

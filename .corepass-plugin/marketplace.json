@@ -34,6 +34,14 @@
       "logoUrl": "https://raw.githubusercontent.com/youlandinc/plugins/main/plugins/kanban/logo.svg"
     },
     {
+      "name": "gmail",
+      "source": "./plugins/gmail",
+      "displayName": "Gmail",
+      "description": "Search, read, draft, and manage email.",
+      "category": "productivity",
+      "logoUrl": "https://raw.githubusercontent.com/youlandinc/plugins/main/plugins/gmail/logo.png"
+    },
+    {
       "name": "github",
       "source": "./plugins/github",
       "displayName": "GitHub",
