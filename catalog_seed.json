@@ -11995,50 +11995,6 @@
    "tagline": "Respond to incidents and check on-call"
   },
   {
-   "name": "informatica-for-claude-platform",
-   "displayName": "Informatica For Claude Platform",
-   "description": "Governed catalog discovery for Informatica Intelligent Data Management Cloud (CDGC): find tables, columns, files, glossary terms and policies across the enterprise catalog, check ownership, certification, sensitivity and applicable policy, and get safe-usage guidance grounded in catalog metadata before querying any data. Requires an Informatica IDMC tenant and the Informatica Catalog Discovery connector.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/forcedotcom/informatica-claude-plugins.git",
-    "path": "informatica-for-claude-platform",
-    "ref": "main",
-    "sha": "554d02e0f7f2adafeaeeedbde04435b7bd310a47"
-   },
-   "category": "database",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://github.com/forcedotcom/informatica-claude-plugins/tree/main/informatica-for-claude-platform",
-   "repository": "https://github.com/forcedotcom/informatica-claude-plugins.git",
-   "author": {
-    "name": "Informatica"
-   },
-   "publisher": {
-    "name": "informatica",
-    "displayName": "Informatica"
-   },
-   "mcpServers": [
-    {
-     "name": "informatica-catalog-discovery",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "informatica-data-exploration",
-     "path": ".mcp.json"
-    }
-   ],
-   "skills": [
-    {
-     "name": "catalog-and-data-discovery",
-     "description": "Enterprise catalog discovery and governance over CDGC. Finds data assets from the catalog \u2014 tables, columns, files, reports, glossary terms, domains, policies \u2014 and evaluates their trustworthiness, business meaning, ownership, sensitivity, applicable policy, and safe use, grounded exclusively in catalog metadata. Use whenever the user asks a data or metadata question \u2014 'find', 'where is', 'show me', 'what tables have X', 'is there a report on Y', 'give me [topic] data', 'who owns', 'what does column X mean', 'is this the authoritative source', 'can I rely on this', 'is this sensitive / PII', 'what policy applies', 'can I safely use this for [purpose]'. Covers business assets (domains, glossaries, policies) and technical assets (tables, columns, files). Always run BEFORE reading actual data through other MCPs so the caller picks the right, trusted, compliant asset.",
-     "path": "skills/catalog-and-data-discovery/SKILL.md"
-    }
-   ],
-   "marketplace": "claude-code",
-   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/informatica-for-claude-platform.png",
-   "tagline": "Discover governed tables and policies"
-  },
-  {
    "name": "intercom",
    "displayName": "Intercom",
    "description": "Intercom integration for Claude Code. Search conversations, analyze customer support patterns, look up contacts and companies, and install the Intercom Messenger. Connect your Intercom workspace to get real-time insights from customer data.",
@@ -20983,109 +20939,6 @@
    "tagline": "Build storefronts, apps and extensions"
   },
   {
-   "name": "slack",
-   "displayName": "Slack",
-   "description": "Slack workspace integration. Search messages, access channels, read threads, and stay connected with your team's communications while coding. Find relevant discussions and context quickly.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/slackapi/slack-mcp-plugin.git",
-    "path": null,
-    "ref": null,
-    "sha": "b073ebc2fc500b52e781f5fd17ebb9ad462363dc"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "homepage": "https://github.com/slackapi/slack-mcp-plugin/tree/main",
-   "repository": "https://github.com/slackapi/slack-mcp-plugin.git",
-   "mcpServers": [
-    {
-     "name": "slack",
-     "path": ".mcp.json"
-    }
-   ],
-   "skills": [
-    {
-     "name": "block-kit",
-     "description": "Use when a developer wants to build or validate Block Kit layouts for Slack messages, modals, or Home tabs: message layouts, modals/forms/dialogs, Home tab interfaces, interactive buttons or menus, or modifying existing Block Kit JSON. Also trigger on any Slack UI component (sections, actions, inputs, headers, alerts, tables, carousels), the words \"blocks\" or \"Block Kit Builder\", a request to preview rendered blocks, or pasted JSON like \"type\": \"section\". Validates via the blocks.validate API method.",
-     "path": "skills/block-kit/SKILL.md"
-    },
-    {
-     "name": "create-slack-app",
-     "description": "Use when a developer wants to create, scaffold, or bootstrap a new Slack app or agent from scratch with the Slack CLI. Covers prerequisites, authentication, choosing a workspace to install into, and creating a project from a Bolt (JS or Python) template locally. Trigger on \"create a Slack app\", \"new Bolt app\", \"start a Slack agent\".",
-     "path": "skills/create-slack-app/SKILL.md"
-    },
-    {
-     "name": "slack-api",
-     "description": "Use when a developer asks which Slack Web API method does something, needs a method's OAuth scopes or token type, wants to call or test a family.method endpoint (chat.postMessage, conversations.history, users.info, views.open), is handling cursor pagination (next_cursor) or rate limits (tier/ratelimited/Retry-After), or is debugging errors like missing_scope, invalid_auth, or channel_not_found. Also trigger on a pasted slack.com/api/ URL or docs.slack.dev/reference/methods link.",
-     "path": "skills/slack-api/SKILL.md"
-    },
-    {
-     "name": "slack-cli",
-     "description": "Use when a developer works with the Slack CLI (slack command) to create, run, or manage a Slack app from the terminal: logging in or authenticating (slack login), adding a team or switching workspaces, running locally (slack run), deploying, editing the app manifest, calling Web API methods (slack api), or searching Slack docs (slack docs search).",
-     "path": "skills/slack-cli/SKILL.md"
-    },
-    {
-     "name": "slack-docs",
-     "description": "Use when answering a conceptual or how-to question about Slack platform features, or when asked to look up, fetch, or summarize a docs.slack.dev page, including a pasted docs.slack.dev link. Covers finding and reading official Slack docs as clean markdown.",
-     "path": "skills/slack-docs/SKILL.md"
-    },
-    {
-     "name": "slack-messaging",
-     "description": "Use when writing, drafting, scheduling, or improving a Slack message, announcement, or reply sent via the Slack MCP tools (slack_send_message, slack_send_message_draft, slack_schedule_message). Covers Slack markdown formatting, message structure, thread etiquette, reactions, and scheduling, and points to the right dialect for canvases and Block Kit.",
-     "path": "skills/slack-messaging/SKILL.md"
-    },
-    {
-     "name": "slack-search",
-     "description": "Use when locating messages, files, channels, or people across Slack, or gathering context before answering, with the search MCP tools (slack_search_public, slack_search_public_and_private, slack_search_channels, slack_search_users). Covers search modifiers (in:, from:, before:), file-type filters, natural-language vs. keyword search, and reading results in context.",
-     "path": "skills/slack-search/SKILL.md"
-    },
-    {
-     "name": "test-slack-app",
-     "description": "Use when a developer wants to test, try out, smoke-test, verify, or confirm that a Slack app built with the Slack CLI (or a plain Bolt app) actually works, by running it in a developer sandbox or a Free Team, never a workspace with real users, with `slack run` and exercising its real slash commands, shortcuts, events, actions, modals, App Home, and assistant surfaces. Also covers `slack doctor` and `slack manifest validate` health checks before hands-on testing.",
-     "path": "skills/test-slack-app/SKILL.md"
-    }
-   ],
-   "commands": [
-    {
-     "name": "channel-digest",
-     "description": "Get a digest of recent activity across multiple Slack channels",
-     "path": "commands/channel-digest.md"
-    },
-    {
-     "name": "draft-announcement",
-     "description": "Draft a well-formatted Slack announcement and save it as a draft",
-     "path": "commands/draft-announcement.md"
-    },
-    {
-     "name": "find-discussions",
-     "description": "Find discussions about a specific topic across Slack channels",
-     "path": "commands/find-discussions.md"
-    },
-    {
-     "name": "standup",
-     "description": "Generate a standup update based on your recent Slack activity",
-     "path": "commands/standup.md"
-    },
-    {
-     "name": "summarize-channel",
-     "description": "Summarize recent activity in a Slack channel",
-     "path": "commands/summarize-channel.md"
-    }
-   ],
-   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/slack-2x.png",
-   "publisher": {
-    "name": "slack",
-    "displayName": "Slack",
-    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/slack-2x.png",
-    "isVerified": true
-   },
-   "featured": true,
-   "keywords": [],
-   "marketplace": "claude-code",
-   "tagline": "Search messages and catch up on threads"
-  },
-  {
    "name": "snowflake-cortex-code",
    "displayName": "Snowflake Cortex Code",
    "description": "Automatically route Snowflake prompts from Claude Code to Cortex Code for execution. Provides slash commands for code review and task delegation, plus skills for routing, run, and setup.",
@@ -22110,63 +21963,6 @@
    "marketplace": "claude-code",
    "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/swift-lsp.png",
    "tagline": "Code intelligence for Swift files"
-  },
-  {
-   "name": "synthflow",
-   "displayName": "Synthflow",
-   "description": "Connects Claude Code to the Synthflow AI voice-agent platform through its hosted MCP server, with skills for reviewing calls and auditing agent prompts, plus a docs-search connector.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/SynthFlowAI/AnthropicPlugin.git",
-    "path": "plugins/synthflow",
-    "ref": "main",
-    "sha": "205871ee83508502d2c982ee1bb7e65a2a29190b"
-   },
-   "category": "agent-orchestration",
-   "strict": null,
-   "license": "MIT",
-   "homepage": "https://synthflow.ai",
-   "repository": "https://github.com/SynthFlowAI/AnthropicPlugin.git",
-   "author": {
-    "name": "Synthflow"
-   },
-   "publisher": {
-    "name": "synthflow",
-    "displayName": "Synthflow"
-   },
-   "mcpServers": [
-    {
-     "name": "synthflow",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "synthflow-docs",
-     "path": ".mcp.json"
-    }
-   ],
-   "keywords": [
-    "synthflow",
-    "mcp",
-    "voice",
-    "ai-agents",
-    "telephony",
-    "integration"
-   ],
-   "skills": [
-    {
-     "name": "call-review",
-     "description": "Review the last 100 calls for an agent and surface problems. Use this whenever the user wants a call-quality audit, a QA pass over recent calls, a \"what's going wrong with this agent\" review, or to find failed, unresolved, dropped, or otherwise problematic calls. Trigger on phrases like \"review my calls\", \"what's wrong with the calls\", \"QA the last 100 calls\", \"find bad calls\", or \"audit recent calls\".",
-     "path": "skills/call-review/SKILL.md"
-    },
-    {
-     "name": "prompt-review",
-     "description": "Review AI voice-agent prompts, especially Synthflow Single-Prompt, for contradictions, missing context, unsafe tool/action behavior, escalation gaps, compliance risk, and regression risk. Use this when the user asks to review, audit, validate, improve, or compare a prompt before deployment.",
-     "path": "skills/prompt-review/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/synthflow.png",
-   "marketplace": "claude-code",
-   "tagline": "Review voice calls and audit prompts"
   },
   {
    "name": "tavily",
@@ -25402,109 +25198,6 @@
    "tagline": "Run email campaigns and automations"
   },
   {
-   "name": "hubspot-sales",
-   "displayName": "HubSpot Sales",
-   "description": "Run your HubSpot sales workflow directly from Claude. Adds skills that cover the full sales day: import contacts and deals into HubSpot, get a prioritised morning brief, prep for any call with full CRM context, draft personalised follow-ups grounded in deal history, log calls and update records by describing what happened, and review your pipeline to surface stalling deals. Everything writes back to HubSpot.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/HubSpot/hubspot-mcp-plugins.git",
-    "path": "HubSpot-Sales",
-    "ref": "main",
-    "sha": "a0c59600fc1ddcf03ceca71aebf0c28aa55f49e3"
-   },
-   "category": "sales",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://www.hubspot.com",
-   "repository": "https://github.com/HubSpot/hubspot-mcp-plugins.git",
-   "author": {
-    "name": "HubSpot"
-   },
-   "publisher": {
-    "name": "hubspot",
-    "displayName": "HubSpot"
-   },
-   "mcpServers": [
-    {
-     "name": "hubspot",
-     "path": ".mcp.json"
-    }
-   ],
-   "keywords": [
-    "hubspot",
-    "sales",
-    "crm",
-    "outreach",
-    "call-prep",
-    "daily-brief",
-    "log-call",
-    "contact-lookup",
-    "pipeline-pulse"
-   ],
-   "skills": [
-    {
-     "name": "call-prep",
-     "description": ">",
-     "path": "skills/call-prep/SKILL.md"
-    },
-    {
-     "name": "contact-lookup",
-     "description": ">",
-     "path": "skills/contact-lookup/SKILL.md"
-    },
-    {
-     "name": "daily-brief",
-     "description": ">",
-     "path": "skills/daily-brief/SKILL.md"
-    },
-    {
-     "name": "follow-up",
-     "description": ">",
-     "path": "skills/follow-up/SKILL.md"
-    },
-    {
-     "name": "hubspot",
-     "description": ">",
-     "path": "skills/hubspot/SKILL.md"
-    },
-    {
-     "name": "import-contacts",
-     "description": ">",
-     "path": "skills/import-contacts/SKILL.md"
-    },
-    {
-     "name": "log-call",
-     "description": ">",
-     "path": "skills/log-call/SKILL.md"
-    },
-    {
-     "name": "onboarding",
-     "description": ">",
-     "path": "skills/onboarding/SKILL.md"
-    },
-    {
-     "name": "pipeline-pulse",
-     "description": ">",
-     "path": "skills/pipeline-pulse/SKILL.md"
-    }
-   ],
-   "agents": [
-    {
-     "name": "account-research",
-     "description": ">",
-     "path": "agents/account-research.md"
-    },
-    {
-     "name": "brief-fetcher",
-     "description": ">",
-     "path": "agents/brief-fetcher.md"
-    }
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/hubspot-sales.png",
-   "marketplace": "claude-code",
-   "tagline": "Prep calls and draft sales follow-ups"
-  },
-  {
    "name": "dynatrace",
    "displayName": "Dynatrace",
    "description": "Dynatrace observability skills: DQL query patterns, application and infrastructure monitoring, log analysis, problem investigation, and incident response workflows, with the Dynatrace MCP server for live platform access.",
@@ -26049,81 +25742,6 @@
    ],
    "marketplace": "cursor",
    "tagline": "Add speech, dictation and read-aloud"
-  },
-  {
-   "name": "google-drive",
-   "displayName": "Google Drive",
-   "description": "Search, read, create, and share files.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/google-drive",
-    "ref": "main",
-    "sha": "1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "google-drive",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-drive",
-   "keywords": [
-    "google-drive",
-    "drive",
-    "google",
-    "mcp",
-    "files",
-    "workspace"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-drive/assets/logo.svg",
-   "skills": [
-    {
-     "name": "google-drive",
-     "description": "Work with Google Drive through its MCP tools - search, read, create, organize, share, comment, and export files. Use when creating files in specific folders, moving or renaming, converting Markdown/CSV into Docs/Sheets, managing comments, or exporting a rendered PDF.",
-     "path": "skills/google-drive/SKILL.md"
-    }
-   ],
-   "marketplace": "cursor",
-   "tagline": "Search, create and share files"
-  },
-  {
-   "name": "google-calendar",
-   "displayName": "Google Calendar",
-   "description": "Search events and schedule meetings.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/google-calendar",
-    "ref": "main",
-    "sha": "1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "google-calendar",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-calendar",
-   "keywords": [
-    "google-calendar",
-    "calendar",
-    "google",
-    "mcp",
-    "events",
-    "workspace"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-calendar/assets/logo.svg",
-   "marketplace": "cursor",
-   "tagline": "Search events and schedule meetings"
   },
   {
    "name": "salesforce",
@@ -27677,42 +27295,6 @@
    "tagline": "Draw and export hand-drawn diagrams"
   },
   {
-   "name": "google-cloud-bigquery",
-   "displayName": "Google Cloud Bigquery",
-   "description": "Explore datasets and tables and run SQL queries.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/google-cloud-bigquery",
-    "ref": "main",
-    "sha": "1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def"
-   },
-   "category": "database",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "google-cloud-bigquery",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp",
-   "keywords": [
-    "google cloud bigquery",
-    "google cloud",
-    "bigquery",
-    "sql",
-    "analytics",
-    "data warehouse",
-    "datasets",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/google-cloud-bigquery/assets/logo.png",
-   "marketplace": "cursor",
-   "tagline": "Explore tables and run SQL queries"
-  },
-  {
    "name": "statsig",
    "displayName": "Statsig",
    "description": "Inspect and manage feature gates, experiments, dynamic configs, and metrics.",
@@ -27821,43 +27403,6 @@
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/coinbase/assets/logo.png",
    "marketplace": "cursor",
    "tagline": "Check balances, get quotes and trade"
-  },
-  {
-   "name": "shopify-store",
-   "displayName": "Shopify Store",
-   "description": "Connect your Shopify store so Grok can answer questions about your products, orders, customers, inventory, and sales. You sign in with Shopify and approve the store access Grok requests; Grok keeps that authorization so the connector can work, and Grok Bot's privacy mode still controls whether your conversations are stored or used for training. xAI never sees or stores your Shopify password, and you can disconnect the store anytime from grok.com.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/shopify-store",
-    "ref": "main",
-    "sha": "1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def"
-   },
-   "category": "sales",
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "shopify",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://grok.com/connectors",
-   "keywords": [
-    "shopify",
-    "store",
-    "orders",
-    "products",
-    "customers",
-    "inventory",
-    "ecommerce",
-    "grok",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def/third_party/shopify-store/assets/logo.png",
-   "marketplace": "cursor",
-   "tagline": "Ask about products, orders and sales"
   },
   {
    "name": "tinyfish",
@@ -28240,231 +27785,6 @@
    "marketplace": "corepass",
    "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/github.png",
    "tagline": "Triage PRs, issues and workflows"
-  },
-  {
-   "name": "zoom-plugin",
-   "displayName": "Zoom",
-   "description": "Plan, build and debug Zoom integrations across REST APIs, SDKs, webhooks, bots and MCP, with Zoom's MCP servers for meetings, recordings, Docs, Chat, Tasks, Revenue Accelerator and Whiteboard.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/corepasshq/plugins",
-    "path": "plugins/zoom-plugin",
-    "ref": null,
-    "sha": "0616ddc585084bd6b60850c4da48bc21de77da17"
-   },
-   "license": "MIT",
-   "category": "development",
-   "featured": null,
-   "repository": "https://github.com/zoom/zoom-plugin",
-   "publisher": {
-    "name": "zoom",
-    "displayName": "Zoom"
-   },
-   "_provenance": {
-    "upstream": "https://github.com/zoom/zoom-plugin",
-    "sha": "86e2592334f5fb563ed273e26035844004e66165",
-    "license": "MIT"
-   },
-   "skills": [
-    {
-     "name": "build-zoom-bot",
-     "description": "Build a Zoom meeting bot, recorder, or real-time media workflow. Use when joining meetings programmatically, processing live media or transcripts, or combining Meeting SDK, RTMS, and backend services.",
-     "path": "skills/build-zoom-bot/SKILL.md"
-    },
-    {
-     "name": "build-zoom-meeting-app",
-     "description": "Build or embed a Zoom meeting flow. Use when implementing Meeting SDK joins, web or mobile meeting embeds, meeting lifecycle flows, or when deciding between Meeting SDK and Video SDK.",
-     "path": "skills/build-zoom-meeting-app/SKILL.md"
-    },
-    {
-     "name": "choose-zoom-approach",
-     "description": "Choose the right Zoom architecture for a use case. Use when deciding between REST API, Webhooks, WebSockets, Meeting SDK, Video SDK, Zoom Apps SDK, Zoom MCP, Phone, Contact Center, or a hybrid approach.",
-     "path": "skills/choose-zoom-approach/SKILL.md"
-    },
-    {
-     "name": "zoom-cobrowse-sdk",
-     "description": "Reference skill for Zoom Cobrowse SDK. Use after routing to a collaborative-support workflow when implementing browser co-browsing, annotation tools, privacy masking, remote assist, or PIN-based session sharing.",
-     "path": "skills/cobrowse-sdk/SKILL.md"
-    },
-    {
-     "name": "build-zoom-contact-center-app",
-     "description": "Reference skill for Zoom Contact Center. Use after routing to a contact-center workflow when implementing app, web, or native integrations; engagement context and state handling; campaigns; callbacks; or version-drift troubleshooting.",
-     "path": "skills/contact-center/SKILL.md"
-    },
-    {
-     "name": "debug-zoom",
-     "description": "Debug a broken Zoom integration by isolating the failure point and routing into the right Zoom references. Use when auth, API, webhook, SDK, or MCP behavior is failing and you need a ranked hypothesis list plus verification steps.",
-     "path": "skills/debug-zoom/SKILL.md"
-    },
-    {
-     "name": "debug-zoom-integration",
-     "description": "Debug broken Zoom implementations quickly. Use when auth, webhooks, SDK joins, MCP transport, or real-time media workflows are failing and you need to isolate the layer before proposing a fix.",
-     "path": "skills/debug-zoom-integration/SKILL.md"
-    },
-    {
-     "name": "design-mcp-workflow",
-     "description": "Design a Zoom MCP workflow for Claude. Use when deciding whether Zoom MCP fits a task, when planning tool-based AI workflows, or when separating MCP responsibilities from REST API responsibilities.",
-     "path": "skills/design-mcp-workflow/SKILL.md"
-    },
-    {
-     "name": "zoom-general",
-     "description": "Cross-product Zoom reference skill. Use after the workflow is clear when you need shared platform guidance, app-model comparisons, authentication context, scopes, marketplace considerations, or API-vs-MCP routing.",
-     "path": "skills/general/SKILL.md"
-    },
-    {
-     "name": "build-zoom-meeting-sdk-app",
-     "description": "Reference skill for Zoom Meeting SDK. Use after routing to a meeting-embed workflow when implementing real Zoom meeting joins, platform-specific SDK behavior, auth and join flows, waiting room issues, or meeting bot patterns.",
-     "path": "skills/meeting-sdk/SKILL.md"
-    },
-    {
-     "name": "zoom-oauth",
-     "description": "Reference skill for Zoom authentication. Use after routing to an auth workflow when choosing app credentials, grant types, scopes, token refresh behavior, or debugging Zoom OAuth failures.",
-     "path": "skills/oauth/SKILL.md"
-    },
-    {
-     "name": "build-zoom-phone-integration",
-     "description": "Reference skill for Zoom Phone. Use after routing to a phone workflow when implementing OAuth, Phone APIs, webhooks, Smart Embed events, URI schemes, CRM or CTI dialers, or call handling automation.",
-     "path": "skills/phone/SKILL.md"
-    },
-    {
-     "name": "plan-zoom-integration",
-     "description": "Turn a Zoom integration idea into an implementation plan with architecture, auth, and delivery milestones. Use when you need a practical build plan, phased delivery sequence, risk list, and next-step recommendation.",
-     "path": "skills/plan-zoom-integration/SKILL.md"
-    },
-    {
-     "name": "plan-zoom-product",
-     "description": "Choose the right Zoom building surface for a use case and explain the tradeoffs clearly. Use when deciding between REST API, Webhooks, WebSockets, Meeting SDK, Video SDK, Zoom Apps SDK, Phone, Contact Center, or MCP for a specific product idea or integration goal.",
-     "path": "skills/plan-zoom-product/SKILL.md"
-    },
-    {
-     "name": "probe-sdk",
-     "description": "Reference skill for Zoom Probe SDK. Use after routing to a preflight workflow when testing browser compatibility, media permissions, audio or video diagnostics, and network readiness before users join.",
-     "path": "skills/probe-sdk/SKILL.md"
-    },
-    {
-     "name": "build-zoom-rest-api-app",
-     "description": "Reference skill for Zoom REST API. Use after choosing an API-based workflow when you need endpoint selection, resource-management patterns, OAuth requirements, rate-limit awareness, or API error debugging.",
-     "path": "skills/rest-api/SKILL.md"
-    },
-    {
-     "name": "rivet-sdk",
-     "description": "Reference skill for Zoom Rivet SDK. Use after routing to a Rivet-based server workflow when implementing auth handling, webhook consumers, API wrappers, multi-module composition, or Lambda receiver patterns.",
-     "path": "skills/rivet-sdk/SKILL.md"
-    },
-    {
-     "name": "zoom-rtms",
-     "description": "Reference skill for Zoom RTMS. Use after routing to a live-media workflow when processing real-time audio, video, chat, transcripts, screen share, or contact-center voice streams.",
-     "path": "skills/rtms/SKILL.md"
-    },
-    {
-     "name": "scribe",
-     "description": "Reference skill for Zoom AI Services Scribe. Use after routing to a transcription workflow when handling live audio, uploaded or stored media, Build-platform JWT auth, Live/Fast/Batch processing modes, or transcript pipeline design.",
-     "path": "skills/scribe/SKILL.md"
-    },
-    {
-     "name": "setup-zoom-marketplace-app",
-     "description": "Create, update, select, or validate the Zoom Marketplace app that owns an integration. Use for General App manifests, Server-to-Server OAuth apps, Meeting SDK apps, scopes, event subscriptions, app-owned credentials, or choosing a scenario template before product implementation.",
-     "path": "skills/setup-zoom-marketplace-app/SKILL.md"
-    },
-    {
-     "name": "setup-zoom-mcp",
-     "description": "Decide when Zoom MCP is the right fit and produce a safe setup plan for Claude. Use when planning AI workflows over Zoom data, deciding between MCP and REST, or defining a hybrid MCP architecture.",
-     "path": "skills/setup-zoom-mcp/SKILL.md"
-    },
-    {
-     "name": "setup-zoom-oauth",
-     "description": "Implement Zoom authentication correctly. Use when setting up app credentials, choosing an OAuth grant, requesting scopes, handling token refresh, or debugging auth failures.",
-     "path": "skills/setup-zoom-oauth/SKILL.md"
-    },
-    {
-     "name": "start",
-     "description": "Start here for any Zoom integration or app idea. Use when you need to choose the right Zoom surface, shape the architecture, or route into the correct implementation skill without reading the whole Zoom doc set first.",
-     "path": "skills/start/SKILL.md"
-    },
-    {
-     "name": "summarizer",
-     "description": "Reference skill for Zoom AI Services Summarizer. Use after routing to transcript summarization, meeting recap, action item extraction, Build-platform JWT auth, fast mode summarization, batch jobs, or summary pipeline design.",
-     "path": "skills/summarizer/SKILL.md"
-    },
-    {
-     "name": "build-zoom-team-chat-app",
-     "description": "Reference skill for Zoom Team Chat. Use after routing to a chat workflow when building user-scoped messaging integrations, chatbot experiences, rich cards, buttons, slash commands, or chat webhooks.",
-     "path": "skills/team-chat/SKILL.md"
-    },
-    {
-     "name": "translator",
-     "description": "Reference skill for Zoom AI Services Translator. Use after routing to text translation, one-target-language jobs, Build-platform JWT auth, fast mode translation, batch file translation, or translation pipeline design.",
-     "path": "skills/translator/SKILL.md"
-    },
-    {
-     "name": "ui-toolkit",
-     "description": "Reference skill for Zoom Video SDK UI Toolkit. Use after routing to a web video workflow when you want prebuilt React UI instead of building a fully custom Video SDK interface.",
-     "path": "skills/ui-toolkit/SKILL.md"
-    },
-    {
-     "name": "build-zoom-video-sdk-app",
-     "description": "Reference skill for Zoom Video SDK. Use after routing to a custom-session workflow when the user needs full control over the video experience rather than an actual Zoom meeting.",
-     "path": "skills/video-sdk/SKILL.md"
-    },
-    {
-     "name": "build-zoom-virtual-agent",
-     "description": "Reference skill for Zoom Virtual Agent. Use after routing to a virtual-agent workflow when implementing web embeds, Android or iOS wrapper integrations, knowledge-base sync, lifecycle handling, or troubleshooting.",
-     "path": "skills/virtual-agent/SKILL.md"
-    },
-    {
-     "name": "setup-zoom-webhooks",
-     "description": "Reference skill for Zoom webhooks. Use after routing to an event-driven workflow when implementing subscriptions, signature verification, delivery handling, retries, or event-type selection.",
-     "path": "skills/webhooks/SKILL.md"
-    },
-    {
-     "name": "setup-zoom-websockets",
-     "description": "Reference skill for Zoom WebSockets. Use after routing to a low-latency event workflow when persistent connections, faster event delivery, or security constraints make WebSockets preferable to webhooks.",
-     "path": "skills/websockets/SKILL.md"
-    },
-    {
-     "name": "zoom-apps-sdk",
-     "description": "Reference skill for Zoom Apps SDK. Use after routing to an in-client app workflow when building web apps that run inside Zoom meetings, webinars, the main client, or Zoom Phone.",
-     "path": "skills/zoom-apps-sdk/SKILL.md"
-    },
-    {
-     "name": "zoom-mcp",
-     "description": "Guidance for Zoom's MCP server catalog. Use after routing to an MCP workflow when planning or troubleshooting tool-based access to Meetings, Canvas, Chat, Tasks, Revenue Accelerator, Whiteboard, recordings, meeting assets, transcripts, Zoom-wide search, or Docs. Use the current server catalog for endpoints and scopes.",
-     "path": "skills/zoom-mcp/SKILL.md"
-    }
-   ],
-   "mcpServers": [
-    {
-     "name": "zoom-mcp",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "zoom-meetings-mcp",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "zoom-canvas-mcp",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "zoom-chat-mcp",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "zoom-tasks-mcp",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "zoom-revenue-accelerator-mcp",
-     "path": ".mcp.json"
-    },
-    {
-     "name": "zoom-whiteboard-mcp",
-     "path": ".mcp.json"
-    }
-   ],
-   "marketplace": "corepass",
-   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/zoom-plugin.png",
-   "tagline": "Plan, build and debug meeting apps"
   }
  ],
  "excluded": {
@@ -28598,9 +27918,28 @@
    "reason": "Its dynamic client registration accepts only an https redirect with a confidential client (token_endpoint_auth_method none is unsupported); needs an Edge-held client and https callback relay.",
    "marketplace": "cursor"
   },
+  "google-ads": {
+   "kind": "cursor-only",
+   "reason": "A Grok Bot plugin whose MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential."
+  },
+  "google-calendar": {
+   "kind": "auth-unsupported",
+   "reason": "Pending a Remy Google OAuth client. Its MCP server (calendarmcp.googleapis.com) answers without a credential but refuses tool calls, Google's authorization server offers no dynamic client registration, and the plugin ships no client id.",
+   "marketplace": "cursor"
+  },
+  "google-cloud-bigquery": {
+   "kind": "auth-unsupported",
+   "reason": "Pending a Remy Google OAuth client. Its MCP server (bigquery.googleapis.com/mcp) uses Google sign-in, which offers no dynamic client registration, and the listed version ships no client id or setting for one. Newer upstream versions let a team enter its own Google client; review again then.",
+   "marketplace": "cursor"
+  },
   "google-docs": {
    "kind": "cursor-only",
    "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth); its one skill only drives that server.",
+   "marketplace": "cursor"
+  },
+  "google-drive": {
+   "kind": "cursor-only",
+   "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth).",
    "marketplace": "cursor"
   },
   "google-sheets": {
@@ -28612,6 +27951,16 @@
    "kind": "cursor-only",
    "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth); its one skill only drives that server.",
    "marketplace": "cursor"
+  },
+  "hubspot-sales": {
+   "kind": "auth-unsupported",
+   "reason": "Pending Remy's HubSpot app on its own endpoint: the plugin ships no client id, HubSpot offers no dynamic registration, and Remy's sign-in service does not yet serve this endpoint (mcp.hubspot.com/anthropic) in production.",
+   "marketplace": "claude-code"
+  },
+  "informatica-for-claude-platform": {
+   "kind": "endpoint-unusable",
+   "reason": "Both of its MCP servers have an empty URL, and the plugin declares no setting to supply one.",
+   "marketplace": "claude-code"
   },
   "langfuse-observability": {
    "kind": "claude-code-only",
@@ -28738,6 +28087,11 @@
    "reason": "Its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth).",
    "marketplace": "cursor"
   },
+  "shopify-store": {
+   "kind": "cursor-only",
+   "reason": "A Grok Bot plugin: its manifest keeps it out of Cursor, its README says sign-in runs through Grok's connector with a client registered by xAI, and its MCP server (setup.shopify.com) accepts only that or a Client ID Metadata Document.",
+   "marketplace": "cursor"
+  },
   "similarweb": {
    "kind": "auth-unsupported",
    "reason": "Its dynamic client registration endpoint answers every request 403 at CloudFront.",
@@ -28748,10 +28102,24 @@
    "reason": "Remy ships its own skill-creator skill; this one also scores skills by shelling out to the claude CLI.",
    "marketplace": "claude-code"
   },
+  "slack": {
+   "kind": "auth-unsupported",
+   "reason": "Pending Remy's Slack app in production: the plugin's client id is Slack's app for Claude Code, which Remy does not sign in with, and Remy's own Slack app is not yet served by its production sign-in service nor approved for workspaces other than its own.",
+   "marketplace": "claude-code"
+  },
   "sumup": {
    "kind": "auth-unsupported",
    "reason": "Its MCP server needs a vendor-registered OAuth app: its authorization server offers no dynamic client registration and the plugin ships no client id.",
    "marketplace": "claude-code"
+  },
+  "synthflow": {
+   "kind": "auth-unsupported",
+   "reason": "Its main MCP server (mcp.synthflow.ai) signs in only through a Client ID Metadata Document, which Remy does not publish yet; its authorization server offers no dynamic client registration.",
+   "marketplace": "claude-code"
+  },
+  "tailscale": {
+   "kind": "cursor-only",
+   "reason": "A Grok Bot plugin: its manifest keeps it out of Cursor, and its tailnet connection is served by Cursor's backend; it ships no MCP server."
   },
   "teams": {
    "kind": "cursor-only",
@@ -28762,6 +28130,10 @@
    "kind": "endpoint-unusable",
    "reason": "Its MCP URL redirects to a not-found page.",
    "marketplace": "claude-code"
+  },
+  "whatsapp-business": {
+   "kind": "cursor-only",
+   "reason": "It ships no MCP server: Cursor hosts the server, and its README says it is reachable from Cursor only."
   },
   "workday": {
    "kind": "cursor-only",
@@ -28787,6 +28159,23 @@
    "kind": "endpoint-unusable",
    "reason": "Its MCP URL (mcp.zocks.io/mcp) answers 404 to every request, with or without a token, so no authorization challenge is ever issued.",
    "marketplace": "claude-code"
+  },
+  "zoho-books": {
+   "kind": "cursor-only",
+   "reason": "It ships no MCP server: Cursor hosts the server and owns the Zoho client, and its README says it is reachable from Cursor only."
+  },
+  "zoho-crm": {
+   "kind": "cursor-only",
+   "reason": "It ships no MCP server: Cursor hosts the server and owns the Zoho client, and its README says it is reachable from Cursor only."
+  },
+  "zoho-desk": {
+   "kind": "cursor-only",
+   "reason": "It ships no MCP server: Cursor hosts the server and owns the Zoho client, and its README says it is reachable from Cursor only."
+  },
+  "zoom-plugin": {
+   "kind": "auth-unsupported",
+   "reason": "Pending Remy's Zoom app for all seven servers: Zoom offers no dynamic registration, and Remy's sign-in service serves only the main Zoom MCP endpoint, and not yet in production. The plain zoom plugin, where a team enters its own Zoom client, stays listed.",
+   "marketplace": "corepass"
   }
  }
 }
