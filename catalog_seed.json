@@ -26917,40 +26917,6 @@
    "marketplace": "cursor"
   },
   {
-   "name": "power-bi",
-   "displayName": "Power Bi",
-   "description": "Browse Microsoft Power BI workspaces and render report pages.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/power-bi",
-    "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
-   },
-   "category": null,
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "power-bi",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://github.com/cursor/plugins/tree/main/third_party/power-bi",
-   "keywords": [
-    "power-bi",
-    "powerbi",
-    "microsoft",
-    "reports",
-    "dashboards",
-    "analytics",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/power-bi/assets/logo.svg",
-   "marketplace": "cursor"
-  },
-  {
    "name": "attio",
    "displayName": "Attio",
    "description": "Search and update CRM records, lists, notes, and tasks.",
@@ -27207,41 +27173,6 @@
    ],
    "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/70b2dc8b4b85c8d5648624ca40d692c421fff32f/third_party/daloopa/assets/logo.png",
    "tagline": "Pull sourced fundamentals and KPIs",
-   "marketplace": "cursor"
-  },
-  {
-   "name": "pitchbook",
-   "displayName": "Pitchbook",
-   "description": "Research private companies, deals, investors, and funds.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/cursor/plugins",
-    "path": "third_party/pitchbook",
-    "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
-   },
-   "category": null,
-   "strict": null,
-   "license": "MIT",
-   "repository": "https://github.com/cursor/plugins",
-   "mcpServers": [
-    {
-     "name": "pitchbook",
-     "path": "mcp.json"
-    }
-   ],
-   "homepage": "https://pitchbook.com",
-   "keywords": [
-    "pitchbook",
-    "private markets",
-    "private equity",
-    "venture capital",
-    "deals",
-    "investors",
-    "funds",
-    "mcp"
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/pitchbook/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -28330,6 +28261,16 @@
    "kind": "endpoint-unusable",
    "reason": "Its MCP URL holds a literal {your-mcp-id} placeholder.",
    "marketplace": "claude-code"
+  },
+  "pitchbook": {
+   "kind": "partner-gated",
+   "reason": "Its dynamic client registration (mcp.pitchbook.com/auth/register) rejects every redirect URI tried (localhost, 127.0.0.1, https) as not allowed, and reserves Cursor's for a pre-registered confidential client: a fixed allowlist of partner clients.",
+   "marketplace": "cursor"
+  },
+  "power-bi": {
+   "kind": "cursor-only",
+   "reason": "A Grok Bot plugin: its manifest keeps it out of Cursor, and its MCP server is api.cursor.com/rest-mcp, which requires a Cursor credential (x-cursor-auth).",
+   "marketplace": "cursor"
   },
   "pr-review-canvas": {
    "kind": "cursor-only",
