@@ -13,9 +13,9 @@ the repo — a plugin may appear in either, both, or neither.
 A normalized directory of open-source Claude Code plugins, backing the app's
 Plugins storefront.
 
-- **Consumed through user-center**: user-center imports
+- **Consumed through remy-service**: remy-service imports
   `https://raw.githubusercontent.com/corepasshq/plugins/main/catalog_seed.json`
-  on its daily sync (or *Sync now* in the admin console). Clients see a change
+  on its daily sync at 03:00 (or *Sync now* in the admin console). Clients see a change
   once an operator **Publishes** the catalog version, and only the plugins
   assigned to their application (admin → Application Plugins).
 - Each entry carries install git coords (`source.url` / `source.ref` /
