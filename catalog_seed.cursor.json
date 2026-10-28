@@ -91,7 +91,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "teaching",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -130,7 +130,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "continual-learning",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -163,7 +163,14 @@
     {
      "name": "stop",
      "description": "",
-     "path": "hooks/hooks.json"
+     "path": "hooks/hooks.json",
+     "execution": [
+      {
+       "type": "command",
+       "command": "bun run ${CURSOR_PLUGIN_ROOT}/hooks/continual-learning-stop.ts",
+       "program": "bun"
+      }
+     ]
     }
    ],
    "publisher": {
@@ -181,7 +188,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cursor-team-kit",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -317,7 +324,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "thermos",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -379,7 +386,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "create-plugin",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -427,7 +434,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "ralph-loop",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -464,12 +471,26 @@
     {
      "name": "afterAgentResponse",
      "description": "",
-     "path": "hooks/hooks.json"
+     "path": "hooks/hooks.json",
+     "execution": [
+      {
+       "type": "command",
+       "command": "./hooks/capture-response.sh",
+       "program": "capture-response.sh"
+      }
+     ]
     },
     {
      "name": "stop",
      "description": "",
-     "path": "hooks/hooks.json"
+     "path": "hooks/hooks.json",
+     "execution": [
+      {
+       "type": "command",
+       "command": "./hooks/stop-hook.sh",
+       "program": "stop-hook.sh"
+      }
+     ]
     }
    ],
    "publisher": {
@@ -487,7 +508,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "agent-compatibility",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -549,7 +570,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cli-for-agent",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -589,7 +610,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "pr-review-canvas",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -627,7 +648,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "docs-canvas",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -665,7 +686,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cursor-sdk",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -705,7 +726,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "origin-apps",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -743,7 +764,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "orchestrate",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -767,6 +788,16 @@
      "path": "skills/orchestrate/SKILL.md"
     }
    ],
+   "localLoginHints": [
+    {
+     "signal": "AWS_PROFILE",
+     "path": "skills/orchestrate/scripts/measurements.ts"
+    },
+    {
+     "signal": "~/.aws/",
+     "path": "skills/orchestrate/scripts/measurements.ts"
+    }
+   ],
    "publisher": {
     "name": "cursor",
     "displayName": "Cursor"
@@ -782,7 +813,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "pstack",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -862,7 +893,7 @@
     },
     {
      "name": "interrogate",
-     "description": "Use for \"interrogate\", \"adversarial review\", \"multi-model review\", \"challenge this\", \"stress test this code\", \"find blind spots\", or \"tear this apart\". Multiple LLM reviewers challenge changes from independent angles.",
+     "description": "Use for \"interrogate\", \"adversarial review\", \"multi-model review\", \"challenge this\", \"stress test this code\", \"find blind spots\", or \"tear this apart\". Adversaries try to break a change or design, and only findings proven by a run survive.",
      "path": "skills/interrogate/SKILL.md"
     },
     {
@@ -872,7 +903,7 @@
     },
     {
      "name": "ketchup-video",
-     "description": "Catch the user up like /ketchup, with a short silent video of slides for what happened and the waiting calls as text under it. Use for /ketchup-video.",
+     "description": "Catch the user up like /ketchup, with a short subtitled video of slides for what happened and the waiting calls as text under it. Use for /ketchup-video.",
      "path": "skills/ketchup-video/SKILL.md"
     },
     {
@@ -937,7 +968,7 @@
     },
     {
      "name": "principle-explain-the-number",
-     "description": "Apply before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
+     "description": "Apply before you measure, and before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
      "path": "skills/principle-explain-the-number/SKILL.md"
     },
     {
@@ -1052,7 +1083,7 @@
     },
     {
      "name": "statechart",
-     "description": "Draw how any system moves between states, such as a product flow, a protocol, or a service, as a Mermaid statechart from a TLA+ model. Each bug is a numbered path with blue borders to a state that breaks a rule. Use for /statechart, to show a bug as a path through states, or to turn an agreed chart into a TLA+ skeleton.",
+     "description": "Check a TLA+ model of a system that moves between states, such as a product flow, a protocol, or a service, and draw it as a Mermaid statechart. The report gives the shortest path to each state that breaks a rule. Use for /statechart, or to show a bug as a path through states.",
      "path": "skills/statechart/SKILL.md"
     },
     {
@@ -1118,7 +1149,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "dyl-stack",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -1133,7 +1164,7 @@
     "code-review",
     "agent-style"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/dyl-stack/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/dyl-stack/assets/logo.png",
    "skills": [
     {
      "name": "build-figma",
@@ -1179,7 +1210,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "grok-voice",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -1233,7 +1264,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "advisor",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -1268,22 +1299,51 @@
     {
      "name": "afterAgentResponse",
      "description": "",
-     "path": "hooks/hooks.json"
+     "path": "hooks/hooks.json",
+     "execution": [
+      {
+       "type": "command",
+       "command": "bash \"${CURSOR_PLUGIN_ROOT}/hooks/capture-response.sh\"",
+       "program": "bash"
+      }
+     ]
     },
     {
      "name": "afterFileEdit",
      "description": "",
-     "path": "hooks/hooks.json"
+     "path": "hooks/hooks.json",
+     "execution": [
+      {
+       "type": "command",
+       "command": "bash \"${CURSOR_PLUGIN_ROOT}/hooks/mark-pending.sh\"",
+       "program": "bash"
+      }
+     ]
     },
     {
      "name": "stop",
      "description": "",
-     "path": "hooks/hooks.json"
+     "path": "hooks/hooks.json",
+     "execution": [
+      {
+       "type": "command",
+       "command": "bash \"${CURSOR_PLUGIN_ROOT}/hooks/stop-hook.sh\"",
+       "program": "bash"
+      }
+     ]
     },
     {
      "name": "subagentStop",
      "description": "",
-     "path": "hooks/hooks.json"
+     "path": "hooks/hooks.json",
+     "execution": [
+      {
+       "type": "command",
+       "matcher": "^advisor-subagent$",
+       "command": "bash \"${CURSOR_PLUGIN_ROOT}/hooks/record-consult.sh\"",
+       "program": "bash"
+      }
+     ]
     }
    ],
    "marketplace": "cursor"
@@ -1297,7 +1357,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gmail",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -1306,7 +1366,20 @@
    "mcpServers": [
     {
      "name": "gmail",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "gmailmcp.googleapis.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://gmailmcp.googleapis.com/mcp/v1"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/gmail",
@@ -1330,7 +1403,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-drive",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -1339,7 +1412,20 @@
    "mcpServers": [
     {
      "name": "google-drive",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.cursor.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.cursor.com/rest-mcp/google-drive/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-drive",
@@ -1371,7 +1457,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-calendar",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -1380,7 +1466,20 @@
    "mcpServers": [
     {
      "name": "google-calendar",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "calendarmcp.googleapis.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://calendarmcp.googleapis.com/mcp/v1"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-calendar",
@@ -1405,7 +1504,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-docs",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -1414,7 +1513,20 @@
    "mcpServers": [
     {
      "name": "google-docs",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.cursor.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.cursor.com/rest-mcp/google-docs/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-docs",
@@ -1445,7 +1557,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-sheets",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -1454,7 +1566,20 @@
    "mcpServers": [
     {
      "name": "google-sheets",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.cursor.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.cursor.com/rest-mcp/google-sheets/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-sheets",
@@ -1485,7 +1610,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-slides",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -1494,7 +1619,20 @@
    "mcpServers": [
     {
      "name": "google-slides",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.cursor.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.cursor.com/rest-mcp/google-slides/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-slides",
@@ -1525,7 +1663,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-ads",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -1534,7 +1672,20 @@
    "mcpServers": [
     {
      "name": "google-ads",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.cursor.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.cursor.com/rest-mcp/google-ads/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/google-ads",
@@ -1547,7 +1698,7 @@
     "keywords",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/google-ads/assets/logo.svg",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/google-ads/assets/logo.svg",
    "marketplace": "cursor"
   },
   {
@@ -1559,7 +1710,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gong",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "sales",
    "strict": null,
@@ -1568,7 +1719,23 @@
    "mcpServers": [
     {
      "name": "gong",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.gong.io",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [
+        "CLIENT_ID",
+        "CLIENT_SECRET"
+       ],
+       "type": "mcp",
+       "endpoint": "https://mcp.gong.io/mcp"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -1608,7 +1775,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/salesforce",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "sales",
    "strict": null,
@@ -1617,7 +1784,20 @@
    "mcpServers": [
     {
      "name": "salesforce",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [
+        "CLIENT_ID",
+        "SALESFORCE_MCP_URL"
+       ],
+       "type": "mcp"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -1658,7 +1838,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/salesforce-headless-360",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -1667,7 +1847,21 @@
    "mcpServers": [
     {
      "name": "salesforce-headless-360",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [
+        "CLIENT_ID",
+        "CLIENT_SECRET",
+        "SALESFORCE_MCP_URL"
+       ],
+       "type": "mcp"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -1702,7 +1896,7 @@
     "headless-360",
     "admin"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/salesforce-headless-360/assets/logo.svg",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/salesforce-headless-360/assets/logo.svg",
    "marketplace": "cursor"
   },
   {
@@ -1714,7 +1908,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/playwright",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -1723,7 +1917,20 @@
    "mcpServers": [
     {
      "name": "playwright",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "stdio",
+       "launcher": "npx",
+       "package": "@playwright/mcp@latest",
+       "packagePinned": false,
+       "envKeys": [],
+       "placeholders": [],
+       "program": "npx",
+       "type": "mcp",
+       "command": "npx -y @playwright/mcp@latest"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/microsoft/playwright-mcp",
@@ -1748,7 +1955,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/github",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -1757,7 +1964,24 @@
    "mcpServers": [
     {
      "name": "github",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.githubcopilot.com",
+       "localhost": false,
+       "headerKeys": [
+        "Authorization"
+       ],
+       "oauth": false,
+       "placeholders": [
+        "GITHUB_PERSONAL_ACCESS_TOKEN"
+       ],
+       "type": "mcp",
+       "endpoint": "https://api.githubcopilot.com/mcp/"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -1792,7 +2016,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ashby",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -1801,7 +2025,20 @@
    "mcpServers": [
     {
      "name": "ashby",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.ashbyhq.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.ashbyhq.com/mcp/v1"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.ashbyhq.com/ashby-mcp-server-beta",
@@ -1827,7 +2064,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/greenhouse",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -1836,7 +2073,20 @@
    "mcpServers": [
     {
      "name": "greenhouse",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.us.greenhouse.io",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.us.greenhouse.io/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://support.greenhouse.io/hc/en-us/articles/52090956642075-Greenhouse-MCP",
@@ -1849,7 +2099,7 @@
     "interviews",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/greenhouse/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/greenhouse/assets/logo.png",
    "tagline": "Review candidates, jobs and scorecards",
    "marketplace": "cursor"
   },
@@ -1862,7 +2112,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/hubspot",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "sales",
    "strict": null,
@@ -1871,7 +2121,23 @@
    "mcpServers": [
     {
      "name": "hubspot",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.hubspot.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [
+        "CLIENT_ID",
+        "CLIENT_SECRET"
+       ],
+       "type": "mcp",
+       "endpoint": "https://mcp.hubspot.com"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -1913,7 +2179,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/intercom",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -1922,7 +2188,20 @@
    "mcpServers": [
     {
      "name": "intercom",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.intercom.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.intercom.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developers.intercom.com/docs/guides/mcp",
@@ -1948,7 +2227,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/zoom",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -1957,7 +2236,23 @@
    "mcpServers": [
     {
      "name": "zoom",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.zoom.us",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [
+        "CLIENT_ID",
+        "CLIENT_SECRET"
+       ],
+       "type": "mcp",
+       "endpoint": "https://mcp.zoom.us/mcp/zoom/streamable"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -1998,7 +2293,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -2007,7 +2302,20 @@
    "mcpServers": [
     {
      "name": "x",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.x.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.x.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.x.com/tools/mcp",
@@ -2047,7 +2355,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/clay",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "sales",
    "strict": null,
@@ -2056,7 +2364,20 @@
    "mcpServers": [
     {
      "name": "clay",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.clay.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.clay.com/v3/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://university.clay.com/docs/connect-to-clay-mcp",
@@ -2082,7 +2403,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/circleback",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2091,7 +2412,20 @@
    "mcpServers": [
     {
      "name": "circleback",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "circleback.ai",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://circleback.ai/api/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://support.circleback.ai/en/articles/13249081-circleback-mcp",
@@ -2116,7 +2450,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/docusign",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2125,7 +2459,23 @@
    "mcpServers": [
     {
      "name": "docusign",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.docusign.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [
+        "CLIENT_ID",
+        "CLIENT_SECRET"
+       ],
+       "type": "mcp",
+       "endpoint": "https://mcp.docusign.com/mcp"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -2165,7 +2515,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/navan",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -2174,7 +2524,20 @@
    "mcpServers": [
     {
      "name": "navan",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.navan.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.navan.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developer.navan.com/mcp/",
@@ -2200,7 +2563,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/profound",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -2209,7 +2572,20 @@
    "mcpServers": [
     {
      "name": "profound",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.tryprofound.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.tryprofound.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.tryprofound.com/mcp/overview",
@@ -2236,7 +2612,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/juicebox",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2245,7 +2621,20 @@
    "mcpServers": [
     {
      "name": "juicebox",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.juicebox.ai",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.juicebox.ai/v1"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.juicebox.ai/juicebox-mcp",
@@ -2271,7 +2660,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outreach",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "sales",
    "strict": null,
@@ -2280,7 +2669,20 @@
    "mcpServers": [
     {
      "name": "outreach",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.outreach.io",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.outreach.io/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developers.outreach.io/mcp-server",
@@ -2306,7 +2708,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/amplemarket",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "sales",
    "strict": null,
@@ -2315,7 +2717,20 @@
    "mcpServers": [
     {
      "name": "amplemarket",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.amplemarket.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.amplemarket.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://knowledge.amplemarket.com/articles/8022685319-connecting-to-the-amplemarket-mcp-server",
@@ -2341,7 +2756,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/klaviyo",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -2350,7 +2765,20 @@
    "mcpServers": [
     {
      "name": "klaviyo",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.klaviyo.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.klaviyo.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
@@ -2376,7 +2804,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/customer-io",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -2385,7 +2813,20 @@
    "mcpServers": [
     {
      "name": "customer-io",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.customer.io",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.customer.io/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.customer.io/ai/mcp/",
@@ -2411,7 +2852,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mailerlite",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -2420,7 +2861,20 @@
    "mcpServers": [
     {
      "name": "mailerlite",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.mailerlite.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.mailerlite.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developers.mailerlite.com/mcp",
@@ -2446,7 +2900,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brevo",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -2455,7 +2909,24 @@
    "mcpServers": [
     {
      "name": "brevo",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.brevo.com",
+       "localhost": false,
+       "headerKeys": [
+        "Authorization"
+       ],
+       "oauth": false,
+       "placeholders": [
+        "BREVO_MCP_TOKEN"
+       ],
+       "type": "mcp",
+       "endpoint": "https://mcp.brevo.com/v1/brevo/mcp"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -2490,7 +2961,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/typeform",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2499,7 +2970,20 @@
    "mcpServers": [
     {
      "name": "typeform",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.typeform.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.typeform.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developers.typeform.com/developers/get-started/mcp/",
@@ -2524,7 +3008,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/jotform",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2533,7 +3017,20 @@
    "mcpServers": [
     {
      "name": "jotform",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.jotform.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.jotform.com"
+      }
+     ]
     }
    ],
    "homepage": "https://www.jotform.com/mcp/",
@@ -2557,7 +3054,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/semrush",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -2566,7 +3063,20 @@
    "mcpServers": [
     {
      "name": "semrush",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.semrush.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.semrush.com/v2/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developer.semrush.com/api/v4/introduction/semrush-mcp/",
@@ -2592,7 +3102,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ahrefs",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -2601,7 +3111,20 @@
    "mcpServers": [
     {
      "name": "ahrefs",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.ahrefs.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.ahrefs.com/mcp/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://ahrefs.com/mcp",
@@ -2627,7 +3150,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/godaddy",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2636,7 +3159,20 @@
    "mcpServers": [
     {
      "name": "godaddy",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.godaddy.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.godaddy.com/v1/domains/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developer.godaddy.com/en/docs/api-users/mcp",
@@ -2661,7 +3197,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/upwork",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2670,7 +3206,20 @@
    "mcpServers": [
     {
      "name": "upwork",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.upwork.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.upwork.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://www.upwork.com/ai/mcp",
@@ -2696,7 +3245,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/workable",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2705,7 +3254,20 @@
    "mcpServers": [
     {
      "name": "workable",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.workable.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.workable.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://workable.readme.io/reference/workable-mcp-server",
@@ -2731,7 +3293,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brex",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -2740,7 +3302,20 @@
    "mcpServers": [
     {
      "name": "brex",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.brex.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.brex.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developer.brex.com/docs/mcp",
@@ -2766,7 +3341,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/todoist",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2775,7 +3350,20 @@
    "mcpServers": [
     {
      "name": "todoist",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "ai.todoist.net",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://ai.todoist.net/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/Doist/todoist-mcp",
@@ -2800,7 +3388,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/calendly",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2809,7 +3397,20 @@
    "mcpServers": [
     {
      "name": "calendly",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.calendly.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.calendly.com/"
+      }
+     ]
     }
    ],
    "homepage": "https://developer.calendly.com/calendly-mcp-server",
@@ -2834,7 +3435,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/smartsheet",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2843,7 +3444,24 @@
    "mcpServers": [
     {
      "name": "smartsheet",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.smartsheet.com",
+       "localhost": false,
+       "headerKeys": [
+        "Authorization"
+       ],
+       "oauth": false,
+       "placeholders": [
+        "SMARTSHEET_API_TOKEN"
+       ],
+       "type": "mcp",
+       "endpoint": "https://mcp.smartsheet.com"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -2877,7 +3495,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/wrike",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2886,7 +3504,24 @@
    "mcpServers": [
     {
      "name": "wrike",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.wrike.com",
+       "localhost": false,
+       "headerKeys": [
+        "Authorization"
+       ],
+       "oauth": false,
+       "placeholders": [
+        "WRIKE_ACCESS_TOKEN"
+       ],
+       "type": "mcp",
+       "endpoint": "https://mcp.wrike.com/v2"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -2920,7 +3555,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coda",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2929,7 +3564,20 @@
    "mcpServers": [
     {
      "name": "coda",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "docs.superhuman.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://docs.superhuman.com/apis/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://help.superhuman.com/hc/en-us/articles/46210076980365-Connect-to-the-Coda-MCP",
@@ -2954,7 +3602,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/guru",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2963,7 +3611,20 @@
    "mcpServers": [
     {
      "name": "guru",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.api.getguru.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.api.getguru.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developer.getguru.com/docs/guru-mcp-server-overview",
@@ -2988,7 +3649,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fireflies",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -2997,7 +3658,20 @@
    "mcpServers": [
     {
      "name": "fireflies",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.fireflies.ai",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.fireflies.ai/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.fireflies.ai/getting-started/mcp-configuration",
@@ -3022,7 +3696,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/otter",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -3031,7 +3705,20 @@
    "mcpServers": [
     {
      "name": "otter",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.otter.ai",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.otter.ai/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
@@ -3056,7 +3743,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fathom",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -3065,7 +3752,20 @@
    "mcpServers": [
     {
      "name": "fathom",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.fathom.ai",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.fathom.ai/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developers.fathom.ai/mcp-docs",
@@ -3090,7 +3790,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/craft",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -3099,7 +3799,20 @@
    "mcpServers": [
     {
      "name": "craft",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.craft.do",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.craft.do/my/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://www.craft.do/imagine/guide/mcp",
@@ -3124,7 +3837,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mem",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -3133,7 +3846,20 @@
    "mcpServers": [
     {
      "name": "mem",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.mem.ai",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.mem.ai/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.mem.ai/mcp/overview",
@@ -3158,7 +3884,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/readwise",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -3167,7 +3893,20 @@
    "mcpServers": [
     {
      "name": "readwise",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp2.readwise.io",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp2.readwise.io/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.readwise.io/tools/mcp",
@@ -3192,7 +3931,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/similarweb",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -3201,7 +3940,24 @@
    "mcpServers": [
     {
      "name": "similarweb",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.similarweb.com",
+       "localhost": false,
+       "headerKeys": [
+        "api-key"
+       ],
+       "oauth": false,
+       "placeholders": [
+        "SIMILARWEB_API_KEY"
+       ],
+       "type": "mcp",
+       "endpoint": "https://mcp.similarweb.com"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -3234,7 +3990,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/xero",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -3243,7 +3999,26 @@
    "mcpServers": [
     {
      "name": "xero",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "stdio",
+       "launcher": "npx",
+       "package": "@xeroapi/xero-mcp-server@latest",
+       "packagePinned": false,
+       "envKeys": [
+        "XERO_CLIENT_ID",
+        "XERO_CLIENT_SECRET"
+       ],
+       "placeholders": [
+        "XERO_CLIENT_ID",
+        "XERO_CLIENT_SECRET"
+       ],
+       "program": "npx",
+       "type": "mcp",
+       "command": "npx -y @xeroapi/xero-mcp-server@latest"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -3285,7 +4060,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outlook",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -3294,7 +4069,20 @@
    "mcpServers": [
     {
      "name": "outlook",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.cursor.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.cursor.com/rest-mcp/outlook/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/outlook",
@@ -3317,7 +4105,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outlook-calendar",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -3326,7 +4114,20 @@
    "mcpServers": [
     {
      "name": "outlook-calendar",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.cursor.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.cursor.com/rest-mcp/outlook-calendar/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/outlook-calendar",
@@ -3350,7 +4151,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/onedrive",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -3359,7 +4160,20 @@
    "mcpServers": [
     {
      "name": "onedrive",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.cursor.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.cursor.com/rest-mcp/onedrive/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/onedrive",
@@ -3382,7 +4196,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/sharepoint",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -3391,7 +4205,20 @@
    "mcpServers": [
     {
      "name": "sharepoint",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.cursor.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.cursor.com/rest-mcp/sharepoint/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/sharepoint",
@@ -3415,7 +4242,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/teams",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -3424,7 +4251,20 @@
    "mcpServers": [
     {
      "name": "teams",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.cursor.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.cursor.com/rest-mcp/teams/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/teams",
@@ -3447,7 +4287,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/power-bi",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -3456,7 +4296,20 @@
    "mcpServers": [
     {
      "name": "power-bi",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.cursor.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.cursor.com/rest-mcp/power-bi/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/power-bi",
@@ -3469,7 +4322,7 @@
     "analytics",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/power-bi/assets/logo.svg",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/power-bi/assets/logo.svg",
    "marketplace": "cursor"
   },
   {
@@ -3481,7 +4334,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/finance",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -3490,7 +4343,20 @@
    "mcpServers": [
     {
      "name": "finance",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "connectors-gateway.grok.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://connectors-gateway.grok.com/gateway/v1/finance/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://grok.com/connectors",
@@ -3516,7 +4382,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x-ads",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -3525,7 +4391,20 @@
    "mcpServers": [
     {
      "name": "x-ads",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "ads-api.x.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://ads-api.x.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.x.com/x-ads-api/introduction",
@@ -3551,7 +4430,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/meta-ads",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -3560,7 +4439,20 @@
    "mcpServers": [
     {
      "name": "meta-ads",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.facebook.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.facebook.com/ads"
+      }
+     ]
     }
    ],
    "homepage": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-get-started",
@@ -3576,7 +4468,7 @@
     "insights",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/meta-ads/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/meta-ads/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3588,7 +4480,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/attio",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "sales",
    "strict": null,
@@ -3597,7 +4489,20 @@
    "mcpServers": [
     {
      "name": "attio",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.attio.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.attio.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.attio.com/mcp/overview",
@@ -3624,7 +4529,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/hunter",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -3633,7 +4538,24 @@
    "mcpServers": [
     {
      "name": "hunter",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.hunter.io",
+       "localhost": false,
+       "headerKeys": [
+        "X-API-Key"
+       ],
+       "oauth": false,
+       "placeholders": [
+        "HUNTER_API_KEY"
+       ],
+       "type": "mcp",
+       "endpoint": "https://mcp.hunter.io/mcp"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -3675,16 +4597,33 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/stable",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
-   "category": null,
+   "category": "productivity",
    "strict": null,
    "license": "MIT",
    "repository": "https://github.com/cursor/plugins",
    "mcpServers": [
     {
      "name": "stable",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.usestable.com",
+       "localhost": false,
+       "headerKeys": [
+        "x-api-key"
+       ],
+       "oauth": false,
+       "placeholders": [
+        "STABLE_API_KEY"
+       ],
+       "type": "mcp",
+       "endpoint": "https://mcp.usestable.com/mcp"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -3706,7 +4645,8 @@
     "api",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/stable/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/stable/assets/logo.png",
+   "tagline": "Find mail and read scanned documents",
    "marketplace": "cursor"
   },
   {
@@ -3718,7 +4658,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gamma",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -3727,7 +4667,20 @@
    "mcpServers": [
     {
      "name": "gamma",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.gamma.app",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.gamma.app/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developers.gamma.app/mcp/gamma-mcp-server.md",
@@ -3753,7 +4706,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/webull",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -3762,7 +4715,20 @@
    "mcpServers": [
     {
      "name": "webull",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.webull.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.webull.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developer.webull.com/apis/docs/AI-friendly-Resources/mcp/",
@@ -3789,7 +4755,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/sp-global",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -3798,7 +4764,20 @@
    "mcpServers": [
     {
      "name": "sp-global",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "kfinance.kensho.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://kfinance.kensho.com/integrations/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.kensho.com/llmreadyapi/overview",
@@ -3825,7 +4804,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/interactive-brokers",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -3834,7 +4813,20 @@
    "mcpServers": [
     {
      "name": "interactive-brokers",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.ibkr.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.ibkr.com/v1/api/mcp-public"
+      }
+     ]
     }
    ],
    "homepage": "https://www.interactivebrokers.com/en/trading/ai-integrations.php",
@@ -3861,7 +4853,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/meltwater",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -3870,7 +4862,20 @@
    "mcpServers": [
     {
      "name": "meltwater",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.meltwater.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.meltwater.com/v2/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developer.meltwater.com/guides/meltwater-mcp/overview",
@@ -3897,7 +4902,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/daloopa",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -3906,7 +4911,20 @@
    "mcpServers": [
     {
      "name": "daloopa",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.daloopa.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.daloopa.com/server/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.daloopa.com/docs/daloopa-mcp",
@@ -3933,7 +4951,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/pitchbook",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -3942,7 +4960,20 @@
    "mcpServers": [
     {
      "name": "pitchbook",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "premium.mcp.pitchbook.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://premium.mcp.pitchbook.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://pitchbook.com",
@@ -3956,7 +4987,7 @@
     "funds",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/pitchbook/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/pitchbook/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -3968,7 +4999,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/excalidraw",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "design",
    "strict": null,
@@ -3977,7 +5008,22 @@
    "mcpServers": [
     {
      "name": "excalidraw",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.excalidraw.com",
+       "localhost": false,
+       "headerKeys": [
+        "X-Cursor-Plugin"
+       ],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.excalidraw.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/excalidraw/excalidraw-mcp",
@@ -4004,7 +5050,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/google-cloud-bigquery",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "database",
    "strict": null,
@@ -4013,7 +5059,23 @@
    "mcpServers": [
     {
      "name": "google-cloud-bigquery",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "bigquery.googleapis.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [
+        "CLIENT_ID",
+        "CLIENT_SECRET"
+       ],
+       "type": "mcp",
+       "endpoint": "https://bigquery.googleapis.com/mcp"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -4056,7 +5118,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/statsig",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "development",
    "strict": null,
@@ -4065,7 +5127,20 @@
    "mcpServers": [
     {
      "name": "statsig",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "api.statsig.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://api.statsig.com/v3/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.statsig.com/integrations/mcp/cursor",
@@ -4092,7 +5167,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/robinhood",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -4101,7 +5176,20 @@
    "mcpServers": [
     {
      "name": "robinhood",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "agent.robinhood.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://agent.robinhood.com/mcp/trading"
+      }
+     ]
     }
    ],
    "homepage": "https://robinhood.com/us/en/support/articles/agentic-trading-overview/",
@@ -4130,7 +5218,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coinbase",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -4139,7 +5227,20 @@
    "mcpServers": [
     {
      "name": "coinbase",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "agents.coinbase.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://agents.coinbase.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
@@ -4166,7 +5267,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/etoro-trading",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -4175,7 +5276,20 @@
    "mcpServers": [
     {
      "name": "etoro-trading",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.public-api.etoro.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.public-api.etoro.com"
+      }
+     ]
     }
    ],
    "homepage": "https://api-portal.etoro.com/core/vibe-code/cursor",
@@ -4203,7 +5317,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/x-money",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -4212,7 +5326,20 @@
    "mcpServers": [
     {
      "name": "x-money",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.money.x.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.money.x.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://x.com/i/money",
@@ -4249,7 +5376,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/shopify-store",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "sales",
    "strict": null,
@@ -4258,7 +5385,20 @@
    "mcpServers": [
     {
      "name": "shopify",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "setup.shopify.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://setup.shopify.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://grok.com/connectors",
@@ -4273,7 +5413,7 @@
     "grok",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/shopify-store/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/shopify-store/assets/logo.png",
    "tagline": "Ask about products, orders and sales",
    "marketplace": "cursor"
   },
@@ -4286,7 +5426,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/tinyfish",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "agent-orchestration",
    "strict": null,
@@ -4295,7 +5435,20 @@
    "mcpServers": [
     {
      "name": "tinyfish",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "agent.tinyfish.ai",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://agent.tinyfish.ai/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.tinyfish.ai/mcp-integration",
@@ -4310,7 +5463,7 @@
     "playwright",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/tinyfish/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/tinyfish/assets/logo.png",
    "tagline": "Automate multi-step web tasks",
    "marketplace": "cursor"
   },
@@ -4323,7 +5476,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/beehiiv",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -4332,7 +5485,20 @@
    "mcpServers": [
     {
      "name": "beehiiv",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.beehiiv.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.beehiiv.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://www.beehiiv.com/support/article/39255979546263-getting-started-with-the-beehiiv-mcp",
@@ -4347,7 +5513,7 @@
     "creator",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/beehiiv/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/beehiiv/assets/logo.png",
    "tagline": "Draft posts and manage subscribers",
    "marketplace": "cursor"
   },
@@ -4360,7 +5526,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/trello",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -4369,7 +5535,20 @@
    "mcpServers": [
     {
      "name": "trello",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.trello.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.trello.com/v1"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/atlassian/trello-mcp-server",
@@ -4385,7 +5564,7 @@
     "planner",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/trello/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/trello/assets/logo.png",
    "tagline": "Organize boards, lists and cards",
    "marketplace": "cursor"
   },
@@ -4398,7 +5577,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/buffer",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -4407,7 +5586,20 @@
    "mcpServers": [
     {
      "name": "buffer",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.buffer.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.buffer.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developers.buffer.com/guides/integrations/mcp.html",
@@ -4422,7 +5614,7 @@
     "ideas",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/buffer/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/buffer/assets/logo.png",
    "tagline": "Schedule and publish social posts",
    "marketplace": "cursor"
   },
@@ -4435,7 +5627,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/plaud",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -4444,7 +5636,20 @@
    "mcpServers": [
     {
      "name": "plaud",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.plaud.ai",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.plaud.ai/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.plaud.ai/plaud-mcp-cli/mcp",
@@ -4459,7 +5664,7 @@
     "action items",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/plaud/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/plaud/assets/logo.png",
    "tagline": "Search recordings and voice notes",
    "marketplace": "cursor"
   },
@@ -4472,7 +5677,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/posthog-mcp",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "data-analytics",
    "strict": null,
@@ -4481,7 +5686,20 @@
    "mcpServers": [
     {
      "name": "posthog",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.posthog.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.posthog.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://posthog.com/docs/model-context-protocol",
@@ -4496,7 +5714,7 @@
     "sql",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/posthog-mcp/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/posthog-mcp/assets/logo.png",
    "tagline": "Query analytics and review replays",
    "marketplace": "cursor"
   },
@@ -4509,7 +5727,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/quickbooks-online",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -4518,7 +5736,20 @@
    "mcpServers": [
     {
      "name": "quickbooks-online",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp-e2e.quickbooks.intuit.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp-e2e.quickbooks.intuit.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://github.com/cursor/plugins/tree/main/third_party/quickbooks-online",
@@ -4534,7 +5765,7 @@
     "finance",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/quickbooks-online/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/quickbooks-online/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -4546,7 +5777,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/workday",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -4565,7 +5796,7 @@
     "recruiting",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/workday/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/workday/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -4577,7 +5808,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/whatsapp-business",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -4614,7 +5845,7 @@
     "messaging",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/whatsapp-business/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/whatsapp-business/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -4626,7 +5857,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/zoho-crm",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -4643,7 +5874,7 @@
     "deals",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/zoho-crm/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/zoho-crm/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -4655,7 +5886,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/zoho-desk",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -4671,7 +5902,7 @@
     "knowledge base",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/zoho-desk/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/zoho-desk/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -4683,7 +5914,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/zoho-books",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -4700,7 +5931,7 @@
     "finance",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/zoho-books/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/zoho-books/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -4712,7 +5943,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/square",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "payments",
    "strict": null,
@@ -4721,7 +5952,20 @@
    "mcpServers": [
     {
      "name": "square",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.squareup.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.squareup.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://developer.squareup.com/docs/mcp",
@@ -4738,7 +5982,7 @@
     "commerce",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/square/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/square/assets/logo.png",
    "tagline": "Manage payments, orders and invoices",
    "marketplace": "cursor"
   },
@@ -4751,7 +5995,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/tailscale",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -4769,11 +6013,11 @@
     "grok",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/tailscale/assets/logo.svg",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/tailscale/assets/logo.svg",
    "skills": [
     {
      "name": "tailscale-setup",
-     "description": "Walk a user or team admin through connecting Grok Bot to a Tailscale tailnet - a personal tailnet (one-click Connect, or a tag:grokbot device when the user's policy should limit it), or a team's company tailnets with each member's own device - granting only the MCP hosts it should reach, and adding tailnet MCP servers, including ones on internal DNS names, behind subnet routes or app connectors, on any port, or with a private CA. Use when the user asks to set up, troubleshoot, or disconnect Grok Bot's Tailscale connection.",
+     "description": "Connect Grok Bot to Tailscale on a company tailnet (a team admin enables it at cursor.com; each member authenticates their own device and an admin limits it with custom:grokbot postures) or a personal tailnet (one-click Connect when the member owns or administers the tailnet, otherwise a tag:grokbot device). Several tailnets can be connected at once. Use when the user asks to set up, troubleshoot, change the default tailnet, or disconnect Grok Bot's Tailscale connection.",
      "path": "skills/tailscale-setup/SKILL.md"
     }
    ],
@@ -4788,7 +6032,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/highlevel",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -4797,7 +6041,20 @@
    "mcpServers": [
     {
      "name": "highlevel",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "services.leadconnectorhq.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://services.leadconnectorhq.com/mcp/cursor/v2"
+      }
+     ]
     }
    ],
    "homepage": "https://help.leadconnectorhq.com/support/solutions/articles/155000008185",
@@ -4815,7 +6072,7 @@
     "marketing",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/highlevel/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/highlevel/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -4827,7 +6084,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/finary",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -4836,7 +6093,20 @@
    "mcpServers": [
     {
      "name": "finary",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "public-api.finary.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://public-api.finary.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://finary.com/en/mcp",
@@ -4852,7 +6122,7 @@
     "personal finance",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/finary/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/finary/assets/logo.png",
    "tagline": "Read your net worth, holdings and spending",
    "marketplace": "cursor"
   },
@@ -4865,7 +6135,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/tiktok-for-business",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "marketing",
    "strict": null,
@@ -4874,7 +6144,20 @@
    "mcpServers": [
     {
      "name": "tiktok-for-business",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "business-api.tiktok.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://business-api.tiktok.com/open_mcp/tt-ads-mcp-layer"
+      }
+     ]
     }
    ],
    "homepage": "https://business-api.tiktok.com/portal/docs/tiktok-ads-mcp-server/v1.3",
@@ -4890,7 +6173,7 @@
     "audiences",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/tiktok-for-business/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/tiktok-for-business/assets/logo.png",
    "tagline": "Run and report on TikTok ad campaigns",
    "marketplace": "cursor"
   },
@@ -4903,7 +6186,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gusto",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "finance",
    "strict": null,
@@ -4912,7 +6195,20 @@
    "mcpServers": [
     {
      "name": "gusto",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.api.gusto.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.api.gusto.com/"
+      }
+     ]
     }
    ],
    "homepage": "https://docs.gusto.com/app-integrations/docs/mcp",
@@ -4927,7 +6223,7 @@
     "timesheets",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/gusto/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/gusto/assets/logo.png",
    "tagline": "Work with payroll, people and time off",
    "marketplace": "cursor"
   },
@@ -4940,7 +6236,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gopuff",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -4949,7 +6245,20 @@
    "mcpServers": [
     {
      "name": "gopuff",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.gopuff.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.gopuff.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://www.gopuff.com",
@@ -4962,7 +6271,7 @@
     "grok",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/gopuff/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/gopuff/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -4974,7 +6283,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/jobber",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -4983,7 +6292,23 @@
    "mcpServers": [
     {
      "name": "jobber",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.getjobber.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [
+        "CLIENT_ID",
+        "CLIENT_SECRET"
+       ],
+       "type": "mcp",
+       "endpoint": "https://mcp.getjobber.com/mcp"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -5016,7 +6341,7 @@
     "scheduling",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/jobber/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/jobber/assets/logo.png",
    "tagline": "Manage clients, quotes, jobs and invoices",
    "marketplace": "cursor"
   },
@@ -5029,7 +6354,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/databricks-genie-one",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "data-analytics",
    "strict": null,
@@ -5038,7 +6363,24 @@
    "mcpServers": [
     {
      "name": "databricks-genie-one",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "${DATABRICKS_HOST}",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [
+        "CLIENT_ID",
+        "CLIENT_SECRET",
+        "DATABRICKS_HOST"
+       ],
+       "type": "mcp",
+       "endpoint": "https://${DATABRICKS_HOST}/ai-gateway/mcp-services/system.ai.genie_one_mcp"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -5075,7 +6417,7 @@
     "lakehouse",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/databricks-genie-one/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/databricks-genie-one/assets/logo.png",
    "tagline": "Ask Genie about your workspace data",
    "marketplace": "cursor"
   },
@@ -5088,7 +6430,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/lark",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": null,
    "strict": null,
@@ -5097,7 +6439,20 @@
    "mcpServers": [
     {
      "name": "lark",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.larksuite.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.larksuite.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_introduction",
@@ -5109,7 +6464,7 @@
     "messages",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/lark/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/lark/assets/logo.png",
    "marketplace": "cursor"
   },
   {
@@ -5121,7 +6476,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/feishu",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "productivity",
    "strict": null,
@@ -5130,7 +6485,20 @@
    "mcpServers": [
     {
      "name": "feishu",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.feishu.cn",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.feishu.cn/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_introduction",
@@ -5141,7 +6509,7 @@
     "messages",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/feishu/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/feishu/assets/logo.png",
    "tagline": "Search and edit Feishu docs and chats",
    "marketplace": "cursor"
   },
@@ -5154,7 +6522,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/framer",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "design",
    "strict": null,
@@ -5163,7 +6531,20 @@
    "mcpServers": [
     {
      "name": "framer",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.framer.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.framer.com/mcp"
+      }
+     ]
     }
    ],
    "homepage": "https://www.framer.com",
@@ -5175,7 +6556,7 @@
     "no-code",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/99b609a72323b70204eab407c622f436e858e112/third_party/framer/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/framer/assets/logo.png",
    "tagline": "Build and edit your Framer sites",
    "marketplace": "cursor"
   },
@@ -5188,7 +6569,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/vanta",
     "ref": "main",
-    "sha": "99b609a72323b70204eab407c622f436e858e112"
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
    },
    "category": "security",
    "strict": null,
@@ -5197,7 +6578,22 @@
    "mcpServers": [
     {
      "name": "vanta",
-     "path": "mcp.json"
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "${VANTA_MCP_HOST}",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [
+        "VANTA_MCP_HOST"
+       ],
+       "type": "mcp",
+       "endpoint": "https://${VANTA_MCP_HOST}/mcp"
+      }
+     ]
     }
    ],
    "userConfig": {
@@ -5225,6 +6621,240 @@
     "displayName": "Vanta"
    },
    "tagline": "Fix failing compliance tests in code",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "ringcentral-phone",
+   "displayName": "Ringcentral Phone",
+   "description": "Read call activity, AI call notes, SMS, voicemail, and fax, and send SMS.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/ringcentral-phone",
+    "ref": "main",
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "ringcentral-phone",
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.labs.ringcentral.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.labs.ringcentral.com/ringex/phone"
+      }
+     ]
+    }
+   ],
+   "homepage": "https://www.ringcentral.com",
+   "keywords": [
+    "ringcentral",
+    "ringcentral phone",
+    "phone",
+    "calls",
+    "sms",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/ringcentral-phone/assets/logo.png",
+   "tagline": "Review calls, voicemail and texts, and send SMS",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "ringcentral-chat",
+   "displayName": "Ringcentral Chat",
+   "description": "Read team chats and posts, send messages, and manage teams, tasks, and notes.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/ringcentral-chat",
+    "ref": "main",
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "ringcentral-chat",
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.labs.ringcentral.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.labs.ringcentral.com/ringex/v1.1.0/team-chat"
+      }
+     ]
+    }
+   ],
+   "homepage": "https://www.ringcentral.com",
+   "keywords": [
+    "ringcentral",
+    "ringcentral chat",
+    "chat",
+    "team messaging",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/ringcentral-chat/assets/logo.png",
+   "tagline": "Read and post in RingCentral team chats",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "servicenow",
+   "displayName": "Servicenow",
+   "description": "Call the tools your admin publishes on a ServiceNow instance.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/servicenow",
+    "ref": "main",
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "servicenow",
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "${SERVICENOW_HOST}",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": true,
+       "placeholders": [
+        "CLIENT_ID",
+        "CLIENT_SECRET",
+        "SERVICENOW_HOST",
+        "SERVICENOW_MCP_SERVER"
+       ],
+       "type": "mcp",
+       "endpoint": "https://${SERVICENOW_HOST}/sncapps/mcp-server/mcp/${SERVICENOW_MCP_SERVER}"
+      }
+     ]
+    }
+   ],
+   "userConfig": {
+    "SERVICENOW_HOST": {
+     "type": "string",
+     "title": "Instance hostname",
+     "description": "Bare hostname of the ServiceNow instance, for example acme.service-now.com. Leave out https:// and any path.",
+     "required": true,
+     "sensitive": false
+    },
+    "SERVICENOW_MCP_SERVER": {
+     "type": "string",
+     "title": "MCP server name",
+     "description": "Name from the server record in MCP Server Console. This is the last segment of the Server URL. The preconfigured Quickstart Server is sn_mcp_server_default.",
+     "required": true,
+     "sensitive": false
+    },
+    "CLIENT_ID": {
+     "type": "string",
+     "title": "OAuth client ID",
+     "description": "Client ID from the OAuth inbound integration created for this client in Machine Identity Console.",
+     "required": true,
+     "sensitive": false
+    },
+    "CLIENT_SECRET": {
+     "type": "string",
+     "title": "OAuth client secret",
+     "description": "Client secret from the same OAuth inbound integration. Stored encrypted and never shown back.",
+     "required": true,
+     "sensitive": true
+    }
+   },
+   "homepage": "https://www.servicenow.com/docs/r/australia/intelligent-experiences/exploring-mcp-server-console.html",
+   "keywords": [
+    "servicenow",
+    "itsm",
+    "incidents",
+    "cases",
+    "mcp",
+    "mcp server console",
+    "now assist"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/servicenow/assets/logo.svg",
+   "tagline": "Use the tools your ServiceNow instance publishes",
+   "marketplace": "cursor"
+  },
+  {
+   "name": "rippling",
+   "displayName": "Rippling",
+   "description": "Look up people, time off, and company policy in Rippling, and file time-off requests and draft hires.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/cursor/plugins",
+    "path": "third_party/rippling",
+    "ref": "main",
+    "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
+   },
+   "category": "productivity",
+   "strict": null,
+   "license": "MIT",
+   "repository": "https://github.com/cursor/plugins",
+   "mcpServers": [
+    {
+     "name": "rippling",
+     "path": "mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [
+        "RIPPLING_MCP_URL"
+       ],
+       "type": "mcp"
+      }
+     ]
+    }
+   ],
+   "userConfig": {
+    "RIPPLING_MCP_URL": {
+     "type": "string",
+     "title": "Remote MCP server URL",
+     "description": "Remote MCP server URL copied from Rippling \u2192 My IT \u2192 MCP connectors. This is the Rippling MCP URL from the setup page, not a company-wide API token and not an MCP Gateway URL for a different product.",
+     "required": true,
+     "sensitive": false
+    }
+   },
+   "homepage": "https://developer.rippling.com/documentation/rippling-platform/rippling-mcp/setup",
+   "keywords": [
+    "rippling",
+    "hr",
+    "hris",
+    "people",
+    "employees",
+    "time off",
+    "payroll",
+    "policy",
+    "mcp"
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/c742dd61706fbacc1b95f1a20b7b988cf096ce6c/third_party/rippling/assets/logo.png",
+   "tagline": "Look up people and time off, and request leave",
    "marketplace": "cursor"
   }
  ]
