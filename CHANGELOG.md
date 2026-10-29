@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+- List each plugin's skills, commands, agents and rules as Remy loads them, under the names users invoke (19 plugins change: cockroachdb, mattpocock-skills, mlflow, planetscale and twilio-developer-kit gain skills; amd-skills, supabase, vercel and coderabbit drop folders and files Remy does not load; notion and posthog commands are namespaced; outputai, sonarqube, stripe and zapier agents take their frontmatter names; cloudflare, grafana-assistant, zapier, zscaler and four Cursor plugins gain `.mdc` and declared rules). A renamed skill keeps its written name as `upstreamName` (pinecone's `pinecone:assistant` is `assistant`; zscaler's `application_segment` skills are slugged). An MCP server its author disabled is marked `disabled` (databases-on-aws).
+- Each hook group carries `entries`, one per hook with its portable toggle key, event, matcher, content hash and occurrence (190 entries over 55 plugins, 7 in the Cursor feed).
+- Each probed remote MCP server's `execution` entry carries `oauth: {signIn, verdict}` from the remote sign-in check, and the feed carries `oauthPolicy.domainGroups`, the reviewed vendor domain groups remy-service signs in with.
+- Publish Slack from the vendored track; hold Business Central, OnePay and Questrade for review; re-pin 69 upstream plugins.
+
 - Publish Slack from the vendored `plugins/slack` again. Its MCP config no longer carries a client id: Remy signs in through remy-service with the Slack app Remy's Slack agent uses.
 - Temporarily exclude the pinned Domino Data Lab plugin until an updated source passes Remy compatibility checks.
 - Publish each MCP server's launch facts in its `execution` entry, the program each command hook starts, each plugin's local sign-in hints, and where each plugin can run (`surfaces`, with `cloudUnsupported` reasons for desktop-only plugins).
