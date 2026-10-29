@@ -2102,7 +2102,7 @@
        "type": "mcp",
        "endpoint": "https://api.githubcopilot.com/mcp/",
        "oauthSignIn": {
-        "signIn": "provider",
+        "signIn": "unsupported",
         "verdict": "needs-client"
        }
       }
