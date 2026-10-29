@@ -657,13 +657,14 @@
        "urlHost": "mcp.airtable.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.airtable.com/mcp"
+       "endpoint": "https://mcp.airtable.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -783,13 +784,14 @@
        "urlHost": "mcp.sandbox.airwallex.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.sandbox.airwallex.com/developer"
+       "endpoint": "https://mcp.sandbox.airwallex.com/developer",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     },
@@ -803,13 +805,14 @@
        "urlHost": "mcp.airwallex.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.airwallex.com/mcp"
+       "endpoint": "https://mcp.airwallex.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -894,13 +897,14 @@
        "urlHost": "mcp.sandbox.airwallex.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.sandbox.airwallex.com/developer"
+       "endpoint": "https://mcp.sandbox.airwallex.com/developer",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -988,13 +992,14 @@
        "urlHost": "mcp.aiven.live",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.aiven.live/mcp"
+       "endpoint": "https://mcp.aiven.live/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -1440,13 +1445,14 @@
        "urlHost": "mcp.amplitude.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.amplitude.com/mcp"
+       "endpoint": "https://mcp.amplitude.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -1687,13 +1693,14 @@
        "urlHost": "mcp.apollo.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.apollo.io/mcp"
+       "endpoint": "https://mcp.apollo.io/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -1777,13 +1784,14 @@
        "urlHost": "mcp.apollographql.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.apollographql.com"
+       "endpoint": "https://mcp.apollographql.com",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -1925,13 +1933,14 @@
        "urlHost": "mcp.appwrite.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.appwrite.io/"
+       "endpoint": "https://mcp.appwrite.io/",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -2342,13 +2351,14 @@
        "urlHost": "mcp.atlan.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.atlan.com/mcp"
+       "endpoint": "https://mcp.atlan.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -2411,13 +2421,14 @@
        "urlHost": "mcp.atlassian.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.atlassian.com/v2/mcp"
+       "endpoint": "https://mcp.atlassian.com/v2/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -2726,13 +2737,14 @@
        "urlHost": "knowledge-mcp.global.api.aws",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "none",
-        "verdict": "no-oauth"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://knowledge-mcp.global.api.aws"
+       "endpoint": "https://knowledge-mcp.global.api.aws",
+       "oauthSignIn": {
+        "signIn": "none",
+        "verdict": "no-oauth"
+       }
       }
      ]
     }
@@ -5247,13 +5259,14 @@
        "urlHost": "mcp.buildkite.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.buildkite.com/mcp"
+       "endpoint": "https://mcp.buildkite.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -5337,13 +5350,14 @@
        "urlHost": "mcp.canva.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.canva.com/mcp"
+       "endpoint": "https://mcp.canva.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -6376,13 +6390,14 @@
        "urlHost": "catalyst.zohomcp.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://catalyst.zohomcp.com/mcp/message"
+       "endpoint": "https://catalyst.zohomcp.com/mcp/message",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -6806,13 +6821,14 @@
        "urlHost": "api.circle.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "none",
-        "verdict": "no-oauth"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.circle.com/v1/codegen/mcp"
+       "endpoint": "https://api.circle.com/v1/codegen/mcp",
+       "oauthSignIn": {
+        "signIn": "none",
+        "verdict": "no-oauth"
+       }
       }
      ]
     }
@@ -6953,13 +6969,14 @@
        "urlHost": "circleback.ai",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://circleback.ai/api/mcp"
+       "endpoint": "https://circleback.ai/api/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -7634,13 +7651,14 @@
        "urlHost": "mcp.clickhouse.cloud",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.clickhouse.cloud/mcp"
+       "endpoint": "https://mcp.clickhouse.cloud/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -8023,13 +8041,14 @@
        "urlHost": "mcp.cloudflare.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.cloudflare.com/mcp"
+       "endpoint": "https://mcp.cloudflare.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -8230,15 +8249,16 @@
        "headerKeys": [
         "mcp-cluster-id"
        ],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [
         "COCKROACHDB_CLUSTER_ID"
        ],
        "type": "mcp",
-       "endpoint": "https://cockroachlabs.cloud/mcp"
+       "endpoint": "https://cockroachlabs.cloud/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -9083,13 +9103,14 @@
        "urlHost": "mcp.codspeed.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.codspeed.io/mcp"
+       "endpoint": "https://mcp.codspeed.io/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -9207,13 +9228,14 @@
        "headerKeys": [
         "x-confidence-mcp-consumer"
        ],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.confidence.dev/mcp/flags"
+       "endpoint": "https://mcp.confidence.dev/mcp/flags",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     },
@@ -9229,13 +9251,14 @@
        "headerKeys": [
         "x-confidence-mcp-consumer"
        ],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.confidence.dev/mcp/docs"
+       "endpoint": "https://mcp.confidence.dev/mcp/docs",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -9462,13 +9485,14 @@
        "urlHost": "mcp.context7.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.context7.com/mcp"
+       "endpoint": "https://mcp.context7.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -11382,13 +11406,14 @@
        "urlHost": "knowledge-mcp.global.api.aws",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "none",
-        "verdict": "no-oauth"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://knowledge-mcp.global.api.aws"
+       "endpoint": "https://knowledge-mcp.global.api.aws",
+       "oauthSignIn": {
+        "signIn": "none",
+        "verdict": "no-oauth"
+       }
       }
      ]
     },
@@ -12434,13 +12459,14 @@
        "urlHost": "knowledge-mcp.global.api.aws",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "none",
-        "verdict": "no-oauth"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://knowledge-mcp.global.api.aws"
+       "endpoint": "https://knowledge-mcp.global.api.aws",
+       "oauthSignIn": {
+        "signIn": "none",
+        "verdict": "no-oauth"
+       }
       }
      ]
     },
@@ -12736,13 +12762,14 @@
        "urlHost": "mcp.dropbox.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.dropbox.com/claude_app_mcp"
+       "endpoint": "https://mcp.dropbox.com/claude_app_mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -13125,13 +13152,14 @@
        "headerKeys": [
         "x-exa-source"
        ],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.exa.ai/mcp"
+       "endpoint": "https://mcp.exa.ai/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -13250,13 +13278,14 @@
        "urlHost": "mcp.expo.dev",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.expo.dev/mcp"
+       "endpoint": "https://mcp.expo.dev/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -13892,13 +13921,14 @@
        "urlHost": "mcp.firecrawl.dev",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.firecrawl.dev/v2/mcp-search"
+       "endpoint": "https://mcp.firecrawl.dev/v2/mcp-search",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -14031,13 +14061,14 @@
        "urlHost": "mcp.atlassian.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.atlassian.com/v1/forge/mcp"
+       "endpoint": "https://mcp.atlassian.com/v1/forge/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     },
@@ -14051,13 +14082,14 @@
        "urlHost": "mcp.atlassian.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.atlassian.com/v1/ads/public/mcp"
+       "endpoint": "https://mcp.atlassian.com/v1/ads/public/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -14183,13 +14215,14 @@
        "urlHost": "api.fullstory.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.fullstory.com/mcp/fullstory"
+       "endpoint": "https://api.fullstory.com/mcp/fullstory",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -14276,13 +14309,14 @@
        "urlHost": "app.gc.ai",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://app.gc.ai/api/mcp"
+       "endpoint": "https://app.gc.ai/api/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -14408,13 +14442,14 @@
        "urlHost": "gitlab.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://gitlab.com/api/v4/mcp"
+       "endpoint": "https://gitlab.com/api/v4/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -14618,13 +14653,14 @@
        "urlHost": "govtribe.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://govtribe.com/mcp"
+       "endpoint": "https://govtribe.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -14783,13 +14819,14 @@
        "urlHost": "mcp.grafana.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.grafana.com/mcp"
+       "endpoint": "https://mcp.grafana.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -14929,13 +14966,14 @@
        "urlHost": "api.greptile.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.greptile.com/mcp"
+       "endpoint": "https://api.greptile.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -15061,13 +15099,14 @@
        "urlHost": "mcp.honeycomb.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.honeycomb.io/mcp"
+       "endpoint": "https://mcp.honeycomb.io/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -15406,13 +15445,14 @@
        "urlHost": "mcp.hostinger.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.hostinger.com"
+       "endpoint": "https://mcp.hostinger.com",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -15489,13 +15529,14 @@
        "urlHost": "huggingface.co",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://huggingface.co/mcp"
+       "endpoint": "https://huggingface.co/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -15706,13 +15747,14 @@
        "urlHost": "mcp.hunter.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.hunter.io/mcp"
+       "endpoint": "https://mcp.hunter.io/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -16225,13 +16267,14 @@
        "urlHost": "mcp.incident.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.incident.io/mcp"
+       "endpoint": "https://mcp.incident.io/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -16336,13 +16379,14 @@
        "urlHost": "mcp.intercom.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.intercom.com/mcp"
+       "endpoint": "https://mcp.intercom.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -16959,13 +17003,14 @@
        "urlHost": "mcp.leadfeeder.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.leadfeeder.com/mcp"
+       "endpoint": "https://mcp.leadfeeder.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -17142,13 +17187,14 @@
        "urlHost": "www.legalzoom.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://www.legalzoom.com/mcp/claude/v1"
+       "endpoint": "https://www.legalzoom.com/mcp/claude/v1",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -17202,13 +17248,14 @@
        "urlHost": "mcp.linear.app",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.linear.app/mcp"
+       "endpoint": "https://mcp.linear.app/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -17268,13 +17315,14 @@
        "urlHost": "api.linqalpha.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.linqalpha.com/v1/mcp"
+       "endpoint": "https://api.linqalpha.com/v1/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -17429,13 +17477,14 @@
        "urlHost": "logfire-us.pydantic.dev",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://logfire-us.pydantic.dev/mcp"
+       "endpoint": "https://logfire-us.pydantic.dev/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -17536,13 +17585,14 @@
        "urlHost": "mcp.logrocket.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.logrocket.com/mcp"
+       "endpoint": "https://mcp.logrocket.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -17718,13 +17768,14 @@
        "urlHost": "mcp.lovable.dev",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.lovable.dev/"
+       "endpoint": "https://mcp.lovable.dev/",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -17979,13 +18030,14 @@
         "X-Lusha-Plugin",
         "X-Lusha-Plugin-Version"
        ],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.lusha.com/mcp/claude"
+       "endpoint": "https://mcp.lusha.com/mcp/claude",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -18079,13 +18131,14 @@
        "urlHost": "mcp-devkit.mapbox.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp-devkit.mapbox.com/mcp"
+       "endpoint": "https://mcp-devkit.mapbox.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     },
@@ -18099,13 +18152,14 @@
        "urlHost": "mcp.mapbox.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.mapbox.com/mcp"
+       "endpoint": "https://mcp.mapbox.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     },
@@ -18119,13 +18173,14 @@
        "urlHost": "mcp-docs.mapbox.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "none",
-        "verdict": "no-oauth"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp-docs.mapbox.com/mcp"
+       "endpoint": "https://mcp-docs.mapbox.com/mcp",
+       "oauthSignIn": {
+        "signIn": "none",
+        "verdict": "no-oauth"
+       }
       }
      ]
     }
@@ -18861,13 +18916,14 @@
         "X-Invocation-Context",
         "X-Plugin-Version"
        ],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.mercadopago.com/mcp"
+       "endpoint": "https://mcp.mercadopago.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -19104,13 +19160,14 @@
        "urlHost": "learn.microsoft.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "none",
-        "verdict": "no-oauth"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://learn.microsoft.com/api/mcp"
+       "endpoint": "https://learn.microsoft.com/api/mcp",
+       "oauthSignIn": {
+        "signIn": "none",
+        "verdict": "no-oauth"
+       }
       }
      ]
     }
@@ -19187,13 +19244,14 @@
        "urlHost": "knowledge-mcp.global.api.aws",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "none",
-        "verdict": "no-oauth"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://knowledge-mcp.global.api.aws"
+       "endpoint": "https://knowledge-mcp.global.api.aws",
+       "oauthSignIn": {
+        "signIn": "none",
+        "verdict": "no-oauth"
+       }
       }
      ]
     },
@@ -19227,13 +19285,14 @@
        "urlHost": "temporal.mcp.kapa.ai",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://temporal.mcp.kapa.ai"
+       "endpoint": "https://temporal.mcp.kapa.ai",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -19420,13 +19479,14 @@
        "urlHost": "mintlify.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "none",
-        "verdict": "redirect-off-origin"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mintlify.com/docs/mcp"
+       "endpoint": "https://mintlify.com/docs/mcp",
+       "oauthSignIn": {
+        "signIn": "none",
+        "verdict": "redirect-off-origin"
+       }
       }
      ]
     }
@@ -19484,13 +19544,14 @@
        "headerKeys": [
         "X-AI-Source"
        ],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.miro.com/"
+       "endpoint": "https://mcp.miro.com/",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -19779,13 +19840,14 @@
        "urlHost": "mcp.monday.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.monday.com/mcp"
+       "endpoint": "https://mcp.monday.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -19991,13 +20053,14 @@
        "urlHost": "mcp.neon.tech",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.neon.tech/mcp"
+       "endpoint": "https://mcp.neon.tech/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -20087,13 +20150,14 @@
        "urlHost": "netlify-mcp.netlify.app",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://netlify-mcp.netlify.app/mcp"
+       "endpoint": "https://netlify-mcp.netlify.app/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -20394,13 +20458,14 @@
        "urlHost": "mcp.newrelic.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.newrelic.com/mcp/"
+       "endpoint": "https://mcp.newrelic.com/mcp/",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -20521,13 +20586,14 @@
        "urlHost": "mcp.nimbleway.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.nimbleway.com/mcp"
+       "endpoint": "https://mcp.nimbleway.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -20762,13 +20828,14 @@
        "urlHost": "mcp.notion.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.notion.com/mcp"
+       "endpoint": "https://mcp.notion.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -22011,15 +22078,16 @@
        "headerKeys": [
         "Authorization"
        ],
-       "oauth": {
-        "signIn": "unsupported",
-        "verdict": "needs-client"
-       },
+       "oauth": false,
        "placeholders": [
         "PAGERDUTY_API_KEY"
        ],
        "type": "mcp",
-       "endpoint": "https://mcp.pagerduty.com/mcp"
+       "endpoint": "https://mcp.pagerduty.com/mcp",
+       "oauthSignIn": {
+        "signIn": "unsupported",
+        "verdict": "needs-client"
+       }
       }
      ]
     }
@@ -22086,15 +22154,16 @@
        "headerKeys": [
         "Authorization"
        ],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [
         "PAYPAL_SANDBOX_ACCESS_TOKEN"
        ],
        "type": "mcp",
-       "endpoint": "https://mcp.sandbox.paypal.com/sse"
+       "endpoint": "https://mcp.sandbox.paypal.com/sse",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -22215,13 +22284,14 @@
        "urlHost": "app.pendo.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://app.pendo.io/mcp/v0/shttp"
+       "endpoint": "https://app.pendo.io/mcp/v0/shttp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     },
@@ -22235,13 +22305,14 @@
        "urlHost": "novus-api.pendo.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://novus-api.pendo.io/mcp"
+       "endpoint": "https://novus-api.pendo.io/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -22326,13 +22397,14 @@
        "urlHost": "app.pendo.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://app.pendo.io/mcp/v0/shttp"
+       "endpoint": "https://app.pendo.io/mcp/v0/shttp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -22392,13 +22464,14 @@
        "urlHost": "app.pendo.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://app.pendo.io/mcp/v0/shttp"
+       "endpoint": "https://app.pendo.io/mcp/v0/shttp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -22806,13 +22879,14 @@
        "urlHost": "mcp.pscale.dev",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.pscale.dev/mcp/planetscale"
+       "endpoint": "https://mcp.pscale.dev/mcp/planetscale",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -23145,13 +23219,14 @@
        "headerKeys": [
         "x-posthog-mcp-consumer"
        ],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.posthog.com/mcp"
+       "endpoint": "https://mcp.posthog.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -24094,13 +24169,14 @@
         "X-Plugin-Version",
         "X-Source"
        ],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.postman.com/mcp"
+       "endpoint": "https://mcp.postman.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -24424,13 +24500,14 @@
        "urlHost": "mcp.prisma.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.prisma.io/mcp"
+       "endpoint": "https://mcp.prisma.io/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -24869,13 +24946,14 @@
        "urlHost": "mcp.railway.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.railway.com"
+       "endpoint": "https://mcp.railway.com",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -25059,13 +25137,14 @@
        "urlHost": "mcp.resend.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.resend.com/mcp"
+       "endpoint": "https://mcp.resend.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -25146,13 +25225,14 @@
        "urlHost": "mcp.rootly.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.rootly.com/mcp"
+       "endpoint": "https://mcp.rootly.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -26764,13 +26844,14 @@
        "urlHost": "mcp.sanity.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.sanity.io"
+       "endpoint": "https://mcp.sanity.io",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -27960,13 +28041,14 @@
        "urlHost": "mcp.sentry.dev",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.sentry.dev/mcp"
+       "endpoint": "https://mcp.sentry.dev/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -28283,13 +28365,14 @@
        "urlHost": "mcp.shippo.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.shippo.com"
+       "endpoint": "https://mcp.shippo.com",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -28768,15 +28851,16 @@
        "headerKeys": [
         "Authorization"
        ],
-       "oauth": {
-        "signIn": "api-key",
-        "verdict": "no-oauth-metadata"
-       },
+       "oauth": false,
        "placeholders": [
         "SONATYPE_GUIDE_TOKEN"
        ],
        "type": "mcp",
-       "endpoint": "https://mcp.guide.sonatype.com/mcp"
+       "endpoint": "https://mcp.guide.sonatype.com/mcp",
+       "oauthSignIn": {
+        "signIn": "api-key",
+        "verdict": "no-oauth-metadata"
+       }
       }
      ]
     }
@@ -29386,13 +29470,14 @@
        "urlHost": "mcp.stripe.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.stripe.com"
+       "endpoint": "https://mcp.stripe.com",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -29677,13 +29762,14 @@
         "X-Source-Name",
         "X-Source-Version"
        ],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.supabase.com/mcp"
+       "endpoint": "https://mcp.supabase.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -30385,13 +30471,14 @@
        "urlHost": "mcp.twilio.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "none",
-        "verdict": "no-oauth"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.twilio.com/docs"
+       "endpoint": "https://mcp.twilio.com/docs",
+       "oauthSignIn": {
+        "signIn": "none",
+        "verdict": "no-oauth"
+       }
       }
      ]
     }
@@ -31727,13 +31814,14 @@
        "urlHost": "api.val.town",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.val.town/v3/mcp"
+       "endpoint": "https://api.val.town/v3/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -31843,13 +31931,14 @@
        "urlHost": "mcp.vanta.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.vanta.com/mcp"
+       "endpoint": "https://mcp.vanta.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     },
@@ -31863,13 +31952,14 @@
        "urlHost": "mcp.eu.vanta.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.eu.vanta.com/mcp"
+       "endpoint": "https://mcp.eu.vanta.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     },
@@ -31883,13 +31973,14 @@
        "urlHost": "mcp.aus.vanta.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.aus.vanta.com/mcp"
+       "endpoint": "https://mcp.aus.vanta.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -31961,13 +32052,14 @@
        "urlHost": "mcp.vanta.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.vanta.com/mcp"
+       "endpoint": "https://mcp.vanta.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     },
@@ -31981,13 +32073,14 @@
        "urlHost": "mcp.eu.vanta.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.eu.vanta.com/mcp"
+       "endpoint": "https://mcp.eu.vanta.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     },
@@ -32001,13 +32094,14 @@
        "urlHost": "mcp.aus.vanta.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.aus.vanta.com/mcp"
+       "endpoint": "https://mcp.aus.vanta.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -32072,13 +32166,14 @@
        "urlHost": "mcp.vercel.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.vercel.com"
+       "endpoint": "https://mcp.vercel.com",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -32574,13 +32669,14 @@
        "urlHost": "mcp.wix.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.wix.com/mcp"
+       "endpoint": "https://mcp.wix.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -32695,13 +32791,14 @@
        "urlHost": "mcp.workos.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.workos.com/mcp"
+       "endpoint": "https://mcp.workos.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -32760,13 +32857,14 @@
        "urlHost": "api.you.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.you.com/mcp"
+       "endpoint": "https://api.you.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     },
@@ -32780,13 +32878,14 @@
        "urlHost": "api.you.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.you.com/mcp/finance"
+       "endpoint": "https://api.you.com/mcp/finance",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     },
@@ -32800,13 +32899,14 @@
        "urlHost": "api.you.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.you.com/mcp/research"
+       "endpoint": "https://api.you.com/mcp/research",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -32888,13 +32988,14 @@
        "urlHost": "mcp.zapier.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.zapier.com/api/v1/connect"
+       "endpoint": "https://mcp.zapier.com/api/v1/connect",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -33755,13 +33856,14 @@
        "urlHost": "mcp.app-us1.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.app-us1.com/http"
+       "endpoint": "https://mcp.app-us1.com/http",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -33888,13 +33990,14 @@
        "urlHost": "mcp.hubspot.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "provider",
-        "verdict": "needs-client"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.hubspot.com/anthropic"
+       "endpoint": "https://mcp.hubspot.com/anthropic",
+       "oauthSignIn": {
+        "signIn": "provider",
+        "verdict": "needs-client"
+       }
       }
      ]
     }
@@ -34236,13 +34339,14 @@
        "urlHost": "api.wingspan.app",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": true,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.wingspan.app/v3/mcp"
+       "endpoint": "https://api.wingspan.app/v3/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -34676,13 +34780,14 @@
        "urlHost": "mcp.ashbyhq.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.ashbyhq.com/mcp/v1"
+       "endpoint": "https://mcp.ashbyhq.com/mcp/v1",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -34731,13 +34836,14 @@
        "urlHost": "mcp.us.greenhouse.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.us.greenhouse.io/mcp"
+       "endpoint": "https://mcp.us.greenhouse.io/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -34786,16 +34892,17 @@
        "urlHost": "mcp.hubspot.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "provider",
-        "verdict": "needs-client"
-       },
+       "oauth": true,
        "placeholders": [
         "CLIENT_ID",
         "CLIENT_SECRET"
        ],
        "type": "mcp",
-       "endpoint": "https://mcp.hubspot.com"
+       "endpoint": "https://mcp.hubspot.com",
+       "oauthSignIn": {
+        "signIn": "provider",
+        "verdict": "needs-client"
+       }
       }
      ]
     }
@@ -34860,16 +34967,17 @@
        "urlHost": "mcp.zoom.us",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "unsupported",
-        "verdict": "needs-client"
-       },
+       "oauth": true,
        "placeholders": [
         "CLIENT_ID",
         "CLIENT_SECRET"
        ],
        "type": "mcp",
-       "endpoint": "https://mcp.zoom.us/mcp/zoom/streamable"
+       "endpoint": "https://mcp.zoom.us/mcp/zoom/streamable",
+       "oauthSignIn": {
+        "signIn": "unsupported",
+        "verdict": "needs-client"
+       }
       }
      ]
     }
@@ -34933,13 +35041,14 @@
        "urlHost": "mcp.navan.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.navan.com/mcp"
+       "endpoint": "https://mcp.navan.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -34988,13 +35097,14 @@
        "urlHost": "mcp.tryprofound.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.tryprofound.com/mcp"
+       "endpoint": "https://mcp.tryprofound.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35044,13 +35154,14 @@
        "urlHost": "mcp.juicebox.ai",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.juicebox.ai/v1"
+       "endpoint": "https://mcp.juicebox.ai/v1",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35099,13 +35210,14 @@
        "urlHost": "api.outreach.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.outreach.io/mcp"
+       "endpoint": "https://api.outreach.io/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35154,13 +35266,14 @@
        "urlHost": "mcp.amplemarket.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.amplemarket.com/mcp"
+       "endpoint": "https://mcp.amplemarket.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35209,13 +35322,14 @@
        "urlHost": "mcp.klaviyo.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.klaviyo.com/mcp"
+       "endpoint": "https://mcp.klaviyo.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -35264,13 +35378,14 @@
        "urlHost": "mcp.customer.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.customer.io/mcp"
+       "endpoint": "https://mcp.customer.io/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35319,13 +35434,14 @@
        "urlHost": "mcp.mailerlite.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.mailerlite.com/mcp"
+       "endpoint": "https://mcp.mailerlite.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35376,15 +35492,16 @@
        "headerKeys": [
         "Authorization"
        ],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [
         "BREVO_MCP_TOKEN"
        ],
        "type": "mcp",
-       "endpoint": "https://mcp.brevo.com/v1/brevo/mcp"
+       "endpoint": "https://mcp.brevo.com/v1/brevo/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35442,13 +35559,14 @@
        "urlHost": "api.typeform.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.typeform.com/mcp"
+       "endpoint": "https://api.typeform.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35496,13 +35614,14 @@
        "urlHost": "mcp.jotform.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.jotform.com"
+       "endpoint": "https://mcp.jotform.com",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35549,13 +35668,14 @@
        "urlHost": "mcp.semrush.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.semrush.com/v2/mcp"
+       "endpoint": "https://mcp.semrush.com/v2/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35604,13 +35724,14 @@
        "urlHost": "api.ahrefs.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.ahrefs.com/mcp/mcp"
+       "endpoint": "https://api.ahrefs.com/mcp/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35659,13 +35780,14 @@
        "urlHost": "api.godaddy.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "none",
-        "verdict": "no-oauth"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.godaddy.com/v1/domains/mcp"
+       "endpoint": "https://api.godaddy.com/v1/domains/mcp",
+       "oauthSignIn": {
+        "signIn": "none",
+        "verdict": "no-oauth"
+       }
       }
      ]
     }
@@ -35713,13 +35835,14 @@
        "urlHost": "mcp.upwork.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.upwork.com/mcp"
+       "endpoint": "https://mcp.upwork.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35768,13 +35891,14 @@
        "urlHost": "mcp.workable.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.workable.com/mcp"
+       "endpoint": "https://mcp.workable.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35823,13 +35947,14 @@
        "urlHost": "api.brex.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.brex.com/mcp"
+       "endpoint": "https://api.brex.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35878,13 +36003,14 @@
        "urlHost": "ai.todoist.net",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://ai.todoist.net/mcp"
+       "endpoint": "https://ai.todoist.net/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35932,13 +36058,14 @@
        "urlHost": "mcp.calendly.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.calendly.com/"
+       "endpoint": "https://mcp.calendly.com/",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -35988,15 +36115,16 @@
        "headerKeys": [
         "Authorization"
        ],
-       "oauth": {
-        "signIn": "unsupported",
-        "verdict": "needs-client"
-       },
+       "oauth": false,
        "placeholders": [
         "SMARTSHEET_API_TOKEN"
        ],
        "type": "mcp",
-       "endpoint": "https://mcp.smartsheet.com"
+       "endpoint": "https://mcp.smartsheet.com",
+       "oauthSignIn": {
+        "signIn": "unsupported",
+        "verdict": "needs-client"
+       }
       }
      ]
     }
@@ -36055,15 +36183,16 @@
        "headerKeys": [
         "Authorization"
        ],
-       "oauth": {
-        "signIn": "unsupported",
-        "verdict": "needs-client"
-       },
+       "oauth": false,
        "placeholders": [
         "WRIKE_ACCESS_TOKEN"
        ],
        "type": "mcp",
-       "endpoint": "https://mcp.wrike.com/v2"
+       "endpoint": "https://mcp.wrike.com/v2",
+       "oauthSignIn": {
+        "signIn": "unsupported",
+        "verdict": "needs-client"
+       }
       }
      ]
     }
@@ -36120,13 +36249,14 @@
        "urlHost": "docs.superhuman.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://docs.superhuman.com/apis/mcp"
+       "endpoint": "https://docs.superhuman.com/apis/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -36174,13 +36304,14 @@
        "urlHost": "mcp.api.getguru.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.api.getguru.com/mcp"
+       "endpoint": "https://mcp.api.getguru.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -36228,13 +36359,14 @@
        "urlHost": "api.fireflies.ai",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.fireflies.ai/mcp"
+       "endpoint": "https://api.fireflies.ai/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -36282,13 +36414,14 @@
        "urlHost": "mcp.otter.ai",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.otter.ai/mcp"
+       "endpoint": "https://mcp.otter.ai/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -36336,13 +36469,14 @@
        "urlHost": "api.fathom.ai",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.fathom.ai/mcp"
+       "endpoint": "https://api.fathom.ai/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -36390,13 +36524,14 @@
        "urlHost": "mcp.craft.do",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.craft.do/my/mcp"
+       "endpoint": "https://mcp.craft.do/my/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -36444,13 +36579,14 @@
        "urlHost": "mcp.mem.ai",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.mem.ai/mcp"
+       "endpoint": "https://mcp.mem.ai/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -36498,13 +36634,14 @@
        "urlHost": "mcp2.readwise.io",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp2.readwise.io/mcp"
+       "endpoint": "https://mcp2.readwise.io/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -36631,13 +36768,14 @@
        "urlHost": "mcp.attio.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.attio.com/mcp"
+       "endpoint": "https://mcp.attio.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -36689,15 +36827,16 @@
        "headerKeys": [
         "x-api-key"
        ],
-       "oauth": {
-        "signIn": "none",
-        "verdict": "no-oauth"
-       },
+       "oauth": false,
        "placeholders": [
         "STABLE_API_KEY"
        ],
        "type": "mcp",
-       "endpoint": "https://mcp.usestable.com/mcp"
+       "endpoint": "https://mcp.usestable.com/mcp",
+       "oauthSignIn": {
+        "signIn": "none",
+        "verdict": "no-oauth"
+       }
       }
      ]
     }
@@ -36755,13 +36894,14 @@
        "urlHost": "api.webull.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.webull.com/mcp"
+       "endpoint": "https://api.webull.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -36811,13 +36951,14 @@
        "urlHost": "kfinance.kensho.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://kfinance.kensho.com/integrations/mcp"
+       "endpoint": "https://kfinance.kensho.com/integrations/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -36867,13 +37008,14 @@
        "urlHost": "api.ibkr.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.ibkr.com/v1/api/mcp-public"
+       "endpoint": "https://api.ibkr.com/v1/api/mcp-public",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -36923,13 +37065,14 @@
        "urlHost": "api.meltwater.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.meltwater.com/v2/mcp"
+       "endpoint": "https://api.meltwater.com/v2/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -36979,13 +37122,14 @@
        "urlHost": "mcp.daloopa.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.daloopa.com/server/mcp"
+       "endpoint": "https://mcp.daloopa.com/server/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37037,13 +37181,14 @@
        "headerKeys": [
         "X-Cursor-Plugin"
        ],
-       "oauth": {
-        "signIn": "none",
-        "verdict": "no-oauth"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.excalidraw.com/mcp"
+       "endpoint": "https://mcp.excalidraw.com/mcp",
+       "oauthSignIn": {
+        "signIn": "none",
+        "verdict": "no-oauth"
+       }
       }
      ]
     }
@@ -37093,13 +37238,14 @@
        "urlHost": "api.statsig.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.statsig.com/v3/mcp"
+       "endpoint": "https://api.statsig.com/v3/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37149,13 +37295,14 @@
        "urlHost": "agent.robinhood.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://agent.robinhood.com/mcp/trading"
+       "endpoint": "https://agent.robinhood.com/mcp/trading",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37207,13 +37354,14 @@
        "urlHost": "agents.coinbase.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://agents.coinbase.com/mcp"
+       "endpoint": "https://agents.coinbase.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37263,13 +37411,14 @@
        "urlHost": "agent.tinyfish.ai",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://agent.tinyfish.ai/mcp"
+       "endpoint": "https://agent.tinyfish.ai/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37320,13 +37469,14 @@
        "urlHost": "mcp.beehiiv.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.beehiiv.com/mcp"
+       "endpoint": "https://mcp.beehiiv.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37377,13 +37527,14 @@
        "urlHost": "mcp.trello.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.trello.com/v1"
+       "endpoint": "https://mcp.trello.com/v1",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37435,13 +37586,14 @@
        "urlHost": "mcp.buffer.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.buffer.com/mcp"
+       "endpoint": "https://mcp.buffer.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37492,13 +37644,14 @@
        "urlHost": "mcp.plaud.ai",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.plaud.ai/mcp"
+       "endpoint": "https://mcp.plaud.ai/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37549,13 +37702,14 @@
        "urlHost": "mcp.posthog.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.posthog.com/mcp"
+       "endpoint": "https://mcp.posthog.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37606,13 +37760,14 @@
        "urlHost": "mcp.squareup.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.squareup.com/mcp"
+       "endpoint": "https://mcp.squareup.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37665,13 +37820,14 @@
        "urlHost": "public-api.finary.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-cimd"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://public-api.finary.com/mcp"
+       "endpoint": "https://public-api.finary.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
       }
      ]
     }
@@ -37723,13 +37879,14 @@
        "urlHost": "business-api.tiktok.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://business-api.tiktok.com/open_mcp/tt-ads-mcp-layer"
+       "endpoint": "https://business-api.tiktok.com/open_mcp/tt-ads-mcp-layer",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37781,13 +37938,14 @@
        "urlHost": "mcp.api.gusto.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.api.gusto.com/"
+       "endpoint": "https://mcp.api.gusto.com/",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -37838,16 +37996,17 @@
        "urlHost": "mcp.getjobber.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "unsupported",
-        "verdict": "needs-client"
-       },
+       "oauth": true,
        "placeholders": [
         "CLIENT_ID",
         "CLIENT_SECRET"
        ],
        "type": "mcp",
-       "endpoint": "https://mcp.getjobber.com/mcp"
+       "endpoint": "https://mcp.getjobber.com/mcp",
+       "oauthSignIn": {
+        "signIn": "unsupported",
+        "verdict": "needs-client"
+       }
       }
      ]
     }
@@ -37996,13 +38155,14 @@
        "urlHost": "mcp.feishu.cn",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.feishu.cn/mcp"
+       "endpoint": "https://mcp.feishu.cn/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -38049,13 +38209,14 @@
        "urlHost": "mcp.framer.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.framer.com/mcp"
+       "endpoint": "https://mcp.framer.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -38103,13 +38264,14 @@
        "urlHost": "mcp.labs.ringcentral.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.labs.ringcentral.com/ringex/phone"
+       "endpoint": "https://mcp.labs.ringcentral.com/ringex/phone",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -38157,13 +38319,14 @@
        "urlHost": "mcp.labs.ringcentral.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.labs.ringcentral.com/ringex/v1.1.0/team-chat"
+       "endpoint": "https://mcp.labs.ringcentral.com/ringex/v1.1.0/team-chat",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -38365,13 +38528,14 @@
        "urlHost": "mcp.sfranalytics.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.sfranalytics.com/mcp"
+       "endpoint": "https://mcp.sfranalytics.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -38422,13 +38586,14 @@
        "urlHost": "mcp.corepass.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.corepass.com/mcp"
+       "endpoint": "https://mcp.corepass.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -38480,13 +38645,14 @@
        "urlHost": "work.corepass.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "address",
-        "verdict": "address-dcr"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://work.corepass.com/mcp"
+       "endpoint": "https://work.corepass.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-dcr"
+       }
       }
      ]
     }
@@ -38534,13 +38700,14 @@
        "urlHost": "api.githubcopilot.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "provider",
-        "verdict": "needs-client"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://api.githubcopilot.com/mcp/"
+       "endpoint": "https://api.githubcopilot.com/mcp/",
+       "oauthSignIn": {
+        "signIn": "provider",
+        "verdict": "needs-client"
+       }
       }
      ]
     }
@@ -38658,13 +38825,14 @@
        "urlHost": "mcp.slack.com",
        "localhost": false,
        "headerKeys": [],
-       "oauth": {
-        "signIn": "provider",
-        "verdict": "needs-client"
-       },
+       "oauth": false,
        "placeholders": [],
        "type": "mcp",
-       "endpoint": "https://mcp.slack.com/mcp"
+       "endpoint": "https://mcp.slack.com/mcp",
+       "oauthSignIn": {
+        "signIn": "provider",
+        "verdict": "needs-client"
+       }
       }
      ]
     }
