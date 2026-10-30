@@ -38443,124 +38443,6 @@
    ]
   },
   {
-   "name": "slack",
-   "displayName": "Slack",
-   "description": "Slack integration for searching messages, sending communications, managing canvases, and more",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/corepasshq/plugins",
-    "path": "plugins/slack",
-    "ref": null,
-    "sha": "887454edf4372a7805e97ed1423d3ef611ed0f6c"
-   },
-   "license": "MIT",
-   "category": "productivity",
-   "featured": true,
-   "repository": "https://github.com/slackapi/slack-skills-plugin",
-   "publisher": {
-    "name": "slack",
-    "displayName": "Slack",
-    "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/slack-2x.png",
-    "isVerified": true
-   },
-   "_provenance": {
-    "upstream": "https://github.com/slackapi/slack-skills-plugin",
-    "fork": "https://github.com/youlandinc/slack-skills-plugin",
-    "sha": "e75b0cf18f1a19f3fd629e3af9565ee84b8c2ce0",
-    "license": "MIT"
-   },
-   "skills": [
-    {
-     "name": "block-kit",
-     "description": "Help developers build and validate Block Kit layouts for Slack messages, modals, and Home tabs. Provides authoritative block references and validates with the blocks.validate API. Use this skill whenever the developer wants to compose Slack message layouts, build modals/forms/dialogs, design Home tab interfaces, create interactive messages with buttons or menus, modify existing Block Kit JSON, or asks about any Slack UI component (sections, actions, inputs, headers, alerts, tables, carousels). Also trigger when they mention \"blocks\", \"Block Kit Builder\", or paste JSON containing block structures like `\"type\": \"section\"`.",
-     "path": "skills/block-kit/SKILL.md"
-    },
-    {
-     "name": "create-slack-app",
-     "description": "Guide developers through creating a Slack app or agent using the Slack CLI and Bolt (JS or Python). Handles prerequisites, sandbox setup, authentication, project creation from templates, and local development.",
-     "path": "skills/create-slack-app/SKILL.md"
-    },
-    {
-     "name": "slack-api",
-     "description": "Discover, navigate, and call Slack Web API methods (the family.method endpoints at slack.com/api like chat.postMessage, conversations.history, users.info, views.open). Use this skill whenever the developer asks which Slack API method does something, needs a method's required OAuth scopes or token type, wants to call or test a Web API method, is handling cursor pagination (next_cursor), hitting rate limits (tier/ratelimited/Retry-After), or debugging API errors like missing_scope, invalid_auth, or channel_not_found. Also trigger when they paste a slack.com/api/ URL or a docs.slack.dev/reference/methods link, or ask how to list/fetch/post/update Slack resources via the API. This skill covers the Web API method layer: finding the right method, reading its contract (scopes, arguments, errors), and calling it over raw HTTP with curl or through a Slack SDK.",
-     "path": "skills/slack-api/SKILL.md"
-    },
-    {
-     "name": "slack-cli",
-     "description": "Use the Slack CLI to create, run, and manage Slack apps from the terminal. Use whenever the developer wants to log in, add a team, switch workspaces, or authenticate with Slack; whenever Slack CLI commands are needed (local development with `slack run`, managing app lifecycle, the manifest); or when searching the Slack developer documentation for any topic (socket mode, the Events API, OAuth, manifests, Bolt).",
-     "path": "skills/slack-cli/SKILL.md"
-    },
-    {
-     "name": "slack-messaging",
-     "description": "Guidance for composing well-formatted, effective Slack messages using standard markdown",
-     "path": "skills/slack-messaging/SKILL.md"
-    },
-    {
-     "name": "slack-search",
-     "description": "Guidance for effectively searching Slack to find messages, files, channels, and people",
-     "path": "skills/slack-search/SKILL.md"
-    }
-   ],
-   "commands": [
-    {
-     "name": "channel-digest",
-     "description": "Get a digest of recent activity across multiple Slack channels",
-     "path": "commands/channel-digest.md"
-    },
-    {
-     "name": "draft-announcement",
-     "description": "Draft a well-formatted Slack announcement and save it as a draft",
-     "path": "commands/draft-announcement.md"
-    },
-    {
-     "name": "find-discussions",
-     "description": "Find discussions about a specific topic across Slack channels",
-     "path": "commands/find-discussions.md"
-    },
-    {
-     "name": "standup",
-     "description": "Generate a standup update based on your recent Slack activity",
-     "path": "commands/standup.md"
-    },
-    {
-     "name": "summarize-channel",
-     "description": "Summarize recent activity in a Slack channel",
-     "path": "commands/summarize-channel.md"
-    }
-   ],
-   "mcpServers": [
-    {
-     "name": "slack",
-     "path": ".mcp.json",
-     "execution": [
-      {
-       "transport": "http",
-       "urlScheme": "https",
-       "urlHost": "mcp.slack.com",
-       "localhost": false,
-       "headerKeys": [],
-       "oauth": false,
-       "placeholders": [],
-       "type": "mcp",
-       "endpoint": "https://mcp.slack.com/mcp",
-       "oauthSignIn": {
-        "signIn": "provider",
-        "verdict": "needs-client"
-       }
-      }
-     ]
-    }
-   ],
-   "logoUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/slack-2x.png",
-   "tagline": "Search messages and catch up on threads",
-   "keywords": [],
-   "marketplace": "corepass",
-   "surfaces": [
-    "desktop",
-    "cloud"
-   ]
-  },
-  {
    "name": "carta",
    "displayName": "Carta",
    "description": "Carta integration \u2014 cap tables, fund and investor data, and the Carta CRM, via the remote Carta MCP server. Pairs with the Carta Cap Table, Carta Investors and Carta CRM skill plugins.",
@@ -39166,6 +39048,11 @@
    "kind": "builtin-overlap",
    "reason": "Remy ships its own skill-creator skill; this one also scores skills by shelling out to the claude CLI.",
    "marketplace": "claude-code"
+  },
+  "slack": {
+   "kind": "auth-unsupported",
+   "reason": "Pending Slack Marketplace listing for Remy's Slack app: Slack's MCP server (mcp.slack.com) admits only internal and Marketplace-listed apps, so sign-in fails in every workspace other than the one that owns Remy's app.",
+   "marketplace": "corepass"
   },
   "sumup": {
    "kind": "auth-unsupported",
