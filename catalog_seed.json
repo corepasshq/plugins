@@ -6604,190 +6604,6 @@
    ]
   },
   {
-   "name": "chronograph-gp",
-   "displayName": "Chronograph Gp",
-   "description": "Portfolio monitoring, valuations and analytics for private-capital GP teams using the Chronograph connector: portfolio-company one-pagers, fund quarterly review packs, markup/markdown briefs, TVPI attribution and budget-vs-actuals. Requires a Chronograph account and the Chronograph connector.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/chronograph-pe/chronograph-gp-claude-plugin.git",
-    "path": null,
-    "ref": null,
-    "sha": "35cb3d12cf4e24823c0efca4abe6f13c2fd0e5f5"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://www.chronograph.pe/",
-   "repository": "https://github.com/chronograph-pe/chronograph-gp-claude-plugin.git",
-   "author": {
-    "name": "Chronograph"
-   },
-   "publisher": {
-    "name": "chronograph",
-    "displayName": "Chronograph"
-   },
-   "keywords": [
-    "private capital",
-    "private equity",
-    "portfolio monitoring",
-    "fund analytics",
-    "general partner"
-   ],
-   "skills": [
-    {
-     "name": "chronograph-budget-vs-actuals-variance",
-     "description": "Compare portfolio company operating actuals against budget/plan, compute variances, flag off-plan companies, and roll up to the fund, using Chronograph company metrics.",
-     "path": "skills/chronograph-budget-vs-actuals-variance/SKILL.md"
-    },
-    {
-     "name": "chronograph-fund-quarterly-review-pack",
-     "description": "Generate a consolidated quarterly review pack for a single fund \u2014 a fund-level summary plus a one-pager section for every portfolio company in the fund \u2014 using Chronograph data.",
-     "path": "skills/chronograph-fund-quarterly-review-pack/SKILL.md"
-    },
-    {
-     "name": "chronograph-markup-markdown-brief",
-     "description": "Identify which portfolio companies were marked up or down this period, quantify each change, surface the stated basis, and rank by impact on fund NAV \u2014 using Chronograph investment metrics.",
-     "path": "skills/chronograph-markup-markdown-brief/SKILL.md"
-    },
-    {
-     "name": "chronograph-portfolio-company-one-pager",
-     "description": "Generate one-pagers and investor reports for private equity portfolio companies. Handles live data fetching via the Chronograph MCP OR an uploaded Excel model, metric formatting, AI-generated or model-sourced commentary, and rendering a fully styled HTML one-pager.",
-     "path": "skills/chronograph-portfolio-company-one-pager/SKILL.md"
-    },
-    {
-     "name": "chronograph-tvpi-attribution-by-company",
-     "description": "Decompose a fund's total value / TVPI into per-company contributions, split realized vs. unrealized, and rank top contributors and detractors \u2014 using Chronograph investment metrics.",
-     "path": "skills/chronograph-tvpi-attribution-by-company/SKILL.md"
-    }
-   ],
-   "agents": [
-    {
-     "name": "chronograph-budget-vs-actuals-variance",
-     "description": "Budget vs. actuals agent \u2014 compares portfolio company actuals to plan via the Chronograph company-metrics Scenario field and flags off-plan companies.",
-     "path": "agents/chronograph-budget-vs-actuals-variance.md"
-    },
-    {
-     "name": "chronograph-fund-quarterly-review-pack",
-     "description": "Fund quarterly review agent \u2014 builds a consolidated review pack for a single fund with a one-pager section for every portfolio company, using Chronograph data.",
-     "path": "agents/chronograph-fund-quarterly-review-pack.md"
-    },
-    {
-     "name": "chronograph-gp-analyst",
-     "description": "End-to-end GP portfolio and fund analysis orchestrator \u2014 builds portfolio-company one-pagers and LP quarterly updates, fund quarterly review packs, markup/markdown briefs, TVPI attribution, and budget-vs-actuals variance, all from permissioned Chronograph data. Use for GP-side reporting and performance work; not for LP cashflow, pacing, exposure, or GP-meeting prep (use the Chronograph LP plugin).",
-     "path": "agents/chronograph-gp-analyst.md"
-    },
-    {
-     "name": "chronograph-markup-markdown-brief",
-     "description": "Markup/markdown agent \u2014 identifies valuation changes by holding, quantifies them, surfaces the stated basis, and ranks by NAV impact using Chronograph investment metrics.",
-     "path": "agents/chronograph-markup-markdown-brief.md"
-    },
-    {
-     "name": "chronograph-portfolio-company-one-pager",
-     "description": "GP report builder \u2014 generates fully styled, self-contained HTML one-pagers and LP quarterly updates for private equity portfolio companies using Chronograph MCP data or an uploaded Excel model.",
-     "path": "agents/chronograph-portfolio-company-one-pager.md"
-    },
-    {
-     "name": "chronograph-tvpi-attribution-by-company",
-     "description": "TVPI attribution agent \u2014 decomposes a fund's total value into per-company contributions, split realized vs. unrealized, using Chronograph investment metrics.",
-     "path": "agents/chronograph-tvpi-attribution-by-company.md"
-    }
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/chronograph-gp.png",
-   "tagline": "Monitor portfolio companies for GPs",
-   "marketplace": "claude-code",
-   "surfaces": [
-    "desktop",
-    "cloud"
-   ]
-  },
-  {
-   "name": "chronograph-lp",
-   "displayName": "Chronograph Lp",
-   "description": "Portfolio monitoring and analytics for private-capital LP teams using the Chronograph connector: cashflow forecasting, commitment pacing, look-through exposure scans and GP-meeting prep. Requires a Chronograph account and the Chronograph connector.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/chronograph-pe/chronograph-lp-claude-plugin.git",
-    "path": null,
-    "ref": null,
-    "sha": "322b2d3fbd4db0a2eeed117e3b3c31522408ae6f"
-   },
-   "category": "productivity",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://www.chronograph.pe/",
-   "repository": "https://github.com/chronograph-pe/chronograph-lp-claude-plugin.git",
-   "author": {
-    "name": "Chronograph"
-   },
-   "publisher": {
-    "name": "chronograph",
-    "displayName": "Chronograph"
-   },
-   "keywords": [
-    "private capital",
-    "private equity",
-    "portfolio monitoring",
-    "fund analytics",
-    "limited partner"
-   ],
-   "skills": [
-    {
-     "name": "chronograph-cashflow-forecast",
-     "description": "Forecast LP-level private capital cashflows for existing portfolios using Chronograph MCP data and a Takahashi-Alexander style model.",
-     "path": "skills/chronograph-cashflow-forecast/SKILL.md"
-    },
-    {
-     "name": "chronograph-commitment-pacing-planner",
-     "description": "Plan forward fund commitments to reach and hold a target private capital allocation, using Chronograph portfolio data and a cashflow-projection model.",
-     "path": "skills/chronograph-commitment-pacing-planner/SKILL.md"
-    },
-    {
-     "name": "chronograph-gp-meeting-prep",
-     "description": "Prepare an LP (investor) to meet with their fund manager (GP) \u2014 an LP-side skill where the user is the LP, not the GP. Review the fund's latest reporting, surface what changed since last period, and draft the questions worth raising. Draws on Chronograph fund and portfolio data when connected \u2014 captured reporting such as fund performance, schedules of investments, and portfolio company KPI profiles \u2014 and asks the LP to provide anything else it needs, such as a capital account statement, investor letter, or AGM or board deck.",
-     "path": "skills/chronograph-gp-meeting-prep/SKILL.md"
-    },
-    {
-     "name": "chronograph-look-through-exposure-scan",
-     "description": "Aggregate an LP's look-through portfolio exposure across funds \u2014 by company, sector, geography, vintage, strategy, and currency \u2014 and surface concentration, using the Chronograph top-exposures tool.",
-     "path": "skills/chronograph-look-through-exposure-scan/SKILL.md"
-    }
-   ],
-   "agents": [
-    {
-     "name": "chronograph-cashflow-forecast",
-     "description": "Private capital cashflow forecasting agent for LP-level portfolio analysis using the Chronograph MCP and a Takahashi-Alexander style model.",
-     "path": "agents/chronograph-cashflow-forecast.md"
-    },
-    {
-     "name": "chronograph-commitment-pacing-planner",
-     "description": "Commitment pacing agent \u2014 plans forward fund commitments to reach and hold a target private capital allocation using Chronograph data and a cashflow-projection model.",
-     "path": "agents/chronograph-commitment-pacing-planner.md"
-    },
-    {
-     "name": "chronograph-gp-meeting-prep",
-     "description": "LP-side meeting preparation agent (preparing an LP to meet their GP) \u2014 reviews fund reporting, surfaces period-over-period changes, and drafts prioritized questions for GP meetings.",
-     "path": "agents/chronograph-gp-meeting-prep.md"
-    },
-    {
-     "name": "chronograph-look-through-exposure-scan",
-     "description": "Look-through exposure agent \u2014 aggregates underlying exposure across funds and surfaces concentration using the Chronograph top-exposures tool.",
-     "path": "agents/chronograph-look-through-exposure-scan.md"
-    },
-    {
-     "name": "chronograph-lp-analyst",
-     "description": "End-to-end LP portfolio analysis orchestrator \u2014 cashflow forecasting, commitment pacing, look-through exposure scans, and GP-meeting prep, all from permissioned Chronograph data. Use for LP-side portfolio and manager-monitoring work; not for GP-side portfolio-company or fund reporting (use the Chronograph GP plugin).",
-     "path": "agents/chronograph-lp-analyst.md"
-    }
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/chronograph-lp.png",
-   "tagline": "Forecast cashflows and pace commitments",
-   "marketplace": "claude-code",
-   "surfaces": [
-    "desktop",
-    "cloud"
-   ]
-  },
-  {
    "name": "circle-skills",
    "displayName": "Circle Skills",
    "description": "Ship stablecoin apps faster. Best-practice skills for USDC payments, cross-chain transfers, wallets, and smart contracts \u2014 plus Circle's MCP server for real-time SDK and documentation guidance.",
@@ -16431,102 +16247,6 @@
    ]
   },
   {
-   "name": "intuit-quickbooks",
-   "displayName": "Intuit Quickbooks",
-   "description": "QuickBooks business insights and actions: financial health briefings across P&L, cash flow, balance sheet and A/R, industry benchmarking, payroll cost analysis, overdue-invoice reminders, estimate/invoice drafting from email, payroll onboarding and base-pay changes (with confirmation), and QuickBooks Capital lending guidance. Requires the Intuit QuickBooks connector.",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/intuit/quickbooks-claude-plugin.git",
-    "path": null,
-    "ref": null,
-    "sha": "c8daa17a64d4d0fdeabdf0516524f72549b6ad19"
-   },
-   "category": "finance",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://github.com/intuit/quickbooks-claude-plugin",
-   "repository": "https://github.com/intuit/quickbooks-claude-plugin.git",
-   "author": {
-    "name": "Intuit QuickBooks"
-   },
-   "publisher": {
-    "name": "intuit-quickbooks",
-    "displayName": "Intuit QuickBooks"
-   },
-   "keywords": [
-    "quickbooks",
-    "accounting",
-    "business",
-    "finance",
-    "reports",
-    "payroll",
-    "invoicing",
-    "lending",
-    "profit and loss",
-    "balance sheet",
-    "cash flow"
-   ],
-   "skills": [
-    {
-     "name": "analyze-payroll-cost",
-     "description": "Analyze QuickBooks Payroll cost, payroll spend changes, top-paid employees, pay item drivers, and practical payroll cost-control ideas using connected payroll run, employee, payslip, paycheck, and company context data. Use when the user asks why payroll expense increased or decreased, who was paid the most, what drove payroll spend, how to reduce payroll spend, how current payroll compares with a prior period, or whether overtime, headcount, pay rates, employer taxes such as SUI, benefits, employer contributions, reimbursements, bonuses, commissions, allowances, or pay-item mix affected payroll cost. Read only; use available payroll tools and do not invent payroll facts.",
-     "path": "skills/analyze-payroll-cost/SKILL.md"
-    },
-    {
-     "name": "business-health-check",
-     "description": "synthesize a QuickBooks business health briefing from multiple Intuit QuickBooks app reports. Use when the user asks broad questions such as \"how's my business doing?\", \"give me the big picture\", \"what should I be worried about?\", \"summarize my financials\", \"anything unusual this month?\", or wants one conversational view of profit and loss, cash flow, balance sheet, receivables aging, and sales performance without opening separate reports.",
-     "path": "skills/business-health-check/SKILL.md"
-    },
-    {
-     "name": "chase-overdue-invoices",
-     "description": "Send payment reminders for invoices with tone matched to aging. ALWAYS use this skill when the user asks to \"send a reminder\", \"send reminder to invoice\", \"remind about invoice\", \"send a reminder to invoice 1234\", \"remind them about 4574\", \"send a firmer reminder for invoice 1042\", \"who owes me money\", \"show me overdue invoices\", \"chase down overdue invoices\", \"follow up on unpaid invoices\", or \"nudge customers who haven't paid\". This skill MUST be loaded before calling qbo_sales_send_invoice_reminder to ensure confirmation and tone-matching.",
-     "path": "skills/chase-overdue-invoices/SKILL.md"
-    },
-    {
-     "name": "email-to-estimate-invoice",
-     "description": "Turn a customer email thread into a ready-to-send QuickBooks estimate or invoice. Use when the user asks to \"create an invoice from my email thread\", \"draft an estimate based on what I quoted this customer over email\", \"bill this customer for the work we discussed and send it to them\", \"turn this email into an invoice\", \"make an estimate from this thread\", or wants to go from an email conversation to a QuickBooks sales document without re-keying line items.",
-     "path": "skills/email-to-estimate-invoice/SKILL.md"
-    },
-    {
-     "name": "industry-benchmark",
-     "description": "benchmark the user's CONNECTED QuickBooks company against industry peers using their QuickBooks financial data. Use only when the numbers come from the user's connected QuickBooks account \u2014 \"how does my business compare to similar businesses\", \"are my margins healthy\", \"am I spending too much\", \"benchmark my QuickBooks company\". Do NOT use for industry research, for questions about which industries are most profitable in a location, for expected profit for a business type, or when the user supplies their own figures \u2014 those are answered by the Intuit QuickBooks benchmarking tools directly.",
-     "path": "skills/industry-benchmark/SKILL.md"
-    },
-    {
-     "name": "lending",
-     "description": "QuickBooks Capital small-business financing: QuickBooks Term Loan, Line of Credit, Intuit Business Credit Card (issued by WebBank), and the QuickBooks Business Loan Marketplace. Use to explain how these products work (eligibility, rates, fees, terms), compare or choose between them, estimate loan payments (weekly/monthly payment, total interest, total repayment), and answer questions about the signed-in user's own QuickBooks Capital loans and lines of credit (balance, APR, repayment schedule, payoff, available credit), plus what similar businesses have borrowed. Use proactively when a funding need surfaces from payroll, cash-flow, or invoicing work to check for a drawable line of credit and, with consent, peer offers. Read-only guidance only: never makes payments, draws, or loan changes, and never gives a loan offer, rate, credit limit, or approval decision. Not for loan application status or non-QuickBooks-Capital products (SBA, invoice factoring, merchant cash advances, consumer loans).",
-     "path": "skills/lending/SKILL.md"
-    },
-    {
-     "name": "payroll-employee-onboarding",
-     "description": "Onboard a new hire into QuickBooks Payroll from user-provided details or onboarding source files such as offer letters and employee rosters. Use when the user wants to add a new payroll employee, onboard a new employee so they can be paid, deduplicate a new hire before creation, assign an existing payroll work location, set initial contract/base pay during onboarding, or review payroll-readiness gaps. Requires confirmation before write actions and reports remaining setup to finish in QuickBooks Payroll. Do not use for existing-employee pay changes outside onboarding, payroll runs, taxes, direct deposit, benefits, deductions, time off, or compliance advice.",
-     "path": "skills/payroll-employee-onboarding/SKILL.md"
-    },
-    {
-     "name": "payroll-help",
-     "description": "Answer read-only QuickBooks Payroll lookup and setup questions using connected company payroll data. Use for employee roster or lookup, company payroll setup, last payroll run, payslips or paycheck details, pay types, deductions/contributions, and time-off policies. Do not use for payroll cost-driver, spend-reduction, or cost-change analysis; use analyze-payroll-cost when the question asks why payroll cost changed or how to reduce it, including questions involving benefits, employer taxes/SUI, overtime, headcount, pay rates, or pay items. Use only available payroll tools; do not provide unsupported procedural, tax, filing, payment, legal, or compliance guidance.",
-     "path": "skills/payroll-help/SKILL.md"
-    },
-    {
-     "name": "set-base-pay",
-     "description": "Set, view, or change employee base pay (salary or hourly rate) in QuickBooks Payroll. Use when the user asks to see current pay, give a raise (absolute, increment, or percentage), reduce or adjust pay, switch between salary and hourly, change pay frequency, or update weekly contracted time for one or more named employees. Reads the current contract first, requires explicit confirmation before writing, then verifies the change using qbo_payroll_search_employee, qbo_payroll_get_employee_contract_details, and qbo_payroll_save_employee_contract_details.",
-     "path": "skills/set-base-pay/SKILL.md"
-    },
-    {
-     "name": "setup",
-     "description": "Connect and troubleshoot QuickBooks for this plugin. Use when the QuickBooks tools are unavailable, unauthenticated, or failing, when the user has just installed the QuickBooks plugin, or when the user asks how to connect QuickBooks, sign in to QuickBooks, or fix a QuickBooks connection error.",
-     "path": "skills/setup/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/intuit-quickbooks.png",
-   "tagline": "Check business health and chase invoices",
-   "marketplace": "claude-code",
-   "surfaces": [
-    "desktop",
-    "cloud"
-   ]
-  },
-  {
    "name": "jdtls-lsp",
    "displayName": "Jdtls Lsp",
    "description": "Java language server (Eclipse JDT.LS) for code intelligence",
@@ -20501,65 +20221,6 @@
    ]
   },
   {
-   "name": "nightvision",
-   "displayName": "Nightvision",
-   "description": "Skills for working with NightVision, a DAST and API Discovery platform that finds exploitable vulnerabilities in web applications and REST APIs",
-   "source": {
-    "type": "url",
-    "url": "https://github.com/nvsecurity/nightvision-skills.git",
-    "path": null,
-    "ref": null,
-    "sha": "957db6bb934839275c0f643042101bbb675ddbf7"
-   },
-   "category": "security",
-   "strict": null,
-   "license": "Apache-2.0",
-   "homepage": "https://github.com/nvsecurity/nightvision-skills",
-   "repository": "https://github.com/nvsecurity/nightvision-skills.git",
-   "keywords": [
-    "dast",
-    "api-discovery",
-    "security-scanning",
-    "ci-cd",
-    "openapi",
-    "vulnerability-detection"
-   ],
-   "skills": [
-    {
-     "name": "api-discovery",
-     "description": "Guide for agents to help users extract OpenAPI specs from source code using NightVision API Discovery. Use when running swagger extract, identifying framework support, troubleshooting extraction, handling unresolved variables, comparing API specs, or understanding Code Traceback.",
-     "path": "skills/api-discovery/SKILL.md"
-    },
-    {
-     "name": "app-security-scan",
-     "description": "DAST-first NightVision scan for an app you just built or changed. Use when a user, or a project or org agent-instructions rule, wants a local, private, staging, or internal web app/API security-scanned. Drives the NightVision MCP `run-app-security-scan` harness.",
-     "path": "skills/app-security-scan/SKILL.md"
-    },
-    {
-     "name": "ci-cd-integration",
-     "description": "Guide for agents to help users integrate NightVision DAST scanning into CI/CD pipelines. Use when setting up security scans in GitHub Actions, GitLab CI, Azure DevOps, Jenkins, BitBucket, or JFrog pipelines, configuring NightVision tokens, creating targets, running scans, exporting results as SARIF/CSV, or detecting API breaking changes.",
-     "path": "skills/ci-cd-integration/SKILL.md"
-    },
-    {
-     "name": "scan-configuration",
-     "description": "Guide for agents to help users configure NightVision DAST scans. Use when creating targets, setting up authentication (Playwright, headers, cookies), recording HTTP traffic, managing projects, configuring scope exclusions, or preparing private network scans.",
-     "path": "skills/scan-configuration/SKILL.md"
-    },
-    {
-     "name": "scan-triage",
-     "description": "Guide for agents to help users interpret and act on NightVision DAST scan results. Use when reading SARIF/CSV findings, explaining vulnerabilities, locating vulnerable code, validating findings with curl, prioritizing by severity, suggesting remediations, or marking false positives.",
-     "path": "skills/scan-triage/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/nightvision.png",
-   "tagline": "Scan web apps and APIs for exploits",
-   "marketplace": "claude-code",
-   "surfaces": [
-    "desktop",
-    "cloud"
-   ]
-  },
-  {
    "name": "nimble",
    "displayName": "Nimble",
    "description": "Nimble web data toolkit \u2014 search, extract, map, crawl the web and work with structured data agents",
@@ -20722,79 +20383,6 @@
    ],
    "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/nimble.png",
    "tagline": "Search, crawl and extract web data",
-   "marketplace": "claude-code",
-   "surfaces": [
-    "desktop",
-    "cloud"
-   ]
-  },
-  {
-   "name": "noibu",
-   "displayName": "Noibu",
-   "description": "Built for ecommerce, the Noibu plugin bridges the gap between customer experience and revenue by connecting Claude directly to your store's session, error, and conversion data through Noibu \u2014 and to the marketing, support, and commerce platforms that put insight into motion. Go beyond analysis: surface what's costing you revenue, take action across your stack, build workflows to automate work end-to-end.",
-   "source": {
-    "type": "git-subdir",
-    "url": "https://github.com/Noibu/ai-plugin.git",
-    "path": "src",
-    "ref": "main",
-    "sha": "9fa2eddc3a86937b7956dedfaab32fac6cabf868"
-   },
-   "category": "monitoring",
-   "strict": null,
-   "license": "MIT",
-   "homepage": "https://help.noibu.com/articles/3918362002-overview-of-the-noibu-plugin-for-claude",
-   "repository": "https://github.com/Noibu/ai-plugin.git",
-   "author": {
-    "name": "Noibu"
-   },
-   "publisher": {
-    "name": "noibu",
-    "displayName": "Noibu"
-   },
-   "skills": [
-    {
-     "name": "accessibility-audit",
-     "description": "Audit a website for WCAG 2.1 AA accessibility violations using automated scanning and Noibu traffic data, and optionally draft the fixes. Use when you want to know what's inaccessible across the store, check WCAG or ADA compliance, find contrast or heading errors, audit for screen reader support, generate an accessibility report, or fix accessibility violations with pull requests or tickets.",
-     "path": "skills/accessibility-audit/SKILL.md"
-    },
-    {
-     "name": "build-business-context",
-     "description": "Builds a rich business-context Markdown file (a CLAUDE.md / context.md) so Noibu skills and Claude stop hallucinating and reason with real context about the business. Use this skill whenever someone wants to create, set up, or improve their business context file, onboard a new store to Noibu, 'build my MD file', 'make a context file', 'set up my CLAUDE.md', capture company background for the AI, or asks why Claude keeps getting their business wrong. Also trigger on looser phrasings like 'help Claude understand my business', 'document my store for the AI', 'what should I tell Claude about my company', or when a user is starting with Noibu and has no context file yet. Even if the user just says 'build the MD file' or 'set up context', use this skill. It does deep web research on the business (always via a subagent), interviews the user about goals, money leaks, deployment process, and team setup, writes a clean Markdown file, then persists the context to the Noibu backend for the domain.",
-     "path": "skills/build-business-context/SKILL.md"
-    },
-    {
-     "name": "checkout-analysis",
-     "description": "Analyze checkout performance and health using Noibu data. Use when you want to know where shoppers drop off in the checkout funnel, what payment or delivery methods customers are using, why completion rates are low, what priority errors are hurting checkout, or how cart and order values benchmark.",
-     "path": "skills/checkout-analysis/SKILL.md"
-    },
-    {
-     "name": "product-analysis",
-     "description": "Analyze product and collection performance using Noibu data. Use when you want to know which products are underperforming, what your best-selling product type is, why a product isn't converting, how your collections are performing, which products get views but no sales, or where shoppers drop off in the product funnel.",
-     "path": "skills/product-analysis/SKILL.md"
-    },
-    {
-     "name": "querying-noibu-data",
-     "description": "Required reference for calling `noibu_*` tools \u2014 field and measure semantics, query constraints (the `orderBy` requirement, row caps, unique-measure rule), the `rationale` argument convention, and domain resolution. Also covers parsing of pasted `console.noibu.com` URLs. Loads alongside topical Noibu skills (e.g., `checkout-analysis`, `tech-diagnosis`), not instead of them \u2014 they own routing for their respective domains.",
-     "path": "skills/querying-noibu-data/SKILL.md"
-    },
-    {
-     "name": "segment-analysis",
-     "description": "Analyze segment and traffic performance using Noibu data. Use when you want to know which channels, devices, or countries convert best, how mobile compares to desktop, where your traffic is coming from, which segments are underperforming, or where to find your best and worst converting customer segments.",
-     "path": "skills/segment-analysis/SKILL.md"
-    },
-    {
-     "name": "store-pulse",
-     "description": "An instant, at-a-glance read on your store's health from the last 24 hours \u2014 with the option to save it as a live Cowork dashboard artifact or schedule a recurring report. Use to check on how the overall store is doing, save a live dashboard, or schedule a recurring summary.",
-     "path": "skills/store-pulse/SKILL.md"
-    },
-    {
-     "name": "tech-diagnosis",
-     "description": "Diagnose technical issues and Core Web Vital performance problems using Noibu data, and recommend a fix. Use when you want to know what's broken across the store, why an error is happening, what's causing errors, the root cause of poor page performance, how to fix a technical issue, why an error rate spiked, or where errors are concentrated.",
-     "path": "skills/tech-diagnosis/SKILL.md"
-    }
-   ],
-   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/noibu.png",
-   "tagline": "Find store errors that cost revenue",
    "marketplace": "claude-code",
    "surfaces": [
     "desktop",
@@ -34419,7 +34007,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "teaching",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -34462,7 +34050,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "thermos",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "development",
    "strict": null,
@@ -34528,7 +34116,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "agent-compatibility",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "development",
    "strict": null,
@@ -34594,7 +34182,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "cli-for-agent",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "development",
    "strict": null,
@@ -34638,7 +34226,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "grok-voice",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "development",
    "strict": null,
@@ -34696,7 +34284,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/salesforce",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "sales",
    "strict": null,
@@ -34763,7 +34351,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ashby",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -34819,7 +34407,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/greenhouse",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -34858,7 +34446,7 @@
     "interviews",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/greenhouse/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/greenhouse/assets/logo.png",
    "tagline": "Review candidates, jobs and scorecards",
    "marketplace": "cursor",
    "surfaces": [
@@ -34875,7 +34463,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/hubspot",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "sales",
    "strict": null,
@@ -34950,7 +34538,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/zoom",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -35024,7 +34612,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/navan",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "finance",
    "strict": null,
@@ -35080,7 +34668,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/profound",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "marketing",
    "strict": null,
@@ -35137,7 +34725,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/juicebox",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -35193,7 +34781,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/outreach",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "sales",
    "strict": null,
@@ -35249,7 +34837,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/amplemarket",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "sales",
    "strict": null,
@@ -35305,7 +34893,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/klaviyo",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "marketing",
    "strict": null,
@@ -35361,7 +34949,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/customer-io",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "marketing",
    "strict": null,
@@ -35417,7 +35005,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mailerlite",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "marketing",
    "strict": null,
@@ -35473,7 +35061,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brevo",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "marketing",
    "strict": null,
@@ -35542,7 +35130,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/typeform",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -35597,7 +35185,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/jotform",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -35651,7 +35239,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/semrush",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "marketing",
    "strict": null,
@@ -35707,7 +35295,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ahrefs",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "marketing",
    "strict": null,
@@ -35763,7 +35351,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/godaddy",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -35818,7 +35406,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/upwork",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -35874,7 +35462,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/workable",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -35930,7 +35518,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/brex",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "finance",
    "strict": null,
@@ -35986,7 +35574,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/todoist",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36041,7 +35629,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/calendly",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36096,7 +35684,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/smartsheet",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36164,7 +35752,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/wrike",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36232,7 +35820,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coda",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36287,7 +35875,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/guru",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36342,7 +35930,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fireflies",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36397,7 +35985,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/otter",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36452,7 +36040,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/fathom",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36507,7 +36095,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/craft",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36562,7 +36150,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/mem",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36617,7 +36205,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/readwise",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36672,7 +36260,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/xero",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "finance",
    "strict": null,
@@ -36751,7 +36339,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/attio",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "sales",
    "strict": null,
@@ -36808,7 +36396,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/stable",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -36860,7 +36448,7 @@
     "api",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/stable/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/stable/assets/logo.png",
    "tagline": "Find mail and read scanned documents",
    "marketplace": "cursor",
    "surfaces": [
@@ -36877,7 +36465,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/webull",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "finance",
    "strict": null,
@@ -36934,7 +36522,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/sp-global",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "finance",
    "strict": null,
@@ -36991,7 +36579,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/interactive-brokers",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "finance",
    "strict": null,
@@ -37048,7 +36636,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/meltwater",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "marketing",
    "strict": null,
@@ -37105,7 +36693,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/daloopa",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "finance",
    "strict": null,
@@ -37162,7 +36750,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/excalidraw",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "design",
    "strict": null,
@@ -37221,7 +36809,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/statsig",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "development",
    "strict": null,
@@ -37278,7 +36866,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/robinhood",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "finance",
    "strict": null,
@@ -37337,7 +36925,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/coinbase",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "finance",
    "strict": null,
@@ -37394,7 +36982,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/tinyfish",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "agent-orchestration",
    "strict": null,
@@ -37435,7 +37023,7 @@
     "playwright",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/tinyfish/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/tinyfish/assets/logo.png",
    "tagline": "Automate multi-step web tasks",
    "marketplace": "cursor",
    "surfaces": [
@@ -37452,7 +37040,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/beehiiv",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "marketing",
    "strict": null,
@@ -37493,7 +37081,7 @@
     "creator",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/beehiiv/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/beehiiv/assets/logo.png",
    "tagline": "Draft posts and manage subscribers",
    "marketplace": "cursor",
    "surfaces": [
@@ -37510,7 +37098,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/trello",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -37552,7 +37140,7 @@
     "planner",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/trello/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/trello/assets/logo.png",
    "tagline": "Organize boards, lists and cards",
    "marketplace": "cursor",
    "surfaces": [
@@ -37569,7 +37157,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/buffer",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "marketing",
    "strict": null,
@@ -37610,7 +37198,7 @@
     "ideas",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/buffer/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/buffer/assets/logo.png",
    "tagline": "Schedule and publish social posts",
    "marketplace": "cursor",
    "surfaces": [
@@ -37627,7 +37215,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/plaud",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -37668,7 +37256,7 @@
     "action items",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/plaud/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/plaud/assets/logo.png",
    "tagline": "Search recordings and voice notes",
    "marketplace": "cursor",
    "surfaces": [
@@ -37685,7 +37273,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/posthog-mcp",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "data-analytics",
    "strict": null,
@@ -37726,7 +37314,7 @@
     "sql",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/posthog-mcp/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/posthog-mcp/assets/logo.png",
    "tagline": "Query analytics and review replays",
    "marketplace": "cursor",
    "surfaces": [
@@ -37743,7 +37331,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/square",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "payments",
    "strict": null,
@@ -37786,7 +37374,7 @@
     "commerce",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/square/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/square/assets/logo.png",
    "tagline": "Manage payments, orders and invoices",
    "marketplace": "cursor",
    "surfaces": [
@@ -37803,7 +37391,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/finary",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "finance",
    "strict": null,
@@ -37845,7 +37433,7 @@
     "personal finance",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/finary/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/finary/assets/logo.png",
    "tagline": "Read your net worth, holdings and spending",
    "marketplace": "cursor",
    "surfaces": [
@@ -37862,7 +37450,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/tiktok-for-business",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "marketing",
    "strict": null,
@@ -37904,7 +37492,7 @@
     "audiences",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/tiktok-for-business/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/tiktok-for-business/assets/logo.png",
    "tagline": "Run and report on TikTok ad campaigns",
    "marketplace": "cursor",
    "surfaces": [
@@ -37921,7 +37509,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/gusto",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "finance",
    "strict": null,
@@ -37962,7 +37550,7 @@
     "timesheets",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/gusto/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/gusto/assets/logo.png",
    "tagline": "Work with payroll, people and time off",
    "marketplace": "cursor",
    "surfaces": [
@@ -37979,7 +37567,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/jobber",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -38041,7 +37629,7 @@
     "scheduling",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/jobber/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/jobber/assets/logo.png",
    "tagline": "Manage clients, quotes, jobs and invoices",
    "marketplace": "cursor",
    "surfaces": [
@@ -38058,7 +37646,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/databricks-genie-one",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "data-analytics",
    "strict": null,
@@ -38121,7 +37709,7 @@
     "lakehouse",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/databricks-genie-one/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/databricks-genie-one/assets/logo.png",
    "tagline": "Ask Genie about your workspace data",
    "marketplace": "cursor",
    "surfaces": [
@@ -38138,7 +37726,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/feishu",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -38175,7 +37763,7 @@
     "messages",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/feishu/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/feishu/assets/logo.png",
    "tagline": "Search and edit Feishu docs and chats",
    "marketplace": "cursor",
    "surfaces": [
@@ -38192,7 +37780,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/framer",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "design",
    "strict": null,
@@ -38230,7 +37818,7 @@
     "no-code",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/framer/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/framer/assets/logo.png",
    "tagline": "Build and edit your Framer sites",
    "marketplace": "cursor",
    "surfaces": [
@@ -38247,7 +37835,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ringcentral-phone",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -38285,7 +37873,7 @@
     "sms",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/ringcentral-phone/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/ringcentral-phone/assets/logo.png",
    "tagline": "Review calls, voicemail and texts, and send SMS",
    "marketplace": "cursor",
    "surfaces": [
@@ -38302,7 +37890,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/ringcentral-chat",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -38339,7 +37927,7 @@
     "team messaging",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/ringcentral-chat/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/ringcentral-chat/assets/logo.png",
    "tagline": "Read and post in RingCentral team chats",
    "marketplace": "cursor",
    "surfaces": [
@@ -38356,7 +37944,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/servicenow",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -38426,7 +38014,7 @@
     "mcp server console",
     "now assist"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/servicenow/assets/logo.svg",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/servicenow/assets/logo.svg",
    "tagline": "Use the tools your ServiceNow instance publishes",
    "marketplace": "cursor",
    "surfaces": [
@@ -38443,7 +38031,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/rippling",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": "productivity",
    "strict": null,
@@ -38488,7 +38076,7 @@
     "policy",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/rippling/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/rippling/assets/logo.png",
    "tagline": "Look up people and time off, and request leave",
    "marketplace": "cursor",
    "surfaces": [
@@ -38505,7 +38093,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/onepay",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": null,
    "strict": null,
@@ -38550,7 +38138,7 @@
     "grok",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/onepay/assets/logo.svg",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/onepay/assets/logo.svg",
    "rules": [
     {
      "name": "onepay",
@@ -38573,7 +38161,7 @@
     "url": "https://github.com/cursor/plugins",
     "path": "third_party/questrade",
     "ref": "main",
-    "sha": "1ba91fc25c0977741dd0e267849e6234b037ed0a"
+    "sha": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe"
    },
    "category": null,
    "strict": null,
@@ -38615,7 +38203,7 @@
     "canada",
     "mcp"
    ],
-   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/1ba91fc25c0977741dd0e267849e6234b037ed0a/third_party/questrade/assets/logo.png",
+   "logoUrl": "https://raw.githubusercontent.com/cursor/plugins/4dd1d05818d19792e7cd6e818f1667f95f7e1dbe/third_party/questrade/assets/logo.png",
    "marketplace": "cursor",
    "surfaces": [
     "desktop",
@@ -38971,6 +38559,246 @@
     "desktop",
     "cloud"
    ]
+  },
+  {
+   "name": "carta",
+   "displayName": "Carta",
+   "description": "Carta integration \u2014 cap tables, fund and investor data, and the Carta CRM, via the remote Carta MCP server. Pairs with the Carta Cap Table, Carta Investors and Carta CRM skill plugins.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/corepasshq/plugins",
+    "path": "plugins/carta",
+    "ref": null,
+    "sha": "a75724a85dd6e930e1c851b98e77d2da2a91e00b"
+   },
+   "license": "proprietary",
+   "category": "finance",
+   "featured": null,
+   "repository": null,
+   "publisher": {
+    "name": "carta",
+    "displayName": "Carta"
+   },
+   "mcpServers": [
+    {
+     "name": "carta",
+     "path": ".mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.app.carta.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.app.carta.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
+      }
+     ]
+    }
+   ],
+   "marketplace": "corepass",
+   "surfaces": [
+    "desktop",
+    "cloud"
+   ]
+  },
+  {
+   "name": "noibu",
+   "displayName": "Noibu",
+   "description": "Noibu ecommerce analytics \u2014 session analytics, error diagnosis, checkout analysis, product performance and accessibility audits, via the remote Noibu MCP server.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/corepasshq/plugins",
+    "path": "plugins/noibu",
+    "ref": null,
+    "sha": "a75724a85dd6e930e1c851b98e77d2da2a91e00b"
+   },
+   "license": "MIT",
+   "category": "monitoring",
+   "featured": null,
+   "repository": "https://github.com/Noibu/ai-plugin",
+   "publisher": {
+    "name": "noibu",
+    "displayName": "Noibu"
+   },
+   "_provenance": {
+    "upstream": "https://github.com/Noibu/ai-plugin",
+    "path": "src",
+    "sha": "9fa2eddc3a86937b7956dedfaab32fac6cabf868",
+    "license": "MIT"
+   },
+   "skills": [
+    {
+     "name": "accessibility-audit",
+     "description": "Audit a website for WCAG 2.1 AA accessibility violations using automated scanning and Noibu traffic data, and optionally draft the fixes. Use when you want to know what's inaccessible across the store, check WCAG or ADA compliance, find contrast or heading errors, audit for screen reader support, generate an accessibility report, or fix accessibility violations with pull requests or tickets.",
+     "path": "skills/accessibility-audit/SKILL.md"
+    },
+    {
+     "name": "build-business-context",
+     "description": "Builds a rich business-context Markdown file (a CLAUDE.md / context.md) so Noibu skills and Claude stop hallucinating and reason with real context about the business. Use this skill whenever someone wants to create, set up, or improve their business context file, onboard a new store to Noibu, 'build my MD file', 'make a context file', 'set up my CLAUDE.md', capture company background for the AI, or asks why Claude keeps getting their business wrong. Also trigger on looser phrasings like 'help Claude understand my business', 'document my store for the AI', 'what should I tell Claude about my company', or when a user is starting with Noibu and has no context file yet. Even if the user just says 'build the MD file' or 'set up context', use this skill. It does deep web research on the business (always via a subagent), interviews the user about goals, money leaks, deployment process, and team setup, writes a clean Markdown file, then persists the context to the Noibu backend for the domain.",
+     "path": "skills/build-business-context/SKILL.md"
+    },
+    {
+     "name": "checkout-analysis",
+     "description": "Analyze checkout performance and health using Noibu data. Use when you want to know where shoppers drop off in the checkout funnel, what payment or delivery methods customers are using, why completion rates are low, what priority errors are hurting checkout, or how cart and order values benchmark.",
+     "path": "skills/checkout-analysis/SKILL.md"
+    },
+    {
+     "name": "product-analysis",
+     "description": "Analyze product and collection performance using Noibu data. Use when you want to know which products are underperforming, what your best-selling product type is, why a product isn't converting, how your collections are performing, which products get views but no sales, or where shoppers drop off in the product funnel.",
+     "path": "skills/product-analysis/SKILL.md"
+    },
+    {
+     "name": "querying-noibu-data",
+     "description": "Required reference for calling `noibu_*` tools \u2014 field and measure semantics, query constraints (the `orderBy` requirement, row caps, unique-measure rule), the `rationale` argument convention, and domain resolution. Also covers parsing of pasted `console.noibu.com` URLs. Loads alongside topical Noibu skills (e.g., `checkout-analysis`, `tech-diagnosis`), not instead of them \u2014 they own routing for their respective domains.",
+     "path": "skills/querying-noibu-data/SKILL.md"
+    },
+    {
+     "name": "segment-analysis",
+     "description": "Analyze segment and traffic performance using Noibu data. Use when you want to know which channels, devices, or countries convert best, how mobile compares to desktop, where your traffic is coming from, which segments are underperforming, or where to find your best and worst converting customer segments.",
+     "path": "skills/segment-analysis/SKILL.md"
+    },
+    {
+     "name": "store-pulse",
+     "description": "An instant, at-a-glance read on your store's health from the last 24 hours \u2014 with the option to save it as a live Cowork dashboard artifact or schedule a recurring report. Use to check on how the overall store is doing, save a live dashboard, or schedule a recurring summary.",
+     "path": "skills/store-pulse/SKILL.md"
+    },
+    {
+     "name": "tech-diagnosis",
+     "description": "Diagnose technical issues and Core Web Vital performance problems using Noibu data, and recommend a fix. Use when you want to know what's broken across the store, why an error is happening, what's causing errors, the root cause of poor page performance, how to fix a technical issue, why an error rate spiked, or where errors are concentrated.",
+     "path": "skills/tech-diagnosis/SKILL.md"
+    }
+   ],
+   "mcpServers": [
+    {
+     "name": "noibu",
+     "path": ".mcp.json",
+     "execution": [
+      {
+       "transport": "http",
+       "urlScheme": "https",
+       "urlHost": "mcp.noibu.com",
+       "localhost": false,
+       "headerKeys": [],
+       "oauth": false,
+       "placeholders": [],
+       "type": "mcp",
+       "endpoint": "https://mcp.noibu.com/mcp",
+       "oauthSignIn": {
+        "signIn": "address",
+        "verdict": "address-cimd"
+       }
+      }
+     ]
+    }
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/noibu.png",
+   "tagline": "Find store errors that cost revenue",
+   "marketplace": "corepass",
+   "surfaces": [
+    "desktop",
+    "cloud"
+   ]
+  },
+  {
+   "name": "nightvision",
+   "displayName": "NightVision",
+   "description": "NightVision DAST and API discovery \u2014 scan local, private and staging apps, extract OpenAPI specs from source, triage findings and wire scans into CI, through NightVision's local MCP server and the NightVision CLI.",
+   "source": {
+    "type": "git-subdir",
+    "url": "https://github.com/corepasshq/plugins",
+    "path": "plugins/nightvision",
+    "ref": null,
+    "sha": "a75724a85dd6e930e1c851b98e77d2da2a91e00b"
+   },
+   "license": "proprietary",
+   "category": "security",
+   "featured": null,
+   "repository": "https://github.com/nvsecurity/nightvision-mcp",
+   "publisher": {
+    "name": "nightvision-security-inc",
+    "displayName": "NightVision Security, Inc."
+   },
+   "_provenance": {
+    "upstream": "https://github.com/nvsecurity/nightvision-mcp",
+    "path": "plugins/nightvision",
+    "sha": "62247d89b64e50d39e909290f95264b482820476",
+    "license": null
+   },
+   "skills": [
+    {
+     "name": "api-discovery",
+     "description": "Former name of the source-intelligence skill, kept so that invoking api-discovery still works. Use source-intelligence instead.",
+     "path": "skills/api-discovery/SKILL.md"
+    },
+    {
+     "name": "app-security-scan",
+     "description": "DAST-first NightVision scan for an app you just built or changed. Use when a user, or a project or org agent-instructions rule, wants a local, private, staging, or internal web app/API security-scanned. Drives the NightVision MCP `run-app-security-scan` harness.",
+     "path": "skills/app-security-scan/SKILL.md"
+    },
+    {
+     "name": "ci-cd-integration",
+     "description": "Guide for agents to help users integrate NightVision DAST scanning into CI/CD pipelines. Use when setting up security scans in GitHub Actions, GitLab CI, Azure DevOps, Jenkins, BitBucket, or JFrog pipelines, configuring NightVision tokens, creating targets, running scans, exporting results as SARIF/CSV, or detecting API breaking changes.",
+     "path": "skills/ci-cd-integration/SKILL.md"
+    },
+    {
+     "name": "scan-configuration",
+     "description": "Guide for agents to help users configure NightVision DAST scans. Use when creating targets, setting up authentication (Playwright, headers, cookies), recording HTTP traffic, managing projects, configuring scope exclusions, or preparing private network scans.",
+     "path": "skills/scan-configuration/SKILL.md"
+    },
+    {
+     "name": "scan-report",
+     "description": "Generate a shareable NightVision security report as a PDF - an executive summary for AppSec and leadership plus a findings appendix for developers - for one scan, a scan compared with the previous one, or a whole project. Use when a user wants a PDF, a report, or something to send to a CISO, manager, auditor, or another team about NightVision scan results. Drives the NightVision MCP `export-report` tool.",
+     "path": "skills/scan-report/SKILL.md"
+    },
+    {
+     "name": "scan-triage",
+     "description": "Guide for agents to help users interpret and act on NightVision DAST scan results. Use when reading SARIF/CSV findings, explaining vulnerabilities, locating vulnerable code, validating findings with curl, prioritizing by severity, suggesting remediations, or marking false positives.",
+     "path": "skills/scan-triage/SKILL.md"
+    },
+    {
+     "name": "source-intelligence",
+     "description": "Guide for agents to help users extract OpenAPI specs from source code using NightVision Source Intelligence. Use when running openapi extract (also spelled swagger extract), identifying framework support, troubleshooting extraction, handling unresolved variables, comparing API specs, or understanding Code Traceback.",
+     "path": "skills/source-intelligence/SKILL.md"
+    }
+   ],
+   "mcpServers": [
+    {
+     "name": "nightvision",
+     "path": ".corepass-plugin/plugin.json",
+     "execution": [
+      {
+       "transport": "stdio",
+       "launcher": "node",
+       "envKeys": [],
+       "placeholders": [
+        "CLAUDE_PLUGIN_ROOT"
+       ],
+       "program": "node",
+       "type": "mcp",
+       "command": "node '${CLAUDE_PLUGIN_ROOT}/build/core/server.mjs'"
+      }
+     ]
+    }
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/nightvision.png",
+   "tagline": "Scan web apps and APIs for exploits",
+   "marketplace": "corepass",
+   "surfaces": [
+    "desktop"
+   ],
+   "cloudUnsupported": [
+    {
+     "reason": "stdio-mcp",
+     "detail": "nightvision: node"
+    }
+   ]
   }
  ],
  "excluded": {
@@ -39017,6 +38845,16 @@
   "chrome-devtools-mcp": {
    "kind": "builtin-overlap",
    "reason": "Remy's built-in Chrome/CDP plugins already inspect and control a live Chrome.",
+   "marketplace": "claude-code"
+  },
+  "chronograph-gp": {
+   "kind": "partner-gated",
+   "reason": "It ships skills and sub-agents only, and its README says they do not work until the Chronograph connector is added from Claude's connectors directory; Chronograph publishes no MCP server address, and offers the connector to its clients with a paid Claude subscription.",
+   "marketplace": "claude-code"
+  },
+  "chronograph-lp": {
+   "kind": "partner-gated",
+   "reason": "It ships skills and sub-agents only, and its README says they do not work until the Chronograph connector is added from Claude's connectors directory; Chronograph publishes no MCP server address, and offers the connector to its clients with a paid Claude subscription.",
    "marketplace": "claude-code"
   },
   "claude-code-setup": {
@@ -39162,6 +39000,11 @@
   "informatica-for-claude-platform": {
    "kind": "endpoint-unusable",
    "reason": "Both of its MCP servers have an empty URL, and the plugin declares no setting to supply one.",
+   "marketplace": "claude-code"
+  },
+  "intuit-quickbooks": {
+   "kind": "partner-gated",
+   "reason": "It ships skills only; its tools come from the QuickBooks connector on a Claude account, and its SETUP.md says a server added by hand fails to sign in because Intuit's authorization server offers no dynamic client registration.",
    "marketplace": "claude-code"
   },
   "langfuse-observability": {
