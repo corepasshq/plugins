@@ -1,0 +1,23 @@
+{
+  "name": "nightvision",
+  "displayName": "NightVision",
+  "description": "NightVision DAST and API discovery — scan local, private and staging apps, extract OpenAPI specs from source, triage findings and wire scans into CI, through NightVision's local MCP server and the NightVision CLI.",
+  "version": "0.3.1",
+  "author": {
+    "name": "NightVision Security, Inc.",
+    "email": "support@nightviz.ai",
+    "url": "https://nightviz.ai"
+  },
+  "homepage": "https://github.com/nvsecurity/nightvision-mcp",
+  "repository": "https://github.com/nvsecurity/nightvision-mcp",
+  "license": "MIT",
+  "keywords": ["application-security", "dast", "api-security", "openapi", "nightvision", "mcp"],
+  "logo": "./assets/nv-icon.png",
+  "skills": "./skills/",
+  "mcpServers": {
+    "nightvision": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/build/core/server.mjs"]
+    }
+  }
+}

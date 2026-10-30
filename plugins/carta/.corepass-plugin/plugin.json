@@ -1,0 +1,12 @@
+{
+  "name": "carta",
+  "displayName": "Carta",
+  "description": "Carta integration — cap tables, fund and investor data, and the Carta CRM, via the remote Carta MCP server. Pairs with the Carta Cap Table, Carta Investors and Carta CRM skill plugins.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Carta",
+    "url": "https://carta.com"
+  },
+  "homepage": "https://github.com/carta/plugins",
+  "keywords": ["carta", "mcp", "cap-table", "investors", "crm", "fund-admin"]
+}

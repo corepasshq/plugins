@@ -79,6 +79,39 @@
         "sha": "e75b0cf18f1a19f3fd629e3af9565ee84b8c2ce0",
         "license": "MIT"
       }
+    },
+    {
+      "name": "carta",
+      "source": "./plugins/carta",
+      "displayName": "Carta",
+      "description": "Carta integration — cap tables, fund and investor data, and the Carta CRM, via the remote Carta MCP server. Pairs with the Carta Cap Table, Carta Investors and Carta CRM skill plugins.",
+      "category": "finance"
+    },
+    {
+      "name": "noibu",
+      "source": "./plugins/noibu",
+      "displayName": "Noibu",
+      "description": "Noibu ecommerce analytics — session analytics, error diagnosis, checkout analysis, product performance and accessibility audits, via the remote Noibu MCP server.",
+      "category": "monitoring",
+      "_provenance": {
+        "upstream": "https://github.com/Noibu/ai-plugin",
+        "path": "src",
+        "sha": "9fa2eddc3a86937b7956dedfaab32fac6cabf868",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "nightvision",
+      "source": "./plugins/nightvision",
+      "displayName": "NightVision",
+      "description": "NightVision DAST and API discovery — scan local, private and staging apps, extract OpenAPI specs from source, triage findings and wire scans into CI, through NightVision's local MCP server and the NightVision CLI.",
+      "category": "security",
+      "_provenance": {
+        "upstream": "https://github.com/nvsecurity/nightvision-mcp",
+        "path": "plugins/nightvision",
+        "sha": "62247d89b64e50d39e909290f95264b482820476",
+        "license": null
+      }
     }
   ]
 }

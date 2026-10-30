@@ -1,0 +1,14 @@
+{
+  "name": "noibu",
+  "displayName": "Noibu",
+  "description": "Noibu ecommerce analytics — session analytics, error diagnosis, checkout analysis, product performance and accessibility audits, via the remote Noibu MCP server.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Noibu",
+    "url": "https://noibu.com"
+  },
+  "homepage": "https://help.noibu.com/articles/3918362002-getting-started-noibu-ai-plugin",
+  "repository": "https://github.com/Noibu/ai-plugin",
+  "license": "MIT",
+  "keywords": ["noibu", "mcp", "ecommerce", "analytics", "errors", "checkout"]
+}
