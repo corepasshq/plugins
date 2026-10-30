@@ -148,10 +148,12 @@ track requires a git `source.url`, which such a vendor does not have.
 
 ### Hosted-only DCR connectors
 
-`sentry`, `context7`, `exa`, `vercel`, `neon`, `supabase`, `stripe` and `asana`
-are all that shape — three files each (`.corepass-plugin/plugin.json`,
+`sentry`, `context7`, `exa`, `vercel`, `neon`, `supabase`, `stripe`, `asana`
+and `carta` are all that shape — three files each (`.corepass-plugin/plugin.json`,
 `.mcp.json`, `README.md`), nothing vendored, no `_provenance`, no `LICENSE`
-question to answer.
+question to answer. `carta` is the server the catalog's three Carta skill
+plugins call; see [its README](plugins/carta/README.md) for why the server is
+not added to copies of those plugins.
 
 `cloudflare` and `datadog` use the same DCR endpoint style but are **not** in
 that group — each vendor ships a real plugin repo, so both carry a `LICENSE`, a
@@ -169,10 +171,22 @@ spectrum, which is the useful comparison when adding the next one:
 
 Read a candidate's skills before deciding which case it is. Two things decide it:
 whether the skills name a client-specific server id or config path, and whether
-any skill declares `allowed-tools` — that one becomes a real `tool_allowlist`
-here, and Claude Code's PascalCase tool names do not match ours, so it would
-block every tool the skill needs. (A *command*'s `allowed-tools` is display-only
-and harmless.)
+any skill that declares `allowed-tools` also declares `context: fork`.
+
+- A **fork** skill runs as its own sub-agent, and its `allowed-tools` is that
+  sub-agent's whole tool pool (remy-core
+  `contributions/skills.py::SkillRegistry._fork`). Claude Code's built-in names
+  (`Bash`, `Read`, `Grep`, …) are mapped onto ours
+  (`contributions/foreign_fields.py::remy_tool_names`), but an MCP tool named
+  for another client's server (`mcp__carta__crm_call_tool`,
+  `mcp__claude_ai_Carta__…`) matches nothing here, where a plugin's tools are
+  `mcp__<plugin>__<server>__<tool>`. Such a skill has to be adapted.
+- An **inline** skill (no `context`, the usual case) is loaded into the
+  current conversation, and its `allowed-tools` restricts nothing: the agent
+  keeps the tools it already has, and the list is only shown in the plugin's
+  details. `noibu` and `nightvision` are copied unchanged on that basis.
+
+A *command*'s `allowed-tools` is display-only as well.
 
 They need no credential of any kind because each provider advertises **RFC 7591
 dynamic client registration**, so the client mints its own public PKCE client

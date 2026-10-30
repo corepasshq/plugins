@@ -28,8 +28,9 @@ plugin) and releases often; a copy would be some 55 MB to keep in sync. The
 skill plugins find this server as it is: their hooks match any tool whose name
 contains `carta`, which `mcp__carta__carta__*` does, and their skills call the
 tools by bare name (`crm_call_tool`, `execute_query`, …). Their `allowed-tools`
-lists name Claude's server ids, but a skill that runs inline does not apply
-them as a tool allowlist.
+lists name Claude's server ids, but none of their skills runs as a fork, and an
+inline skill does not apply `allowed-tools` as a tool allowlist (see the
+repository README, *Hosted-only DCR connectors*).
 
 One server serves all three: the registration below was granted
 `read_mcp_firms`, `read_mcp_companies` and `read_mcp_crm` scopes (with their
