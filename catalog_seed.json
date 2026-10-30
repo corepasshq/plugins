@@ -38451,7 +38451,7 @@
     "url": "https://github.com/corepasshq/plugins",
     "path": "plugins/carta",
     "ref": null,
-    "sha": "a75724a85dd6e930e1c851b98e77d2da2a91e00b"
+    "sha": "23ab13cf705a609a4313f3b490518c1883cc5a02"
    },
    "license": "proprietary",
    "category": "finance",
@@ -38483,6 +38483,16 @@
       }
      ]
     }
+   ],
+   "logoUrl": "https://raw.githubusercontent.com/corepasshq/plugins/main/logos/carta.png",
+   "tagline": "Connect cap tables, funds and the Carta CRM",
+   "keywords": [
+    "carta",
+    "mcp",
+    "cap-table",
+    "investors",
+    "crm",
+    "fund-admin"
    ],
    "marketplace": "corepass",
    "surfaces": [
