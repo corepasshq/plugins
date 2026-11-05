@@ -1,0 +1,15 @@
+{
+  "name": "hubspot",
+  "displayName": "HubSpot",
+  "description": "Search and update contacts, companies, deals, and tickets.",
+  "version": "1.0.1",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+  "repository": "https://github.com/cursor/plugins",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": ["hubspot", "crm", "mcp", "sales", "marketing", "contacts", "deals"]
+}

@@ -112,6 +112,19 @@
         "sha": "62247d89b64e50d39e909290f95264b482820476",
         "license": null
       }
+    },
+    {
+      "name": "hubspot",
+      "source": "./plugins/hubspot",
+      "displayName": "HubSpot",
+      "description": "Search and update contacts, companies, deals, and tickets.",
+      "category": "sales",
+      "_provenance": {
+        "upstream": "https://github.com/cursor/plugins",
+        "path": "third_party/hubspot",
+        "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
+        "license": "MIT"
+      }
     }
   ]
 }
