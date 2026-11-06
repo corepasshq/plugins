@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Hold back GoDaddy (`auth-unsupported`): its MCP server publishes OAuth sign-in but refuses Remy's client registration, so Remy cannot sign in.
+
 - Publish HubSpot from the vendored `plugins/hubspot`, which replaces Cursor's listing. Its MCP config carries no client id and the plugin has no Client ID or Client Secret settings: Remy signs in to `mcp.hubspot.com` through remy-service with Remy's HubSpot app.
 - Mark 22 plugins desktop-only because their MCP servers refuse remy-service's sign-in callback (aiven, atlassian, buffer, canva, codspeed, coinbase, dropbox, feishu, forge-skills, govtribe, intercom, leadfeeder, legalzoom, lusha, mercadopago, onepay, semrush, sfranalytics, shippo, square, typeform, upwork). Keep Lark Base out as Cursor-only (its MCP server is Cursor's gateway). Runway's plugin is now Runway Dev with a remote MCP server; re-pin 129 upstream plugins.
 
