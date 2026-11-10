@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Categorize five code/Git/PR plugins as Development, Carta Cap Table/Carta Investors/LinqAlpha as Finance, and Hunter/Wavus as Sales after checking pinned manifests, agents and skills. Reproject both complete pinned feeds without changing source pins, components, exclusions or entry counts; align the hand-maintained Wavus index and manifest.
+
 - Hold back GoDaddy (`auth-unsupported`): its MCP server publishes OAuth sign-in but refuses Remy's client registration, so Remy cannot sign in.
 
 - Publish HubSpot from the vendored `plugins/hubspot`, which replaces Cursor's listing. Its MCP config carries no client id and the plugin has no Client ID or Client Secret settings: Remy signs in to `mcp.hubspot.com` through remy-service with Remy's HubSpot app.
