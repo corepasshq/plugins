@@ -5471,7 +5471,7 @@
    "author": {
     "name": "Carta Engineering"
    },
-   "category": "productivity",
+   "category": "finance",
    "description": "Carta Cap Table plugin \u2014 skills and hooks for querying cap tables, grants, SAFEs, 409A valuations, waterfall scenarios, and more",
    "displayName": "Carta Cap Table",
    "homepage": "https://carta.com",
@@ -6070,7 +6070,7 @@
    "author": {
     "name": "Carta Engineering"
    },
-   "category": "productivity",
+   "category": "finance",
    "description": "Carta Investors plugin \u2014 skills for querying investor data, performance benchmarks, regulatory reporting, AGM deck generation, brand extraction, and more via the Carta MCP Server.",
    "displayName": "Carta Investors",
    "homepage": "https://carta.com",
@@ -8816,7 +8816,7 @@
     "ref": "main",
     "sha": "fa4eb54397ee2faccb6940512a19c017cb1337f3"
    },
-   "category": "productivity",
+   "category": "development",
    "strict": null,
    "license": "Apache-2.0",
    "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier",
@@ -8852,7 +8852,7 @@
      "path": "agents/code-reviewer.md"
     }
    ],
-   "category": "productivity",
+   "category": "development",
    "commands": [
     {
      "description": "Run CodeRabbit AI code review on your changes",
@@ -8989,7 +8989,7 @@
     "ref": "main",
     "sha": "fa4eb54397ee2faccb6940512a19c017cb1337f3"
    },
-   "category": "productivity",
+   "category": "development",
    "strict": null,
    "license": "Apache-2.0",
    "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/commit-commands",
@@ -14264,7 +14264,7 @@
     "ref": "main",
     "sha": "fa4eb54397ee2faccb6940512a19c017cb1337f3"
    },
-   "category": "productivity",
+   "category": "development",
    "strict": null,
    "license": "Apache-2.0",
    "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/gitlab",
@@ -15560,7 +15560,7 @@
    "author": {
     "name": "Hunter.io"
    },
-   "category": "productivity",
+   "category": "sales",
    "description": "Find and verify professional email addresses, search contacts by domain, and enrich company data -- directly in Claude.",
    "displayName": "Hunter",
    "homepage": "https://hunter.io",
@@ -17047,7 +17047,7 @@
    "author": {
     "name": "LinqAlpha"
    },
-   "category": "productivity",
+   "category": "finance",
    "description": "LinqAlpha financial research in Claude: guided setup for the LinqAlpha connector, capability-based source selection for fundamentals, estimates, transcripts, filings and market data, and an optional, opt-in default-source preference you can remove at any time. Requires a LinqAlpha account.",
    "displayName": "Linq Alpha",
    "homepage": "https://www.linqalpha.com",
@@ -23983,7 +23983,7 @@
     "ref": "main",
     "sha": "fa4eb54397ee2faccb6940512a19c017cb1337f3"
    },
-   "category": "productivity",
+   "category": "development",
    "strict": null,
    "license": "Apache-2.0",
    "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/pr-review-toolkit",
@@ -38255,7 +38255,7 @@
     "sha": "b31c6cb64e8b2331fd80488f496e116e28390b3d"
    },
    "license": "proprietary",
-   "category": "data-analytics",
+   "category": "sales",
    "featured": false,
    "repository": null,
    "publisher": {

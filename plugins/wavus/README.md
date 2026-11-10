@@ -45,8 +45,9 @@ verified contacts, ranked by a fit score, with enrichment on investment mandates
 AUM, funding history, contact details and deal activity. Aimed at capital
 markets, real estate and lending, and B2B prospecting.
 
-Categorized as `data-analytics`, matching `sfranalytics` and the wider
-company/contact-intelligence group.
+Categorized as `sales`: the primary workflow finds and prioritizes prospects,
+decision-makers and investor contacts for outreach. Data enrichment supports
+that sales-intelligence workflow rather than a general analytics workspace.
 
 ## Authentication
 
