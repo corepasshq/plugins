@@ -32178,17 +32178,8 @@
    "tagline": "Deploy, check builds and manage domains",
    "marketplace": "claude-code",
    "surfaces": [
-    "desktop"
-   ],
-   "cloudUnsupported": [
-    {
-     "reason": "hook-program",
-     "detail": "node"
-    },
-    {
-     "reason": "local-login",
-     "detail": "stripe login, vercel login"
-    }
+    "desktop",
+    "cloud"
    ]
   },
   {
