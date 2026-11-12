@@ -2519,13 +2519,8 @@
    ],
    "marketplace": "claude-code",
    "surfaces": [
-    "desktop"
-   ],
-   "cloudUnsupported": [
-    {
-     "reason": "reviewed",
-     "detail": "Atlassian's Rovo MCP server allows only Atlassian-supported domains and domains each organization's admin adds, so Remy's cloud sign-in callback is blocked on the consent page."
-    }
+    "desktop",
+    "cloud"
    ]
   },
   {
