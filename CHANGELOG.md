@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Let Atlassian run in Cloud: its entry is `surfaces: ["desktop", "cloud"]` with no `cloudUnsupported`, matching the reviewed verdict in remy's `scripts/catalog/catalog_cloud.json` (`cloud: true`: the Rovo MCP server accepts Remy's HTTPS callback once the customer's organization admin allows it; users still authorize their organization). Verified on dev 2026-11-17: a Slack Tag run read a remy-test Confluence page through the user's Atlassian connection signed in by address through remy-service.
+
 - Categorize five code/Git/PR plugins as Development, Carta Cap Table/Carta Investors/LinqAlpha as Finance, and Hunter/Wavus as Sales after checking pinned manifests, agents and skills. Reproject both complete pinned feeds without changing source pins, components, exclusions or entry counts; align the hand-maintained Wavus index and manifest.
 
 - Hold back GoDaddy (`auth-unsupported`): its MCP server publishes OAuth sign-in but refuses Remy's client registration, so Remy cannot sign in.
